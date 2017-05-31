@@ -1,0 +1,753 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>website index page</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link rel="stylesheet" href="assets/css/pushy-buttons.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/flaticon.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+</head>
+
+<body>
+	<!-- Fixed navbar -->
+	<nav id="navBar" class="navbar navbar-default navbar-SH navbar-fixed-top" role="navigation"></nav>
+
+	<div class="container">
+		<div class="top-height">
+			<article class="table-box navbar-fixed-top top-Menu">
+				<section onclick="history.go(-1)"><i class="fa fa-chevron-left"></i> back</section>
+				<section>Top Title</section>
+				<section><a data-toggle="modal" data-target="#SearchModal" href="#"><i class="fa fa-search"></i> Search</a> <i class="fa fa-chevron-right"></i></section>
+			</article>
+		</div>
+
+		<div class="row">
+
+			<!-- Flickity HTML init -->
+			<article class="carousel type_sel_btn" data-flickity='{ "contain": true, "prevNextButtons": false, "pageDots": false }'>
+				<section class="carousel-cell">
+					<span class="label_text">類 型</span>
+				</section>
+				<section class="carousel-cell">
+					<input type="radio" name="options" id="option1" checked>
+					<label class="btn" for="option1">播放</label>
+				</section>
+				<section class="carousel-cell">
+					<input type="radio" name="options" id="option2">
+					<label class="btn" for="option2">最新</label>
+				</section>
+				<section class="carousel-cell">
+					<input type="radio" name="options" id="option3">
+					<label class="btn" for="option3">价格</label>
+				</section>
+				<section class="carousel-cell">
+						<input type="radio" name="options" id="option4">
+					<label class="btn" for="option4">销量</label>
+				</section>
+				<section class="carousel-cell">
+						<input type="radio" name="options" id="option5">
+					<label class="btn" for="option5">老师</label>
+				</section>
+				<section class="carousel-cell">
+						<input type="radio" name="options" id="option6">
+					<label class="btn" for="option6">收藏</label>
+				</section>
+				<section class="carousel-cell">
+						<input type="radio" name="options" id="option7">
+					<label class="btn" for="option7">Other</label>
+				</section>
+				<section class="carousel-cell">
+						<input type="radio" name="options" id="option8">
+					<label class="btn" for="option8">Other</label>
+				</section>
+				<section class="carousel-cell">
+						<input type="radio" name="options" id="option9">
+					<label class="btn" for="option9">Other</label>
+				</section>
+			</article>
+
+			<!-- Flickity HTML init -->
+			<div class="carousel js-flickity" data-flickity-options='{ "lazyLoad":true, "autoPlay": 3600, "adaptiveHeight": true}'>
+				<section class="carousel-cell">
+					<img class="carousel-cell-image" data-flickity-lazyload="http://static.ehejun.com/upload/hejun/bannerImages/20161101/1477964907249406996.jpg"/>
+				</section>
+				<section class="carousel-cell">
+					<img class="carousel-cell-image" data-flickity-lazyload="http://static.ehejun.com/upload/hejun/bannerImages/20170220/1487578266938308136.png"/>
+				</section>
+				<section class="carousel-cell">
+					<img class="carousel-cell-image" data-flickity-lazyload="http://static.ehejun.com/upload/hejun/bannerImages/20151023/1445570500775813622.jpg"/>
+				</section>
+			</div>
+		</div><!-- /.row -->
+
+		<hr>
+
+		<div class="row">
+			<!-- Layout Main aside Star -->
+			<article class="col-sm-9">
+
+				<div class="row">
+					<!-- Flickity group_item HTML init -->
+					<div class="carousel group_item" data-flickity='{"groupCells": true}'>
+						<section class="carousel-cell"></section>
+						<section class="carousel-cell"></section>
+						<section class="carousel-cell"></section>
+						<section class="carousel-cell"></section>
+						<section class="carousel-cell"></section>
+						<section class="carousel-cell"></section>
+						<section class="carousel-cell"></section>
+						<section class="carousel-cell"></section>
+						<section class="carousel-cell"></section>
+						<section class="carousel-cell"></section>
+						<section class="carousel-cell"></section>
+					</div>
+				</div>
+
+				<hr>
+				<div id="home_items" class="row">
+					<!-- <section class="col-sm-6 col-md-4">
+						<div class="card">
+							<a class="img_link" href="#0"><img src="http://img.accupass.com/userupload/8cc6fe084f61462b88ee8620cd642216.jpg"></a>
+							<div class="caption">
+								<h3>VOGUE 风格野餐日</h3>
+								<p>4月22日‧华山艺文中心</p>
+								<p>
+									<a href="#" class="pushy-btn btn--link" role="button">有兴趣</a>
+									<button class="pushy-btn btn--sm btn--grey" href="#">参加</button>
+								</p>
+							</div>
+						</div>
+					</section> -->
+				</div>
+
+				<div class="row">
+					<hr>
+					<header>
+						<h3 class="well">Model Title</h3>
+					</header>
+					<section class="col-sm-6">
+						<div class="card">
+							<div class="price row">
+								<header class="col-sm-12"><h4>企业家应该确立的N个产业思维和产业认识</h4></header>
+								<div class="col-sm-7 col-xs-6">
+									<img class="img-responsive" src="assets/images/item3.jpg">
+								</div>
+								<div class="col-sm-5 col-xs-5">
+									<p class="sale">促銷價：$<span class="fz16 red">12</span></p>
+									<p>原價：$<b class="fz12">20</b></p>
+									<ul class="table-box">
+										<li>购买：0</li>
+										<li>收藏：0</li>
+									</ul>
+									<!-- <p>一元體驗</p>
+									<p>套餐</p>
+									<p>限時優惠</p> -->
+									<footer>
+										<button class="pushy-btn btn--grey"><i class="fa fa-star"></i></button>
+										<button class="pushy-btn btn--red"><i class="fa fa-shopping-cart"></i> 购买</button>
+									</footer>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="col-sm-6">
+						<div class="card">
+							<div class="price row">
+								<header class="col-sm-12"><h4>品牌营销的理论与实操</h4></header>
+								<div class="col-sm-7 col-xs-6">
+									<img class="img-responsive" src="assets/images/item2.jpg">
+								</div>
+								<div class="col-sm-5 col-xs-5">
+									<p class="sale">价格：$<span class="fz16 red">16</span></p>
+									<p>原價：$<b class="fz12">22</b></p>
+									<ul class="table-box">
+										<li>购买：0</li>
+										<li>收藏：0</li>
+									</ul>
+									<footer>
+										<button class="pushy-btn btn--grey"><i class="fa fa-star"></i></button>
+										<button class="pushy-btn btn--red"><i class="fa fa-shopping-cart"></i> 购买</button>
+									</footer>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="col-sm-6">
+						<div class="card">
+							<div class="price row">
+								<header class="col-sm-12"><h4>互联网思维与中国企业创新转型</h4></header>
+								<div class="col-sm-7 col-xs-6">
+									<img class="img-responsive" src="assets/images/item1.jpg">
+								</div>
+								<div class="col-sm-5 col-xs-5">
+									<p class="sale">价格：$<span class="fz16 red">100</span></p>
+									<p>原價：$<b class="fz12">89</b></p>
+									<ul class="table-box">
+										<li>购买：0</li>
+										<li>收藏：0</li>
+									</ul>
+									<footer>
+										<button class="pushy-btn btn--grey"><i class="fa fa-star"></i></button>
+										<button class="pushy-btn btn--red"><i class="fa fa-shopping-cart"></i> 购买</button>
+									</footer>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- <section class="col-sm-6">
+						<div class="card">
+							<div class="price row">
+								<header class="col-sm-12"><h4 class="style2">Title Style2</h4></header>
+								<div class="col-sm-7 col-xs-6">
+									<img class="img-responsive" src="http://placehold.it/640x480/bfcfff/fff">
+								</div>
+								<div class="col-sm-5 col-xs-5">
+									<p class="sale">价格：$<span class="fz16 red">89</span></p>
+									<ul class="table-box">
+										<li>购买：0</li>
+										<li>收藏：0</li>
+									</ul>
+									<footer>
+										<button class="pushy-btn btn--grey"><i class="fa fa-star"></i></button>
+										<button class="pushy-btn btn--grey"><i class="fa fa-shopping-cart"></i> 购买</button>
+									</footer>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="col-sm-6">
+						<div class="card">
+							<div class="price row">
+								<header class="col-sm-12"><h4 class="style3">Title Style3</h4></header>
+								<div class="col-sm-7 col-xs-6">
+									<img class="img-responsive" src="http://placehold.it/640x480/73ffff/fff">
+								</div>
+								<div class="col-sm-5 col-xs-5">
+									<p class="sale">价格：$<span class="fz16 red">89</span></p>
+									<ul class="table-box">
+										<li>购买：0</li>
+										<li>收藏：0</li>
+									</ul>
+									<footer>
+										<button class="pushy-btn btn--grey"><i class="fa fa-star"></i></button>
+										<button class="pushy-btn btn--grey"><i class="fa fa-shopping-cart"></i> 购买</button>
+									</footer>
+								</div>
+							</div>
+						</div>
+					</section> -->
+				</div><!-- /.row -->
+
+				<div class="row__">
+					<header>
+						<h3 class="well">Model Title (Video)</h3>
+					</header>
+					<article>
+						<section class="row">
+							<div class="col-sm-7">
+								<!-- <iframe width="100%" height="380" src="https://www.youtube.com/embed/JqYd_UkCxB0" frameborder="0" allowfullscreen></iframe> -->
+								<div class="ppt-play" id="">
+									<a class="" href="#0" title="播放">
+										<img src="assets/images/wang.jpg">
+									</a>
+									<a href="#0" title="播放" class="play-btn">&nbsp;</a>
+								</div>
+							</div>
+							<div class="col-sm-5">
+								<div style="padding:0 .8em 1em;">
+									<h3>Birdy bike is your lifestyle</h3>
+									<p>價格：$<span class="fz16 red">99</span></p>
+									<p>效期： 180天</p>
+									<div style="height:2em;"></div>
+									<section>
+										<button class="pushy-btn btn--grey"><i class="fa fa-star"></i> <!-- 收藏 --></button>
+										<button class="pushy-btn btn--grey"><i class="fa fa-thumbs-up"></i> <!-- 按讚 --></button>
+										<button class="pushy-btn btn--grey" data-toggle="modal" data-target="#commentModal"><i class="fa fa-comments"></i> 谘询</button>
+										<button class="pushy-btn btn--grey"><i class="fa fa-usd"></i> 打賞</button>
+									<!-- <button class="pushy-btn btn--grey"><i class="fa fa-share"></i></button> -->
+									</section>
+									<div style="height:1em;"></div>
+									<button class="pushy-btn btn--red btn-block fz12"><i class="fa fa-shopping-cart"></i> 购买</button>
+								</div>
+							</div>
+						</section>
+						<section class="table-box" style="padding:.8rem 0;border-top:1px solid #d9d9d9;border-bottom:1px solid #d9d9d9;">
+							<div>播放 0</div>
+							<div>评论 0</div>
+							<div>收藏 0</div>
+							<div>购买 0</div>
+						</section>
+						<div class="///" style="padding:0 .5rem;">
+							<h3>Birdy bike is your lifestyle</h3>
+							<p>Birdy 是一台真正的折疊自行車。不用任何工具，短短15秒內就能完成折疊。不像有些所謂的「折疊車」，實質上卻是「拼裝車」，拆裝需要的不僅是工具、時間，更需要您的熱情。</p>
+							<p>折疊完成後的 Birdy 是一個完整個體，讓您可輕易攜帶。不像其他折疊車，會有零件散落在主車體之外，只靠幾條脆弱的管線勉強聯結。甚至有零件(像輪子)與主車體分離，需分別放置。</p>
+							<p>上述優點都是 Birdy 成為傑出城市通勤車的理由。不論何時何地，折疊或組立 Birdy 都相當方便簡易，即便您想要馬上跳上就在眼前的巴士或火車，您還是有足夠的時間折疊，或是如果您覺得無法把 Birdy 停在一個您不熟悉的區域，您只需要做的就是幾個簡單的動作，就能把您最愛的 Birdy 帶在身邊。</p>
+							<p>其他折疊車在主車體都有不可避免的折疊關節，相對使得車體變得脆弱，尤其使高速行駛變得相當危險，Birdy 則突破傳統，擁有堅固、免受破壞的主車體。精心設計的 Birdy 巧妙揉合折疊構造與避震系統，使主車體更加堅固耐用。</p>
+							<p>Birdy 前後避震相當簡易輕盈，卻能提供您平穩舒適的旅程。您可能認為避震功能可有可無，只是多增加自行車重量與減緩行車速度。但是請記住，小輪車並不像大輪車天生就有避震效果。沒有避震的高壓胎小輪車，除了讓您騎乘不舒服，對您的車體結構更是殘酷無情的摧折。</p>
+							<p>Birdy 比起其他折疊車要來的輕量化。重量一直是折疊車攜帶簡易度的重點。Birdy 以堅固的鋁合金材質7005製作，讓車體不僅輕又防鏽，更堅固！</p>
+							<p>Birdy 原本是一台專為城市通勤人所設計的折疊車，然而，經過設計團隊多年持續不斷的創新與改善， Birdy 也已然成為相當驚人的旅行車。設計團隊不停改善車體期盼臻至完美，更研發出可輕鬆攜帶25公斤行李的貨架，體積完全沒有因此增大。而後貨架甚至在折疊過程 中，自然就融入折疊車體中，您甚至不需碰觸到它。</p>
+
+							<h3>規格及注意事項：</h3>
+							<h4><span style="color: #fff;background-color: #333;padding:0 .5rem;">* 商品規格 *</span></h4>
+							<p>• 車架：NEW BIRDY Monocoque[高剛性單體式] 碟剎款 前:AL 6061 後:AL 7005<br>
+							• 顏色：簡約白 / 碳晶黑<br>
+							• 前叉避震：NEW BIRDY 折疊式避震前叉 碟剎款 w/ 10.5圈黑色避震彈簧<br>
+							• 後避震器：PU避震 紅 90D<br>
+							• 車頭碗組：隱藏式1-1/8吋 黑色 w/ 2mm 墊圈<br>
+							• 五通中軸：外掛式培林組<br>
+							• 座桿：SP61R.1 硬陽黑鐳雕刻度座桿 34.9x570mm 鋁合金 7075<br>
+							• 座桿快拆型式：座桿束 JD-SC65A 40.0mm 陽極黑<br>
+							• 外胎：Schwalbe Marathon Racer 18x1.5 (40-355) 85PSI 反光胎<br>
+							• 車圈：Alex CROSTINI M1.1 18x1.5 FV 陽極黑 前/後:32H w/ 磨耗警告線<br>
+							• 鋼絲：2.0mm (14G) 不銹鋼<br>
+							• 前花鼓：T22B 碟剎款 QR Type 32H OLD:100mm 密封式軸承 陽極黑<br>
+							• 後花鼓：A4217B 碟煞後花鼓 QR Type 32H OLD:135mm 陽極黑<br>
+							• 大齒盤：Birdy專用鋁合金 52T 170mm BCD:130mm w/雙面黑色鋁鏈蓋 <br>
+							• 鏈條：Shimano CN-HG95 112L<br>
+							• 飛輪組：Shimano CS-M771 10速 11~34T<br>
+							• 後變速器：Shimano R350-10 SS 10速<br>
+							• 變速把：Shimano SL-R780 右撥把<br>
+							• 座墊：Sella Italia X1 黑/銀色 <br>
+							• 腳踏：VP-197 噴砂黑<br>
+							• 車手：JD-MTB20AF 鋁合金6061 T6 31.8x540mm 12D 噴砂陽黑 w/ 鐳雕 BIRDY Logo 握把<br>
+							• 折疊立管型式：3D鍛造可調式立管組-21度運動款 拋光陽黑 w/安全鎖<br>
+							• 煞車器：TRP Spyre Road 碟盤 160mm <br>
+							• 煞車把：Shimano BL-R550 煞車把 w/ 鐵弗龍塗層剎車線<br>
+							• 附件：鏈條拉緊器、鈴鐺、車輪反光片<br>
+							• 折疊後尺寸：長75cm x 寬32cm x 高65cm<br>
+							• 全車重量：約11公斤 <br>
+							• 乘載限制：最大乘載 110kg (含人、行李)<br>
+							• 適用身高：140 - 195cm</p>	
+							<h4><span style="color: #fff;background-color: #333;padding:0 .5rem;">* 注意事項 *</span></h4>
+							<p>此為特殊商品，需要專人安裝服務，若下單訂購，會有專人通知您至門市為您服務</p>
+
+						</div>
+					</article>
+				</div>
+
+				<div class="row__">
+					<header>
+						<h3 class="well">Model Title</h3>
+					</header>
+					<article>
+						<section>
+							<h3>企业家应该确立的N个产业思维和产业认识（节选）</h3>
+							<p>xxxxxxx</p>
+							<div class="Introduction card table-box">
+								<section><img class="img-responsive" src="http://static.ehejun.com/upload/mavendemo/course/20151130/1448875590826981403.jpg"></section>
+								<section>
+									<h2 class="red" style="margin-botton:4rem;">王丰</h2>
+									<p class="fz12 grey">和君集团副总裁<br/>合夥人</p>
+								</section>
+							</div>
+							<p>一鄉中成年死營保護說關無是因優委日有土：藝他告的大後如、細並育未年我一題長都上意會自樹不。子地消王，是什不主拿走進英孩育通；一坡紅，老民日細有自名一內一現運死，嗎林總壓一多……什再天的了太我是響！子理故東示於的是片打當靈成！生更感；園小求只。</p>
+						</section>
+					</article>
+				</div>
+
+				<div class="row__">
+					<header>
+						<h3 class="well">Model Title</h3>
+					</header>
+					<!-- Nav tabs -->
+					<ul class="nav nav-pills nav-justified" role="tablist">
+						<li role="presentation" class="active"><a href="#A" aria-controls="home" role="tab" data-toggle="tab">留 言</a></li>
+						<li role="presentation"><a href="#B" aria-controls="profile" role="tab" data-toggle="tab">聊 天</a></li>
+						<li role="presentation"><a href="#C" aria-controls="messages" role="tab" data-toggle="tab">作 业</a></li>
+						<li role="presentation"><a href="#D" aria-controls="settings" role="tab" data-toggle="tab">说 明</a></li>
+					</ul>
+
+					<!-- Tab panes -->
+					<article class="tab-content">
+						<section role="tabpanel" class="tab-pane fade in active" id="A">
+							<div class="media">
+								<div class="media-left">
+									<a href="#">
+										<img class="media-object" src="assets/images/avatar/user_4.jpg">
+									</a>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">王小明</h4>
+									<p>者我開員緊，深程信每絕子自育明源，為險多萬比臺身平女體，因格同稱庭克選，文不人起反配聽係笑：日是大。</p>
+									<p class="text-muted">4月23日 17:23 /<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_1" aria-expanded="false" aria-controls="collapse_1">回覆</button></p>
+									<div class="collapse" id="collapse_1">
+										<footer class="input-group col-sm-7">
+											<input type="text" class="form-control" placeholder="Messenger...">
+											<span class="input-group-btn">
+												<button class="btn btn-danger_" type="button"><i class="fa fa-chevron-right"></i></button>
+											</span>
+										</footer><!-- /input-group -->
+									</div>
+								</div>
+							</div>
+							<div class="media">
+								<div class="media-left">
+									<a href="#">
+										<img class="media-object" src="assets/images/avatar/user_1.png">
+									</a>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">王国军</h4>
+									<p>家運至經，看依工投衣的改金廣理知就電，內接然不，發人樣的理近進相止中問色成、看主時幾出臺調來日人票斯識一大商現教其讀裡車是流影大口最。生為師。女告果馬的史念後華客的海</p>
+									<p class="text-muted">4月22日 22:45 /<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_2" aria-expanded="false" aria-controls="collapse_2">回覆</button></p>
+									<div class="collapse" id="collapse_2">
+										<footer class="input-group col-sm-7">
+											<input type="text" class="form-control" placeholder="Messenger...">
+											<span class="input-group-btn">
+												<button class="btn btn-danger_" type="button"><i class="fa fa-chevron-right"></i></button>
+											</span>
+										</footer><!-- /input-group -->
+									</div>
+
+									<div class="media">
+										<div class="media-left">
+											<a href="#">
+												<img class="media-object" src="assets/images/avatar/user_3.jpg">
+											</a>
+										</div>
+										<div class="media-body">
+											<h4 class="media-heading">Dr, 琼斯 <small class="text-muted">4月22日 23:16</small></h4>
+											Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="media">
+								<div class="media-left">
+									<a href="#">
+										<img class="media-object" src="assets/images/avatar/user_2.jpg">
+									</a>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">Angela baby</h4>
+									<p>本名楊穎，出生於上海，是香港女模特兒、女演員，目前為華誼兄弟藝人、風尚國際（Style International Management）之旗下模特 ...</p>
+									<p class="text-muted">4月22日 10:18 /<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_3" aria-expanded="false" aria-controls="collapse_3">回覆</button></p>
+									<div class="collapse" id="collapse_3">
+										<footer class="input-group col-sm-7">
+											<input type="text" class="form-control" placeholder="Messenger...">
+											<span class="input-group-btn">
+												<button class="btn btn-danger_" type="button"><i class="fa fa-chevron-right"></i></button>
+											</span>
+										</footer><!-- /input-group -->
+									</div>
+								</div>
+							</div>
+							<footer class="input-group" style="margin-top:2rem;">
+								<input type="text" class="form-control" placeholder="Messenger...">
+								<span class="input-group-btn">
+									<button class="btn btn-danger_" type="button"><i class="fa fa-chevron-right"></i></button>
+								</span>
+							</footer><!-- /input-group -->
+						</section>
+						<section role="tabpanel" class="tab-pane fade" id="B">
+							<div class="media">
+								<div class="media-left">
+									<a href="#">
+										<img class="media-object" src="assets/images/avatar/user_4.jpg">
+									</a>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">陳大強 <small class="text-muted">4月25日 12:06</small></h4>
+									<p>中在易任出星老年部黨流必經器運情費十如高。以回再減化定為食十時王？面看奇回教我談個業媽有加就會為見我。</p>
+								</div>
+							</div>
+							<div class="media">
+								<div class="media-left">
+									<a href="#">
+										<img class="media-object" src="assets/images/avatar/user_2.png">
+									</a>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">張立強 <small class="text-muted">4月25日 11:02</small></h4>
+									<p>發是是身外化型生告火朋指樓老產，產落型技長？</p>
+								</div>
+							</div>
+							<footer class="input-group" style="margin-top:2rem;">
+								<input type="text" class="form-control" placeholder="Messenger...">
+								<span class="input-group-btn">
+									<button class="btn btn-danger_" type="button"><i class="fa fa-chevron-right"></i></button>
+								</span>
+							</footer><!-- /input-group -->
+						</section>
+						<section role="tabpanel" class="tab-pane fade" id="C">
+							<h4><small class="pull-right">(复选)</small>1.標題名稱</h4>
+							<div class="checkbox_btn row__">
+								<input type="checkbox" id="box_1" value="option1">
+								<label for="box_1" class="checkbox-inline">复选 1</label>
+								<input type="checkbox" id="box_2" value="option1">
+								<label for="box_2" class="checkbox-inline">复选 2</label>
+								<input type="checkbox" id="box_3" value="option1">
+								<label for="box_3" class="checkbox-inline">复选 3</label>
+								<hr>
+							</div>
+							<h4><small class="pull-right">(单选)</small>2.標題名稱</h4>
+							<div class="radio_btn row__">
+								<input type="radio" name="inlineRadioOptions" id="Radio_1" value="option1">
+								<label for="Radio_1" class="radio-inline">Radio 1</label>
+								<input type="radio" name="inlineRadioOptions" id="Radio_2" value="option2">
+								<label for="Radio_2" class="radio-inline">Radio2</label>
+								<input type="radio" name="inlineRadioOptions" id="Radio_3" value="option3">
+								<label for="Radio_3" class="radio-inline">Radio 3</label>
+								<hr>
+							</div>
+							<h4><small class="pull-right">(问答)</small>3.標題名稱</h4>
+							<p>我 <span class="text-muted">4月22日 22:45</span><button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_4" aria-expanded="false" aria-controls="collapse_4">回覆</button></p>
+							<div class="collapse" id="collapse_4">
+								<footer class="input-group col-sm-7">
+									<input type="text" class="form-control" placeholder="Messenger...">
+									<span class="input-group-btn">
+										<button class="btn btn-danger_" type="button"><i class="fa fa-chevron-right"></i></button>
+									</span>
+								</footer><!-- /input-group -->
+							</div>
+							<p><i class="fa fa-file-word-o fa-2x"></i> Test.docx</p>
+							<div class="media">
+								<div class="media-left">
+									<a href="#">
+										<img class="media-object" src="assets/images/avatar/user_3.jpg">
+									</a>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">李小花 <small class="text-muted">4月24日 15:01</small></h4>
+									<p>在社所果跑技廣就藝保公高了山學時表後字天由點節程傳！怎母天球！達詩作得，品其坐子遊通行還般受。</p>
+								</div>
+							</div>
+							<hr>
+							<p>我 <span class="text-muted">4月23日 21:54</span><button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_5" aria-expanded="false" aria-controls="collapse_5">回覆</button></p>
+							<div class="collapse" id="collapse_5">
+								<footer class="input-group col-sm-7">
+									<input type="text" class="form-control" placeholder="Messenger...">
+									<span class="input-group-btn">
+										<button class="btn btn-danger_" type="button"><i class="fa fa-chevron-right"></i></button>
+									</span>
+								</footer><!-- /input-group -->
+							</div>
+							<p><i class="fa fa-file-word-o fa-2x"></i> Test_01.docx</p>
+							<div class="media">
+								<div class="media-left">
+									<a href="#">
+										<img class="media-object" src="assets/images/avatar/user_4.jpg">
+									</a>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">陳大強 <small class="text-muted">4月23日 21:42</small></h4>
+									<p>球是在為輕在對青行建可格處克的；親去題廣是！致景實緊麗親萬間得第使後生可市……動日臉，親看產，們一而學。</p>
+								</div>
+							</div>
+						</section>
+						<section role="tabpanel" class="tab-pane fade" id="D">
+
+							<div class="row__">
+								<h3>企业家应该确立的N个产业思维和产业认识（节选）</h3>
+								<div class="Introduction table-box card">
+									<section><img class="img-responsive" src="http://static.ehejun.com/upload/mavendemo/course/20151130/1448875590826981403.jpg"></section>
+									<section>
+										<h2 class="red" style="margin-botton:4rem;">王丰</h2>
+										<p class="fz12 grey">和君集团副总裁<br/>合夥人</p>
+									</section>
+								</div>
+								<p>一鄉中成年死營保護說關無是因優委日有土：藝他告的大後如、細並育未年我一題長都上意會自樹不。子地消王，是什不主拿走進英孩育通；一坡紅，老民日細有自名一內一現運死，嗎林總壓一多……什再天的了太我是響！子理故東示於的是片打當靈成！生更感；園小求只。</p>
+								<div style="height:2em;"></div>
+								<ul class="file_dl list-group">
+									<li class="list-group-item"><span class="badge"><a href="#0"><i class="fa fa-download"></i> 下载</a></span><i class="fa fa-file-pdf-o fa-2x"></i> this text.pdf</li>
+									<li class="list-group-item"><span class="badge"><a href="#0"><i class="fa fa-download"></i> 下载</a></span><i class="fa fa-file-word-o fa-2x"></i> this text.docx</li>
+									<li class="list-group-item"><span class="badge"><a href="#0"><i class="fa fa-download"></i> 下载</a></span><i class="fa fa-file-excel-o fa-2x"></i> this text.xlsx</li>
+									<li class="list-group-item"><span class="badge"><a href="#0"><i class="fa fa-download"></i> 下载</a></span><i class="fa fa-file-powerpoint-o fa-2x"></i> this text.pptx</li>
+									<li class="list-group-item"><span class="badge"><a href="#0"><i class="fa fa-eye"></i> 檢視</a></span><i class="fa fa-file-image-o fa-2x"></i> this text.jpg</li>
+									<li class="list-group-item"><span class="badge"><a href="#0"><i class="fa fa-link"></i> 链接</a></span><i class="fa fa-globe fa-2x"></i> this text.url</li>
+								</ul>
+							</div>
+
+						</section>
+
+					</article>
+				</div>
+				
+				<div class="row__">
+					<header>
+						<h3 class="well">Model Title</h3>
+					</header>
+					<article>
+						<section class="row__">
+							<ul class="table-box cube_btn">
+								<li><button class="pushy-btn btn--grey fz12"><i class="fa fa-usd"></i>打賞</button></li>
+								<li><button class="pushy-btn btn--grey fz12"><i class="fa fa-thumbs-up"></i>按讚</button></li>
+								<li><button class="pushy-btn btn--grey fz12" data-toggle="modal" data-target="#commentModal"><i class="fa fa-comments-o"></i>谘询</button></li>
+								<!-- <li><button class="pushy-btn btn--grey fz12"><i class="fa fa-share"></i>分享</button></li> -->
+								<li><button class="pushy-btn btn--grey fz12"><i class="fa fa-star"></i>收藏</button></li>
+								<li><button class="pushy-btn btn--red fz12"><i class="fa fa-shopping-cart"></i>购买</button></li>
+							</ul>
+						</section>
+					</article>
+				</div>
+
+			</article><!-- Layout Main aside End -->
+			
+			<!-- Layout Right aside Star -->
+			<article class="col-sm-3 hidden-xs">
+				<ul class="list-group">
+					<li class="list-group-item active">
+						<span class="badge">14</span>
+						<span>this text</span>
+					</li>
+					<li class="list-group-item"><span class="badge">0</span>this text</li>
+					<li class="list-group-item"><span class="badge">0</span>this text</li>
+					<li class="list-group-item"><span class="badge">0</span>this text</li>
+					<li class="list-group-item"><span class="badge">0</span>this text</li>
+				</ul>
+				<img src="http://placehold.it/480x160/e2e2e2/333" class="img-thumbnail">
+				<img src="http://placehold.it/480x160/e2e2e2/333" class="img-thumbnail">
+				<div style="height:2em;"></div>
+				<img src="http://placehold.it/74x74/c0c9d8/333" class="img-thumbnail">
+				<img src="http://placehold.it/75x74/c0c9d8/333" class="img-thumbnail">
+				<img src="http://placehold.it/74x74/c0c9d8/333" class="img-thumbnail">
+			</article><!-- Layout Right aside End -->
+
+		</div><!-- /.row -->
+	</div><!-- /.container -->
+	
+	<!-- Search Modal -->
+	<div class="modal fade" id="SearchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<article class="modal-dialog" role="document">
+			<section class="modal-content">
+				<header class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel"><i class="fa fa-search"></i> Search Modal title</h4>
+				</header>
+				<section class="modal-body">
+					<p class="modal-subTitle">按专业</p>
+					<div class="checkbox_btn">
+						<input type="checkbox" id="type_1" value="option1" checked>
+						<label for="type_1" class="checkbox-inline">局势大观</label>
+						<input type="checkbox" id="type_2" value="option2" checked>
+						<label for="type_2" class="checkbox-inline">职业发展</label>
+						<input type="checkbox" id="type_3" value="option3" checked>
+						<label for="type_3" class="checkbox-inline">互连网+</label>
+						<input type="checkbox" id="type_4" value="option4">
+						<label for="type_4" class="checkbox-inline">案例解析</label>
+					</div>
+					<p class="modal-subTitle">按类型</p>
+					<div class="checkbox_btn">
+						<input type="checkbox" id="compny" value="option1" checked>
+						<label for="compny" class="checkbox-inline">企业在线班</label>
+					</div>
+					<p class="modal-subTitle">上课方式</p>
+					<div class="checkbox_btn">
+						<input type="checkbox" id="line_up" value="option1" checked>
+						<label for="line_up" class="checkbox-inline">线上</label>
+						<input type="checkbox" id="line_down" value="option2">
+						<label for="line_down" class="checkbox-inline">线下</label>
+					</div>
+				</section>
+				<footer class="modal-footer">
+					<button type="button" class="pushy-btn btn--grey" data-dismiss="modal">Close</button>
+					<button type="button" class="pushy-btn btn--red">Search</button>
+				</footer>
+			</section>
+		</article>
+	</div>
+
+	<!-- Comment Modal -->
+	<div class="modal fade" id="commentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<article class="modal-dialog" role="document">
+			<section class="modal-content">
+				<header class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel"><i class="fa fa-comments"></i> 谘询 / Comments - Modal</h4>
+				</header>
+				<section class="modal-body">
+					<div class="media">
+						<div class="media-left">
+							<a href="#">
+								<img class="media-object" src="assets/images/avatar/user_4.jpg">
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">王小明</h4>
+							<p>者我開員緊，深程信每絕子自育明源，為險多萬比臺身平女體，因格同稱庭克選，文不人起反配聽係笑：日是大。</p>
+							<p class="text-muted">4月23日 17:23 /<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#re_1" aria-expanded="false" aria-controls="re_1">回覆</button></p>
+							<div class="collapse" id="re_1">
+								<footer class="input-group col-sm-7">
+									<input type="text" class="form-control" placeholder="Messenger...">
+									<span class="input-group-btn">
+										<button class="btn btn-danger_" type="button"><i class="fa fa-chevron-right"></i></button>
+									</span>
+								</footer><!-- /input-group -->
+							</div>
+						</div>
+					</div>
+					<div class="media">
+						<div class="media-left">
+							<a href="#">
+								<img class="media-object" src="assets/images/avatar/user_1.png">
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">王国军</h4>
+							<p>家運至經，看依工投衣的改金廣理知就電，內接然不，發人樣的理近進相止中問色成、看主時幾出臺調來日人票斯識一大商現教其讀裡車是流影大口最。生為師。女告果馬的史念後華客的海</p>
+							<p class="text-muted">4月22日 22:45 /<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#re_2" aria-expanded="false" aria-controls="re_2">回覆</button></p>
+							<div class="collapse" id="re_2">
+								<footer class="input-group col-sm-7">
+									<input type="text" class="form-control" placeholder="Messenger...">
+									<span class="input-group-btn">
+										<button class="btn btn-danger_" type="button"><i class="fa fa-chevron-right"></i></button>
+									</span>
+								</footer><!-- /input-group -->
+							</div>
+
+							<div class="media">
+								<div class="media-left">
+									<a href="#">
+										<img class="media-object" src="assets/images/avatar/user_3.jpg">
+									</a>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">Dr, 琼斯 <small class="text-muted">4月22日 23:16</small></h4>
+									Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<footer class="modal-footer">
+					<!-- <button type="button" class="pushy-btn btn--grey" data-dismiss="modal">Close</button>
+					<button type="button" class="pushy-btn btn--red">Search</button> -->
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Messenger...">
+						<span class="input-group-btn">
+							<button class="btn btn-danger_" type="button"><i class="fa fa-chevron-right"></i></button>
+						</span>
+					</div><!-- /input-group -->
+				</footer>
+			</section>
+		</article>
+	</div>
+
+	<div style="height:6em;"></div>
+
+	<div class="container">
+		<!-- <footer>Footer bar</footer> -->
+		<div class="row__">
+			<ul class="table-box footMenu_btn">
+				<li class="sel"><button class="btn btn-block btn-deault"><i class="flaticon-home"></i>首頁</button></li>
+				<li><button class="btn btn-block btn-deault"><i class="flaticon-circle"></i>产品</button></li>
+				<li><button class="btn btn-block btn-deault"><i class="flaticon-calendar-1"></i>课程</button></li>
+				<li><button class="btn btn-block btn-deault"><i class="flaticon-profile-1"></i>会员</button></li>
+				<li><button class="btn btn-block btn-deault"><i class="flaticon-favorites"></i>活动</button></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<script src="assets/js/global_main.js" /></script>
+</body>
+</html>

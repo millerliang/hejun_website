@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>website index page</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link rel="stylesheet" href="assets/css/pushy-buttons.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/flaticon.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+</head>
+
+<body>
+	<!-- Fixed navbar -->
+	<nav id="navBar" class="navbar navbar-default navbar-SH navbar-fixed-top" role="navigation"></nav>
+
+	<div class="container">
+		<div class="top-height">
+			<article class="table-box navbar-fixed-top top-Menu">
+				<section onclick="history.go(-1)"><i class="fa fa-chevron-left"></i> back</section>
+				<section>課程卡儲值紀錄</section>
+				<section><!-- <i class="fa fa-chevron-right"></i> --></section>
+			</article>
+		</div><!-- /.row -->
+
+		<div class="row">
+			<!-- Layout Main aside Star -->
+			<aside class="col-sm-3 hidden-xs" style="margin-top:1rem;">
+				<ul class="list-group">
+					<li class="list-group-item"><a href="userprofile.html">會員檔案</a></li>
+					<li class="list-group-item"><a href="u2.html">課程訂單</a></li>
+					<li class="list-group-item"><a href="u3.html">積分交易紀錄</a></li>
+					<li class="list-group-item"><a href="u4.html">代幣交易紀錄</a></li>
+					<li class="list-group-item active"><a href="u5.html"><i class="flaticon-folder"></i> 課程卡儲值紀錄</a></li>
+					<li class="list-group-item"><a href="u6.html">好友邀請紀錄</a></li>
+					<li class="list-group-item"><span class="badge">0</span><a href="u7.html">系統通知</a></li>
+					<li class="list-group-item"><a href="u8.html">幫助中心</a></li>
+				</ul>
+				<hr/>
+				<img src="http://placehold.it/74x74/c0c9d8/333" class="img-thumbnail">
+				<img src="http://placehold.it/75x74/c0c9d8/333" class="img-thumbnail">
+				<img src="http://placehold.it/74x74/c0c9d8/333" class="img-thumbnail">
+				<hr/>
+
+			</aside><!-- Layout Main aside End -->
+			
+			<!-- Layout Right aside Star -->
+			<article class="col-sm-8">
+
+				<div class="">
+					<header class="hidden-xs">
+						<h3><i class="flaticon-folder"></i> 課程卡儲值紀錄</h3>
+					</header>
+					<div class="h3em"></div>
+					<article>
+
+						<form class="form-horizontal">
+							<section class="form-group">
+								<div class="col-sm-8 col-lg-9">
+									<input type="text" class="form-control input-lg" placeholder="請輸入課程卡序號">
+								</div>
+								<div class="col-sm-4 col-lg-3">
+									<button type="submit" class="pushy-btn btn-lg btn-block btn--red"><i class="fa fa-usd"></i> 確認儲值</button>
+								</div>
+							</section>
+						</form>
+						<div class="h3em"></div>
+						<section class="card">
+							<ul class="row older grey transaction" style="padding:.5rem .35rem 0;">
+								<li class="col-sm-6 col-md-4"><b>交易日期</b>：YYYY/MM/DD</li>
+								<li class="col-sm-6 col-md-4"><b>課程卡號</b>：ENIDFRH124</li>
+								<li class="col-sm-6 col-md-4"><b>代幣單號</b>：T-017BHVX</li>
+							</ul>
+							<p class="integral">儲值代幣 <b class="fz16 red">+100.0</b></p>
+						</section>
+
+					</article>
+				</div><!-- /.row -->
+
+			</article><!-- Layout Right aside End -->
+
+		</div><!-- /.row -->
+	</div><!-- /.container -->
+	
+	<!-- Search Modal -->
+	<div class="modal fade" id="SearchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<article class="modal-dialog" role="document">
+			<section class="modal-content">
+				<header class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel"><i class="fa fa-search"></i> Search Modal title</h4>
+				</header>
+				<section class="modal-body">
+					<p class="modal-subTitle">按专业</p>
+					<div class="checkbox_btn">
+						<input type="checkbox" id="type_1" value="option1" checked>
+						<label for="type_1" class="checkbox-inline">局势大观</label>
+						<input type="checkbox" id="type_2" value="option2" checked>
+						<label for="type_2" class="checkbox-inline">职业发展</label>
+						<input type="checkbox" id="type_3" value="option3" checked>
+						<label for="type_3" class="checkbox-inline">互连网+</label>
+						<input type="checkbox" id="type_4" value="option4">
+						<label for="type_4" class="checkbox-inline">案例解析</label>
+					</div>
+					<p class="modal-subTitle">按类型</p>
+					<div class="checkbox_btn">
+						<input type="checkbox" id="compny" value="option1" checked>
+						<label for="compny" class="checkbox-inline">企业在线班</label>
+					</div>
+					<p class="modal-subTitle">上课方式</p>
+					<div class="checkbox_btn">
+						<input type="checkbox" id="line_up" value="option1" checked>
+						<label for="line_up" class="checkbox-inline">线上</label>
+						<input type="checkbox" id="line_down" value="option2">
+						<label for="line_down" class="checkbox-inline">线下</label>
+					</div>
+				</section>
+				<footer class="modal-footer">
+					<button type="button" class="pushy-btn btn--grey" data-dismiss="modal">Close</button>
+					<button type="button" class="pushy-btn btn--red">Search</button>
+				</footer>
+			</section>
+		</article>
+	</div>
+
+	<div style="height:6em;"></div>
+
+	<div class="container">
+		<article id="footMenuBar"></article>
+	</div>
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<script src="assets/js/global_main.js" /></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		setTimeout(function(){
+			$(".navbar-nav:first-child").children('li:nth-child(4)').children('a').addClass("red");
+			$("#footMenuBar .footMenu_btn").children('li:nth-child(4)').addClass("sel");
+		},500); 
+	});
+	</script>
+	
+</body>
+</html>

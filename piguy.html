@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>website index page</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link rel="stylesheet" href="assets/css/pushy-buttons.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/flaticon.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+</head>
+
+<body>
+	<!-- Fixed navbar -->
+	<nav id="navBar" class="navbar navbar-default navbar-SH navbar-fixed-top" role="navigation"></nav>
+
+	<div class="container">
+		<div class="top-height">
+			<article class="table-box navbar-fixed-top top-Menu">
+				<section onclick="location.href='index.html'"><img style="height:2.35em;" src="assets/images/hejun_logo.png"></section>
+				<!-- <section onclick="history.go(-1)"><i class="fa fa-chevron-left"></i> back</section> -->
+				<section>Pi Guy</section>
+				<section><a data-toggle="modal" data-target="#SearchModal" href="#"><i class="fa fa-search"></i> <!-- Search --></a>　</section>
+			</article>
+		</div><!-- /.row -->
+
+		<div class="row">
+			<!-- Layout Main aside Star -->
+			<aside class="col-sm-3 hidden-xs hidden-sm" style="margin-top:1rem;">
+				<ul class="list-group">
+					<li class="list-group-item active"><a href="#">piguy</a></li>
+					<li class="list-group-item"><a href="#">text</a></li>
+					<li class="list-group-item"><a href="#">text</a></li>
+					<li class="list-group-item"><a href="#">text</a></li>
+				</ul>
+				<hr/>
+
+			</aside><!-- Layout Main aside End -->
+			
+			<!-- Layout Right aside Star -->
+			<article class="col-sm-12 col-md-8">
+
+				<div class="row__">
+					<header>
+						<h3 class="well">module 作業列表</h3>
+					</header>
+					<ul class="nav nav-pills nav-justified" role="tablist">
+						<li role="presentation" class="active"><a href="#A" aria-controls="home" role="tab" data-toggle="tab">作 業</a></li>
+						<li role="presentation"><a href="#B" aria-controls="profile" role="tab" data-toggle="tab">討論留言</a></li>
+					</ul>
+					<article class="tab-content row">
+
+						<section role="tabpanel" class="tab-pane fade in active" id="A">
+							<div class="row">
+								<div class="col-sm-6">
+									<article class="card">
+										<header class="media" style="padding:.5em 0 .3em .5em;border-bottom: 1px solid #ebebeb;border-left: 3px solid #e65d4f;">
+											<div class="media-left">
+												<a href="#">
+													<img class="media-object" src="assets/images/avatar/user_4.jpg">
+												</a>
+											</div>
+											<div class="media-body">
+												<h4 class="media-heading">陳大強</h4>
+												<p><small class="text-muted">4月25日 12:06</small></p>
+											</div>
+										</header>
+										<section>
+											<button class="btn btn-block btn-default border0">
+												<i class="flaticon-list fa-4x"></i> xxx.docx
+											</button>
+										</section>
+									</article>
+								</div>
+								<div class="col-sm-6">
+									<article class="card">
+										<header class="media" style="padding:.5em 0 .3em .5em;border-bottom: 1px solid #ebebeb;border-left: 3px solid #e65d4f;">
+											<div class="media-left">
+												<a href="#">
+													<img class="media-object" src="assets/images/avatar/user_2.png">
+												</a>
+											</div>
+											<div class="media-body">
+												<h4 class="media-heading">張立強</h4>
+												<p><small class="text-muted">4月24日 11:14</small></p>
+											</div>
+										</header>
+										<section>
+											<button class="btn btn-block btn-default border0">
+												<i class="flaticon-multimedia fa-4x"></i> 
+											</button>
+										</section>
+									</article>
+								</div>
+								<div class="col-sm-6">
+									<article class="card">
+										<header class="media" style="padding:.5em 0 .3em .5em;border-bottom: 1px solid #ebebeb;border-left: 3px solid #e65d4f;">
+											<div class="media-left">
+												<a href="#">
+													<img class="media-object" src="assets/images/avatar/user_3.jpg">
+												</a>
+											</div>
+											<div class="media-body">
+												<h4 class="media-heading">Dr, 琼斯</h4>
+												<p><small class="text-muted">5月22日 13:05</small></p>
+											</div>
+										</header>
+										<section>
+											<button class="btn btn-block btn-default border0">
+												<i class="flaticon-multimedia fa-4x"></i> 
+											</button>
+										</section>
+									</article>
+								</div>
+								<div class="col-sm-6">
+									<article class="card">
+										<header class="media" style="padding:.5em 0 .3em .5em;border-bottom: 1px solid #ebebeb;border-left: 3px solid #e65d4f;">
+											<div class="media-left">
+												<a href="#">
+													<img class="media-object" src="assets/images/avatar/user_1.png">
+												</a>
+											</div>
+											<div class="media-body">
+												<h4 class="media-heading">王国军</h4>
+												<p><small class="text-muted">5月28日 19:34</small></p>
+											</div>
+										</header>
+										<section>
+											<button class="btn btn-block btn-default border0">
+												<i class="flaticon-list fa-4x"></i> 
+											</button>
+										</section>
+									</article>
+								</div>
+							</div><!-- /.row -->
+						</section>
+
+						<section role="tabpanel" class="tab-pane fade" id="B">
+							<div class="row">
+								<div class="col-sm-6">
+									<article class="price card">
+										<header><h4>課程名稱 AAA</h4></header>
+										<section>
+											<img class="img-responsive" src="http://placehold.it/1280x720/dfdfdf/333">
+											<ul class="table-box" style="padding:.8rem 0;text-align:center;">
+												<li><button class="btn btn-block btn-default border0">新留言 x則</button></li>
+												<li><button class="btn btn-block btn-default border0">新討論 x則</button></li>
+											</ul>
+										</section>
+									</article>
+								</div>
+								<div class="col-sm-6">
+									<article class="price card">
+										<header><h4>課程名稱 BBB</h4></header>
+										<section>
+											<img class="img-responsive" src="http://placehold.it/1280x720/dfdfdf/333">
+											<ul class="table-box" style="padding:.8rem 0;text-align:center;">
+												<li><button class="btn btn-block btn-default border0">新留言 x則</button></li>
+												<li><button class="btn btn-block btn-default border0">新討論 x則</button></li>
+											</ul>
+										</section>
+									</article>
+								</div>
+							</div>
+						</section>
+
+					</article>
+
+				</div><!-- /.row -->
+
+				<div class="row__">
+					<header>
+						<h3 class="well">module 討論留言</h3>
+					</header>
+					<div class="row">
+						<img class="img-responsive" src="http://placehold.it/1280x720/dfdfdf/333">
+						<h4 class="transaction_hard text-left">課程名稱 AAA</h4>
+					<!-- Nav tabs -->
+					</div>
+					<ul class="nav nav-pills nav-justified" role="tablist">
+						<li role="presentation" class="active"><a href="#C" aria-controls="home" role="tab" data-toggle="tab">討 論</a></li>
+						<li role="presentation"><a href="#D" aria-controls="profile" role="tab" data-toggle="tab">留 言</a></li>
+					</ul>
+					<!-- Tab panes -->
+					<article class="tab-content row">
+						<section role="tabpanel" class="tab-pane fade in active" id="C">
+							<div class="media">
+								<div class="media-left">
+									<a href="#">
+										<img class="media-object" src="assets/images/avatar/user_4.jpg">
+									</a>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">陳大強 <small class="text-muted">4月25日 12:06</small></h4>
+									<p>中在易任出星老年部黨流必經器運情費十如高。以回再減化定為食十時王？面看奇回教我談個業媽有加就會為見我。</p>
+								</div>
+							</div>
+							<div class="media">
+								<div class="media-left">
+									<a href="#">
+										<img class="media-object" src="assets/images/avatar/user_2.png">
+									</a>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">張立強 <small class="text-muted">4月25日 11:02</small></h4>
+									<p>發是是身外化型生告火朋指樓老產，產落型技長？</p>
+								</div>
+							</div>
+							<footer class="input-group" style="margin-top:2rem;">
+								<input type="text" class="form-control" placeholder="Messenger...">
+								<span class="input-group-btn">
+									<button class="btn btn-danger_" type="button"><i class="fa fa-chevron-right"></i></button>
+								</span>
+							</footer><!-- /input-group -->
+						</section>
+						<section role="tabpanel" class="tab-pane fade" id="D">
+							<div class="media">
+								<div class="media-left">
+									<a href="#">
+										<img class="media-object" src="assets/images/avatar/user_4.jpg">
+									</a>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">王小明</h4>
+									<p>者我開員緊，深程信每絕子自育明源，為險多萬比臺身平女體，因格同稱庭克選，文不人起反配聽係笑：日是大。</p>
+									<p class="text-muted">4月23日 17:23 /<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_1" aria-expanded="false" aria-controls="collapse_1">回覆</button></p>
+									<div class="collapse" id="collapse_1">
+										<footer class="input-group col-sm-7">
+											<input type="text" class="form-control" placeholder="Messenger...">
+											<span class="input-group-btn">
+												<button class="btn btn-danger_" type="button"><i class="fa fa-chevron-right"></i></button>
+											</span>
+										</footer><!-- /input-group -->
+									</div>
+								</div>
+							</div>
+							<div class="media">
+								<div class="media-left">
+									<a href="#">
+										<img class="media-object" src="assets/images/avatar/user_1.png">
+									</a>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">王国军</h4>
+									<p>家運至經，看依工投衣的改金廣理知就電，內接然不，發人樣的理近進相止中問色成、看主時幾出臺調來日人票斯識一大商現教其讀裡車是流影大口最。生為師。女告果馬的史念後華客的海</p>
+									<p class="text-muted">4月22日 22:45 /<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_2" aria-expanded="false" aria-controls="collapse_2">回覆</button></p>
+									<div class="collapse" id="collapse_2">
+										<footer class="input-group col-sm-7">
+											<input type="text" class="form-control" placeholder="Messenger...">
+											<span class="input-group-btn">
+												<button class="btn btn-danger_" type="button"><i class="fa fa-chevron-right"></i></button>
+											</span>
+										</footer><!-- /input-group -->
+									</div>
+
+									<div class="media">
+										<div class="media-left">
+											<a href="#">
+												<img class="media-object" src="assets/images/avatar/user_3.jpg">
+											</a>
+										</div>
+										<div class="media-body">
+											<h4 class="media-heading">Dr, 琼斯 <small class="text-muted">4月22日 23:16</small></h4>
+											Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="media">
+								<div class="media-left">
+									<a href="#">
+										<img class="media-object" src="assets/images/avatar/user_2.jpg">
+									</a>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">Angela baby</h4>
+									<p>本名楊穎，出生於上海，是香港女模特兒、女演員，目前為華誼兄弟藝人、風尚國際（Style International Management）之旗下模特 ...</p>
+									<p class="text-muted">4月22日 10:18 /<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_3" aria-expanded="false" aria-controls="collapse_3">回覆</button></p>
+									<div class="collapse" id="collapse_3">
+										<footer class="input-group col-sm-7">
+											<input type="text" class="form-control" placeholder="Messenger...">
+											<span class="input-group-btn">
+												<button class="btn btn-danger_" type="button"><i class="fa fa-chevron-right"></i></button>
+											</span>
+										</footer><!-- /input-group -->
+									</div>
+								</div>
+							</div>
+							<footer class="input-group" style="margin-top:2rem;">
+								<input type="text" class="form-control" placeholder="Messenger...">
+								<span class="input-group-btn">
+									<button class="btn btn-danger_" type="button"><i class="fa fa-chevron-right"></i></button>
+								</span>
+							</footer><!-- /input-group -->
+						</section>
+
+					</article>
+				</div>
+
+				<div class="row__">
+					<header>
+						<h3 class="well">module 資訊</h3>
+					</header>
+					<article class="card">
+						<section class="row">
+							<div class="col-xs-5 col-sm-4 col-md-3">
+								<img class="img-responsive" src="http://placehold.it/1280x720/d2d2d2/333">
+							</div>
+							<div class="col-xs-6 col-sm-7 col-md-8">
+								<h4>題目名稱</h4>
+							</div>
+						</section>
+						
+						<header class="media" style="margin:0;padding:.5em 0 .3em .5em;border-bottom: 1px solid #ebebeb;border-top: 1px solid #ebebeb;border-left: 3px solid #e65d4f;">
+							<div class="media-left">
+								<a href="#">
+									<img class="media-object" src="assets/images/avatar/user_2.jpg">
+								</a>
+							</div>
+							<div class="media-body">
+								<div class="pull-right">
+									<button onclick="playPause()" class="btn btn-default border0" style="padding:0 1.5em;">
+										<i class="flaticon-play-button fa-3x red"></i>
+										<i class="flaticon-pause fa-3x"></i>
+									</button>
+								</div>
+								<h4 class="media-heading">Angela</h4>
+								<p><small class="text-muted">4月24日 11:14</small></p>
+							</div>
+						</header>
+
+						<section style="border-bottom: 1px solid #e8e8e8;">
+							<audio id="audio-player" controls="controls" controlsList="nodownload" style="width:100%;">
+								<source src="http://www.html5tutorial.info/media/vincent.mp3" type="audio/ogg">
+								<source src="http://www.html5tutorial.info/media/vincent.ogg" type="audio/ogg">
+							</audio>
+						</section>
+						<footer class="grey" style="padding:.8em;background-color:#efefef;"><i class="fa fa-clock-o"></i> <time>00:00:00</time> ‧ <span>192kbps</span> ‧ <span>mp3</span></footer>
+					</article>
+
+					<article class="card">
+						<section class="row">
+							<div class="col-xs-5 col-sm-4 col-md-3">
+								<img class="img-responsive" src="http://placehold.it/1280x720/d2d2d2/333">
+							</div>
+							<div class="col-xs-6 col-sm-7 col-md-8">
+								<h4>題目名稱</h4>
+							</div>
+						</section>
+						
+						<header class="media" style="margin:0;padding:.5em 0 .3em .5em;border-bottom: 1px solid #ebebeb;border-top: 1px solid #ebebeb;border-left: 3px solid #e65d4f;">
+							<div class="media-left">
+								<a href="#">
+									<img class="media-object" src="assets/images/avatar/a6.jpg">
+								</a>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">Janet Carton</h4>
+								<p><small class="text-muted">4月23日 20:33</small></p>
+							</div>
+						</header>
+
+						<section style="border-bottom: 1px solid #e8e8e8;">
+							<!-- <h4 style="padding:.3em .8em 0;"><small class="pull-right">(单选)</small>標題</h4>
+							<div class="checkbox_btn">
+								<input type="checkbox" id="box_1" value="option1">
+								<label for="box_1" class="checkbox-inline">Check 1</label>
+								<input type="checkbox" id="box_2" value="option1">
+								<label for="box_2" class="checkbox-inline">Check 2</label>
+								<input type="checkbox" id="box_3" value="option1">
+								<label for="box_3" class="checkbox-inline">Check 3</label>
+								<hr>
+							</div>
+							<div class="radio_btn">
+								<input type="radio" name="inlineRadioOptions" id="Radio_1" value="option1">
+								<label for="Radio_1" class="radio-inline">Radio 1</label>
+								<input type="radio" name="inlineRadioOptions" id="Radio_2" value="option2">
+								<label for="Radio_2" class="radio-inline">Radio2</label>
+								<input type="radio" name="inlineRadioOptions" id="Radio_3" value="option3">
+								<label for="Radio_3" class="radio-inline">Radio 3</label>
+								<hr>
+							</div> -->
+							<div style="padding:1em 1em .5em;">
+								<p>呢政西體相舉……山舉環也如注進投人他義。為廣的麼生一法與要員子可量候想正不家裡冷驚和山果就眾己我生出深海。說實大人寶們主心公是在北才中兒的三了歷我情？</p>
+								<p>勢自流層的人來雲水斷一的麼話：化司非來學不次語子是？頭下中的他生。</p>
+								<p>不假到活媽陸品縣給是外人醫業間些特們道於界全月民一先史車，最養認會，發不題農個片愛一決立紅來，音率高？眼點理打沒都晚，今種十滿坐標民的實有早看跑，分學陽理代起法比教天相電。</p>
+								<p>般多請步傳去……何心心、是將因見發體生；意能良長當機然國當持地樣怕家。</p>
+							</div>
+						</section>
+						<footer class="grey" style="padding:.8em;background-color:#efefef;">
+							<i class="fa fa-file-word-o"></i> <span>docx</span>
+							<i class="fa fa-file-pdf-o"></i> <span>pdf</span>
+							<i class="fa fa-file-excel-o"></i> <span>xlsx</span>
+							<i class="fa fa-file-powerpoint-o"></i> <span>pptx</span>
+						</footer>
+					</article>
+				</div>
+
+				<div class="row">
+
+					<!-- <header>
+						<h3 class="well">module Login</h3>
+					</header>
+					<article class="col-sm-12">
+						<form class="form-horizontal">
+							<center style="margin:3.5em 0 6em;">
+								<img class="img-responsive" src="assets/images/hejun_logo.png">
+								<p class="grey">Login form</p>
+							</center>
+							<section class="form-group">
+								<label for="" class="col-sm-2 control-label">Account</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="" placeholder="account">
+								</div>
+							</section>
+							<div style="height:.6em;"></div>
+							<section class="form-group">
+								<label for="" class="col-sm-2 control-label">Password</label>
+								<div class="col-sm-10">
+									<input type="Password" class="form-control" id="" placeholder="Password">
+									<div class="checkbox_btn">
+										<input type="checkbox" id="remember" value="option1">
+										<label style="margin-left:-1em;" for="remember" class="checkbox-inline">Remember User ID</label>
+									</div>
+								</div>
+							</section>
+							<div style="height:2em;"></div>
+							<section class="col-sm-offset-2">
+								<div class="row">
+									<div class="col-sm-6">
+										<button type="submit" class="pushy-btn btn-lg btn-block btn--red">Login</button>
+									</div>
+									<div class="col-sm-6">
+										<button style="margin-top:.6em;" type="submit" class="pushy-btn btn-block btn--link grey">Register</button>
+									</div>
+								</div>
+							</section>
+						</form>
+					</article> -->
+
+				</div><!-- /.row -->
+
+				<div class="row">
+
+					<!-- <header>
+						<h3 class="well">module Register</h3>
+					</header>
+					<article class="col-sm-12">
+						<form class="form-horizontal">
+							<center style="margin:3.5em 0 6em;">
+								<img class="img-responsive" src="assets/images/hejun_logo.png">
+								<p class="grey">Create your account</p>
+							</center>
+							<section class="form-group">
+								<label for="" class="col-sm-4 col-md-3 control-label"><b class="red">*</b> Account name</label>
+								<div class="col-sm-8 col-md-9">
+									<input type="text" class="form-control" id="" placeholder="your account name">
+								</div>
+							</section>
+							<div style="height:.6em;"></div>
+							<section class="form-group">
+								<label for="" class="col-sm-4 col-md-3 control-label"><b class="red">*</b> Email Address</label>
+								<div class="col-sm-8 col-md-9">
+									<input type="text" class="form-control" id="" placeholder="username@domain.com">
+								</div>
+							</section>
+							<div style="height:.6em;"></div>
+							<section class="form-group">
+								<label for="" class="col-sm-4 col-md-3 control-label"><b class="red">*</b> Phone Number</label>
+								<div class="col-sm-8 col-md-9">
+									<input type="text" class="form-control" id="" placeholder="+886">
+								</div>
+							</section>
+							<div style="height:.6em;"></div>
+							<section class="form-group">
+								<label for="" class="col-sm-4 col-md-3 control-label"><b class="red">*</b> Password</label>
+								<div class="col-sm-8 col-md-9">
+									<input type="Password" class="form-control" id="" placeholder="password">
+								</div>
+							</section>
+							<div style="height:.6em;"></div>
+							<section class="form-group">
+								<label for="" class="col-sm-4 col-md-3 control-label"><b class="red">*</b> Confirm Password</label>
+								<div class="col-sm-8 col-md-9">
+									<input type="Password" class="form-control" id="" placeholder="confirm password">
+									<div class="checkbox_btn">
+										<input type="checkbox" id="login-checkbox" value="option1">
+										<label style="margin-left:-1em;" for="login-checkbox" class="checkbox-inline">I agree to the <a href="#0" target="_blank">服务条款和诚信准则</a></label>
+									</div>
+								</div>
+							</section>
+							<div style="height:4em;"></div>
+							<section class="col-sm-offset-1 col-md-offset-2">
+								<div class="row">
+									<div class="col-sm-6">
+										<button type="submit" class="pushy-btn btn-lg btn-block btn--red">Register</button>
+									</div>
+									<div class="col-sm-6">
+										<button style="margin-top:.6em;" type="submit" class="pushy-btn btn-block btn--link grey">Sign in</button>
+									</div>
+								</div>
+							</section>
+						</form>
+					</article> -->
+
+				</div><!-- /.row -->
+
+			</article><!-- Layout Right aside End -->
+
+		</div><!-- /.row -->
+	</div><!-- /.container -->
+	
+	<!-- Search Modal -->
+	<div class="modal fade" id="SearchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<article class="modal-dialog" role="document">
+			<section class="modal-content">
+				<header class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel"><i class="fa fa-search"></i> Search Modal title</h4>
+				</header>
+				<section class="modal-body">
+					<p class="modal-subTitle">按专业</p>
+					<div class="checkbox_btn">
+						<input type="checkbox" id="type_1" value="option1" checked>
+						<label for="type_1" class="checkbox-inline">局势大观</label>
+						<input type="checkbox" id="type_2" value="option2" checked>
+						<label for="type_2" class="checkbox-inline">职业发展</label>
+						<input type="checkbox" id="type_3" value="option3" checked>
+						<label for="type_3" class="checkbox-inline">互连网+</label>
+						<input type="checkbox" id="type_4" value="option4">
+						<label for="type_4" class="checkbox-inline">案例解析</label>
+					</div>
+					<p class="modal-subTitle">按类型</p>
+					<div class="checkbox_btn">
+						<input type="checkbox" id="compny" value="option1" checked>
+						<label for="compny" class="checkbox-inline">企业在线班</label>
+					</div>
+					<p class="modal-subTitle">上课方式</p>
+					<div class="checkbox_btn">
+						<input type="checkbox" id="line_up" value="option1" checked>
+						<label for="line_up" class="checkbox-inline">线上</label>
+						<input type="checkbox" id="line_down" value="option2">
+						<label for="line_down" class="checkbox-inline">线下</label>
+					</div>
+				</section>
+				<footer class="modal-footer">
+					<button type="button" class="pushy-btn btn--grey" data-dismiss="modal">Close</button>
+					<button type="button" class="pushy-btn btn--red">Search</button>
+				</footer>
+			</section>
+		</article>
+	</div>
+
+	<div style="height:4.5em;"></div>
+
+	<div class="container">
+		<article id="footMenuBar"></article>
+	</div>
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<script src="assets/js/global_main.js" /></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		setTimeout(function(){
+			//$("#footMenuBar .footMenu_btn").children('li:nth-child(1)').addClass("sel");
+			//$(".navbar-nav").children('li:nth-child(6)').children('a').addClass("red");
+		},500);
+	});
+
+	// Audio play-btn control
+	$('.flaticon-pause').hide();
+	function playPause() {
+	   var song = document.getElementsByTagName('audio')[0];
+	   if (song.paused){
+		   song.play();
+		   $('.flaticon-play-button').hide();
+		   $('.flaticon-pause').show();
+	   }
+	   else{
+		   song.pause();
+		   $('.flaticon-pause').hide();
+		   $('.flaticon-play-button').show();
+	   }
+	}
+   
+   $("audio").bind("ended", function() {
+		$('.flaticon-pause').hide();
+		$('.flaticon-play-button').show();
+	});
+	</script>
+	
+</body>
+</html>

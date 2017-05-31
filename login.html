@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>website index page</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link rel="stylesheet" href="assets/css/pushy-buttons.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/flaticon.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+</head>
+
+<body>
+	<!-- Fixed navbar -->
+	<nav id="navBar" class="navbar navbar-default navbar-SH navbar-fixed-top" role="navigation"></nav>
+
+	<div class="container">
+		<div class="top-height">
+			<article class="table-box navbar-fixed-top top-Menu">
+				<section onclick="location.href='index.html'"><img style="height:2.35em;" src="assets/images/hejun_logo.png"></section>
+				<!-- <section onclick="history.go(-1)"><i class="fa fa-chevron-left"></i> back</section> -->
+				<section>Sign in</section>
+				<section><a data-toggle="modal" data-target="#SearchModal" href="#"><i class="fa fa-search"></i> <!-- Search --></a>　</section>
+			</article>
+		</div><!-- /.row -->
+
+		<div class="row">
+			<!-- Layout Main aside Star -->
+			<aside class="col-sm-3 hidden hidden-xs hidden-sm" style="margin-top:1rem;">
+				<ul class="list-group">
+					<li class="list-group-item active"><a href="#">piguy</a></li>
+					<li class="list-group-item"><a href="#">text</a></li>
+					<li class="list-group-item"><a href="#">text</a></li>
+					<li class="list-group-item"><a href="#">text</a></li>
+				</ul>
+				<hr/>
+
+			</aside><!-- Layout Main aside End -->
+			
+			<!-- Layout Right aside Star -->
+			<article class="col-sm-12 col-md-8 col-sm-offset-2">
+
+				<div class="row">
+
+					<!-- <header>
+						<h3 class="well">module Login</h3>
+					</header> -->
+					<article class="col-sm-12">
+						<form class="form-horizontal">
+							<center style="margin:3.5em 0 6em;">
+								<img class="img-responsive" src="assets/images/hejun_logo.png">
+								<p class="grey">Login form</p>
+							</center>
+							<section class="form-group">
+								<label for="" class="col-sm-2 control-label">Account</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="" placeholder="account name">
+								</div>
+							</section>
+							<div style="height:.6em;"></div>
+							<section class="form-group">
+								<label for="" class="col-sm-2 control-label">Password</label>
+								<div class="col-sm-10">
+									<input type="Password" class="form-control" id="" placeholder="Password">
+									<div class="checkbox_btn">
+										<input type="checkbox" id="remember" value="option1">
+										<label style="margin-left:-1em;" for="remember" class="checkbox-inline">Remember User ID</label>
+										<!-- <a data-toggle="modal" data-target="#ForgotModal" class="pull-right grey" style="margin-top:1.5em;" href="#0">Forgot?</a> -->
+									</div>
+								</div>
+							</section>
+							<!-- <div style="height:1em;"></div>
+							<section class="form-group">
+								<label for="" class="col-sm-2 control-label">Verification code</label>
+								<div class="col-sm-10 form-inline">
+									<img style="height:3.3em;margin: 0 1em 1em 0;;" src="http://images2015.cnblogs.com/blog/1100975/201702/1100975-20170215101353566-1365184605.jpg">
+									<input type="text" class="form-control" id="" placeholder="Enter code">
+								</div>
+							</section> -->
+							<div class="h2em"></div>
+							<section class="col-sm-offset-2">
+								<div class="row">
+									<div class="col-sm-6">
+										<button type="submit" class="pushy-btn btn-lg btn-block btn--red">Login</button>
+									</div>
+									<div class="col-sm-6">
+										<button onclick="location.href='sign_up.html'" style="margin-top:.6em;" type="button" class="pushy-btn btn-block btn--link grey">Register</button>
+									</div>
+								</div>
+							</section>
+						</form>
+					</article>
+					
+				</div><!-- /.row -->
+
+				<!-- <div class="h3em"></div>
+				<h4>LoginSecurity</h4>
+				<p>LoginSecurity is a lightweight password authorization plugin. You can optionally set a password each time you enter the server, adding a double layer of security to your account. The password is stored inside the configuration file, nobody else except the server owner can access or modify it.</p> -->
+
+			</article><!-- Layout Right aside End -->
+
+		</div><!-- /.row -->
+	</div><!-- /.container -->
+	
+	<!-- Search Modal -->
+	<div class="modal fade" id="SearchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<article class="modal-dialog" role="document">
+			<section class="modal-content">
+				<header class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel"><i class="fa fa-search"></i> Search Modal title</h4>
+				</header>
+				<section class="modal-body">
+					<p class="modal-subTitle">按专业</p>
+					<div class="checkbox_btn">
+						<input type="checkbox" id="type_1" value="option1" checked>
+						<label for="type_1" class="checkbox-inline">局势大观</label>
+						<input type="checkbox" id="type_2" value="option2" checked>
+						<label for="type_2" class="checkbox-inline">职业发展</label>
+						<input type="checkbox" id="type_3" value="option3" checked>
+						<label for="type_3" class="checkbox-inline">互连网+</label>
+						<input type="checkbox" id="type_4" value="option4">
+						<label for="type_4" class="checkbox-inline">案例解析</label>
+					</div>
+					<p class="modal-subTitle">按类型</p>
+					<div class="checkbox_btn">
+						<input type="checkbox" id="compny" value="option1" checked>
+						<label for="compny" class="checkbox-inline">企业在线班</label>
+					</div>
+					<p class="modal-subTitle">上课方式</p>
+					<div class="checkbox_btn">
+						<input type="checkbox" id="line_up" value="option1" checked>
+						<label for="line_up" class="checkbox-inline">线上</label>
+						<input type="checkbox" id="line_down" value="option2">
+						<label for="line_down" class="checkbox-inline">线下</label>
+					</div>
+				</section>
+				<footer class="modal-footer">
+					<button type="button" class="pushy-btn btn--grey" data-dismiss="modal">Close</button>
+					<button type="button" class="pushy-btn btn--red">Search</button>
+				</footer>
+			</section>
+		</article>
+	</div>
+
+	<div class="h6em hidden-md hidden-lg"></div>
+
+	<div class="container">
+		<article id="footMenuBar"></article>
+	</div>
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<script src="assets/js/global_main.js" /></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		setTimeout(function(){
+			//$("#footMenuBar .footMenu_btn").children('li:nth-child(1)').addClass("sel");
+			//$(".navbar-nav").children('li:nth-child(6)').children('a').addClass("red");
+		},500);
+	});
+	</script>
+	
+</body>
+</html>

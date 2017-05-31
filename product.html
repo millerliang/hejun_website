@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>website hejun page</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link rel="stylesheet" href="assets/css/pushy-buttons.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/flaticon.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+</head>
+
+<body>
+	<!-- Fixed navbar -->
+	<nav id="navBar" class="navbar navbar-default navbar-SH navbar-fixed-top" role="navigation"></nav>
+
+	<div class="container">
+		<div class="top-height">
+			<article class="table-box navbar-fixed-top top-Menu">
+				<section onclick="location.href='index.html'"><img style="height:2.35em;" src="assets/images/hejun_logo.png"></section>
+				<!-- <section onclick="history.go(-1)"><i class="fa fa-chevron-left"></i> back</section> -->
+				<section>产品</section>
+				<section><a data-toggle="modal" data-target="#SearchModal" href="#"><i class="fa fa-search"></i> <!-- Search --></a>　</section>
+			</article>
+		</div>
+		
+		<div class="row">
+			<article class="carousel type_sel_btn" data-flickity='{ "contain": true, "prevNextButtons": false, "pageDots": false }'>
+				<section class="carousel-cell">
+					<span class="label_text">類 型</span>
+				</section>
+				<section class="carousel-cell">
+					<input type="radio" name="options" id="option1" checked>
+					<label class="btn" for="option1">播放</label>
+				</section>
+				<section class="carousel-cell">
+					<input type="radio" name="options" id="option2">
+					<label class="btn" for="option2">最新</label>
+				</section>
+				<section class="carousel-cell">
+					<input type="radio" name="options" id="option3">
+					<label class="btn" for="option3">价格</label>
+				</section>
+				<section class="carousel-cell">
+						<input type="radio" name="options" id="option4">
+					<label class="btn" for="option4">销量</label>
+				</section>
+				<section class="carousel-cell">
+						<input type="radio" name="options" id="option5">
+					<label class="btn" for="option5">老师</label>
+				</section>
+				<section class="carousel-cell">
+						<input type="radio" name="options" id="option6">
+					<label class="btn" for="option6">收藏</label>
+				</section>
+				<section class="carousel-cell">
+						<input type="radio" name="options" id="option7">
+					<label class="btn" for="option7">Other</label>
+				</section>
+				<section class="carousel-cell">
+						<input type="radio" name="options" id="option8">
+					<label class="btn" for="option8">Other</label>
+				</section>
+				<section class="carousel-cell">
+						<input type="radio" name="options" id="option9">
+					<label class="btn" for="option9">Other</label>
+				</section>
+			</article>
+		</div>
+
+		<!-- Layout Main aside Star -->
+		<article class="col-md-8 col-sm-12">
+
+			<div class="hidden-xs hidden-sm" style="height:2em;"></div>
+			<div class="row">
+				<ul class="nav nav-pills nav-justified" role="tablist">
+					<li role="presentation" class="active"><a href="#A" aria-controls="home" role="tab" data-toggle="tab">課程列表</a></li>
+					<li role="presentation"><a href="#B" aria-controls="profile" role="tab" data-toggle="tab">線上套餐</a></li>
+				</ul>
+				<article class="tab-content row">
+					<div role="tabpanel" class="tab-pane fade in active" id="A">
+						<section class="col-sm-6 price2">
+							<span class="label_mask label_c1">限時促銷</span>
+							<a class="price2_img" href="p1.html">
+								<h4>企业家应该确立的N个产业思维和产业认识</h4>
+								<img src="assets/images/item3.jpg">
+							</a>
+							<div class="white_bg" style="padding:.5rem 0;">
+								<ul class="table-box">
+									<li class="red">$<span class="fz16">12</span></li>
+									<li>限時促銷</li>
+									<li style="text-align:left;">購買 78<br>收藏 0</li>
+									<li><span class="btn-block grey fz12 favorite"><i class="fa fa-star"></i> 收藏</span></li>
+								</ul>
+							</div>
+						</section>
+						<section class="col-sm-6 price2">
+							<span class="label_mask label_c2">一元體驗</span>
+							<a class="price2_img" href="p1.html">
+								<h4>品牌营销的理论与实操</h4>
+								<img src="assets/images/item2.jpg">
+							</a>
+							<div class="white_bg" style="padding:.5rem 0;">
+								<ul class="table-box">
+									<li class="red">$<span class="fz16">66</span></li>
+									<li>一元體驗</li>
+									<li style="text-align:left;">購買 0<br>收藏 1</li>
+									<li><span class="btn-block grey fz12 favorite"><i class="fa fa-star"></i> 收藏</span></li>
+								</ul>
+							</div>
+						</section>
+						<section class="col-sm-6 price2">
+							<span class="label_mask label_c3">結帳X折</span>
+							<a class="price2_img" href="p1.html">
+								<h4>互联网思维与中国企业创新转型</h4>
+								<img src="assets/images/item1.jpg">
+							</a>
+							<div class="white_bg" style="padding:.5rem 0;">
+								<ul class="table-box">
+									<li class="red">$<span class="fz16">54</span></li>
+									<li>結帳X折</li>
+									<li style="text-align:left;">購買 1<br>收藏 2</li>
+									<li><span class="btn-block grey fz12 favorite"><i class="fa fa-star"></i> 收藏</span></li>
+								</ul>
+							</div>
+						</section>
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="B">
+						<div class="row">
+							<section class="col-sm-6">
+								<div class="card price">
+									<header><h4><i class="fa fa-connectdevelop"></i> 和君企业在线班</h4></header>
+									<h4 class="white fz12 greyDark_bg">培养杰出的企业领袖，造就卓越的中国企业。</h4>
+									<div style="padding:.6rem 1em;">
+										<p><b>开课</b>：全年 <span class="green">(报名中)</span></p>
+										<p><b>效期</b>：1年</p>
+										<ul class="table-box">
+											<li><b>价格</b>：￥<span class="fz14 red">5万元</span></li>
+											<li><b>购买</b>：236人</li>
+										</ul>
+										<footer class="text-right">
+											<button class="pushy-btn btn--sm btn--red" onclick="location.href='p2.html'"> 点击进入 》</button>
+										</footer>
+									</div>
+								</div>
+							</section>
+							<section class="col-sm-6">
+								<div class="card price">
+									<header><h4><i class="fa fa-building-o"></i> 企业家必修经典课程</h4></header>
+									<h4 class="white fz12 greyDark_bg">适用人群：企业中高层管理人员。</h4>
+									<div style="padding:.6rem 1em;">
+										<p><b>开课</b>：全年 <span class="green">(报名中)</span></p>
+										<p><b>效期</b>：1年</p>
+										<ul class="table-box">
+											<li><b>价格</b>：￥<span class="fz14 red">3万元</span></li>
+											<li><b>购买</b>：236人</li>
+										</ul>
+										<footer class="text-right">
+											<button class="pushy-btn btn--sm btn--red" onclick="location.href='p2.html'"> 点击进入 》</button>
+										</footer>
+									</div>
+								</div>
+							</section>
+						</div><!-- /.row -->
+					</div>
+				</article><!-- /.article -->
+			</div>
+
+		</article><!-- Layout Main aside End -->
+		
+		<!-- Layout Right aside Star -->
+		<article class="col-md-3 col-sm-offset-1 hidden-xs hidden-sm">
+			<div style="height:2em;"></div>
+			<!-- <ul class="list-group">
+				<li class="list-group-item active__">
+					<span class="badge">0</span>
+					<span>this text</span>
+				</li>
+				<li class="list-group-item"><span class="badge">0</span>this text</li>
+				<li class="list-group-item"><span class="badge">0</span>this text</li>
+				<li class="list-group-item"><span class="badge">0</span>this text</li>
+				<li class="list-group-item"><span class="badge">0</span>this text</li>
+			</ul> -->
+			<h5><strong>※ 課程推薦</strong></h5>
+			<ol class="list-group" style="list-style: none;">
+				<li class="list-group-item"><a class="row" href="#0"><img style="width:5em;float:left;margin-right:.5em" src="assets/images/item1.jpg"> 互联网思维与中国企业创新转型</a></li>
+				<li class="list-group-item"><a class="row" href="#0"><img style="width:5em;float:left;margin-right:.5em" src="assets/images/item2.jpg"> 品牌营销的理论与实操</a></li>
+				<li class="list-group-item"><a class="row" href="#0"><img style="width:5em;float:left;margin-right:.5em" src="assets/images/item3.jpg"> 企业家应该确立的N个产业思维和产业认识</a></li>
+			</ol>
+		</article><!-- Layout Right aside End -->
+
+	</div><!-- /.container -->
+	
+	<!-- Search Modal -->
+	<div class="modal fade" id="SearchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<article class="modal-dialog" role="document">
+			<section class="modal-content">
+				<header class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel"><i class="fa fa-search"></i> Search Modal title</h4>
+				</header>
+				<section class="modal-body">
+					<p class="modal-subTitle">按专业</p>
+					<div class="checkbox_btn">
+						<input type="checkbox" id="type_1" value="option1" checked>
+						<label for="type_1" class="checkbox-inline">局势大观</label>
+						<input type="checkbox" id="type_2" value="option2" checked>
+						<label for="type_2" class="checkbox-inline">职业发展</label>
+						<input type="checkbox" id="type_3" value="option3" checked>
+						<label for="type_3" class="checkbox-inline">互连网+</label>
+						<input type="checkbox" id="type_4" value="option4">
+						<label for="type_4" class="checkbox-inline">案例解析</label>
+					</div>
+					<p class="modal-subTitle">按类型</p>
+					<div class="checkbox_btn">
+						<input type="checkbox" id="compny" value="option1" checked>
+						<label for="compny" class="checkbox-inline">企业在线班</label>
+					</div>
+					<p class="modal-subTitle">上课方式</p>
+					<div class="checkbox_btn">
+						<input type="checkbox" id="line_up" value="option1" checked>
+						<label for="line_up" class="checkbox-inline">线上</label>
+						<input type="checkbox" id="line_down" value="option2">
+						<label for="line_down" class="checkbox-inline">线下</label>
+					</div>
+				</section>
+				<footer class="modal-footer">
+					<button type="button" class="pushy-btn btn--grey" data-dismiss="modal">Close</button>
+					<button type="button" class="pushy-btn btn--red">Search</button>
+				</footer>
+			</section>
+		</article>
+	</div>
+
+	<div style="height:6em;"></div>
+
+	<div class="container">
+		<article id="footMenuBar"></article>
+	</div>
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<script src="assets/js/global_main.js" /></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		setTimeout(function(){
+			$("#footMenuBar .footMenu_btn").children('li:nth-child(2)').addClass("sel");
+			$(".navbar-nav:first-child").children('li:nth-child(2)').children('a').addClass("red");
+		},500);
+	});
+	</script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>website hejun page</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link rel="stylesheet" href="assets/css/pushy-buttons.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/flaticon.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+</head>
+
+<body>
+	<!-- Fixed navbar -->
+	<nav id="navBar" class="navbar navbar-default navbar-SH navbar-fixed-top" role="navigation"></nav>
+
+	<div class="container">
+		<div class="top-height">
+			<article class="table-box navbar-fixed-top top-Menu">
+				<section onclick="location.href='index.html'"><img style="height:2.35em;" src="assets/images/hejun_logo.png"></section>
+				<!-- <section onclick="history.go(-1)"><i class="fa fa-chevron-left"></i> back</section> -->
+				<section>活动</section>
+				<section><a data-toggle="modal" data-target="#SearchModal" href="#"><i class="fa fa-search"></i> <!-- Search --></a>　</section>
+			</article>
+		</div>
+
+		<!-- Layout Main aside Star -->
+		<article class="col-sm-8">
+
+			<div class="row">
+				<div class="hidden-xs hidden-sm" style="height:2em;"></div>
+				<article>
+						<section>
+							<p>Activity Contact</p>
+						</section>
+				</article>
+			</div><!-- /.row -->
+
+		</article><!-- Layout Main aside End -->
+		
+		<!-- Layout Right aside Star -->
+		<article class="col-sm-3 col-sm-offset-1 hidden-xs hidden-sm">
+			<div style="height:2em;"></div>
+			<ul class="list-group">
+				<li class="list-group-item active__">
+					<span class="badge">0</span>
+					<span>this text</span>
+				</li>
+				<li class="list-group-item"><span class="badge">0</span>this text</li>
+				<li class="list-group-item"><span class="badge">0</span>this text</li>
+				<li class="list-group-item"><span class="badge">0</span>this text</li>
+				<li class="list-group-item"><span class="badge">0</span>this text</li>
+			</ul>
+			<img src="http://placehold.it/480x160/e2e2e2/333" class="img-thumbnail">
+			<hr/>
+			<img src="http://placehold.it/480x160/e2e2e2/333" class="img-thumbnail">
+		</article><!-- Layout Right aside End -->
+
+	</div><!-- /.container -->
+	
+	<!-- Search Modal -->
+	<div class="modal fade" id="SearchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<article class="modal-dialog" role="document">
+			<section class="modal-content">
+				<header class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel"><i class="fa fa-search"></i> Search Modal title</h4>
+				</header>
+				<section class="modal-body">
+					<p class="modal-subTitle">按专业</p>
+					<div class="checkbox_btn">
+						<input type="checkbox" id="type_1" value="option1" checked>
+						<label for="type_1" class="checkbox-inline">局势大观</label>
+						<input type="checkbox" id="type_2" value="option2" checked>
+						<label for="type_2" class="checkbox-inline">职业发展</label>
+						<input type="checkbox" id="type_3" value="option3" checked>
+						<label for="type_3" class="checkbox-inline">互连网+</label>
+						<input type="checkbox" id="type_4" value="option4">
+						<label for="type_4" class="checkbox-inline">案例解析</label>
+					</div>
+					<p class="modal-subTitle">按类型</p>
+					<div class="checkbox_btn">
+						<input type="checkbox" id="compny" value="option1" checked>
+						<label for="compny" class="checkbox-inline">企业在线班</label>
+					</div>
+					<p class="modal-subTitle">上课方式</p>
+					<div class="checkbox_btn">
+						<input type="checkbox" id="line_up" value="option1" checked>
+						<label for="line_up" class="checkbox-inline">线上</label>
+						<input type="checkbox" id="line_down" value="option2">
+						<label for="line_down" class="checkbox-inline">线下</label>
+					</div>
+				</section>
+				<footer class="modal-footer">
+					<button type="button" class="pushy-btn btn--grey" data-dismiss="modal">Close</button>
+					<button type="button" class="pushy-btn btn--red">Search</button>
+				</footer>
+			</section>
+		</article>
+	</div>
+
+	<!-- Comment Modal -->
+	<div class="modal fade" id="commentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<article class="modal-dialog" role="document">
+			<section class="modal-content">
+				<header class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel"><i class="fa fa-comments"></i> 谘询 / Comments - Modal</h4>
+				</header>
+				<section class="modal-body">
+					<div class="media">
+						<div class="media-left">
+							<a href="#">
+								<img class="media-object" src="assets/images/avatar/user_4.jpg">
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">王小明</h4>
+							<p>者我開員緊，深程信每絕子自育明源，為險多萬比臺身平女體，因格同稱庭克選，文不人起反配聽係笑：日是大。</p>
+							<p class="text-muted">4月23日 17:23 /<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#re_1" aria-expanded="false" aria-controls="re_1">回覆</button></p>
+							<div class="collapse" id="re_1">
+								<footer class="input-group col-sm-7">
+									<input type="text" class="form-control" placeholder="Messenger...">
+									<span class="input-group-btn">
+										<button class="btn btn-danger_" type="button"><i class="fa fa-chevron-right"></i></button>
+									</span>
+								</footer><!-- /input-group -->
+							</div>
+						</div>
+					</div>
+					<div class="media">
+						<div class="media-left">
+							<a href="#">
+								<img class="media-object" src="assets/images/avatar/user_1.png">
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">王国军</h4>
+							<p>家運至經，看依工投衣的改金廣理知就電，內接然不，發人樣的理近進相止中問色成、看主時幾出臺調來日人票斯識一大商現教其讀裡車是流影大口最。生為師。女告果馬的史念後華客的海</p>
+							<p class="text-muted">4月22日 22:45 /<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#re_2" aria-expanded="false" aria-controls="re_2">回覆</button></p>
+							<div class="collapse" id="re_2">
+								<footer class="input-group col-sm-7">
+									<input type="text" class="form-control" placeholder="Messenger...">
+									<span class="input-group-btn">
+										<button class="btn btn-danger_" type="button"><i class="fa fa-chevron-right"></i></button>
+									</span>
+								</footer><!-- /input-group -->
+							</div>
+
+							<div class="media">
+								<div class="media-left">
+									<a href="#">
+										<img class="media-object" src="assets/images/avatar/user_3.jpg">
+									</a>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">Dr, 琼斯 <small class="text-muted">4月22日 23:16</small></h4>
+									Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<footer class="modal-footer">
+					<!-- <button type="button" class="pushy-btn btn--grey" data-dismiss="modal">Close</button>
+					<button type="button" class="pushy-btn btn--red">Search</button> -->
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Messenger...">
+						<span class="input-group-btn">
+							<button class="btn btn-danger_" type="button"><i class="fa fa-chevron-right"></i></button>
+						</span>
+					</div><!-- /input-group -->
+				</footer>
+			</section>
+		</article>
+	</div>
+
+	<div style="height:6em;"></div>
+
+	<div class="container">
+		<!-- <footer>Footer bar</footer> -->
+		<article id="footMenuBar"></article>
+	</div>
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<script src="assets/js/global_main.js" /></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		setTimeout(function(){
+			$("#footMenuBar .footMenu_btn").children('li:nth-child(5)').addClass("sel");
+			$(".navbar-nav:first-child").children('li:nth-child(5)').children('a').addClass("red");
+		},500);
+	});
+	</script>
+</body>
+</html>
