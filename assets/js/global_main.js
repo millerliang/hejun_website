@@ -30,7 +30,7 @@ nav_item +='<li><a href="#0">Sign out</a></li>';
 nav_item +='</ul>';
 nav_item +='</li>';
 nav_item +='<li><a href="activity.html"><i class="flaticon-favorites"></i> 活动</a></li>';
-nav_item +='<li><a href="piguy.html"><i class="flaticon-edit"></i> 作業批改</a></li>';
+nav_item +='<li><a href="piguy.html"><i class="flaticon-edit"></i> 管理區</a></li>';
 nav_item +='</ul>';
 nav_item +='<ul class="nav navbar-nav navbar-right">';
 nav_item +='<li><a data-toggle="modal" data-target="#SearchModal" href="#"><i class="fa fa-search"></i> Search</a></li>';
