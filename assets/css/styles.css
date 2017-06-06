@@ -29,6 +29,24 @@ hr {border-color:#e0e0e0;}
 .pLR0 {padding:15px 0;}
 .thumbs,.favorite,.join {cursor: pointer;}
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {outline:0;}
+.brt{border-top: 1px solid #ebebeb;}
+.brb{border-bottom: 1px solid #ebebeb;}
+.pl-1{padding-left:1rem;}
+.pr-1{padding-right:1rem;}
+.pl-2{padding-left:2rem;}
+.pr-2{padding-right:2rem;}
+.ml-1{margin-left:1rem;}
+.mr-1{margin-right:1rem;}
+.ml-2{margin-left:2rem;}
+.mr-2{margin-right:2rem;}
+.px-1{padding-left:1rem;padding-right:1rem;}
+.py-1{padding-top:1rem;padding-bottom:1rem;}
+.px-2{padding-left:2rem;padding-right:2rem;}
+.py-2{padding-top:2rem;padding-bottom:2rem;}
+.mx-1{margin-left:1rem;margin-right:1rem;}
+.my-1{margin-top:1rem;margin-bottom:1rem;}
+.mx-2{margin-left:2rem;margin-right:2rem;}
+.my-2{margin-top:2rem;margin-bottom:2rem;}
 
 /* Fix bootstrap Style */
 .row {margin-right:-1.18rem;margin-left:-1.18rem;}
@@ -75,9 +93,9 @@ footer .input-group input, footer.input-group input {background-color:#fff;}
 	background-color: #fff;
 	border_: 1px solid #ddd;
 	border-radius: 3px;
-	box-shadow__: 0 2px 2px rgba(0, 0, 0, .25);
-	-moz-box-shadow__: 0 2px 2px rgba(0, 0, 0, .25);
-	-webkit-box-shadow__: 0 2px 2px rgba(0, 0, 0, .25);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .08);
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .08);
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .08);
 	-webkit-transition: border .2s ease-in-out;
 	-o-transition: border .2s ease-in-out;
 	transition: border .2s ease-in-out;
