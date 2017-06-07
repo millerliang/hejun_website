@@ -31,10 +31,16 @@
 
 			<div class="row">
 				<div class="hidden-xs hidden-sm" style="height:2em;"></div>
+				<ol class="breadcrumb hidden-xs">
+					<li class="breadcrumb-item"><a href="index.html"><i class="flaticon-home"></i> Home</a></li>
+					<li class="breadcrumb-item"><a href="#">xxxx</a></li>
+					<li class="breadcrumb-item active">xxxx</li>
+				</ol>
 				<article class="card">
 					<header class="row">
 						<div class="col-xs-5 col-sm-4 col-md-3">
-							<img class="img-responsive" src="http://placehold.it/1280x720/d2d2d2/333">
+							<!-- <img class="img-responsive" src="http://placehold.it/1280x720/d2d2d2/333"> -->
+							<img class="img-responsive" src="http://img95.699pic.com/photo/50039/9337.jpg_wh300.jpg">
 						</div>
 						<div class="col-xs-6 col-sm-7 col-md-8">
 							<h4>課程名稱</h4>
@@ -43,7 +49,10 @@
 					
 					<section class="media" style="margin:0;padding:.5em 0 .3em .5em;">
 						<div class="media-body">
-							<h4><small class="pull-right">(单选)&nbsp;</small>題目</h4>
+							<h4><small class="pull-right">(问答)&nbsp;</small><i class="fa fa-quora grey-lighter"></i> 題目</h4>
+							<p class="pb-2">xxxx xxxx xxxx.</p>
+							<hr>
+							<h4><small class="pull-right">(单选)&nbsp;</small><i class="fa fa-quora grey-lighter"></i> 題目</h4>
 							<div class="radio_btn">
 								<input type="radio" name="inlineRadioOptions" id="Radio_1" value="option1">
 								<label for="Radio_1" class="radio-inline">Radio 1</label>
@@ -53,12 +62,22 @@
 								<label for="Radio_3" class="radio-inline">Radio 3</label>
 								<hr>
 							</div>
+							<h4><small class="pull-right">(复选)&nbsp;</small><i class="fa fa-quora grey-lighter"></i> 題目</h4>
+							<div class="checkbox_btn">
+								<input type="checkbox" id="box_1" value="option1">
+								<label for="box_1" class="checkbox-inline">复选 1</label>
+								<input type="checkbox" id="box_2" value="option1">
+								<label for="box_2" class="checkbox-inline">复选 2</label>
+								<input type="checkbox" id="box_3" value="option1">
+								<label for="box_3" class="checkbox-inline">复选 3</label>
+								<hr>
+							</div>
 							<section>
 								<h5 class="grey-lighter">答題結果</h5>
-								<p class="fz14 red">抱歉，您答錯了</p>
-								<p>答題要領<br/>xxxxx  xxx x x xxxx x xxx xx x x xxx xx xxxxx xx xx x xxxxx</p>
-								<p class="fz14 red">恭喜，您答對了</p>
-								<p>答題解說<br/>xxxxx  xxx x x xxxx x xxx xx x x xxx xx xxxxx xx xx x xxxxx</p>
+								<p class="fz14 red text-center"><i class="fa fa-exclamation-triangle"></i> 抱歉，您答錯了</p>
+								<blockquote><span class="grey fz12">答題要領</span><br/>xxxxx  xxx x x xxxx x xxx xx x x xxx xx xxxxx xx xx x xxxxx</blockquote>
+								<p class="fz14 red text-center"><i class="fa fa-check green"></i> 恭喜，您答對了</p>
+								<blockquote><span class="grey fz12">答題解說</span><br/>xxxxx  xxx x x xxxx x xxx xx x x xxx xx xxxxx xx xx x xxxxx</blockquote>
 							</section>
 						</div>
 					</section>

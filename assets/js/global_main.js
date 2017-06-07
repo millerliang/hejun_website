@@ -116,7 +116,7 @@ Search_Modal +='</article>';
 $('#SearchModal').append(Search_Modal);
 // Search Modal End //
 
-// Comment Modal End //
+// Comment Modal Star //
 Comment_Modal ='<article class="modal-dialog" role="document">';
 Comment_Modal +='<section class="modal-content">';
 Comment_Modal +='<header class="modal-header">';
@@ -190,6 +190,150 @@ Comment_Modal +='</section>';
 Comment_Modal +='</article>';
 $('#commentModal').append(Comment_Modal);
 // Comment Modal End //
+
+// Chat Star End //
+chat_item ='<div class="media">';
+chat_item +='<div class="media-left">';
+chat_item +='<a href="#">';
+chat_item +='<img class="media-object" src="assets/images/avatar/user_4.jpg">';
+chat_item +='</a>';
+chat_item +='</div>';
+chat_item +='<div class="media-body">';
+chat_item +='<h4 class="media-heading">王小明</h4>';
+chat_item +='<p>者我開員緊，深程信每絕子自育明源，為險多萬比臺身平女體，因格同稱庭克選，文不人起反配聽係笑：日是大。</p>';
+chat_item +='<p class="text-muted">4月23日 17:23 /<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_1" aria-expanded="false" aria-controls="collapse_1">回覆</button></p>';
+chat_item +='<div class="collapse" id="collapse_1">';
+chat_item +='<footer class="input-group col-sm-7">';
+chat_item +='<input type="text" class="form-control" placeholder="Messenger...">';
+chat_item +='<span class="input-group-btn">';
+chat_item +='<button class="btn btn-danger_" type="button"><i class="fa fa-chevron-right"></i></button>';
+chat_item +='</span>';
+chat_item +='</footer>';
+chat_item +='</div>';
+chat_item +='</div>';
+chat_item +='</div>';
+chat_item +='<div class="media">';
+chat_item +='<div class="media-left">';
+chat_item +='<a href="#">';
+chat_item +='<img class="media-object" src="assets/images/avatar/user_1.png">';
+chat_item +='</a>';
+chat_item +='</div>';
+chat_item +='<div class="media-body">';
+chat_item +='<h4 class="media-heading">王国军</h4>';
+chat_item +='<p>家運至經，看依工投衣的改金廣理知就電，內接然不，發人樣的理近進相止中問色成、看主時幾出臺調來日人票斯識一大商現教其讀裡車是流影大口最。生為師。女告果馬的史念後華客的海</p>';
+chat_item +='<p class="text-muted">4月22日 22:45 /<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_2" aria-expanded="false" aria-controls="collapse_2">回覆</button></p>';
+chat_item +='<div class="collapse" id="collapse_2">';
+chat_item +='<footer class="input-group col-sm-7">';
+chat_item +='<input type="text" class="form-control" placeholder="Messenger...">';
+chat_item +='<span class="input-group-btn">';
+chat_item +='<button class="btn btn-danger_" type="button"><i class="fa fa-chevron-right"></i></button>';
+chat_item +='</span>';
+chat_item +='</footer>';
+chat_item +='</div>';
+chat_item +='<div class="media">';
+chat_item +='<div class="media-left">';
+chat_item +='<a href="#">';
+chat_item +='<img class="media-object" src="assets/images/avatar/user_3.jpg">';
+chat_item +='</a>';
+chat_item +='</div>';
+chat_item +='<div class="media-body">';
+chat_item +='<h4 class="media-heading">Dr, 琼斯 <small class="text-muted">4月22日 23:16</small></h4>';
+chat_item +='Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.';
+chat_item +='</div>';
+chat_item +='</div>';
+chat_item +='</div>';
+chat_item +='</div>';
+chat_item +='<div class="media">';
+chat_item +='<div class="media-left">';
+chat_item +='<a href="#">';
+chat_item +='<img class="media-object" src="assets/images/avatar/user_2.jpg">';
+chat_item +='</a>';
+chat_item +='</div>';
+chat_item +='<div class="media-body">';
+chat_item +='<h4 class="media-heading">Angela baby</h4>';
+chat_item +='<p>本名楊穎，出生於上海，是香港女模特兒、女演員，目前為華誼兄弟藝人、風尚國際（Style International Management）之旗下模特 ...</p>';
+chat_item +='<p class="text-muted">4月22日 10:18 /<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_3" aria-expanded="false" aria-controls="collapse_3">回覆</button></p>';
+chat_item +='<div class="collapse" id="collapse_3">';
+chat_item +='<footer class="input-group col-sm-7">';
+chat_item +='<input type="text" class="form-control" placeholder="Messenger...">';
+chat_item +='<span class="input-group-btn">';
+chat_item +='<button class="btn btn-danger_" type="button"><i class="fa fa-chevron-right"></i></button>';
+chat_item +='</span>';
+chat_item +='</footer>';
+chat_item +='</div>';
+chat_item +='</div>';
+chat_item +='</div>';
+chat_item +='<footer class="input-group" style="margin-top:2rem;">';
+chat_item +='<input type="text" class="form-control" placeholder="Messenger...">';
+chat_item +='<span class="input-group-btn">';
+chat_item +='<button class="btn btn-danger" type="button"><i class="fa fa-chevron-right"></i></button>';
+chat_item +='</span>';
+chat_item +='</footer>';
+$('#ChatModal').append(chat_item);
+// Chat Modal End //
+
+// Course Modal Star //
+var course_text =[{
+	c_url:"#0",c_title:"課程名稱 AAA",c_img:"http://placehold.it/1280x720/dfdfdf/333"
+	},{                                                                   
+	c_url:"#0",c_title:"課程名稱 BBB",c_img:"http://placehold.it/1280x720/dfdfdf/333"
+	},{                                                                   
+	c_url:"#0",c_title:"課程名稱 CCC",c_img:"http://placehold.it/1280x720/dfdfdf/333"
+	},{                                                                   
+	c_url:"#0",c_title:"課程名稱 DDD",c_img:"http://placehold.it/1280x720/dfdfdf/333"
+	}
+];
+$.each(course_text,function(index,obj)
+{
+	course_item ='<div class="col-sm-6">';
+	course_item +='<article class="price card">';
+	course_item +='<header><h4>'+ obj.c_title +'</h4></header>';
+	course_item +='<section>';
+	course_item +='<a href="'+ obj.c_url +'"><img class="img-responsive" src="'+ obj.c_img +'"></a>';
+	course_item +='<ul class="table-box" style="padding:.8rem 0;">';
+	course_item +='<li><button class="btn btn-block btn--link border0 red"><i class="fa fa-video-camera"></i> 課程錄製</button></li>';
+	course_item +='<li><button class="btn btn-block btn-default border0">新討論 x則</button></li>';
+	course_item +='</ul>';
+	course_item +='</section>';
+	course_item +='</article>';
+	course_item +='</div>';
+	$('#Course').append(course_item);
+});
+// Course Modal End //
+
+// Operation Modal Star //
+var operation_text =[{
+	o_url:"#0",o_name:"陳大強",o_time:"4月25日 12:06",o_title:"題目名稱",o_img:"assets/images/avatar/user_4.jpg",o_icoType:"list"
+	},{                                                                                                          
+	o_url:"#0",o_name:"張立強",o_time:"4月24日 11:14",o_title:"題目名稱",o_img:"assets/images/avatar/user_2.png",o_icoType:"multimedia"
+	},{
+	o_url:"#0",o_name:"Dr, 琼斯",o_time:"5月22日 13:05",o_title:"題目名稱",o_img:"assets/images/avatar/user_3.jpg",o_icoType:"multimedia"
+	},{
+	o_url:"#0",o_name:"Janet Carton",o_time:"6月7日 20:02",o_title:"Gun attacks and suicide bomb in Tehran",o_img:"assets/images/avatar/a6.jpg",o_icoType:"list"
+	},{
+	o_url:"#0",o_name:"王国军",o_time:"5月28日 19:34",o_title:"題目名稱",o_img:"assets/images/avatar/user_1.png",o_icoType:"list"
+	}
+];
+$.each(operation_text,function(index,obj)
+{
+	operation_item ='<div class="col-sm-6">';
+	operation_item +='<article class="card">';
+	operation_item +='<header class="media brb" style="padding:.5em 0 .3em .5em;border-left: 3px solid #e65d4f;">';
+	operation_item +='<div class="media-left">';
+	operation_item +='<a href="'+ obj.o_url +'"><img class="media-object" src="'+ obj.o_img +'"></a>';
+	operation_item +='</div>';
+	operation_item +='<div class="media-body">';
+	operation_item +='<div class="pull-right" style="margin-right:1em;"><i class="flaticon-'+ obj.o_icoType +' fz14"></i></div>';
+	operation_item +='<h4 class="media-heading">'+ obj.o_name +'</h4>';
+	operation_item +='<p><small class="text-muted">'+ obj.o_time +'</small></p>';
+	operation_item +='</div>';
+	operation_item +='</header>';
+	operation_item +='<section style="padding:.3rem .6rem">'+ obj.o_title +'</section>';
+	operation_item +='</article>';
+	operation_item +='</div>';
+	$('#Operation').append(operation_item);
+});
+// Operation & Course Modal End //
 
 // footMenu goto where page star
 function indexPage(){
