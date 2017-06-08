@@ -182,7 +182,7 @@ Comment_Modal +='<button type="button" class="pushy-btn btn--red">Search</button
 Comment_Modal +='<div class="input-group">';
 Comment_Modal +='<input type="text" class="form-control" placeholder="Messenger...">';
 Comment_Modal +='<span class="input-group-btn">';
-Comment_Modal +='<button class="btn btn-danger_" type="button"><i class="fa fa-chevron-right"></i></button>';
+Comment_Modal +='<button class="btn btn-danger" type="button"><i class="fa fa-chevron-right"></i></button>';
 Comment_Modal +='</span>';
 Comment_Modal +='</div><!-- /input-group -->';
 Comment_Modal +='</footer>';
@@ -335,6 +335,135 @@ $.each(operation_text,function(index,obj)
 });
 // Operation & Course Modal End //
 
+// Product_item1 list Star //
+var item1_text =[{
+	item1_url:"#0",item1_type:"單課",item1_price:"15",item1_buy:"0",item1_favorite:"0",item1_title:"高考奋斗青春精彩未来",item1_img:"http://img95.699pic.com/photo/50040/6301.jpg_wh300.jpg",item1_icoColor:"c1"
+	},{
+	item1_url:"#0",item1_type:"套餐",item1_price:"20",item1_buy:"1",item1_favorite:"1",item1_title:"課程標題 xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx",item1_img:"http://placehold.it/530x300/#666/e65d4f",item1_icoColor:"c3"
+	},{
+	item1_url:"#0",item1_type:"體驗",item1_price:"25",item1_buy:"0",item1_favorite:"2",item1_title:"課程標題 xxxx xxx xxxx",item1_img:"http://placehold.it/530x300/#666/e65d4f",item1_icoColor:"c2"
+	}
+];
+$.each(item1_text,function(index,obj)
+{
+	list_item1 ='<table class="card">';
+	list_item1 +='<tr>';
+	list_item1 +='<td style="width:48%;">';
+	list_item1 +='<a class="price2_img" href="'+ obj.item1_url +'">';
+	list_item1 +='<img src="'+ obj.item1_img +'">';
+	list_item1 +='</a>';
+	list_item1 +='</td>';
+	list_item1 +='<td class="px-1 align-top">';
+	list_item1 +='<h5>'+ obj.item1_title +'</h5>';
+	list_item1 +='</td>';
+	list_item1 +='</tr>';
+	list_item1 +='<tr>';
+	list_item1 +='<td>';
+	list_item1 +='<ul class="table-box" style="padding:.8rem 0;">';
+	list_item1 +='<li><span><i class="fa fa-shopping-cart"></i> 購買 '+ obj.item1_buy +'</span></li>';
+	list_item1 +='<li><span class="favorite"><i class="fa fa-star"></i> 收藏 '+ obj.item1_favorite +'</span></li>';
+	list_item1 +='</ul>';
+	list_item1 +='</td>';
+	list_item1 +='<td class="px-1">';
+	list_item1 +='<ul class="table-box brt">';
+	list_item1 +='<li class="red" style="text-align:left;">$<span class="fz16">'+ obj.item1_price +'</span></li>';
+	list_item1 +='<li style="text-align:right;"><span class="badge label_'+ obj.item1_icoColor +'">'+ obj.item1_type +'</span></li>';
+	list_item1 +='</ul>';
+	list_item1 +='</td>';
+	list_item1 +='</tr>';
+	list_item1 +='</table>';
+	$('#Product_item1').append(list_item1);
+});
+// Product_item1 list End //
+
+// Product_item2 list Star //
+var item2_text =[{
+	item2_url:"#0",item2_type:"套餐",item2_price:"20",item2_buy:"1",item2_favorite:"1",item2_title:"課程標題",item2_img:"http://placehold.it/530x300/#666/e65d4f",item2_icoColor:"c3"
+	},{
+	item2_url:"#0",item2_type:"體驗",item2_price:"25",item2_buy:"0",item2_favorite:"2",item2_title:"課程標題",item2_img:"http://placehold.it/530x300/#666/e65d4f",item2_icoColor:"c2"
+	},{
+	item2_url:"#0",item2_type:"單課",item2_price:"10",item2_buy:"1",item2_favorite:"3",item2_title:"課程標題",item2_img:"http://placehold.it/530x300/#666/e65d4f",item2_icoColor:"c1"
+	}
+];
+$.each(item2_text,function(index,obj)
+{
+	list_item2 ='<section class="col-xs-6 col-sm-4">';
+	list_item2 +='<div class="card">';
+	list_item2 +='<section>';
+	list_item2 +='<a class="price2_img" href="'+ obj.item2_url +'">';
+	list_item2 +='<img src="'+ obj.item2_img +'">';
+	list_item2 +='</a>';
+	list_item2 +='<ul class="table-box" style="padding:.8rem 0;">';
+	list_item2 +='<li><span><i class="fa fa-shopping-cart"></i> 購買 '+ obj.item2_buy +'</span></li>';
+	list_item2 +='<li><span class="favorite"><i class="fa fa-star"></i> 收藏 '+ obj.item2_favorite +'</span></li>';
+	list_item2 +='</ul>';
+	list_item2 +='</section>';
+	list_item2 +='<section>';
+	list_item2 +='<h5 class="brt brb h3em" style="padding:.5rem 0 .5rem 1rem;">'+ obj.item2_title +'</h5>';
+	list_item2 +='<ul class="table-box">';
+	list_item2 +='<li class="pl-1" style="text-align:left;"><span class="badge label_'+ obj.item2_icoColor +'">'+ obj.item2_type +'</span></li>';
+	list_item2 +='<li class="red pr-1" style="text-align:right;">$<span class="fz16">'+ obj.item2_price +'</span></li>';
+	list_item2 +='</ul>';
+	list_item2 +='</section>';
+	list_item2 +='</div>';
+	list_item2 +='</section>';
+	$('#Product_item2').append(list_item2);
+});
+// Product_item2 list End //
+
+// Product_item3 list Star //
+var item3_text =[{
+	item3_url:"p1.html",item3_type:"限時促銷",item3_price:"12",item3_buy:"7",item3_favorite:"0",item3_title:"企业家应该确立的N个产业思维和产业认识",item3_img:"assets/images/item3.jpg",item3_icoColor:"c1"
+	},{
+	item3_url:"p2.html",item3_type:"一元體驗",item3_price:"66",item3_buy:"0",item3_favorite:"1",item3_title:"品牌营销的理论与实操",item3_img:"assets/images/item2.jpg",item3_icoColor:"c2"
+	},{
+	item3_url:"p3.html",item3_type:"結帳88折",item3_price:"54",item3_buy:"1",item3_favorite:"3",item3_title:"互联网思维与中国企业创新转型",item3_img:"assets/images/item1.jpg",item3_icoColor:"c3"
+	},{
+	item3_url:"p4.html",item3_type:"限時促銷",item3_price:"0",item3_buy:"0",item3_favorite:"0",item3_title:"標題名稱",item3_img:"http://placehold.it/640x480/#666/e65d4f",item3_icoColor:"c1"
+	}
+];
+$.each(item3_text,function(index,obj)
+{
+	list_item3 ='<section class="col-sm-6 price2">';
+	list_item3 +='<span class="label_mask label_'+ obj.item3_icoColor +'">'+ obj.item3_type +'</span>';
+	list_item3 +='<a class="price2_img" href="'+ obj.item3_url +'">';
+	list_item3 +='<h4>'+ obj.item3_title +'</h4>';
+	list_item3 +='<img src="'+ obj.item3_img +'">';
+	list_item3 +='</a>';
+	list_item3 +='<div class="white_bg" style="padding:.5rem 0;">';
+	list_item3 +='<ul class="table-box">';
+	list_item3 +='<li class="red">$<span class="fz16">'+ obj.item3_price +'</span></li>';
+	list_item3 +='<li>'+ obj.item3_type +'</li>';
+	list_item3 +='<li style="text-align:left;">購買 '+ obj.item3_buy +'<br>收藏 '+ obj.item3_favorite +'</li>';
+	list_item3 +='<li><span class="btn-block grey fz12 favorite"><i class="fa fa-star"></i> 收藏</span></li>';
+	list_item3 +='</ul>';
+	list_item3 +='</div>';
+	list_item3 +='</section>';
+	$('#Product_item3').append(list_item3);
+});
+// Product_item3 list End //
+
+// Recommendations Modal Star //
+var rcd_text =[{
+	rcd_url:"#0",rcd_title:"互联网思维与中国企业创新转型",rcd_img:"assets/images/item1.jpg"
+	},{
+	rcd_url:"#0",rcd_title:"品牌营销的理论与实操",rcd_img:"assets/images/item2.jpg"
+	},{
+	rcd_url:"#0",rcd_title:"企业家应该确立的N个产业思维和产业认识",rcd_img:"assets/images/item3.jpg"
+	}
+];
+rcd_item ='<h4><strong><i class="flaticon-calendar-1 grey"></i> 課程推薦</strong></h4>';
+rcd_item +='<ol class="recommendations list-group">';
+$.each(rcd_text,function(index,obj)
+{
+	rcd_item +='<li class="list-group-item clearfix">';
+	rcd_item +='<a href="'+ obj.rcd_url +'"><img src="'+ obj.rcd_img +'">'+ obj.rcd_title +'</a>';
+	rcd_item +='</li>';
+});
+rcd_item +='</ol>';
+$('#Recommendations').append(rcd_item);
+// Recommendations Modal End //
+
 // footMenu goto where page star
 function indexPage(){
 	if (confirm("Go back Homepage？")==true)
@@ -360,25 +489,17 @@ function activityPage(){
 
 // items Star //
 var index_text =[{
-	//item_title:"VOGUE 风格野餐日",item_date:"4月22日",item_loc:"华山艺文中心",item_img:"http://img.accupass.com/userupload/8cc6fe084f61462b88ee8620cd642216.jpg",item_url:"#0",item_join:"grey"
-	//},{
-	//item_title:"中華三菱野餐音樂匯",item_date:"4月23日",item_loc:"华山艺文中心",item_img:"http://static-us.fever38.com/hotdeals/activity_image/2014072911320931352_810X.jpg",item_url:"#0",item_join:"grey"
-	//},{
-	//item_title:"/// 2016 VOGUE 風格野餐日///",item_date:"4月21日",item_loc:"华山艺文中心",item_img:"https://gc.meepcloud.com/meepshop/shop/onestory/layout/55f12eb5b94d66bc4f5da89d/images/86287-vogue%E9%87%8E%E9%A4%90%E7%89%B9%E6%83%A0-01.jpg",item_url:"#0",item_join:"grey"
-	//},{
-	//item_title:"2016 臺東野餐生活節",item_date:"4月21日",item_loc:"华山艺文中心",item_img:"http://tour.taitung.gov.tw/zh-tw/Event/DisplayEventPhoto?imageId=2711&type=Activity",item_url:"#0",item_join:"grey"
-	//},{
-	item_title:"Title",item_date:"mm月dd日",item_loc:"Location",item_img:"http://placehold.it/720x480/#666/e65d4f",item_url:"#0",item_join:"grey"
+	item_title:"2014華航&菲觀局",item_date:"5月16日",item_loc:"長灘島",item_img:"http://www.cheesead.com.tw/w2/files/w03-4.jpg",item_url:"p1.html"
 	},{
-	item_title:"Title",item_date:"mm月dd日",item_loc:"Location",item_img:"http://placehold.it/720x480/#666/e65d4f",item_url:"#0",item_join:"grey"
+	item_title:"Title",item_date:"mm月dd日",item_loc:"Location",item_img:"http://placehold.it/720x480/#666/e65d4f",item_url:"p2.html"
 	},{
-	item_title:"Title",item_date:"mm月dd日",item_loc:"Location",item_img:"http://placehold.it/720x480/#666/e65d4f",item_url:"#0",item_join:"grey"
+	item_title:"瑞士雷达手表",item_date:"4月23日",item_loc:"瑞士",item_img:"http://www.mindriverad.com/images/case-online/rado/rado-3.jpg",item_url:"p3.html"
 	},{
-	item_title:"Title",item_date:"mm月dd日",item_loc:"Location",item_img:"http://placehold.it/720x480/#666/e65d4f",item_url:"#0",item_join:"grey"
+	item_title:"Title",item_date:"mm月dd日",item_loc:"Location",item_img:"http://placehold.it/720x480/#666/e65d4f",item_url:"p4.html"
 	},{
-	item_title:"Title",item_date:"mm月dd日",item_loc:"Location",item_img:"http://placehold.it/720x480/#666/e65d4f",item_url:"#0",item_join:"grey"
+	item_title:"Samsung Galaxy A8(2016) 評測",item_date:"10月26日",item_loc:"Taipei",item_img:"https://cdn0-techbang.pixfs.net/system/images/368769/original/b10abb16ffa2c7b7a32ab73ee5d828b2.jpg?1477208685",item_url:"p5.html"
 	},{
-	item_title:"Title",item_date:"mm月dd日",item_loc:"Location",item_img:"http://placehold.it/720x480/#666/e65d4f",item_url:"#0",item_join:"grey"
+	item_title:"Title",item_date:"mm月dd日",item_loc:"Location",item_img:"http://placehold.it/720x480/#666/e65d4f",item_url:"p6.html"
 	}
 ];
 $.each(index_text,function(index,obj)
@@ -391,7 +512,7 @@ $.each(index_text,function(index,obj)
 	index_items += '<p>'+ obj.item_date +' ‧ '+ obj.item_loc +'</p>';
 	index_items += '<p>';
 	index_items += '<button class="pushy-btn btn--link grey-lighter interested" role="button">有兴趣</button>';
-	index_items += '<button class="pushy-btn btn--link btn--'+ obj.item_join +' grey-lighter join"><i class="fa fa-check"></i> 参加</button>';
+	index_items += '<button class="pushy-btn btn--link btn--grey grey-lighter join"><i class="fa fa-check"></i> 参加</button>';
 	index_items += '</p>';
 	index_items += '</div>';
 	index_items += '</div>';
