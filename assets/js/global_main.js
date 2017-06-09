@@ -26,7 +26,7 @@ nav_item +='<li><a href="u6.html">好友邀請紀錄</a></li>';
 nav_item +='<li><a href="u7.html">系統通知</a></li>';
 nav_item +='<li><a href="u8.html">幫助中心</a></li>';
 nav_item +='<li class="divider"></li>';
-nav_item +='<li><a href="#0">Sign out</a></li>';
+nav_item +='<li><a href="#0">Logout</a></li>';
 nav_item +='</ul>';
 nav_item +='</li>';
 nav_item +='<li><a href="activity.html"><i class="flaticon-favorites"></i> 活动</a></li>';
@@ -354,7 +354,7 @@ $.each(item1_text,function(index,obj)
 	list_item1 +='</a>';
 	list_item1 +='</td>';
 	list_item1 +='<td class="px-1 align-top">';
-	list_item1 +='<h5>'+ obj.item1_title +'</h5>';
+	list_item1 +='<h4>'+ obj.item1_title +'</h4>';
 	list_item1 +='</td>';
 	list_item1 +='</tr>';
 	list_item1 +='<tr>';
@@ -380,9 +380,9 @@ $.each(item1_text,function(index,obj)
 var item2_text =[{
 	item2_url:"#0",item2_type:"套餐",item2_price:"20",item2_buy:"1",item2_favorite:"1",item2_title:"課程標題",item2_img:"http://placehold.it/530x300/#666/e65d4f",item2_icoColor:"c3"
 	},{
-	item2_url:"#0",item2_type:"體驗",item2_price:"25",item2_buy:"0",item2_favorite:"2",item2_title:"課程標題",item2_img:"http://placehold.it/530x300/#666/e65d4f",item2_icoColor:"c2"
+	item2_url:"#0",item2_type:"體驗",item2_price:"25",item2_buy:"0",item2_favorite:"2",item2_title:"高考奋斗青春精彩未来",item2_img:"http://img95.699pic.com/photo/50040/6301.jpg_wh300.jpg",item2_icoColor:"c2"
 	},{
-	item2_url:"#0",item2_type:"單課",item2_price:"10",item2_buy:"1",item2_favorite:"3",item2_title:"課程標題",item2_img:"http://placehold.it/530x300/#666/e65d4f",item2_icoColor:"c1"
+	item2_url:"#0",item2_type:"單課",item2_price:"10",item2_buy:"1",item2_favorite:"3",item2_title:"課程標題 xxxx xxxx xxxx xxxx xxxx xxxx",item2_img:"http://placehold.it/530x300/#666/e65d4f",item2_icoColor:"c1"
 	}
 ];
 $.each(item2_text,function(index,obj)
@@ -399,7 +399,7 @@ $.each(item2_text,function(index,obj)
 	list_item2 +='</ul>';
 	list_item2 +='</section>';
 	list_item2 +='<section>';
-	list_item2 +='<h5 class="brt brb h3em" style="padding:.5rem 0 .5rem 1rem;">'+ obj.item2_title +'</h5>';
+	list_item2 +='<h4 class="brt brb h3em" style="padding:.5rem 0 .5rem 1rem;">'+ obj.item2_title +'</h4>';
 	list_item2 +='<ul class="table-box">';
 	list_item2 +='<li class="pl-1" style="text-align:left;"><span class="badge label_'+ obj.item2_icoColor +'">'+ obj.item2_type +'</span></li>';
 	list_item2 +='<li class="red pr-1" style="text-align:right;">$<span class="fz16">'+ obj.item2_price +'</span></li>';

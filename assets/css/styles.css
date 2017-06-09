@@ -53,6 +53,11 @@ hr {border-color:#e0e0e0;}
 .mx-2{margin-left:2rem;margin-right:2rem;}
 .my-2{margin-top:2rem;margin-bottom:2rem;}
 .mb-1{margin-bottom:1rem;}
+/* social Register login */
+.social-or-login {margin:2em 0;text-align: center;position: relative;z-index: 1;}
+.social-or-login:before {content: "";display: block;position: absolute;z-index: -1;top: 50%;left: 0;right: 0;border-top: 1px dotted #a0afbe;}
+.social-or-login :first-child {display: inline-block;background: #eceef0;padding: 0 1em;color: #a0afbe;}
+.social-login a {border-radius: 50%;width: 4em;height: 4em;line-height: 4.5em;padding: 0;margin: 0 .3rem;border-width: 0;}
 
 /* Fix bootstrap Style */
 .row {margin-right:-1.18rem;margin-left:-1.18rem;}
