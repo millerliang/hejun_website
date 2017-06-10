@@ -291,7 +291,7 @@ $.each(course_text,function(index,obj)
 	course_item +='<section>';
 	course_item +='<a href="'+ obj.c_url +'"><img class="img-responsive" src="'+ obj.c_img +'"></a>';
 	course_item +='<ul class="table-box" style="padding:.8rem 0;">';
-	course_item +='<li><button class="btn btn-block btn\ border0 red"><i class="fa fa-video-camera"></i> 課程錄製</button></li>';
+	course_item +='<li><button class="btn btn-block btn--link red"><i class="fa fa-video-camera"></i> 課程錄製</button></li>';
 	course_item +='<li><button class="btn btn-block btn--link grey">新討論 '+ obj.c_comm +'則</button></li>';
 	course_item +='</ul>';
 	course_item +='</section>';
