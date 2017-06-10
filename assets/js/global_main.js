@@ -292,7 +292,7 @@ $.each(course_text,function(index,obj)
 	course_item +='<a href="'+ obj.c_url +'"><img class="img-responsive" src="'+ obj.c_img +'"></a>';
 	course_item +='<ul class="table-box" style="padding:.8rem 0;">';
 	course_item +='<li><button class="btn btn-block btn--link border0 red"><i class="fa fa-video-camera"></i> 課程錄製</button></li>';
-	course_item +='<li><button class="btn btn-block btn-default border0">新討論 x則</button></li>';
+	course_item +='<li><button class="btn btn-block btn--link">新討論 x則</button></li>';
 	course_item +='</ul>';
 	course_item +='</section>';
 	course_item +='</article>';
