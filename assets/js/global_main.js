@@ -274,13 +274,13 @@ $('#ChatModal').append(chat_item);
 
 // Course Modal Star //
 var course_text =[{
-	c_url:"#0",c_title:"課程名稱 AAA",c_img:"http://placehold.it/1280x720/dfdfdf/333"
+	c_url:"#0",c_comm:"0",c_title:"課程名稱 AAA",c_img:"http://placehold.it/1280x720/dfdfdf/333"
 	},{                                                                   
-	c_url:"#0",c_title:"課程名稱 BBB",c_img:"http://placehold.it/1280x720/dfdfdf/333"
+	c_url:"#0",c_comm:"1",c_title:"課程名稱 BBB",c_img:"http://www.mindriverad.com/images/case-online/rado/rado-3.jpg"
 	},{                                                                   
-	c_url:"#0",c_title:"課程名稱 CCC",c_img:"http://placehold.it/1280x720/dfdfdf/333"
+	c_url:"#0",c_comm:"2",c_title:"課程名稱 CCC",c_img:"http://placehold.it/1280x720/dfdfdf/333"
 	},{                                                                   
-	c_url:"#0",c_title:"課程名稱 DDD",c_img:"http://placehold.it/1280x720/dfdfdf/333"
+	c_url:"#0",c_comm:"3",c_title:"課程名稱 DDD",c_img:"http://placehold.it/1280x720/dfdfdf/333"
 	}
 ];
 $.each(course_text,function(index,obj)
@@ -292,7 +292,7 @@ $.each(course_text,function(index,obj)
 	course_item +='<a href="'+ obj.c_url +'"><img class="img-responsive" src="'+ obj.c_img +'"></a>';
 	course_item +='<ul class="table-box" style="padding:.8rem 0;">';
 	course_item +='<li><button class="btn btn-block btn--link border0 red"><i class="fa fa-video-camera"></i> 課程錄製</button></li>';
-	course_item +='<li><button class="btn btn-block btn--link">新討論 x則</button></li>';
+	course_item +='<li><button class="btn btn-block btn--link grey">新討論 '+ obj.c_comm +'則</button></li>';
 	course_item +='</ul>';
 	course_item +='</section>';
 	course_item +='</article>';
