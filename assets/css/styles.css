@@ -112,7 +112,7 @@ footer .input-group input, footer.input-group input {background-color:#fff;}
 .card .caption h3 {font-size:20px;min-height:2.15em;color: #333;margin: .3rem 0;}
 
 /* price Style */
-.price {}
+.price {-webkit-transition: all 0.3s;-moz-transition: all .5s;-o-transition: all .5s;transition: all .5s;}
 .price header h4 {margin:0;line-height:1.2;padding:.5rem .8rem;border-bottom:1px solid #000;border-left__: 3px solid #e65d4f;color:#fff;
 	background-color:#111;
 	background: -moz-linear-gradient(45deg, #000 0%, #3B3B3B 75%, #444444 100%); /* ff3.6+ */
@@ -466,6 +466,11 @@ color: #666666;
 .recommendations li a {}
 .recommendations li a img {width:5em;float:left;margin-right:.5em}
 
+/* 2017-06-12 課程列表 File cube & list view */
+.view_list {width:100%;-webkit-transition: all 0.3s;-moz-transition: all 0.5s;-o-transition: all 0.5s;transition: all 0.5s;}
+.view_list a {width:9.7154em;float:left;margin-right: .5rem;}
+.view_list .table-box {width:auto;float:right;}
+
 /* form input style */
 .form-control {
 color: #000;
@@ -492,6 +497,7 @@ box-shadow: none;
 	.form-horizontal .form-group {margin-right: .5rem;margin-left: .5rem;}
 	.checkbox-inline, .radio-inline {padding:0;}
 	#SearchModal .modal-footer button {width:49%;margin-bottom__:.5rem;}
+	.view_list a {width: 10em;}
 }
 @media (min-width: 414px) {
 	.userProfile .media-left img {max-width: 128px;margin-bottom:.6rem;}

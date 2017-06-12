@@ -62,6 +62,10 @@
 							</section>
 
 							<section role="tabpanel" class="tab-pane fade" id="B">
+								<p class="text-right">
+									<a class="btn btn--link view-th red"><i class="fa fa-th"></i></a>
+									<a class="btn btn--link view-list grey"><i class="fa fa-list"></i></a>
+								</p>
 								<div id="Course" class="row"></div><!-- /#Course -->
 							</section>
 
@@ -230,6 +234,18 @@
    $("audio").bind("ended", function() {
 		$('.flaticon-pause').hide();
 		$('.flaticon-play-button').show();
+	});
+	
+	// File cube & list view
+	$('.view-list').click(function() {
+		$(this).addClass('red');
+		$(".view-th").removeClass("red").addClass( "grey" );
+		$(".price").removeClass("price").addClass( "view_list" );
+	});
+	$('.view-th').click(function() {
+		$(this).addClass('red');
+		$(".view-list").removeClass("red").addClass( "grey" );
+		$(".view_list").removeClass("view_list").addClass( "price" );
 	});
 	</script>
 	

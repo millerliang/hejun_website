@@ -280,19 +280,27 @@ var course_text =[{
 	},{                                                                   
 	c_url:"#0",c_comm:"2",c_title:"課程名稱 CCC",c_img:"http://placehold.it/720x480/dfdfdf/333"
 	},{                                                                   
-	c_url:"#0",c_comm:"3",c_title:"課程名稱 DDD",c_img:"https://cdn0-techbang.pixfs.net/system/images/368769/original/b10abb16ffa2c7b7a32ab73ee5d828b2.jpg?1477208685"
+	c_url:"#0",c_comm:"3",c_title:"課程名稱 DDD",c_img:"https://cdn0-techbang.pixfs.net/system/images/368769/original/b10abb16ffa2c7b7a32ab73ee5d828b2.jpg"
+	},{                                                                   
+	c_url:"#0",c_comm:"0",c_title:"課程名稱",c_img:"http://placehold.it/720x480/dfdfdf/333"
+	},{                                                                   
+	c_url:"#0",c_comm:"0",c_title:"課程名稱",c_img:"http://www.cheesead.com.tw/w2/files/w03-4.jpg"
+	},{                                                                   
+	c_url:"#0",c_comm:"0",c_title:"課程名稱",c_img:"http://placehold.it/720x480/dfdfdf/333"
+	},{                                                                   
+	c_url:"#0",c_comm:"0",c_title:"課程名稱",c_img:"http://placehold.it/720x480/dfdfdf/333"
 	}
 ];
 $.each(course_text,function(index,obj)
 {
-	course_item ='<div class="col-sm-6">';
-	course_item +='<article class="price card">';
-	course_item +='<header><h4>'+ obj.c_title +'</h4></header>';
-	course_item +='<section>';
+	course_item ='<div class="price col-xs-6 col-sm-6 col-md-4">';
+	course_item +='<article class="card">';
+	course_item +='<section class="clearfix">';
 	course_item +='<a href="'+ obj.c_url +'"><img class="img-responsive" src="'+ obj.c_img +'"></a>';
+	course_item +='<header><h4>'+ obj.c_title +'</h4></header>';
 	course_item +='<ul class="table-box" style="padding:.8rem 0;">';
-	course_item +='<li><button class="btn btn-block btn--link red"><i class="fa fa-video-camera"></i> 課程錄製</button></li>';
-	course_item +='<li><button class="btn btn-block btn--link grey">新討論 '+ obj.c_comm +'則</button></li>';
+	course_item +='<li><button class="btn btn-block btn--link red"><i class="fa fa-video-camera"></i> <span class="hidden-xs">課程</span>錄製</button></li>';
+	course_item +='<li><button class="btn btn-block btn--link grey"><span class="hidden-xs">新</span>討論 '+ obj.c_comm +'則</button></li>';
 	course_item +='</ul>';
 	course_item +='</section>';
 	course_item +='</article>';
@@ -497,7 +505,7 @@ var index_text =[{
 	},{
 	item_title:"Title",item_date:"mm月dd日",item_loc:"Location",item_img:"http://placehold.it/720x480/#666/e65d4f",item_url:"p4.html"
 	},{
-	item_title:"Samsung Galaxy A8(2016) 評測",item_date:"10月26日",item_loc:"Taipei",item_img:"https://cdn0-techbang.pixfs.net/system/images/368769/original/b10abb16ffa2c7b7a32ab73ee5d828b2.jpg?1477208685",item_url:"p5.html"
+	item_title:"Samsung Galaxy A8(2016) 評測",item_date:"10月26日",item_loc:"Taipei",item_img:"https://cdn0-techbang.pixfs.net/system/images/368769/original/b10abb16ffa2c7b7a32ab73ee5d828b2.jpg",item_url:"p5.html"
 	},{
 	item_title:"Title",item_date:"mm月dd日",item_loc:"Location",item_img:"http://placehold.it/720x480/#666/e65d4f",item_url:"p6.html"
 	}
