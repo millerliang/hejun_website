@@ -72,11 +72,8 @@ hr {border-color:#e0e0e0;}
 .nav-pills>li>a {border-radius:0;}
 .nav-justified>li>a {margin-bottom:0;color:#888;}
 .nav-justified {
-background-color:#f3f3f3;
-box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
 -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
--webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
-}
+.nav-justified {background-color:#f3f3f3;box-shadow: 0 1px 2px rgba(0, 0, 0, .2);-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .2);-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .2);}
 footer .input-group input, footer.input-group input {background-color:#fff;}
 
 .join i {display:none;white-space:nowrap;}
@@ -302,7 +299,6 @@ z-index: 1028;
 .flickity-enabled.is-draggable .flickity-viewport{touch-action: pan-y !important;}
 
 /* Fix Mobile view layout */
-.container_______ {padding:0;}
 .nav-justified>li {display: table-cell;width: 1%;}
 .navbar-SH {display:none;}
 .navbar-default {
@@ -361,7 +357,6 @@ border-bottom__:1px solid #e6e6e6;
 .infomaction li {font-size:small;color:#bbb;}
 .infomaction li b {display:block;color:#ffd352;font-size: x-large;}
 
-/* 九宮格 */
 .lottery {padding:.35rem 0;overflow:hidden;}
 .lottery li {border-top: 1px solid #ddd;border-left: 1px solid #ddd;background-color:#fff;position:relative;width: 33.3333%;float:left;text-align:center;display:inline-block;animation: blinker 2.5s ease-out infinite;position:relative;overflow:hidden;}
 .lottery li a {margin: .3rem;display: block;height:6em;white-space:nowrap;text-decoration: none;
