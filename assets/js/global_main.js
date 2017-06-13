@@ -311,15 +311,15 @@ $.each(course_text,function(index,obj)
 
 // Operation Modal Star //
 var operation_text =[{
-	o_url:"#0",o_name:"陳大強",o_time:"4月25日 12:06",o_title:"題目名稱",o_img:"assets/images/avatar/user_4.jpg",o_icoType:"list"
+	o_url:"p6.html",o_name:"陳大強",o_time:"4月25日 12:06",o_title:"題目名稱",o_img:"assets/images/avatar/user_4.jpg",o_icoType:"list"
 	},{                                                                                                          
-	o_url:"#0",o_name:"張立強",o_time:"4月24日 11:14",o_title:"題目名稱",o_img:"assets/images/avatar/user_2.png",o_icoType:"multimedia"
+	o_url:"p6.html",o_name:"張立強",o_time:"4月24日 11:14",o_title:"題目名稱",o_img:"assets/images/avatar/user_2.png",o_icoType:"multimedia"
 	},{
-	o_url:"#0",o_name:"Dr, 琼斯",o_time:"5月22日 13:05",o_title:"題目名稱",o_img:"assets/images/avatar/user_3.jpg",o_icoType:"multimedia"
+	o_url:"p6.html",o_name:"Dr, 琼斯",o_time:"5月22日 13:05",o_title:"題目名稱",o_img:"assets/images/avatar/user_3.jpg",o_icoType:"multimedia"
 	},{
-	o_url:"#0",o_name:"Janet Carton",o_time:"6月7日 20:02",o_title:"Gun attacks and suicide bomb in Tehran",o_img:"assets/images/avatar/a6.jpg",o_icoType:"list"
+	o_url:"p6.html",o_name:"Janet Carton",o_time:"6月7日 20:02",o_title:"Gun attacks and suicide bomb in Tehran",o_img:"assets/images/avatar/a6.jpg",o_icoType:"list"
 	},{
-	o_url:"#0",o_name:"王国军",o_time:"5月28日 19:34",o_title:"題目名稱",o_img:"assets/images/avatar/user_1.png",o_icoType:"list"
+	o_url:"p6.html",o_name:"王国军",o_time:"5月28日 19:34",o_title:"題目名稱",o_img:"assets/images/avatar/user_1.png",o_icoType:"list"
 	}
 ];
 $.each(operation_text,function(index,obj)
@@ -328,7 +328,7 @@ $.each(operation_text,function(index,obj)
 	operation_item +='<article class="card">';
 	operation_item +='<header class="media brb" style="padding:.5em 0 .3em .5em;border-left: 3px solid #e65d4f;">';
 	operation_item +='<div class="media-left">';
-	operation_item +='<a href="'+ obj.o_url +'"><img class="media-object" src="'+ obj.o_img +'"></a>';
+	operation_item +='<img class="media-object" src="'+ obj.o_img +'">';
 	operation_item +='</div>';
 	operation_item +='<div class="media-body">';
 	operation_item +='<div class="pull-right" style="margin-right:1em;"><i class="flaticon-'+ obj.o_icoType +' fz14"></i></div>';
@@ -336,7 +336,7 @@ $.each(operation_text,function(index,obj)
 	operation_item +='<p><small class="text-muted">'+ obj.o_time +'</small></p>';
 	operation_item +='</div>';
 	operation_item +='</header>';
-	operation_item +='<section style="padding:.3rem .6rem">'+ obj.o_title +'</section>';
+	operation_item +='<a href="'+ obj.o_url +'"><section style="padding:.3rem .6rem">'+ obj.o_title +'</section></a>';
 	operation_item +='</article>';
 	operation_item +='</div>';
 	$('#Operation').append(operation_item);
