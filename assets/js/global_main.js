@@ -23,7 +23,7 @@ nav_item +='<li><a href="u3.html">積分交易紀錄</a></li>';
 nav_item +='<li><a href="u4.html">代幣交易紀錄</a></li>';
 nav_item +='<li><a href="u5.html">課程卡儲值紀錄</a></li>';
 nav_item +='<li><a href="u6.html">好友邀請紀錄</a></li>';
-nav_item +='<li><a href="u7.html">系統通知</a></li>';
+nav_item +='<li><a href="u7.html">系統通知 <span class="badge pull-right red_bg_">3</span></a></li>';
 nav_item +='<li><a href="u8.html">幫助中心</a></li>';
 nav_item +='<li class="divider"></li>';
 nav_item +='<li><a href="#0">Logout</a></li>';
@@ -35,7 +35,7 @@ nav_item +='</ul>';
 nav_item +='<ul class="nav navbar-nav navbar-right">';
 nav_item +='<li><a data-toggle="modal" data-target="#SearchModal" href="#"><i class="fa fa-search"></i> Search</a></li>';
 nav_item +='<li class="dropdown">';
-nav_item +='<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="flaticon-profile-1"></i> 会员 <span class="caret"></span></a>';
+nav_item +='<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="flaticon-profile-1"></i> 会员 <span class="caret"></span> <span class="badge sye_msg">3</span></a>';
 nav_item +='<ul class="dropdown-menu" role="menu">';
 //nav_item +='<li><a href="userprofile.html">會員檔案</a></li>';
 //nav_item +='<li><a href="u2.html">課程訂單</a></li>';
@@ -69,7 +69,7 @@ footMenu_item ='<ul class="table-box footMenu_btn">';
 footMenu_item +='<li><button class="btn btn-block btn-deault" onclick="indexPage()"><i class="flaticon-home"></i>首頁</button></li>';
 footMenu_item +='<li><button class="btn btn-block btn-deault" onclick="productPage()"><i class="flaticon-circle"></i>产品</button></li>';
 footMenu_item +='<li><button class="btn btn-block btn-deault" onclick="coursePage()"><i class="flaticon-calendar-1"></i>课程</button></li>';
-footMenu_item +='<li><button class="btn btn-block btn-deault" onclick="userPage()"><i class="flaticon-profile-1"></i>会员</button></li>';
+footMenu_item +='<li><button class="btn btn-block btn-deault" onclick="userPage()"><i class="flaticon-profile-1"></i>会员</button><span class="badge sye_msg">3</span></li>';
 footMenu_item +='<li><button class="btn btn-block btn-deault" onclick="activityPage()"><i class="flaticon-favorites"></i>活动</button></li>';
 footMenu_item +='</ul>';
 $('#footMenuBar').append(footMenu_item);
@@ -460,7 +460,7 @@ var rcd_text =[{
 	rcd_url:"#0",rcd_title:"企业家应该确立的N个产业思维和产业认识",rcd_img:"assets/images/item3.jpg"
 	}
 ];
-rcd_item ='<h4><strong><i class="flaticon-calendar-1 grey"></i> 課程推薦</strong></h4>';
+rcd_item ='<h4><i class="flaticon-calendar-1 grey"></i> <strong>課程推薦</strong></h4>';
 rcd_item +='<ol class="recommendations list-group">';
 $.each(rcd_text,function(index,obj)
 {

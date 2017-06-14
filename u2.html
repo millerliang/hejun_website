@@ -55,9 +55,9 @@
 						<h3><i class="flaticon-calendar-1"></i> 課程訂單</h3>
 					</header>
 					<div class="h1em"></div>
-					<article>
+					<article id="course_order">
 
-						<section class="card">
+						<!-- <section class="card">
 							<div class="price"><header><h4>【課程】XXXXXXXXXXXX</h4></header></div>
 							<ul class="row older grey brb" style="padding:.5rem .35rem 0;">
 								<li class="col-sm-6 col-md-4"><b>訂單日期</b>：YYYY/MM/DD</li>
@@ -91,7 +91,7 @@
 								<li><b>-20</b>代 幣</li>
 								<li><b>-500</b>積 分</li>
 							</ul>
-						</section>
+						</section> -->
 
 					</article>
 				</div><!-- /.row -->
@@ -122,6 +122,34 @@
 			$(".navbar-nav:first-child").children('li:nth-child(4)').children('a').addClass("red");
 			$("#footMenuBar .footMenu_btn").children('li:nth-child(4)').addClass("sel");
 		},500); 
+	});
+
+	var data_text =[{
+		items_date:"YYYY/MM/DD",items_invoice:"UN1224822",items_point:"-700",items_cash:"10",virtual_tokens:"-10",items_reason:"微信支付",items_order:"O-kuei789",items_promotion:"S-017D025",items_remarks:"",items_token:"50.00"
+		},{
+		items_date:"2017/05/05",items_invoice:"UN1224821",items_point:"-600",items_cash:"20",virtual_tokens:"-30",items_reason:"微信支付",items_order:"O-kuei788",items_promotion:"S-017D024",items_remarks:"",items_token:"20.00"
+		}
+	];
+	$.each(data_text,function(index,obj)
+	{
+		this_items ='<section class="card">';
+		this_items +='<h4 class="transaction_hard">【課程】XXXXXXXXXXXX</h4>';
+		this_items +='<ul class="row older transaction" style="padding:.5rem .35rem 0;">';
+		this_items +='<li class="col-sm-6 col-md-4"><b>訂單日期</b>：'+ obj.items_date +'</li>';
+		this_items +='<li class="col-sm-6 col-md-4"><b>訂單編號</b>：'+ obj.items_order +'</li>';
+		this_items +='<li class="col-sm-6 col-md-4"><b>付款方式</b>：'+ obj.items_reason +'</li>';
+		this_items +='<li class="col-sm-6 col-md-4"><b>促案編號</b>：'+ obj.items_promotion +'</li>';
+		this_items +='<li class="col-sm-6 col-md-4"><b>發票編號</b>：'+ obj.items_invoice +'</li>';
+		this_items +='<li class="col-xs-12"><b>訂單金額</b>：'+ obj.items_remarks +'</li>';
+		this_items +='</ul>';
+		this_items +='<p class="integral grey-lighter">交易積分 $ <b class="fz16 red">'+ obj.items_token +'</b></p>';
+		this_items +='<ul class="table-box infomaction grey_bg">';
+		this_items +='<li><b>'+ obj.items_cash +'</b>現 金</li>';
+		this_items +='<li><b>'+ obj.virtual_tokens +'</b>代 幣</li>';
+		this_items +='<li><b>'+ obj.items_point +'</b>積 分</li>';
+		this_items +='</ul>';
+		this_items +='</section>';
+		$('#course_order').append(this_items);
 	});
 	</script>
 	

@@ -68,13 +68,15 @@
 							</section>
 						</form>
 						<div class="h3em"></div>
-						<section class="card">
-							<ul class="row older grey transaction" style="padding:.5rem .35rem 0;">
-								<li class="col-sm-6 col-md-4"><b>交易日期</b>：YYYY/MM/DD</li>
-								<li class="col-sm-6 col-md-4"><b>課程卡號</b>：ENIDFRH124</li>
-								<li class="col-sm-6 col-md-4"><b>代幣單號</b>：T-017BHVX</li>
-							</ul>
-							<p class="integral">儲值代幣 <b class="fz16 red">+100.0</b></p>
+						<section id="stored_vr">
+							<!-- <div class="card">
+								<ul class="row older transaction" style="padding:.5rem .35rem 0;">
+									<li class="col-sm-6 col-md-4"><b>交易日期</b>：YYYY/MM/DD</li>
+									<li class="col-sm-6 col-md-4"><b>課程卡號</b>：ENIDFRH124</li>
+									<li class="col-sm-6 col-md-4"><b>代幣單號</b>：T-017BHVX</li>
+								</ul>
+								<p class="integral grey-lighter">儲值代幣 <b class="fz16 red">+100.0</b></p>
+							</div> -->
 						</section>
 
 					</article>
@@ -106,6 +108,27 @@
 			$(".navbar-nav:first-child").children('li:nth-child(4)').children('a').addClass("red");
 			$("#footMenuBar .footMenu_btn").children('li:nth-child(4)').addClass("sel");
 		},500); 
+	});
+
+	var data_text =[{
+		items_date:"YYYY/MM/DD",items_cardNum:"ENIDFRH124",items_serial:"T-017BHVX",items_token:"100.0"
+		},{
+		items_date:"2017/06/05",items_cardNum:"ENIDFRH124",items_serial:"T-017BHVX",items_token:"90.00"
+		},{
+		items_date:"2017/06/01",items_cardNum:"ENIDFRH078",items_serial:"T-012DJFN",items_token:"120.0"
+		}
+	];
+	$.each(data_text,function(index,obj)
+	{
+		this_items ='<div class="card">';
+		this_items +='<ul class="row older transaction" style="padding:.5rem .35rem 0;">';
+		this_items +='<li class="col-sm-6 col-md-4"><b>交易日期</b>：'+ obj.items_date +'</li>';
+		this_items +='<li class="col-sm-6 col-md-4"><b>課程卡號</b>：'+ obj.items_cardNum +'</li>';
+		this_items +='<li class="col-sm-6 col-md-4"><b>代幣單號</b>：'+ obj.items_serial +'</li>';
+		this_items +='</ul>';
+		this_items +='<p class="integral grey-lighter">儲值代幣 <b class="fz16 red">+'+ obj.items_token +'</b></p>';
+		this_items +='</div>';
+		$('#stored_vr').append(this_items);
 	});
 	</script>
 	

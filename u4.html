@@ -55,9 +55,9 @@
 						<h3><i class="flaticon-changing-money"></i> 代幣交易紀錄</h3>
 					</header>
 					<h4 class="transaction_hard text-center"><i class="fa fa-usd"></i> 結餘代幣 <b class="fz14 yellow">50</b></h4>
-					<article>
+					<article id="transaction_record">
 
-						<section class="card">
+						<!-- <section class="card">
 							<ul class="row older grey transaction" style="padding:.5rem .35rem 0;">
 								<li class="col-sm-6"><b>交易日期</b>：YYYY/MM/DD</li>
 								<li class="col-sm-6"><b>代幣單號</b>：T-017BHVU</li>
@@ -75,7 +75,7 @@
 								<li class="col-sm-6"><b>交易備註</b>：</li>
 							</ul>
 							<p class="integral">交易代幣 <b class="fz16 red">+100.0</b></p>
-						</section>
+						</section> -->
 
 					</article>
 				</div><!-- /.row -->
@@ -106,6 +106,28 @@
 			$(".navbar-nav:first-child").children('li:nth-child(4)').children('a').addClass("red");
 			$("#footMenuBar .footMenu_btn").children('li:nth-child(4)').addClass("sel");
 		},500); 
+	});
+
+	var data_text =[{
+		items_date:"YYYY/MM/DD",items_serial:"ENIDFRH124",items_reason:"購買課程",items_remarks:"..",items_token:"-10.0"
+		},{
+		items_date:"2017/06/05",items_serial:"ENIDFRH124",items_reason:"購買課程",items_remarks:"...",items_token:"+100.0"
+		},{
+		items_date:"2017/06/01",items_serial:"ENIDFRH078",items_reason:"購買課程",items_remarks:"....",items_token:"+50.0"
+		}
+	];
+	$.each(data_text,function(index,obj)
+	{
+		this_items ='<section class="card">';
+		this_items +='<ul class="row older transaction" style="padding:.5rem .35rem 0;">';
+		this_items +='<li class="col-sm-6 col-md-4"><b>交易日期</b>：'+ obj.items_date +'</li>';
+		this_items +='<li class="col-sm-6 col-md-4"><b>代幣單號</b>：'+ obj.items_serial +'</li>';
+		this_items +='<li class="col-sm-6 col-md-4"><b>交易原因</b>：'+ obj.items_reason +'</li>';
+		this_items +='<li class="col-sm-6 col-md-4"><b>交易備註</b>：'+ obj.items_remarks +'</li>';
+		this_items +='</ul>';
+		this_items +='<p class="integral grey-lighter">交易代幣 <b class="fz16 red">'+ obj.items_token +'</b></p>';
+		this_items +='</section>';
+		$('#transaction_record').append(this_items);
 	});
 	</script>
 	

@@ -19,6 +19,7 @@ a {color:#333;}
 .white_bg {background-color:#fff;}
 .black_bg {background-color:#000;}
 hr {border-color:#e0e0e0;}
+.sye_msg {display:none;position:absolute;right:.6rem;top:.3rem;background-color:#e65d4f;padding:2px 5px;font-size:xx-small;}
 .h1em {height:1em;}
 .h2em {height:2em;}
 .h3em {height:3em;}
@@ -226,7 +227,7 @@ padding__:.4rem 0!important;
 -webkit-box-shadow: 0px -2px 8px rgba(0,0,0,.12);
 box-shadow: 0px -2px 8px rgba(0,0,0,.12);
 }
-.footMenu_btn li {white-space:nowrap;}
+.footMenu_btn li {white-space:nowrap;position:relative;}
 .footMenu_btn li i {font-size:1.8em;display:block;margin-bottom__: .15rem;}
 .footMenu_btn li button {color:#666;background-color:transparent;padding:.25rem 0;font-size: small;}
 .footMenu_btn li.sel button {color:#e65d4f;}
@@ -417,7 +418,7 @@ border-bottom:1px solid #e5e5e5;
 .QA label:hover {color: #380c08;}
 .QA .answers {
 background-color: #fff;
-padding:0em .5em;
+padding:0em .8em;
 margin: 5px 0;
 height: 0;
 overflow: hidden;
@@ -432,7 +433,7 @@ transition: .7s ease;
 .QA input:checked ~ .answers{
 height: auto;
 opacity: 1;
-padding:.3em .5em;
+padding:.5em .8em;
 }
 .QA .plus {
 position: absolute;

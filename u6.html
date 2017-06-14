@@ -68,13 +68,15 @@
 							</section>
 						</form>
 						<div class="h3em"></div>
-						<section class="card">
-							<ul class="row older transaction" style="padding:.5rem .35rem 0;">
-								<li class="col-sm-6 col-md-4"><b>註冊日期</b>：YYYY/MM/DD</li>
-								<li class="col-sm-6 col-md-4"><b>註冊會員</b>：會員姓名 XXXXX</li>
-								<li class="col-sm-6 col-md-4"><b>會員手機</b>：+886 918223XXX</li>
-							</ul>
-							<p class="integral">獲贈積分 <b class="fz16 red">+50</b></p>
+						<section id="invitation_record">
+							<!-- <div class="card">
+								<ul class="row older transaction" style="padding:.5rem .35rem 0;">
+									<li class="col-sm-6 col-md-4"><b>註冊日期</b>：YYYY/MM/DD</li>
+									<li class="col-sm-6 col-md-4"><b>註冊會員</b>：會員姓名 XXXXX</li>
+									<li class="col-sm-6 col-md-4"><b>會員手機</b>：+886 918223XXX</li>
+								</ul>
+								<p class="integral">獲贈積分 <b class="fz16 red">+50</b></p>
+							</div> -->
 						</section>
 
 					</article>
@@ -107,7 +109,27 @@
 			$("#footMenuBar .footMenu_btn").children('li:nth-child(4)').addClass("sel");
 		},500); 
 	});
+
+	var data_text =[{
+		items_date:"YYYY/MM/DD",items_name:"會員姓名",items_phone:"0918223XXX",items_point:"50"
+		},{
+		items_date:"2017/06/06",items_name:"User Name",items_phone:"0918223333",items_point:"30"
+		},{
+		items_date:"2017/06/05",items_name:"Alex chang",items_phone:"0935111222",items_point:"20"
+		}
+	];
+	$.each(data_text,function(index,obj)
+	{
+		this_items ='<div class="card">';
+		this_items +='<ul class="row older transaction" style="padding:.5rem .35rem 0;">';
+		this_items +='<li class="col-sm-6 col-md-4"><b>註冊日期</b>：'+ obj.items_date +'</li>';
+		this_items +='<li class="col-sm-6 col-md-4"><b>註冊會員</b>：'+ obj.items_name +'</li>';
+		this_items +='<li class="col-sm-6 col-md-4"><b>會員手機</b>：'+ obj.items_phone +'</li>';
+		this_items +='</ul>';
+		this_items +='<p class="integral grey-lighter">獲贈積分 <b class="fz16 red">+'+ obj.items_point +'</b></p>';
+		this_items +='</div>';
+		$('#invitation_record').append(this_items);
+	});
 	</script>
-	
 </body>
 </html>

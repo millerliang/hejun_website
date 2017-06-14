@@ -56,8 +56,8 @@
 					</header>
 					<div class="h1em"></div>
 					<article style="padding:.8rem 0 .1rem 1rem;background-color:#fff;">
-						<ol class="sys-msg">
-							<li>
+						<ol id="sys_notice" class="sys-msg">
+							<!-- <li>
 								<button class="pull-right btn btn--link hidden"><i class="fa fa-trash-o fz14 red"></i></button>
 								<label>
 									<input type="checkbox" class="hidden"><i class="fa fa-envelope-o"></i>
@@ -65,25 +65,7 @@
 								</label>
 								<p>內容</p>
 								<time>- 2017/05/05</time>
-							</li>
-							<li>
-								<button class="pull-right btn btn--link hidden"><i class="fa fa-trash-o fz14 red"></i></button>
-								<label>
-									<input type="checkbox" class="hidden"><i class="fa fa-envelope-o"></i>
-									主旨：XXX XXXXXXX XXX XXXXX XXXXXXXX XXX X XX XXX X
-								</label>
-								<p>內容</p>
-								<time>- 2017/05/05</time>
-							</li>
-							<li>
-								<button class="pull-right btn btn--link hidden"><i class="fa fa-trash-o fz14 red"></i></button>
-								<label>
-									<input type="checkbox" class="hidden"><i class="fa fa-envelope-o"></i>
-									主旨：XXX XXXXXXX XXX XXXXX XXXXXXXX XXX X XX XXX X
-								</label>
-								<p>內容</p>
-								<time>- 2017/05/05</time>
-							</li>
+							</li> -->
 						</ol>
 					</article>
 				</div><!-- /.row -->
@@ -114,6 +96,30 @@
 			$(".navbar-nav:first-child").children('li:nth-child(4)').children('a').addClass("red");
 			$("#footMenuBar .footMenu_btn").children('li:nth-child(4)').addClass("sel");
 		},500); 
+	});
+
+	var data_text =[{
+		items_title:"xxxx",items_remarks:"內容 1",items_date:"YYYY/MM/DD"
+		},{
+		items_title:"xx xx xx",items_remarks:"內容 2",items_date:"2017/05/05"
+		},{
+		items_title:"xx xx xx xx xx",items_remarks:"內容 3",items_date:"2017/05/04"
+		},{
+		items_title:"xxx xxx xxx",items_remarks:"內容 4",items_date:"2017/05/03"
+		}
+	];
+	$.each(data_text,function(index,obj)
+	{
+		this_items ='<li>';
+		//this_items +='<button class="pull-right btn btn--link"><i class="fa fa-trash-o fz12 red"></i></button>';
+		this_items +='<label>';
+		//this_items +='<input type="checkbox" class="hidden"><i class="fa fa-envelope-o"></i>';
+		this_items +='【主旨】'+ obj.items_title +'';
+		this_items +='</label>';
+		this_items +='<p>'+ obj.items_remarks +'</p>';
+		this_items +='<time>- '+ obj.items_date +'</time>';
+		this_items +='</li>';
+		$('#sys_notice').append(this_items);
 	});
 	</script>
 	

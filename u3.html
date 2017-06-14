@@ -55,8 +55,8 @@
 						<h3><i class="flaticon-transfer"></i> 積分交易紀錄</h3>
 					</header>
 					<h4 class="transaction_hard text-center"><i class="fa fa-diamond"></i> 結餘積分 <b class="fz14 yellow">70</b></h4>
-					<article>
-						<section class="card">
+					<article id="transaction_record">
+						<!-- <section class="card">
 							<ul class="row older transaction" style="padding:.5rem .35rem 0;">
 								<li class="col-sm-6 col-md-4"><b>交易日期</b>：YYYY/MM/DD</li>
 								<li class="col-sm-6 col-md-4"><b>積分單號</b>：P-017DHVU</li>
@@ -65,7 +65,7 @@
 								<li class="col-sm-6 col-md-4"><b>訂單編號</b>：O-kuei789</li>
 							</ul>
 							<p class="integral">交易積分 <b class="fz16 red">-700.00</b></p>
-						</section>
+						</section> -->
 					</article>
 				</div><!-- /.row -->
 
@@ -95,6 +95,29 @@
 			$(".navbar-nav:first-child").children('li:nth-child(4)').children('a').addClass("red");
 			$("#footMenuBar .footMenu_btn").children('li:nth-child(4)').addClass("sel");
 		},500); 
+	});
+
+	var data_text =[{
+		items_date:"YYYY/MM/DD",items_serial:"ENIDFRH124",items_order:"O-kuei789",items_reason:"購買課程",items_remarks:"",items_token:"-700.0"
+		},{
+		items_date:"2017/06/05",items_serial:"ENIDFRH124",items_order:"O-kuei788",items_reason:"購買課程",items_remarks:"",items_token:"-100.0"
+		},{
+		items_date:"2017/06/01",items_serial:"ENIDFRH078",items_order:"O-kuei787",items_reason:"購買課程",items_remarks:"",items_token:"-500.0"
+		}
+	];
+	$.each(data_text,function(index,obj)
+	{
+		this_items ='<section class="card">';
+		this_items +='<ul class="row older transaction" style="padding:.5rem .35rem 0;">';
+		this_items +='<li class="col-sm-6 col-md-4"><b>交易日期</b>：'+ obj.items_date +'</li>';
+		this_items +='<li class="col-sm-6 col-md-4"><b>積分單號</b>：'+ obj.items_serial +'</li>';
+		this_items +='<li class="col-sm-6 col-md-4"><b>交易原因</b>：'+ obj.items_reason +'</li>';
+		this_items +='<li class="col-sm-6 col-md-4"><b>訂單編號</b>：'+ obj.items_order +'</li>';
+		this_items +='<li class="col-sm-6 col-md-4"><b>交易備註</b>：'+ obj.items_remarks +'</li>';
+		this_items +='</ul>';
+		this_items +='<p class="integral grey-lighter">交易積分 <i class="flaticon-transfer black"></i> <b class="fz16 red">'+ obj.items_token +'</b></p>';
+		this_items +='</section>';
+		$('#transaction_record').append(this_items);
 	});
 	</script>
 	
