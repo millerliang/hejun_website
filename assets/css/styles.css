@@ -110,7 +110,7 @@ footer .input-group input, footer.input-group input {background-color:#fff;}
 .card .img_link {position__:relative;overflow:hidden;min-height__:10.5rem;display: block;background-color:#eaece8;}
 .card .img_link img {width:100%;height__:100%;position__:absolute;}
 .card .caption {padding:0 9px;color: #666;}
-.card .caption h3 {font-size:20px;min-height:2.15em;color: #333;margin: .3rem 0;}
+.card .caption h4 {margin: .3rem 0;}
 
 /* price Style */
 .price {-webkit-transition: all 0.3s;-moz-transition: all .5s;-o-transition: all .5s;transition: all .5s;}
@@ -469,8 +469,8 @@ color: #666666;
 
 /* 2017-06-12 課程列表 File cube & list view */
 .view_list {width:100%;-webkit-transition: all 0.3s;-moz-transition: all 0.5s;-o-transition: all 0.5s;transition: all 0.5s;}
-.view_list a {width:9.7154em;float:left;margin-right: .5rem;}
-.view_list .table-box {width:auto;float:right;}
+.view_list a {width:12em;float:left;margin-right: .5rem;}
+.view_list .table-box {width:auto;float:right;margin-top:1em;}
 
 /* form input style */
 .form-control {
@@ -498,7 +498,8 @@ box-shadow: none;
 	.form-horizontal .form-group {margin-right: .5rem;margin-left: .5rem;}
 	.checkbox-inline, .radio-inline {padding:0;}
 	#SearchModal .modal-footer button {width:49%;margin-bottom__:.5rem;}
-	.view_list a {width: 10em;}
+	.view_list a {width:7em;}
+	.view_list .table-box {width:100%;float:none;padding:.25rem 0;}
 }
 @media (min-width: 414px) {
 	.userProfile .media-left img {max-width: 128px;margin-bottom:.6rem;}

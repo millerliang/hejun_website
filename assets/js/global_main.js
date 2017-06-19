@@ -127,7 +127,7 @@ Comment_Modal +='<section class="modal-body">';
 Comment_Modal +='<div class="media">';
 Comment_Modal +='<div class="media-left">';
 Comment_Modal +='<a href="#">';
-Comment_Modal +='<img class="media-object" src="assets/images/avatar/user_4.jpg">';
+Comment_Modal +='<img class="media-object" src="assets/images/avatar/user_male.png">';
 Comment_Modal +='</a>';
 Comment_Modal +='</div>';
 Comment_Modal +='<div class="media-body">';
@@ -195,7 +195,7 @@ $('#commentModal').append(Comment_Modal);
 chat_item ='<div class="media">';
 chat_item +='<div class="media-left">';
 chat_item +='<a href="#">';
-chat_item +='<img class="media-object" src="assets/images/avatar/user_4.jpg">';
+chat_item +='<img class="media-object" src="assets/images/avatar/user_male.png">';
 chat_item +='</a>';
 chat_item +='</div>';
 chat_item +='<div class="media-body">';
@@ -282,7 +282,7 @@ var course_text =[{
 	},{                                                                   
 	c_url:"#0",c_comm:"3",c_title:"課程名稱 DDD",c_img:"https://cdn0-techbang.pixfs.net/system/images/368769/original/b10abb16ffa2c7b7a32ab73ee5d828b2.jpg"
 	},{                                                                   
-	c_url:"#0",c_comm:"0",c_title:"課程名稱",c_img:"http://placehold.it/720x480/dfdfdf/333"
+	c_url:"#0",c_comm:"0",c_title:"課程名稱課程名稱課程名稱課程名稱",c_img:"http://placehold.it/720x480/dfdfdf/333"
 	},{                                                                   
 	c_url:"#0",c_comm:"0",c_title:"課程名稱",c_img:"http://www.cheesead.com.tw/w2/files/w03-4.jpg"
 	},{                                                                   
@@ -297,8 +297,8 @@ $.each(course_text,function(index,obj)
 	course_item +='<article class="card">';
 	course_item +='<section class="clearfix">';
 	course_item +='<a href="'+ obj.c_url +'"><img class="img-responsive" src="'+ obj.c_img +'"></a>';
-	course_item +='<header><h4>'+ obj.c_title +'</h4></header>';
-	course_item +='<ul class="table-box" style="padding:.8rem 0;">';
+	course_item +='<header><h4 class="text-over h2em">'+ obj.c_title +'</h4></header>';
+	course_item +='<ul class="table-box">';
 	course_item +='<li><button class="btn btn-block btn--link red"><i class="fa fa-video-camera"></i> <span class="hidden-xs">課程</span>錄製</button></li>';
 	course_item +='<li><button class="btn btn-block btn--link grey"><span class="hidden-xs">新</span>討論 '+ obj.c_comm +'則</button></li>';
 	course_item +='</ul>';
@@ -312,12 +312,16 @@ $.each(course_text,function(index,obj)
 // Operation Modal Star //
 var operation_text =[{
 	o_url:"p6.html",o_name:"陳大強",o_time:"4月25日 12:06",o_title:"題目名稱",o_img:"assets/images/avatar/user_4.jpg",o_icoType:"list"
-	},{                                                                                                          
+	},{
 	o_url:"p6.html",o_name:"張立強",o_time:"4月24日 11:14",o_title:"題目名稱",o_img:"assets/images/avatar/user_2.png",o_icoType:"multimedia"
 	},{
 	o_url:"p6.html",o_name:"Dr, 琼斯",o_time:"5月22日 13:05",o_title:"題目名稱",o_img:"assets/images/avatar/user_3.jpg",o_icoType:"multimedia"
 	},{
 	o_url:"p6.html",o_name:"Janet Carton",o_time:"6月7日 20:02",o_title:"Gun attacks and suicide bomb in Tehran",o_img:"assets/images/avatar/a6.jpg",o_icoType:"list"
+	},{
+	o_url:"#module_C",o_name:"Name",o_time:"mm/dd 00:00",o_title:"題目名稱題目名稱題目名稱題目名稱題目名稱題目名稱題目名稱",o_img:"assets/images/avatar/user_female.png",o_icoType:"list"
+	},{
+	o_url:"#module_C",o_name:"Name",o_time:"mm/dd 00:00",o_title:"題目名稱",o_img:"assets/images/avatar/user_male.png",o_icoType:"multimedia"
 	},{
 	o_url:"p6.html",o_name:"王国军",o_time:"5月28日 19:34",o_title:"題目名稱",o_img:"assets/images/avatar/user_1.png",o_icoType:"list"
 	}
@@ -336,7 +340,7 @@ $.each(operation_text,function(index,obj)
 	operation_item +='<p><small class="text-muted">'+ obj.o_time +'</small></p>';
 	operation_item +='</div>';
 	operation_item +='</header>';
-	operation_item +='<a href="'+ obj.o_url +'"><section style="padding:.3rem .6rem">'+ obj.o_title +'</section></a>';
+	operation_item +='<a href="'+ obj.o_url +'" data-toggle="tab"><section class="over-text" style="height:3.4em;;padding:.3rem .6rem">'+ obj.o_title +'</section></a>';
 	operation_item +='</article>';
 	operation_item +='</div>';
 	$('#Operation').append(operation_item);
@@ -512,16 +516,16 @@ var index_text =[{
 ];
 $.each(index_text,function(index,obj)
 {
-	index_items = '<section class="col-sm-6 col-md-4">';
+	index_items = '<section class="col-xs-6 col-md-4">';
 	index_items += '<div class="card">';
 	index_items += '<a class="img_link" href="'+ obj.item_url +'"><img src="'+ obj.item_img +'"></a>';
 	index_items += '<div class="caption">';
-	index_items += '<h3>'+ obj.item_title +'</h3>';
-	index_items += '<p>'+ obj.item_date +' ‧ '+ obj.item_loc +'</p>';
-	index_items += '<p>';
-	index_items += '<button class="pushy-btn btn--link grey-lighter interested" role="button">有兴趣</button>';
-	index_items += '<button class="pushy-btn btn--link btn--grey grey-lighter join"><i class="fa fa-check"></i> 参加</button>';
-	index_items += '</p>';
+	index_items += '<h4 class="h2em over-text">'+ obj.item_title +'</h4>';
+	index_items += '<small class="mb-1">'+ obj.item_date +' ‧ '+ obj.item_loc +'</small>';
+	index_items += '<ul class="table-box brt" style="padding:.5rem 0;">';
+	index_items += '<li><button class="btn btn--link grey-lighter interested" role="button">有兴趣</button></li>';
+	index_items += '<li><button class="btn btn--link btn--grey grey-lighter join"><i class="fa fa-check"></i> 参加</button></li>';
+	index_items += '</ul>';
 	index_items += '</div>';
 	index_items += '</div>';
 	index_items += '</section>';
