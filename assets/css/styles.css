@@ -1,4 +1,4 @@
-body {font-family:Microsoft JhengHei,arial,Microsoft YaHei,helvetica,sans-serif;background-color:#eceef0;}
+body {font-family:Noto Sans TC,Microsoft JhengHei,Microsoft YaHei,Helvetica Neue,arial;background-color:#eceef0;}
 /* Global font color Style */
 a {color:#333;}
 .m-logo {height:2.35em;margin-left:.5rem;}
@@ -30,6 +30,7 @@ hr {border-color:#e0e0e0;}
 .border0 {border:0!important;}
 .pLR0 {padding:15px 0;}
 .thumbs,.favorite,.join {cursor: pointer;}
+.thumbs:active i,.favorite:active i,.join:active i {transform: scale(1.4)translateY(-.25rem);}
 .align-top {vertical-align:top;}
 .align-middle {vertical-align:middle;}
 .align-bottom {vertical-align:bottom;}
@@ -109,8 +110,9 @@ footer .input-group input, footer.input-group input {background-color:#fff;}
 }
 .card .img_link {position__:relative;overflow:hidden;min-height__:10.5rem;display: block;background-color:#eaece8;}
 .card .img_link img {width:100%;height__:100%;position__:absolute;}
-.card .caption {padding:0 9px;color: #666;}
-.card .caption h4 {margin: .3rem 0;}
+.card .caption {padding:0 9px;}
+.card .caption h4 {margin: .3rem 0;color:#222;}
+.card .caption small {color:#666;}
 
 /* price Style */
 .price {-webkit-transition: all 0.3s;-moz-transition: all .5s;-o-transition: all .5s;transition: all .5s;}
