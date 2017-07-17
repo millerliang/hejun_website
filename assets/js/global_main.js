@@ -532,20 +532,42 @@ $.each(index_text,function(index,obj)
 	$('#home_items').append(index_items);
 });
 
+toastr.options = {
+	"positionClass": 'toast-top-right',
+	"timeOut": "1500",
+}
+
 // btns toggleClass
+var Like_num= 12;
+$(".l-num").text(Like_num);
 $('.favorite').click(function() {
 	if ($(this).hasClass('blue')== true){
-		alert("Remove a favorite");
+		//alert("Remove a favorite");
+		toastr.error("移除收藏");
+		Like_num=Like_num-1;
 	}
 	if ($(this).hasClass('blue')== false){
-		alert("Add a favorite");
+		//alert("Add a favorite");
+		toastr.success("加入收藏");
+		Like_num=Like_num+1;
 	}
 	$(this).toggleClass('blue');
+	//$(this).toggleClass('blue').children("i").toggleClass('green');
+	$(".l-num").text(Like_num);
 });
 
 // 按讚
+var num= 1;
+$(".num").text(num);
 $('.thumbs').click(function() {
+	if ($(this).hasClass('blue')== true){
+		num=num-1;
+	}else
+	{
+		num=num+1;
+	}
 	$(this).toggleClass('blue');
+	$(".num").text(num);
 });
 
 // 参加
@@ -556,4 +578,16 @@ $('.join').click(function() {
 // 有兴趣
 $('.interested').click(function() {
 	$(this).toggleClass('black');
+});
+
+// Buy Shopping Cars
+$('.buy').click(function() {
+	if ($(this).prop('disabled')== true){
+		$(this).prop('disabled', false );
+		toastr.success("沒敗");
+	}
+	else {
+		$(this).prop('disabled', true);
+		toastr.success("已敗");
+	}
 });
