@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>website hejun page</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link rel="stylesheet" href="assets/css/pushy-buttons.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/flaticon.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+</head>
+
+<body>
+	<!-- Fixed navbar -->
+	<nav id="navBar" class="navbar navbar-default navbar-SH navbar-fixed-top" role="navigation"></nav>
+
+	<div class="container">
+		<div class="top-height">
+			<article class="table-box navbar-fixed-top top-Menu">
+				<section onclick="history.go(-1)"><i class="fa fa-chevron-left"></i> back</section>
+				<section>团购课程/觀看課程</section>
+				<section><a data-toggle="modal" data-target="#SearchModal" href="#"><i class="fa fa-search"></i></a>　</section>
+			</article>
+		</div>
+
+		<!-- Layout Main aside Star -->
+		<article class="col-md-8 col-sm-12">
+
+			<div class="hidden-xs hidden-sm" style="height:2em;"></div>
+			<div class="row">
+				<ol class="breadcrumb hidden-xs row">
+					<li class="breadcrumb-item"><a href="index.html"><i class="flaticon-home"></i> Home</a></li>
+					<li class="breadcrumb-item"><a href="#">xxxx</a></li>
+					<li class="breadcrumb-item active">xxxx</li>
+				</ol>
+				<section class="black_bg" style="position: relative;overflow:hidden;">
+					<!-- <img class="img-responsive" src="http://www.zjiay.com:8081/rc/pdfImages/12d7fb1ae75a4daebe1d67506f0f5bedB/pages/0.JPG"> -->
+					<style>
+						.tranAll {-webkit-transition: all 0.5s;-moz-transition: all .5s;-o-transition: all .5s;transition: all .5s;-webkit-transition-delay:.3s;transition-delay:.3s;}
+						.toggle_playBtn {background-color:rgba(0,0,0,.5);position:absolute;text-align:center;width:85%;top:50%;left:50%;transform: translate(-50%, -50%);-webkit-border-radius:6em;-moz-border-radius:6em;border-radius:6em;}
+						.toggle_playBtn i {opacity:.85;cursor: pointer;-moz-text-shadow: 0px 2px 8px rgba(0,0,0,.65);-webkit-text-shadow: 0px 2px 8px rgba(0,0,0,.65);text-shadow: 0px 2px 8px rgba(0,0,0,.65);}
+						.toggle_playBtn i:hover,.toggle_playBtn i:active,.toggle_playBtn i:focus {opacity:1;transform: scale(1.2, 1.2);transform-origin: center;}
+						.toggle_playBtn.this_opacity {visibility: hidden;}
+						.if_play::before{content:"\f3a5";}
+						.if_screen::before{content:"\f16c";}
+					</style>
+					<iframe id="this_iframe_id" frameborder="0" style="display:block;width:100%;height:180px;" scrolling="no" src="http://www.zjiay.com:8081/rc/pdfImages/ecaa669efa7246fa91f7b6ba906ab4c0B/dn.html?_t=1499133135206" onload="iframeload()">&lt;video&gt;&lt;/video&gt;</iframe>
+					<div class="black_inline tranAll" style="background-color:rgba(0,0,0,.75);position:absolute;width:100%;height:100%;top:0;"></div>
+					<div class="white tranAll toggle_playBtn">
+						<ul class="table-box" style="height:100%;">
+							<li>
+								<i class="zmdi zmdi-play-circle zmdi-hc-5x"></i>
+								<!-- <i class="zmdi zmdi-pause-circle-outline zmdi-hc-5x"></i> -->
+							</li>
+							<li>
+								<i class="zmdi zmdi-fullscreen zmdi-hc-5x"></i>
+								<!-- <i class="zmdi zmdi-fullscreen-exit zmdi-hc-5x"></i> -->
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="black_bg">
+					<!-- Here the Kit progress bar -->
+					<audio controls preload="metadata" controlslist="nodownload" style="width:100%;margin:0;margin-bottom: -5px;">
+						<source src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Demo_chorus.ogg" type="audio/ogg">
+					</audio>
+				</section>
+				<h4 class="transaction_hard pl-1">課程標題</h4>
+				<!-- Nav tabs -->
+				<ul class="nav nav-pills nav-justified" role="tablist">
+					<li role="presentation" class="active"><a href="#A" aria-controls="home" role="tab" data-toggle="tab">討 論</a></li>
+					<!-- <li role="presentation"><a href="#B" aria-controls="profile" role="tab" data-toggle="tab">聊 天</a></li> -->
+					<li role="presentation"><a href="#C" aria-controls="messages" role="tab" data-toggle="tab">作 业</a></li>
+					<li role="presentation"><a href="#D" aria-controls="settings" role="tab" data-toggle="tab">说 明</a></li>
+				</ul>
+
+				<!-- Tab panes -->
+				<style>.tab-pane {padding:1em .5rem;}</style>
+				<article class="tab-content">
+					<section role="tabpanel" class="tab-pane fade in active" id="A">
+						<div id="ChatModal"></div>
+					</section>
+					<section role="tabpanel" class="tab-pane fade" id="B">
+						<div class="media">
+							<div class="media-left">
+								<a href="#">
+									<img class="media-object" src="assets/images/avatar/user_4.jpg">
+								</a>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">陳大強 <small class="text-muted">4月25日 12:06</small></h4>
+								<p>中在易任出星老年部黨流必經器運情費十如高。以回再減化定為食十時王？面看奇回教我談個業媽有加就會為見我。</p>
+							</div>
+						</div>
+						<div class="media">
+							<div class="media-left">
+								<a href="#">
+									<img class="media-object" src="assets/images/avatar/user_2.png">
+								</a>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">張立強 <small class="text-muted">4月25日 11:02</small></h4>
+								<p>發是是身外化型生告火朋指樓老產，產落型技長？</p>
+							</div>
+						</div>
+						<footer class="input-group" style="margin-top:2rem;">
+							<input type="text" class="form-control" placeholder="Messenger...">
+							<span class="input-group-btn">
+								<button class="btn btn-danger_" type="button"><i class="fa fa-chevron-right"></i></button>
+							</span>
+						</footer><!-- /input-group -->
+					</section>
+					<section role="tabpanel" class="tab-pane fade" id="C">
+						<ul class="list-group">
+							<li class="card list-group-item">
+								<h4><small class="pull-right">(问答)</small>題目</h4>
+								<time class="grey-lighter">yyyy/mm/dd</time>
+								<span class="green">狀態</span>
+								<hr/>
+								<p class="text-right"><button class="btn" onclick="location.href='p6.html'">檢視</button></p>
+							</li>
+							<li class="card list-group-item">
+								<h4><small class="pull-right">(單選)</small>題目</h4>
+								<!-- <time class="grey-lighter">yyyy/mm/dd</time>
+								<span class="green">狀態</span> -->
+								<hr/>
+								<p class="text-right"><button class="btn btn-danger" onclick="location.href='p6.html'">請作答</button></p>
+							</li>
+							<li class="card list-group-item">
+								<h4><small class="pull-right">(问答)</small>題目</h4>
+								<hr/>
+								<p class="text-right"><button class="btn btn-danger" onclick="location.href='p6.html'">請作答</button></p>
+							</li>
+						</ul>
+					</section>
+					<section role="tabpanel" class="tab-pane fade" id="D">
+
+						<div class="row__">
+							<h4>課程簡介</h4>
+							<p>【課程簡介】 xxxxxxxxx</p>
+							<div style="height:2em;"></div>
+							<h4>講員簡介</h4>
+							<div class="Introduction table-box card">
+								<section><img class="img-responsive" src="assets/images/item1.jpg"></section>
+								<section>
+									<h2 class="red" style="margin-botton:4rem;">趙大偉</h2>
+									<p class="fz12 grey">和君集团副总裁<br/>合夥人</p>
+								</section>
+							</div>
+							<p>【講員介紹】一鄉中成年死營保護說關無是因優委日有土：藝他告的大後如、細並育未年我一題長都上意會自樹不。子地消王，是什不主拿走進英孩育通；一坡紅，老民日細有自名一內一現運死，嗎林總壓一多……什再天的了太我是響！子理故東示於的是片打當靈成！生更感；園小求只。</p>
+							<div style="height:2em;"></div>
+							<h4 style="padding:.8rem 0;border-top:1px solid #e6e6e6;border-bottom:1px solid #e6e6e6;"><i class="fa fa-comments fz12 grey-lighter"></i> 課程評論 <small>會員評論 xxxx</small></h4>
+							<div class="media">
+								<div class="media-left">
+									<a href="#">
+										<img class="media-object" src="assets/images/avatar/user_4.jpg">
+									</a>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">陳大強 <small class="text-muted">4月25日 12:06</small></h4>
+									<p>中在易任出星老年部黨流必經器運情費十如高。以回再減化定為食十時王？面看奇回教我談個業媽有加就會為見我。</p>
+								</div>
+							</div>
+							<div class="media">
+								<div class="media-left">
+									<a href="#">
+										<img class="media-object" src="assets/images/avatar/user_2.png">
+									</a>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">張立強 <small class="text-muted">4月25日 11:02</small></h4>
+									<p>發是是身外化型生告火朋指樓老產，產落型技長？</p>
+								</div>
+							</div>
+							<footer class="input-group" style="margin-top:2rem;">
+								<input type="text" class="form-control" placeholder="Messenger...">
+								<span class="input-group-btn">
+									<button class="btn btn-danger_" type="button"><i class="fa fa-chevron-right"></i></button>
+								</span>
+							</footer><!-- /input-group -->
+						</div>
+
+					</section>
+
+				</article>
+			</div>
+
+		</article><!-- Layout Main aside End -->
+		
+		<!-- Layout Right aside Star -->
+		<aside class="col-md-3 col-sm-offset-1 hidden-xs hidden-sm">
+			<div style="height:2em;"></div>
+			<div id="Recommendations"></div>
+		</aside><!-- Layout Right aside End -->
+
+	</div><!-- /.container -->
+	
+	<!-- Search Modal -->
+	<div class="modal fade" id="SearchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"></div>
+
+	<!-- Comment Modal -->
+	<div class="modal fade" id="commentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"></div>
+
+	<div class="hidden-xs" style="height:6em;"></div>
+
+	<div class="container hidden">
+		<article id="footMenuBar"></article>
+	</div>
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<script src="assets/js/global_main.js" /></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		setTimeout(function(){
+			$("#footMenuBar .footMenu_btn").children('li:nth-child(3)').addClass("sel");
+			$(".navbar-nav:first-child").children('li:nth-child(3)').children('a').addClass("red");
+		},500);
+
+		// Show hide opacity black block
+		$(".black_inline").click(function() {
+			$(".black_inline,.toggle_playBtn").toggleClass('this_opacity');
+		});
+
+		// Paly & pause btn
+		$(".zmdi-play-circle").click(function() {
+			if ($(this).hasClass("if_play")){
+				$(this).removeClass('if_play');
+			}else{
+				$(this).addClass('if_play');
+				setTimeout(function(){
+					$(".black_inline,.toggle_playBtn").toggleClass('this_opacity');
+				},500);
+			};
+		});
+
+		// FullScreen btn
+		$(".zmdi-fullscreen").click(function() {
+			$(this).toggleClass('if_screen');
+			if ($(".zmdi-play-circle").hasClass("if_play")){
+				setTimeout(function(){
+					$(".black_inline,.toggle_playBtn").toggleClass('this_opacity');
+				},500);
+			};
+		});
+
+	});
+	</script>
+</body>
+</html>

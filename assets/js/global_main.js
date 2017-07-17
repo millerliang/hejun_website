@@ -390,28 +390,28 @@ $.each(item1_text,function(index,obj)
 
 // Product_item2 list Star //
 var item2_text =[{
-	item2_url:"#0",item2_type:"套餐",item2_price:"20",item2_buy:"1",item2_favorite:"1",item2_title:"課程標題",item2_img:"http://placehold.it/530x300/#666/e65d4f",item2_icoColor:"c3"
+	item2_url:"#0",item2_type:"套餐",item2_price:"20",item2_buy:"1",item2_favorite:"1",item2_title:"課程標題課程標題課程標題課程標題課程標題課程標題課程標題課程標題",item2_img:"http://lab.jyt-inc.com/rc/coursepic/20170713/1499926304987CAi4YvT.jpg",item2_icoColor:"c3"
 	},{
-	item2_url:"#0",item2_type:"體驗",item2_price:"25",item2_buy:"0",item2_favorite:"2",item2_title:"高考奋斗青春精彩未来",item2_img:"http://img95.699pic.com/photo/50040/6301.jpg_wh300.jpg",item2_icoColor:"c2"
+	item2_url:"#0",item2_type:"體驗",item2_price:"25",item2_buy:"0",item2_favorite:"2",item2_title:"高考奋斗青春精彩未来",item2_img:"http://lab.jyt-inc.com/rc/coursepic/20170713/1499926304987CAi4YvT.jpg",item2_icoColor:"c2"
 	},{
-	item2_url:"#0",item2_type:"單課",item2_price:"10",item2_buy:"1",item2_favorite:"3",item2_title:"課程標題 xxxx xxxx xxxx xxxx xxxx xxxx",item2_img:"http://placehold.it/530x300/#666/e65d4f",item2_icoColor:"c1"
+	item2_url:"#0",item2_type:"單課",item2_price:"10",item2_buy:"1",item2_favorite:"3",item2_title:"課程標題 xxxx xxxx xxxx xxxx xxxx xxxx",item2_img:"http://lab.jyt-inc.com/rc/coursepic/20170713/1499926304987CAi4YvT.jpg",item2_icoColor:"c1"
 	}
 ];
 $.each(item2_text,function(index,obj)
 {
 	list_item2 ='<section class="col-xs-6 col-sm-4">';
 	list_item2 +='<div class="card">';
-	list_item2 +='<section>';
+	list_item2 +='<section style="position: relative;">';
 	list_item2 +='<a class="price2_img" href="'+ obj.item2_url +'">';
 	list_item2 +='<img src="'+ obj.item2_img +'">';
 	list_item2 +='</a>';
-	list_item2 +='<ul class="table-box" style="padding:.8rem 0;">';
+	list_item2 +='<ul class="table-box" style="padding: .35rem 0;position: absolute;bottom: 0;color: white;background: rgba(0,0,0,.35);">';
 	list_item2 +='<li><span><i class="fa fa-shopping-cart"></i> 購買 '+ obj.item2_buy +'</span></li>';
 	list_item2 +='<li><span class="favorite"><i class="fa fa-star"></i> 收藏 '+ obj.item2_favorite +'</span></li>';
 	list_item2 +='</ul>';
 	list_item2 +='</section>';
 	list_item2 +='<section>';
-	list_item2 +='<h4 class="brt brb h3em" style="padding:.5rem 0 .5rem 1rem;">'+ obj.item2_title +'</h4>';
+	list_item2 +='<h5 class="brt brb h3em" style="padding:0 .1rem 0 .8rem;">'+ obj.item2_title +'</h5>';
 	list_item2 +='<ul class="table-box">';
 	list_item2 +='<li class="pl-1" style="text-align:left;"><span class="badge label_'+ obj.item2_icoColor +'">'+ obj.item2_type +'</span></li>';
 	list_item2 +='<li class="red pr-1" style="text-align:right;">$<span class="fz16">'+ obj.item2_price +'</span></li>';
@@ -534,13 +534,13 @@ $.each(index_text,function(index,obj)
 
 // btns toggleClass
 $('.favorite').click(function() {
-	if ($(this).hasClass('red')== true){
+	if ($(this).hasClass('blue')== true){
 		alert("Remove a favorite");
 	}
-	if ($(this).hasClass('red')== false){
+	if ($(this).hasClass('blue')== false){
 		alert("Add a favorite");
 	}
-	$(this).toggleClass('red');
+	$(this).toggleClass('blue');
 });
 
 // 按讚
