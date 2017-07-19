@@ -11,13 +11,26 @@
 	<link rel="stylesheet" href="assets/css/pushy-buttons.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/flaticon.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+	<style>
+	.ToggleHide .mt-5rem {display:none;}
+	.ShowHiddenInput .form-control {display:none;}
+	.ToggleHide .form-control {display:block;border-color: rgb(52, 152, 219);}
+	.ToggleHide .Voucher {top:.8em;right:1em;}
+	.type_btn {font-size:1.4em;margin:0 auto;display:block;padding:0;width:2.5rem;height:2.5rem;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;}
+	.type_btn.active{transform:rotate(-90deg);transition:.3s;color:white;background-color:#3498db;}
+	.Voucher{position: absolute;right:2em;}
+	.Voucher::before{content:"可抵用額 ¥";}
+	.PaymentDetails{border-bottom: dotted 1px #d8d8d8;padding-bottom:1rem;margin:0 0 .8em;}
+	.SubTitle{position:relative;top:-1.1rem;padding: .2rem .5rem .3rem;background-color:#3498db;color:white;-webkit-border-radius:0 0 3px 0;-moz-border-radius:0 0 3px 0;border-radius:0 0 3px 0;}
+	.SubTitle::after{content:"";width: 0;margin-left:.33em;height: 0;border-style: solid;border-width: 1.75em 1.2em 0 0;border-color: #3498db transparent transparent transparent;position:absolute;}
+	</style>
 </head>
 
 <body>
 	<!-- Fixed navbar -->
 	<nav id="navBar" class="navbar navbar-default navbar-SH navbar-fixed-top" role="navigation"></nav>
 
-	<div class="container">
+	<div id="app" class="container">
 		<div class="top-height">
 			<article class="table-box navbar-fixed-top top-Menu">
 				<section onclick="location.href='index.html'"><i class="fa fa-chevron-left"></i> back</section>
@@ -27,7 +40,7 @@
 		</div>
 
 		<!-- Layout Main aside Star -->
-		<article id="app" class="col-md-8">
+		<article class="col-md-8">
 
 			<div class="hidden-sm h1em"></div>
 			<ol class="breadcrumb hidden-xs hidden-sm row">
@@ -36,62 +49,65 @@
 				<li class="breadcrumb-item active">課程資訊</li>
 			</ol>
 
-			<section class="card" style="margin-bottom:.8rem!important;">
-				<div class="px-1 py-1 brb brt3">
-					<h4>烏克麗麗 免費體驗課程</h4>
-					<div><i class="fa fa-calendar-o"></i>&nbsp; <span class="grey"> 效期：</span><span>180天</span></div>
-					<div><span class="grey"><i class="fa fa-address-card-o"></i> 講員：</span> <span>OOO</span></div>
+			<section class="card py-1 brt3" style="margin-bottom:.8rem!important;">
+				<div class="px-1 brb">
+					<h4 class="PaymentDetails row">
+						<img style="max-width:80px;" class="pull-left mr-1" v-bind:src="imgUrl">
+						{{Title}}
+						</h4>
+					<div><i class="fa fa-calendar-o"></i>&nbsp; <span class="grey"> 效期：</span><span>{{ValidityPeriod}}天</span></div>
+					<div><span class="grey"><i class="fa fa-address-card-o"></i> 講員：</span> <span>{{Speaker}}</span></div>
 				</div>
 				<div class="table-box grey" style="padding:.5rem 0 .25rem;">
 					<div>
 						<span>定價:</span>
-						<s>¥ <span class="fz14">109</span></s>
+						<s>¥ <span class="fz14">{{OrderPrice}}</span></s>
 					</div>
 					<div>
 						<span>售價:</span>
-						<span class="red">¥ <span class="fz16">{{payCash}}</span></span>
+						¥ <span class="red"><span class="fz16">{{FinalPrice}}</span></span>
 					</div>
 				</div>
 			</section>
 			
 			<section class="row">
 				<div class="col-sm-6">
-					<article class="card brt3">
+					<article class="card brt3__">
 						<div class="py-1">
-							<h4 class="m-0 red brb px-1 pb-1">我的代幣</h4>
+							<h4 class="m-0 grey brb px-1 pb-1 fz13">{{textArry[0]}}</h4>
 							<section class="flex-box cube_btn">
 								<div class="text-center">
-									<span class="fz14 d-block">50</span>
-									<small class="grey d-block">代幣餘額</small>
+									<span class="fz14 d-block">{{CoinOver}}</span>
+									<small class="grey-lighter d-block">{{textArry[2]}}</small>
 								</div>
 								<div class="text-center">
 									<span class="fz14 d-block">50</span>
-									<small class="grey d-block">等值現金(1:1)</small>
+									<small class="grey-lighter d-block">{{textArry[3]}}</small>
 								</div>
 								<div class="text-center">
-									<span class="fz14 d-block">{{this_token}}</span>
-									<small class="grey d-block">可抵用額</small>
+									<span class="fz14 d-block">{{offsetToken}}</span>
+									<small class="grey-lighter d-block">{{textArry[4]}}</small>
 								</div>
 							</section>
 						</div>
 					</article>
 				</div>
 				<div class="col-sm-6">
-					<article class="card brt3">
+					<article class="card brt3__">
 						<div class="py-1">
-							<h4 class="m-0 red brb px-1 pb-1">我的積分</h4>
+							<h4 class="m-0 grey brb px-1 pb-1 fz13">{{textArry[1]}}</h4>
 							<section class="flex-box cube_btn">
 								<div class="text-center">
 									<span class="fz14 d-block">280</span>
-									<small class="grey d-block">積分餘額</small>
+									<small class="grey-lighter d-block">{{textArry[5]}}</small>
 								</div>
 								<div class="text-center">
 									<span class="fz14 d-block">10</span>
-									<small class="grey d-block">等值現金(1:30)</small>
+									<small class="grey-lighter d-block">{{textArry[6]}}</small>
 								</div>
 								<div class="text-center">
-									<span class="fz14 d-block">{{this_integral}}</span>
-									<small class="grey d-block">可抵用額</small>
+									<span class="fz14 d-block">{{offsetIntegral}}</span>
+									<small class="grey-lighter d-block">{{textArry[4]}}</small>
 								</div>
 							</section>
 						</div>
@@ -100,55 +116,59 @@
 			</section>
 			<div class="hidden-xs h1em"></div>
 
-			<section class="white_bg py-1 card">
+			<section class="white_bg py-1 card brt3" style="border-color:#3498db;">
+				<small class="SubTitle">折抵</small>
 				<form class="form-horizontal">
 					<!-- <h4 class="m-0 grey brb px-1 pb-2"><i class="fa fa-calculator"></i> 合計</h4> -->
-					<section class="form-group form-inline pt-1">
+					<section class="form-group form-inline">
 						<div class="h1em"></div>
-						<label for="" class="col-sm-2 col-xs-3 control-label grey">代幣抵現</label>
+						<label for="" class="col-sm-2 col-xs-3 control-label grey">{{textArry[7]}}</label>
 						<div class="ShowHiddenInput col-sm-8 col-xs-7">
 							<!-- <input type="range" value="0" data-min="0" data-max="50" class="rangeSlide"> -->
 							<!-- <input type="range" data-min="0" v-bind:data-max="offsetToken" class="rangeSlide form-control fz14" v-model.number="token"> -->
 							<div class="mt-5rem"><vue-slider v-bind:max="offsetToken" v-model.number="token"></vue-slider></div>
-							<input class="form-control fz13" type="text" v-model:value="token">
+							<small class="Voucher grey">{{this_token}}</small>
+							<input class="form-control fz13" type="number" v-model:value="token">
 						</div>
 						<div class="col-sm-1 col-xs-2">
-							<a class="type_btn btn btn-default btn-outline fz13" data-toggle="button" aria-pressed="false" autocomplete="off">&crarr;</a>
+							<a class="type_btn btn btn-default btn-outline" data-toggle="button" aria-pressed="false" autocomplete="off">&crarr;</a>
 						</div>
 					</section>
 					<div class="h1em hidden-sm"></div>
 
 					<section class="form-group form-inline pt-1">
-						<label for="" class="col-sm-2 col-xs-3 control-label grey">積分抵現</label>
+						<label for="" class="col-sm-2 col-xs-3 control-label grey">{{textArry[8]}}</label>
 						<div class="ShowHiddenInput col-sm-8 col-xs-7">
 							<!-- <input type="range" min="0" v-bind:data-max="offsetIntegral" class="rangeSlide form-control fz14" v-model.number="integral"> -->
 							<div class="mt-5rem"><vue-slider v-bind:max="offsetIntegral" v-model.number="integral"></vue-slider></div>
-							<input class="form-control fz13" type="text" v-model:value="integral">
+							<small class="Voucher grey">{{this_integral}}</small>
+							<input class="form-control fz13" type="number" v-model:value="integral">
 						</div>
 						<div class="col-sm-1 col-xs-2">
-							<a class="type_btn btn btn-default btn-outline fz13" data-toggle="button" aria-pressed="false" autocomplete="off">&crarr;</a>
+							<a class="type_btn btn btn-default btn-outline" data-toggle="button" aria-pressed="false" autocomplete="off">&crarr;</a>
 						</div>
 					</section>
 
 					<section class="form-group pt-1">
-						<label for="" class="col-sm-2 col-xs-3 control-label grey">課程售價</label>
+						<label for="" class="col-sm-2 col-xs-3 control-label grey">{{textArry[9]}}</label>
 						<div class="col-sm-9 col-xs-8">
-							¥ <span class="fz13">{{payCash}}</span> 元
+							¥ <span class="fz13">{{FinalPrice}}</span> 元 - 
+							<span class="grey">折抵</span> <span class="fz13 red">{{total}}</span> 元
 						</div>
 					</section>
 
-					<section class="form-group">
+					<!-- <section class="form-group">
 						<label for="" class="col-sm-2 control-label grey">&nbsp;</label>
 						<div class="col-sm-9 col-xs-10_ text-right">
 							<p><span class="grey">折抵</span> <span class="fz13">{{total}}</span> 元</p>
-							<label class="badge__ d-inline__ green_bg__ grey mr-1" v-if="cacl>=0">應付現金</label>
-							<label class="badge d-inline red_bg mr-1" v-if="cacl<=-1">低於售價</label>
-							¥ <span class="red fz16">{{cacl}}</span> 元
+							<label class="badge__ d-inline__ green_bg__ grey mr-1" v-if="PriceCacl>=0">應付現金</label>
+							<label class="badge d-inline red_bg mr-1" v-if="PriceCacl<=-1">低於售價</label>
+							¥ <span class="red fz16">{{PriceCacl}}</span> 元
 						</div>
-					</section>
+					</section> -->
 
 					<div class="h1em hidden-xs"></div>
-					<hr>
+					<!-- <hr>
 					<section class="form-group">
 						<div class="col-xs-6 col-sm-4 col-sm-offset-2">
 							<button type="button" class="pushy-btn btn-g btn-block btn--grey" onclick="history.go(-1)">&times; 取消訂購</button>
@@ -156,21 +176,38 @@
 							<div class="col-xs-6 col-sm-4">
 							<button class="pushy-btn b-lg btn-block" :class="{'btn--green':!isFormValid}" :disabled="!!isFormValid" type="submit"><i class="fa fa-wechat"></i> 微信付款</button>
 						</div>
-					</section>
+					</section> -->
 				</form>
 			</section><!-- /.section -->
 
 		</article><!-- Layout Main aside End -->
-		<style>
-			.ToggleHide .mt-5rem {display:none;}
-			.ShowHiddenInput .form-control {display:none;}
-			.ToggleHide .form-control {display:block;}
-		</style>
-		
+
 		<!-- Layout Right aside Star -->
-		<aside class="col-sm-3 col-sm-offset-1 hidden-xs hidden-sm">
-			<div style="height:2em;"></div>
-			<div id="Recommendations"></div>
+		<aside class="col-sm-12 col-md-4">
+			<div class="h5em hidden-xs hidden-sm"></div>
+			<section class="card px-1 py-1 brt3" style="border-color:#555;">
+				<h4 class="PaymentDetails fz12">{{PayTitle}} <i class="fa fa-print pull-right grey-lighter"></i></h4>
+				<section class="flex-box mb-1">
+					<div><small class="grey">{{textArry[7]}}：</small><span class="fz14">{{token}}</span></div>
+					<div><small class="grey">{{textArry[8]}}：</small><span class="fz14">{{integral}}</span></div>
+				</section>
+				<div class="h3em"></div>
+				<section class="text-right">
+					<p><span class="grey">共折抵</span> <span class="fz13">{{total}}</span> 元</p>
+					<label class="badge__ d-inline__ green_bg__ grey mr-1" v-if="PriceCacl>=0">{{textArry[10]}}</label>
+					<label class="badge d-inline red_bg mr-1" v-if="PriceCacl<=-1">低於售價</label>
+					¥ <span class="red fz16">{{PriceCacl}}</span> 元
+				</section>
+				<hr>
+				<div class="row">
+					<section class="col-xs-6">
+						<button type="button" class="pushy-btn btn-g btn-block btn--grey" onclick="history.go(-1)">&times; 取消訂購</button>
+					</section>
+					<section class="col-xs-6">
+						<button class="pushy-btn b-lg btn-block" :class="{'btn--green':!isFormValid}" :disabled="!!isFormValid" type="submit"><i class="fa fa-wechat"></i> 微信付款</button>
+					</section>
+				</div>
+			</section>
 		</aside><!-- Layout Right aside End -->
 
 	</div><!-- /.container -->
@@ -207,18 +244,38 @@
 		var app = new Vue({
 			el:'#app',
 			data:{
-				offsetToken: 50,
+				imgUrl: "http://img.accupass.com/userupload/b4e1fb446b0a45f8a8a424b3c250541c.jpg",
+				Title: "烏克麗麗 免費體驗課程",
+				PayTitle: "Payment Details",
+				ValidityPeriod: 180,
+				Speaker: "OOO",
+				OrderPrice: 109,
+				CoinOver: 50,
+				offsetToken: 55,
 				offsetIntegral: 270,
 				token: 0,
 				integral: 0,
-				payCash: 99
+				FinalPrice: 99,
+				textArry:[
+					'我的代幣',
+					'我的積分',
+					'代幣餘額',
+					'等值現金(1:1)',
+					'可抵用額',
+					'積分餘額',
+					'等值現金(1:30)',
+					'代幣抵現',
+					'積分抵現',
+					'課程售價',
+					'應付現金'
+				]
 			},
 			computed: {
 			  total: function () {
 				return this.token + this.integral
 			  },
-			  cacl: function () {
-				return this.payCash - this.total
+			  PriceCacl: function () {
+				return this.FinalPrice - this.total
 			  },
 			  this_token: function () {
 				return this.offsetToken - this.token
@@ -228,7 +285,7 @@
 			  },
 			  isFormValid: function(){
 				isFormValid: false;
-				return this.cacl <= -1;
+				return this.PriceCacl <= -1;
 			  }
 			},
 			components: {
