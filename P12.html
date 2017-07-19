@@ -30,6 +30,11 @@
 		<article id="app" class="col-md-8">
 
 			<div class="hidden-xs hidden-sm" style="height:2em;"></div>
+			<ol class="breadcrumb hidden-xs row">
+				<li class="breadcrumb-item"><a href="index.html"><i class="flaticon-home"></i> Home</a></li>
+				<li class="breadcrumb-item"><a href="#">課程</a></li>
+				<li class="breadcrumb-item active">課程資訊</li>
+			</ol>
 
 			<section class="card" style="margin-bottom:.8rem!important;">
 				<!-- <span class="label_mask red_bg">購買課程</span> -->
@@ -98,6 +103,7 @@
 					</article>
 				</div>
 			</section>
+			<div class="hidden-xs h1em"></div>
 
 			<section class="white_bg py-1 card">
 				<form class="form-horizontal">
@@ -122,7 +128,7 @@
 					<section class="form-group pt-1">
 						<label for="" class="col-sm-2 col-xs-3 control-label grey">課程售價</label>
 						<div class="col-sm-9 col-xs-8">
-							¥ <span class="fz13">{{payCash}}</span>
+							¥ <span class="fz13">{{payCash}}</span> 元
 						</div>
 					</section>
 
@@ -177,13 +183,10 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.js"></script>
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.js"></script> -->
 
 	<script src="https://nightcatsama.github.io/vue-slider-component/dist/index.js"></script>
-	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.2.0/css/ion.rangeSlider.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.2.0/css/ion.rangeSlider.skinFlat.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.2.0/js/ion.rangeSlider.min.js"></script> -->
 
 	<script src="https://unpkg.com/vue/dist/vue.js"></script>
 	<script src="assets/js/global_main.js"></script>
@@ -222,12 +225,6 @@
 				'vueSlider': window[ 'vue-slider-component' ],
 			}
 		});
-
-		// ion.rangeSlider.js
-		$(".rangeSlide").ionRangeSlider({
-            prefix: "¥",
-            grid: true
-        });
 		
 		setTimeout(function(){
 			$("#footMenuBar .footMenu_btn").children('li:nth-child(2)').addClass("sel");

@@ -30,6 +30,11 @@
 		<article id="app" class="col-md-8">
 
 			<div class="hidden-xs hidden-sm" style="height:2em;"></div>
+			<ol class="breadcrumb hidden-xs row">
+				<li class="breadcrumb-item"><a href="index.html"><i class="flaticon-home"></i> Home</a></li>
+				<li class="breadcrumb-item"><a href="#">課程</a></li>
+				<li class="breadcrumb-item active">課程資訊</li>
+			</ol>
 
 			<section class="price2 card" style="margin-bottom:.8rem!important;">
 				<!-- <span class="label_mask red_bg">購買課程</span> -->
@@ -39,10 +44,12 @@
 					<img src="http://img.accupass.com/userupload/b4e1fb446b0a45f8a8a424b3c250541c.jpg">
 				</div>
 				<div class="flex-box white_bg grey" style="padding:.5rem 0 .25rem;">
-					<div>
+					<!-- <div>
 						<span>效期:</span>
 						<span>180天</span>
-					</div>
+					</div> -->
+					<div></div>
+					<div></div>
 					<div></div>
 					<div></div>
 					<div class="hidden-xs"></div>
@@ -53,12 +60,16 @@
 						<s>¥ <span class="fz14">109</span></s>
 					</div>
 					<div>
-						<span class="badge label_c1 badge_for_course">售價 </span>&nbsp;
-						<span class="red">¥ <span class="fz16">{{payCash}}</span></span>
+						<span class="badge_ label_c1_ badge_for_course_">售價: ¥ </span>
+						<span class="red"><span class="fz16">{{payCash}}</span></span>
 					</div>
 				</div>
 				<div class="brt" style="padding:.3rem .8rem .1rem;">
-					<p><span class="grey"><i class="fa fa-address-card-o"></i> 講員：</span> <span>OOO</span></p>
+					<p>
+						<span class="grey"><i class="fa fa-calendar-o"></i> 效期：</span><span>180天</span>
+						<b class="grey-lighter fz13"> &nbsp;‧&nbsp; </b>
+						<span class="grey"><i class="fa fa-address-card-o"></i> 講員：</span> <span>OOO</span>
+					</p>
 				</div>
 			</section>
 			
@@ -106,31 +117,32 @@
 					</article>
 				</div>
 			</section>
+			<div class="hidden-xs h2em"></div>
 
 			<section class="white_bg py-1 card">
 				<form class="form-horizontal">
-					<!-- <h4 class="m-0 grey brb px-1 pb-2"><i class="fa fa-calculator"></i> 合計</h4> -->
+					<h4 class="m-0 grey brb px-1 pb-2 hidden-xs"><i class="fa fa-calculator"></i></h4>
 					<section class="form-group">
 						<label for="" class="col-sm-2 col-xs-3 control-label grey">代幣抵現</label>
 						<div class="col-sm-9 col-xs-8">
 							<!-- <input type="range" value="0" data-min="0" data-max="50" class="rangeSlide"> -->
-							<!-- <input type="range" data-min="0" v-bind:data-max="offsetToken" class="rangeSlide form-control fz14" v-model.number="token"> -->
-							<div class="mt-5rem"><vue-slider v-bind:max="offsetToken" v-model.number="token"></vue-slider></div>
+							<input type="range" data-min="0" v-bind:data-max="offsetToken" class="rangeSlide" v-model.number="token">
+							<!-- <div class="mt-5rem"><vue-slider v-bind:max="offsetToken" v-model.number="token"></vue-slider></div> -->
 						</div>
 					</section>
 
 					<section class="form-group">
 						<label for="" class="col-sm-2 col-xs-3 control-label grey">積分抵現</label>
 						<div class="col-sm-9 col-xs-8">
-							<!-- <input type="range" min="0" v-bind:data-max="offsetIntegral" class="rangeSlide form-control fz14" v-model.number="integral"> -->
-							<div class="mt-5rem"><vue-slider v-bind:max="offsetIntegral" v-model.number="integral"></vue-slider></div>
+							<input type="range" min="0" v-bind:max="offsetIntegral" data-min="0" v-bind:data-max="offsetIntegral" class="rangeSlide" v-model.number="integral">
+							<!-- <div class="mt-5rem"><vue-slider v-bind:max="offsetIntegral" v-model.number="integral"></vue-slider></div> -->
 						</div>
 					</section>
 
-					<section class="form-group">
-						<label for="" class="col-sm-2 col-xs-3 control-label grey">課程售價</label>
+					<section class="form-group pt-1">
+						<label for="" class="col-sm-2 col-xs-3 control-label grey"><small>課程售價</small></label>
 						<div class="col-sm-9 col-xs-8">
-							¥ <span class="fz14">{{payCash}}</span>
+							¥ <span class="fz14">{{payCash}}</span> 元 <input type="text" id="my111" value="">
 						</div>
 					</section>
 
@@ -188,10 +200,10 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.js"></script>
 
-	<script src="https://nightcatsama.github.io/vue-slider-component/dist/index.js"></script>
-	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.2.0/css/ion.rangeSlider.min.css">
+	<!-- <script src="https://nightcatsama.github.io/vue-slider-component/dist/index.js"></script> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.2.0/css/ion.rangeSlider.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.2.0/css/ion.rangeSlider.skinFlat.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.2.0/js/ion.rangeSlider.min.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.2.0/js/ion.rangeSlider.min.js"></script>
 
 	<script src="https://unpkg.com/vue/dist/vue.js"></script>
 	<script src="assets/js/global_main.js"></script>
@@ -226,15 +238,20 @@
 				return this.cacl <= -1;
 			  }
 			},
-			components: {
-				'vueSlider': window[ 'vue-slider-component' ],
-			}
+			//components: {
+			//	'vueSlider': window[ 'vue-slider-component' ],
+			//}
 		});
 
 		// ion.rangeSlider.js
 		$(".rangeSlide").ionRangeSlider({
-            prefix: "¥",
-            grid: true
+			prefix: "¥",
+            grid: true,
+			onChange: function(data) {
+				//console.log(data.from);
+				//this(data.from).set()this.payCash;
+				$(this).parent('div').child('input').val(data.from)
+			}
         });
 		
 		setTimeout(function(){
