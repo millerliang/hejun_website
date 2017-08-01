@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>website hejun page</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link rel="stylesheet" href="assets/css/pushy-buttons.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/flaticon.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+</head>
+
+<body>
+	<!-- Fixed navbar -->
+	<nav id="navBar" class="navbar navbar-default navbar-SH navbar-fixed-top" role="navigation"></nav>
+
+	<div class="container">
+		<div class="top-height">
+			<article class="table-box navbar-fixed-top top-Menu">
+				<section onclick="location.href='index.html'"><img class="m-logo" src="assets/images/hejun_logo.png"></section>
+				<!-- <section onclick="history.go(-1)"><i class="fa fa-chevron-left"></i> back</section> -->
+				<section>课程</section>
+				<section><a data-toggle="modal" data-target="#SearchModal" href="#"><i class="fa fa-search"></i> <!-- Search --></a>　</section>
+			</article>
+		</div>
+
+		<!-- Layout Main aside Star -->
+		<article class="col-md-8">
+
+			<div class="row">
+				<div class="hidden-xs hidden-sm" style="height:2em;"></div>
+				<ul class="nav nav-pills nav-justified" role="tablist">
+					<li role="presentation" class="active"><a href="#A" aria-controls="aa" role="tab" data-toggle="tab">线上单课</a></li>
+					<li role="presentation"><a href="#B" aria-controls="bb" role="tab" data-toggle="tab">线上套餐</a></li>
+					<li role="presentation"><a href="#C" aria-controls="cc" role="tab" data-toggle="tab">团购课程</a></li>
+				</ul>
+				<article class="tab-content row">
+					<div role="tabpanel" class="tab-pane fade in active" id="A">
+
+						<div class="row">
+							<section class="col-sm-6">
+								<div class="card price">
+									<header><h4>郭坤学：重新发现国学</h4></header>
+									<div class="row">
+										<div class="col-xs-5">
+											<img class="img-responsive" src="assets/images/item3.jpg">
+										</div>
+										<div class="col-xs-7">
+											<p><b class="fz12">课时：</b>1</p>
+											<p><b>效期：</b>50天（2017/5/20）</p>
+											<footer>
+												<span class="badge label_c1 white">單課</span>
+												<button class="pushy-btn btn--link grey" onclick="location.href='p3.html'"><i class="fa fa-eye"></i> 观看</button>
+												<!-- <button class="pushy-btn btn--link grey">說明</button> -->
+											</footer>
+										</div>
+									</div><!-- /.row -->
+								</div>
+							</section>
+							<section class="col-sm-6">
+								<div class="card price">
+									<header><h4>何梦杰：资本市场形势与机会识别</h4></header>
+									<div class="row">
+										<div class="col-xs-5">
+											<img class="img-responsive" src="assets/images/item2.jpg">
+										</div>
+										<div class="col-xs-7">
+											<p><b class="fz12">课时：</b>1</p>
+											<p><b>效期：</b>50天（2017/5/20）</p>
+											<footer>
+												<span class="badge label_c2 white">團購</span>
+												<button class="pushy-btn btn--link grey" onclick="location.href='p3.html'"><i class="fa fa-eye"></i> 观看</button>
+												<!-- <button class="pushy-btn btn--link grey">說明</button> -->
+											</footer>
+										</div>
+									</div><!-- /.row -->
+								</div>
+							</section>
+							<section class="col-sm-6">
+								<div class="card price">
+									<header><h4>xxxxxx</h4></header>
+									<div class="row">
+										<div class="col-xs-5">
+											<img class="img-responsive" src="https://dummyimage.com/400x300/60c1de/ffffff">
+										</div>
+										<div class="col-xs-7">
+											<p><b class="fz12">课时：</b>1</p>
+											<p><b>效期：</b>50天（2017/5/20）</p>
+											<footer>
+												<span class="badge label_c3 white">套餐</span>
+												<button class="pushy-btn btn--link grey" onclick="location.href='p3.html'"><i class="fa fa-eye"></i> 观看</button>
+												<!-- <button class="pushy-btn btn--link grey">說明</button> -->
+											</footer>
+										</div>
+									</div><!-- /.row -->
+								</div>
+							</section>
+						</div><!-- /.row -->
+
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="B">
+
+						<div class="row">
+							<section class="col-sm-6">
+								<div class="card price">
+									<header><h4><i class="fa fa-connectdevelop"></i> 和君企业在线班</h4></header>
+									<h4 class="white fz12 greyDark_bg" style="padding:.6rem;margin:0;">培养杰出的企业领袖，造就卓越的中国企业。</h4>
+									<div style="padding:.6rem 1em;">
+										<p><b>课时：</b>10堂</p>
+										<p><b>效期：</b>163天（2017/5/20）</p>
+										<p><b>价格：</b>￥<span class="fz14 red">5万元</span></p>
+										<footer class="text-right">
+											<button class="pushy-btn btn--sm btn--red" onclick="location.href='p3.html'"> 点击进入 》</button>
+										</footer>
+									</div>
+								</div>
+							</section>
+							<section class="col-sm-6">
+								<div class="card price">
+									<header><h4><i class="fa fa-building-o"></i> 企业家必修经典课程</h4></header>
+									<h4 class="white fz12 greyDark_bg" style="padding:.6rem;margin:0;">适用人群：企业中高层管理人员。</h4>
+									<div style="padding:.6rem 1em;">
+										<p><b>课时：</b>10堂</p>
+										<p><b>效期：</b>255天（2017/5/20）</p>
+										<p><b>价格：</b>￥<span class="fz14 red">5万元</span></p>
+										<footer class="text-right">
+											<button class="pushy-btn btn--sm btn--red" onclick="location.href='p3.html'"> 点击进入 》</button>
+										</footer>
+									</div>
+								</div>
+							</section>
+						</div><!-- /.row -->
+
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="C">
+
+						<div class="row">
+							<section class="col-sm-6">
+								<div class="card price">
+									<header><h4><i class="fa fa-connectdevelop"></i> 和君企业在线班</h4></header>
+									<h4 class="white fz12 greyDark_bg" style="padding:.6rem;margin:0;">培养杰出的企业领袖，造就卓越的中国企业。</h4>
+									<div style="padding:.6rem 1em;">
+										<p><b>课时：</b>10堂</p>
+										<p><b>效期：</b>163天（2017/5/20）</p>
+										<p><b>价格：</b>￥<span class="fz14 red">5万元</span></p>
+										<footer class="text-right">
+											<button class="pushy-btn btn--sm btn--red" onclick="location.href='p3.html'"> 点击进入 》</button>
+										</footer>
+									</div>
+								</div>
+							</section>
+							<section class="col-sm-6">
+								<div class="card price">
+									<header><h4><i class="fa fa-building-o"></i> 企业家必修经典课程</h4></header>
+									<h4 class="white fz12 greyDark_bg" style="padding:.6rem;margin:0;">适用人群：企业中高层管理人员。</h4>
+									<div style="padding:.6rem 1em;">
+										<p><b>课时：</b>10堂</p>
+										<p><b>效期：</b>255天（2017/5/20）</p>
+										<p><b>价格：</b>￥<span class="fz14 red">5万元</span></p>
+										<footer class="text-right">
+											<button class="pushy-btn btn--sm btn--red" onclick="location.href='p3.html'"> 点击进入 》</button>
+										</footer>
+									</div>
+								</div>
+							</section>
+						</div><!-- /.row -->
+
+					</div>
+				</article>
+
+			</div><!-- /.row -->
+
+		</article><!-- Layout Main aside End -->
+		
+		<!-- Layout Right aside Star -->
+		<article class="col-sm-3 col-sm-offset-1 hidden-xs hidden-sm">
+			<div style="height:2em;"></div>
+			<div id="Recommendations"></div>
+			<!-- <ul class="list-group">
+				<li class="list-group-item active__">
+					<span class="badge">0</span>
+					<span>this text</span>
+				</li>
+				<li class="list-group-item"><span class="badge">0</span>this text</li>
+				<li class="list-group-item"><span class="badge">0</span>this text</li>
+				<li class="list-group-item"><span class="badge">0</span>this text</li>
+				<li class="list-group-item"><span class="badge">0</span>this text</li>
+			</ul> -->
+			<img src="http://placehold.it/480x160/e2e2e2/333" class="img-thumbnail">
+			<hr/>
+			<img src="http://placehold.it/480x160/e2e2e2/333" class="img-thumbnail">
+		</article><!-- Layout Right aside End -->
+
+	</div><!-- /.container -->
+	
+	<!-- Search Modal -->
+	<div class="modal fade" id="SearchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"></div>
+
+	<!-- Comment Modal -->
+	<div class="modal fade" id="CommentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"></div>
+
+	<div style="height:6em;"></div>
+
+	<div class="container">
+		<!-- <footer>Footer bar</footer> -->
+		<article id="footMenuBar"></article>
+	</div>
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<script src="assets/js/global_main.js" /></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		setTimeout(function(){
+			$("#footMenuBar .footMenu_btn").children('li:nth-child(3)').addClass("sel");
+			$(".navbar-nav:first-child").children('li:nth-child(3)').children('a').addClass("red");
+		},500);
+	});
+	</script>
+</body>
+</html>

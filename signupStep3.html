@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>website index page</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link rel="stylesheet" href="assets/css/pushy-buttons.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/flaticon.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+</head>
+
+<body>
+	<!-- Fixed navbar -->
+	<nav id="navBar" class="navbar navbar-default navbar-SH navbar-fixed-top" role="navigation"></nav>
+
+	<div class="container">
+		<div class="top-height">
+			<article class="table-box navbar-fixed-top top-Menu">
+				<section onclick="location.href='index.html'"><img class="m-logo" src="assets/images/hejun_logo.png"></section>
+				<section>输入昵称、邮箱、密码 3/3</section>
+				<section><a data-toggle="modal" data-target="#SearchModal" href="#"><i class="fa fa-search"></i> <!-- Search --></a>　</section>
+			</article>
+		</div><!-- /.row -->
+
+		<div class="row">
+			<!-- Layout Right aside Star -->
+			<article class="col-md-10 col-md-offset-1 card">
+
+					<section id="SignUpApp" class="pb-2">
+						<center style="padding:3.5em 0 5em;">
+							<img class="img-responsive" src="assets/images/hejun_logo.png">
+							<p class="grey">Sign up form <span class="badge label_c1">Step 3/3</span></p>
+						</center>
+						<form id="signup-form" class="form-horizontal px-1">
+							<section class="form-group">
+								<label for="" class="col-sm-3 control-label grey-lighter_"><small class="hidden-xs_"><b class="red">*</b> Nick Name</small></label>
+								<div class="col-sm-8 pt-1">
+									<div class="input-group">
+										<input type="text" class="form-control input-lg" v-model="nickName" maxlength="15" id="" placeholder="输入昵称">
+										<span class="input-group-addon"><i :class="{hidden: nickCheck}" class="fa fa-check green"></i></span>
+									</div>
+									<small v-if="nickName.length > 1" :class="nickColor" class="pt-1 d-block">{{ nickName_msg }}</small>
+								</div>
+							</section>
+							<div class="h1em"></div>
+							<section class="form-group">
+								<label for="" class="col-sm-3 control-label grey-lighter_"><small class="hidden-xs_"><b class="red">*</b> E-Mail</small></label>
+								<div class="col-sm-8">
+									<div class="input-group">
+										<input type="email" class="form-control input-lg" v-model="email" id="" placeholder="输入邮箱">
+										<span class="input-group-addon"><i :class="{hidden: mailCheck}" class="fa fa-check green"></i></span>
+									</div>
+									<small class="grey">※ 您可以输入电子信箱以便日后查询密码。</small>
+									<small v-if="email.length > 1" :class="msgColor" class="pt-1 d-block">{{ email_msg }}</small>
+								</div>
+							</section>
+							<div class="h1em"></div>
+							<section class="form-group">
+								<label for="" class="col-sm-3 control-label grey-lighter_"><small class="hidden-xs_"><b class="red">*</b> Password</small></label>
+								<div class="col-sm-8">
+									<div class="input-group">
+										<input class="form-control input-lg" type="password" v-model="password1" placeholder="输入密码 (6 or more characters required)"/>
+										<label class="input-group-addon btn"><input class="ShowHidePW hidden" type="checkbox"><i class="fa fa-eye grey"></i> <small>SHOW</small></label>
+									</div>
+										<small class="pt-1 red d-block" v-show="msg1">{{ pwd1_msg }}</small>
+								</div>
+							</section>
+							<div class="h1em"></div>
+							<section class="form-group">
+								<label for="" class="col-sm-3 control-label grey-lighter_"><small class="hidden-xs_"><b class="red">*</b> Password confirm</small></label>
+								<div class="col-sm-8">
+									<div class="input-group">
+										<input class="form-control input-lg" type="password" v-model="password2" placeholder="Confirm again"/>
+										<label class="input-group-addon btn"><input class="ShowHidePW hidden" type="checkbox"><i class="fa fa-eye grey"></i> <small>SHOW</small></label>
+									</div>
+									<small class="pt-1 red d-block" v-show="msg2">{{ pwd2_msg }}</small>
+								</div>
+							</section>
+							<div class="h1em"></div>
+							<section class="form-group">
+								<label for="" class="col-sm-3 control-label grey-lighter_"><small class="hidden-xs_">Industry</small></label>
+								<div class="col-sm-8">
+									<select class="form-control input-lg" id="">
+										<option value="0">Select 行業欄</option>
+										<option value="1">作鸡</option>
+										<option value="2">吃鸡</option>
+										<option value="3">養鸡</option>
+										<option value="4">買鸡</option>
+										<option value="5">賣鸡</option>
+										<option value="6">小鸡鸡</option>
+										<option value="7">大鸡鸡</option>
+									</select>
+									<small class="pt-1 d-block grey">※ Select Your industry</small>
+								</div>
+							</section>
+							<div class="h4em"></div>
+							<section class="col-sm-offset-1">
+								<div class="row">
+									<div class="col-sm-6 col-sm-offset-3">
+										<button data-toggle="modal" data-target="#signUpModal" type__="submit" class="pushy-btn btn-lg btn-block btn--red" :class="{active: disable_btn}" :disabled="disable_btn" @click.prevent="on_signup()">完 成</button>
+									</div>
+								</div>
+							</section>
+						</form>
+					</section>
+
+			</article><!-- Layout Right aside End -->
+		</div><!-- /.row -->
+	</div><!-- /.container -->
+	
+	<!-- Search Modal -->
+	<div class="modal fade" id="SearchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"></div>
+
+	<!-- SignUp Modal -->
+	<div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" style="pointer-events:none">
+		<article class="modal-dialog" style="pointer-events:auto">
+			<section class="modal-content">
+				<header class="modal-header">
+					<!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button> -->
+					<h4 class="modal-title" id="signUpLabel">
+						<i class="fa fa-lightbulb-o"></i> 讯息提示
+					</h4>
+				</header>
+				<section class="modal-body">
+					<center style="margin:1em 0 3em;">
+						<img class="img-responsive" src="assets/images/hejun_logo.png">
+					</center>
+					<h3 class="red text-center py-1 mb-1">恭喜您，已成功注册成为本站的用户！</h3>
+					<p>在您建立帐户后，我们会将验证连结传送到您建立帐户时所使用的电子邮件地址。如果您未验证电子邮件地址，将无法使用某些功能。</p>
+					<p class="text-right grey pt-1">你可以继续以下操作！</p>
+				</section>
+				<footer class="modal-footer">
+					<button type="button" class="pushy-btn btn--grey" onclick="location.href='index.html'"><i class="flaticon-home"></i> Home</button>
+					<button type="button" class="pushy-btn btn--red" onclick="location.href='edit_user.html'"><i class="flaticon-profile-1"></i> 完善会员信息</button>
+				</footer>
+			</section>
+		</article>
+	</div>
+
+	<div class="h4em hidden-md hidden-lg"></div>
+
+	<!-- <div class="container">
+		<article id="footMenuBar"></article>
+	</div> -->
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<!-- Vue2.js link -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.js"></script>
+	<script src="assets/js/global_main.js" /></script>
+
+	<script>
+	new Vue({
+	  el: '#SignUpApp',
+	  data: {
+		nickName: '',
+		nickName_msg: '',
+		nickColor: '',
+		email: '',
+		email_msg: '',
+		password1: '',
+		pwd1_msg: '',
+		password2: '',
+		pwd2_msg: '',
+		disable_btn: true,
+		nickCheck: true,
+		mailCheck: true,
+		msg1: true,
+		msg2: true
+	  },
+	  methods: {
+		valid_nickName(nickName, msg) {
+		  if (this.nickName.length > 3) {
+			this[msg] = '※ 昵称可使用';
+			this.nickColor = 'text-info';
+			this.nickCheck = false;
+			return true;
+		  } else {
+			this[msg] = '※ 昵称限制 4 - 15 个字元，只能使用 a-z, A-Z, 0-9, 下引号(_), 引号(-) 与点(.)，设置的昵称可以有中文英文及数字，且头尾不可为符号。';
+			this.nickColor = 'red';
+			this.nickCheck = true;
+			return false;
+		  } 
+		},
+		valid_email(email, msg) {
+		  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+			this[msg] = '';
+			this.msgColor = 'green';
+			this.mailCheck = false;
+			return true;
+		  } else {
+			this[msg] = '※ Keep typing...waiting for a valid email';
+			this.msgColor = 'red';
+			this.mailCheck = true;
+			return false;
+		  } 
+		},
+		check_password_length(value, msg, total) {
+		  var length = value.length;
+		  var sum = 0;
+		  var display;
+		  
+		  sum = (total - length);
+		  
+		  switch(sum) {
+			case 0:
+			  display = '';
+			  break;
+			case 1:
+			  display = 'Keep going - just need '+ sum + ' more character.';
+			  break;
+			default:
+			  display = 'Keep going - just need '+ sum + ' more characters';
+		  }
+
+		  if(length >= total) {
+			this[msg] = '';
+			return true;
+		  } else {
+			this[msg] = display;
+			return false;
+		  }
+		},
+		check_passwords_match() {
+		  if(this.password1.length > 5 && this.password2.length > 5) {
+			  if(this.password2 != this.password1) {
+				this.pwd2_msg = 'Passwords do not match';
+				this.disable_btn = true;
+				return true;
+			  } else {
+				this.pwd2_msg = '';
+				this.disable_btn = false;
+				return false;
+			  }
+			}
+		},
+		on_signup() {
+			this.nickName = '';
+			this.email = '';
+			this.password1 = '';
+			this.password2 = '';
+			this.nickName_msg = '';
+			this.email_msg = '';
+			this.pwd1_msg = '';
+			this.pwd2_msg = '';
+			this.nickCheck = false;
+			this.msg1 = false;
+			this.msg2 = false;
+			//this.disable_btn = true;
+			//this.$emit('change_comp', 'results');
+		}
+	  },
+	  watch: {
+		nickName: function(value) {
+		  this.valid_nickName(value, 'nickName_msg');
+		},
+		email: function(value) {
+		  this.valid_email(value, 'email_msg');
+		},
+		password1: function(value) {
+		  if(this.check_password_length(value, 'pwd1_msg', 6)) {
+			this.check_passwords_match();
+		  }
+		},
+		password2: function(value) {
+		  if(this.check_password_length(value, 'pwd2_msg', 6)) {
+			this.check_passwords_match();
+		  }
+		}
+	  }
+
+	});
+
+	// Show & Hide Password
+	$(".ShowHidePW").change(function(){
+		if($(this).is(':checked')){
+			$(this).parents("div").children("input").attr("type","text");
+		}else{
+			$(this).parents("div").children("input").attr("type","password");
+		}
+	});
+
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>website index page</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link rel="stylesheet" href="assets/css/pushy-buttons.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/flaticon.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+</head>
+
+<body>
+	<!-- Fixed navbar -->
+	<nav id="navBar" class="navbar navbar-default navbar-SH navbar-fixed-top" role="navigation"></nav>
+
+	<div class="container">
+		<div class="top-height">
+			<article class="table-box navbar-fixed-top top-Menu">
+				<section onclick="location.href='index.html'"><img class="m-logo" src="assets/images/hejun_logo.png"></section>
+				<section>输入验证码 2/3</section>
+				<section><a data-toggle="modal" data-target="#SearchModal" href="#"><i class="fa fa-search"></i> <!-- Search --></a>　</section>
+			</article>
+		</div><!-- /.row -->
+
+		<div class="row">
+			<!-- Layout Right aside Star -->
+			<article id="SignUpStep2" class="col-md-10 col-md-offset-1 card">
+
+					<article class="px-1 pb-2">
+						<center style="padding:3.5em 0 5em;">
+							<img class="img-responsive" src="assets/images/hejun_logo.png">
+							<p class="grey">Sign Up form <span class="badge label_c1">Step 2/3</span></p>
+						</center>
+						<form class="form-horizontal">
+							<section class="form-group">
+								<label for="" class="col-sm-3 control-label"><small class="hidden-xs_">Verification code</small></label>
+								<div class="col-sm-8">
+									<!-- <input type="tel" class="form-control input-lg" maxlength="6" id="" placeholder="输入6位数码验证码"> -->
+									<input type="tel" class="form-control input-lg" v-model="verification" maxlength="6" id="" placeholder="输入6位数验证码">
+									<span v-if="verification.length > 1" :class="verificationColor" class="pt-1 d-block">{{ verification_msg }}</span>
+									<!-- <small class="pt-1 d-block grey">※ 由于手机验证码在短时间内重复发送，或是输入错误达设定上限，系统会暂时锁定一天，所以您若进行以上操作仍无法排除问题，请透过线上客服确认帐号验证状态喔！</small> -->
+								</div>
+							</section>
+						</form>
+						<div class="h2em"></div>
+						<section class="col-sm-offset-1">
+							<div class="row">
+								<div class="col-sm-6 col-sm-offset-3">
+									<!-- <button class="pushy-btn btn-lg btn-block btn--blue" onclick="NextPage()">下一步</button> -->
+									<button class="pushy-btn btn-lg btn-block btn--blue" :class="{active: disable_btn}" :disabled="disable_btn" onclick="NextPage()">验 证</button>
+								</div>
+								<div class="hidden-md h1em"></div>
+								<small class="col-xs-12 text-center pt-1 d-block grey">若于 5 分钟内未收到简讯或未登入成功，请重新注册取得简讯验证码，谢谢。</small>
+							</div>
+						</section>
+					</article>
+
+			</article><!-- Layout Right aside End -->
+		</div><!-- /.row -->
+	</div><!-- /.container -->
+	
+	<!-- Search Modal -->
+	<div class="modal fade" id="SearchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"></div>
+
+	<div class="h6em hidden-md hidden-lg"></div>
+
+	<!-- <div class="container">
+		<article id="footMenuBar"></article>
+	</div> -->
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<!-- Vue2.js link -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.js"></script>
+	<script src="assets/js/global_main.js" /></script>
+	<script>
+		function NextPage(){
+			location.href = "signupStep3.html";
+		}
+
+		new Vue({
+		  el: '#SignUpStep2',
+		  data: {
+			verification: '',
+			verification_msg: '',
+			verificationColor: '',
+			verificationCheck: true,
+			disable_btn: true
+		  },
+		  methods: {
+			valid_verification(verification, msg) {
+			  if (this.verification.length > 5) {
+				this[msg] = '※ 由于手机验证码在短时间内重复发送，或是输入错误达设定上限，系统会暂时锁定一天，所以您若进行以上操作仍无法排除问题，请透过线上客服确认帐号验证状态喔！';
+				this.verificationColor = 'text-info';
+				this.verificationCheck = false;
+				this.disable_btn = false;
+				return true;
+			  } else {
+				this[msg] = '※ 输入6位数验证码';
+				this.verificationColor = 'red';
+				this.verificationCheck = true;
+				this.disable_btn = true;
+				return false;
+			  } 
+			}
+		  },
+		  watch: {
+			verification: function(value) {
+			  this.valid_verification(value, 'verification_msg');
+			}
+		  }
+
+		});
+	</script>
+	
+</body>
+</html>

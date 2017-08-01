@@ -54,17 +54,25 @@
 					<header class="hidden-xs">
 						<h3><i class="flaticon-transfer"></i> 積分交易紀錄</h3>
 					</header>
-					<h4 class="transaction_hard text-center"><i class="fa fa-diamond"></i> 結餘積分 <b class="fz14 yellow">70</b></h4>
+					<section class="flex-box transaction_hard">
+						<div class="col">
+							<h4><i class="fa fa-diamond"></i> 結餘積分 <b class="fz14 yellow">70</b></h4>
+						</div>
+						<div class="col">
+							<h4><i class="fa fa-yen"></i> 結餘代幣 <b class="fz14 yellow">50</b></h4>
+						</div>
+					</section>
+					<br>
 					<article id="transaction_record">
 						<!-- <section class="card">
-							<ul class="row older transaction" style="padding:.5rem .35rem 0;">
-								<li class="col-sm-6 col-md-4"><b>交易日期</b>：YYYY/MM/DD</li>
-								<li class="col-sm-6 col-md-4"><b>積分單號</b>：P-017DHVU</li>
-								<li class="col-sm-6 col-md-4"><b>交易原因</b>：購買課程</li>
-								<li class="col-sm-6 col-md-4"><b>交易備註</b>：</li>
-								<li class="col-sm-6 col-md-4"><b>訂單編號</b>：O-kuei789</li>
+							<div class="pull-right pr-2"><span class="grey">積分</span> <b class="fz14 red">-35</b></div>
+							<ul class="row older transaction" style="padding:.8rem .35rem 0;">
+								<li class="col-sm-12"><small class="grey">交易日期：</small>YYYY/MM/DD</li>
+								<li class="col-sm-6"><small class="grey">交易原因：</small>購買課程</li>
+								<li class="col-sm-6"><small class="grey">交易單號：</small>P-017DHVU</li>
+								<li class="col-sm-6"><small class="grey">關連單號：</small>訂單編號 Oxxx111</li>
+								<li class="col-sm-12"><small class="grey">交易備註：</small></li>
 							</ul>
-							<p class="integral">交易積分 <b class="fz16 red">-700.00</b></p>
 						</section> -->
 					</article>
 				</div><!-- /.row -->
@@ -98,24 +106,35 @@
 	});
 
 	var data_text =[{
-		items_date:"YYYY/MM/DD",items_serial:"ENIDFRH124",items_order:"O-kuei789",items_reason:"購買課程",items_remarks:"",items_token:"-700.0"
+		items_date:"YYYY/MM/DD",items_serial:"P-017KSYU",items_order:"訂單編號 O-xxx111",items_reason:"購買課程",items_remarks:"",items_token:"-35"
 		},{
-		items_date:"2017/06/05",items_serial:"ENIDFRH124",items_order:"O-kuei788",items_reason:"購買課程",items_remarks:"",items_token:"-100.0"
+		items_date:"2017/06/05",items_serial:"T-017BHVX",items_order:"O-xxx111",items_reason:"購買課程",items_remarks:"",items_token:"-35"
 		},{
-		items_date:"2017/06/01",items_serial:"ENIDFRH078",items_order:"O-kuei787",items_reason:"購買課程",items_remarks:"",items_token:"-500.0"
+		items_date:"2017/06/01",items_serial:"T-017BHVX",items_order:"",items_reason:"課程卡儲值",items_remarks:"序號 SDSKIY",items_token:"+500"
+		},{
+		items_date:"2017/06/01",items_serial:"T-017BHVX",items_order:"O-xxx111",items_reason:"沙龍報名",items_remarks:"沙龍日 講員姓名 ex2017/08/31 1400 陳浩",items_token:"+500"
 		}
 	];
 	$.each(data_text,function(index,obj)
 	{
 		this_items ='<section class="card">';
-		this_items +='<ul class="row older transaction" style="padding:.5rem .35rem 0;">';
-		this_items +='<li class="col-sm-6 col-md-4"><b>交易日期</b>：'+ obj.items_date +'</li>';
-		this_items +='<li class="col-sm-6 col-md-4"><b>積分單號</b>：'+ obj.items_serial +'</li>';
-		this_items +='<li class="col-sm-6 col-md-4"><b>交易原因</b>：'+ obj.items_reason +'</li>';
-		this_items +='<li class="col-sm-6 col-md-4"><b>訂單編號</b>：'+ obj.items_order +'</li>';
-		this_items +='<li class="col-sm-6 col-md-4"><b>交易備註</b>：'+ obj.items_remarks +'</li>';
+		this_items +='<div class="pull-right pr-2"><span class="grey">積分</span> <b class="fz14 red">'+ obj.items_token +'</b></div>';
+		this_items +='<ul class="row older transaction" style="padding:.8rem .35rem 0;">';
+		this_items +='<li class="col-sm-12"><small class="grey">交易日期：</small>'+ obj.items_date +'</li>';
+		this_items +='<li class="col-sm-6"><small class="grey">交易原因：</small>'+ obj.items_reason +'</li>';
+		this_items +='<li class="col-sm-6"><small class="grey">交易單號：</small>'+ obj.items_serial +'</li>';
+		this_items +='<li class="col-sm-6"><small class="grey">關連單號：</small>'+ obj.items_order +'</li>';
+		this_items +='<li class="col-sm-12"><small class="grey">交易備註：</small>'+ obj.items_remarks +'</li>';
 		this_items +='</ul>';
-		this_items +='<p class="integral grey-lighter">交易積分 <i class="flaticon-transfer black"></i> <b class="fz16 red">'+ obj.items_token +'</b></p>';
+		
+		//this_items +='<ul class="row older transaction" style="padding:.5rem .35rem 0;">';
+		//this_items +='<li class="col-sm-6 col-md-4"><b>交易日期</b>：'+ obj.items_date +'</li>';
+		//this_items +='<li class="col-sm-6 col-md-4"><b>積分單號</b>：'+ obj.items_serial +'</li>';
+		//this_items +='<li class="col-sm-6 col-md-4"><b>交易原因</b>：'+ obj.items_reason +'</li>';
+		//this_items +='<li class="col-sm-6 col-md-4"><b>訂單編號</b>：'+ obj.items_order +'</li>';
+		//this_items +='<li class="col-sm-6 col-md-4"><b>交易備註</b>：'+ obj.items_remarks +'</li>';
+		//this_items +='</ul>';
+		//this_items +='<p class="integral grey-lighter">交易積分 <i class="flaticon-transfer black"></i> <b class="fz16 red">'+ obj.items_token +'</b></p>';
 		this_items +='</section>';
 		$('#transaction_record').append(this_items);
 	});

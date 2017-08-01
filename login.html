@@ -5,19 +5,30 @@
 	<title>website index page</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 	<link rel="stylesheet" href="assets/css/pushy-buttons.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/flaticon.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+	<style>
+	.error{color:red;}
+	label.error{color:red;font-size:small;position:absolute;white-space:nowrap;left:1rem;top:3.9em;
+	-webkit-animation: fadein .8s;
+       -moz-animation: fadein .8s;
+        -ms-animation: fadein .8s;
+         -o-animation: fadein .8s;
+            animation: fadein .8s;
+	}
+	#usPassword-error{left:0;}
+	</style>
 </head>
 
 <body>
 	<!-- Fixed navbar -->
 	<nav id="navBar" class="navbar navbar-default navbar-SH navbar-fixed-top" role="navigation"></nav>
 
-	<div class="container">
+	<main class="container">
 		<div class="top-height">
 			<article class="table-box navbar-fixed-top top-Menu">
 				<section onclick="location.href='index.html'"><img class="m-logo" src="assets/images/hejun_logo.png"></section>
@@ -28,102 +39,79 @@
 		</div><!-- /.row -->
 
 		<div class="row">
-			<!-- Layout Main aside Star -->
-			<aside class="col-sm-3 hidden hidden-xs hidden-sm" style="margin-top:1rem;">
-				<ul class="list-group">
-					<li class="list-group-item active"><a href="#">piguy</a></li>
-					<li class="list-group-item"><a href="#">text</a></li>
-					<li class="list-group-item"><a href="#">text</a></li>
-					<li class="list-group-item"><a href="#">text</a></li>
-				</ul>
-				<hr/>
-
-			</aside><!-- Layout Main aside End -->
-			
-			<!-- Layout Right aside Star -->
-			<article class="col-sm-12 col-md-8 col-sm-offset-2">
-
-				<div class="row">
-
-					<!-- <header>
-						<h3 class="well">module Login</h3>
-					</header> -->
-					<article class="col-sm-12">
-						<form class="form-horizontal">
-							<center style="margin:3.5em 0 6em;">
-								<img class="img-responsive" src="assets/images/hejun_logo.png">
-								<p class="grey">Login form</p>
-							</center>
-							<section class="form-group">
-								<label for="" class="col-sm-2 control-label">Account</label>
-								<div class="col-sm-10">
-									<input type="text" class="form-control" id="" placeholder="account name">
-								</div>
-							</section>
-							<div style="height:.6em;"></div>
-							<section class="form-group">
-								<label for="" class="col-sm-2 control-label">Password</label>
-								<div class="col-sm-10">
-									<input type="Password" class="form-control" id="" placeholder="Password">
-									<div class="checkbox_btn">
-										<input type="checkbox" id="remember" value="option1">
-										<label style="padding-left:0;" for="remember" class="checkbox-inline">Remember User ID</label>
-										<!-- <a data-toggle="modal" data-target="#ForgotModal" class="pull-right grey" style="margin-top:1.5em;" href="#0">Forgot?</a> -->
-									</div>
-								</div>
-							</section>
-							<!-- <div style="height:1em;"></div>
-							<section class="form-group">
-								<label for="" class="col-sm-2 control-label">Verification code</label>
-								<div class="col-sm-10 form-inline">
-									<img style="height:3.3em;margin: 0 1em 1em 0;;" src="http://images2015.cnblogs.com/blog/1100975/201702/1100975-20170215101353566-1365184605.jpg">
-									<input type="text" class="form-control" id="" placeholder="Enter code">
-								</div>
-							</section> -->
-							<div class="h2em"></div>
-							<section class="col-sm-offset-2">
-								<div class="row">
-									<div class="col-sm-6">
-										<button type="submit" class="pushy-btn btn-lg btn-block btn--red">Login</button>
-									</div>
-									<div class="col-sm-6">
-										<button onclick="location.href='sign_up.html'" style="margin-top:.6em;" type="button" class="pushy-btn btn-block btn--link grey">Register</button>
-									</div>
-								</div>
-								<!-- <center class="social-or-login">
-									<span>Or Login Using</span>
-								</center> -->
-							</section>
-							<!-- <section class="col-sm-offset-1 col-md-offset-2">
-								<center class="social-login">
-									<a class="btn btn-success">
-										<i class="fa fa-wechat fz14"></i>
-									</a>
-									<a class="btn btn-primary">
-										<i class="fa fa-facebook fz14"></i>
-									</a>
-									<a class="btn btn-info">
-										<i class="fa fa-twitter fz14"></i>
-									</a>
-									<a class="btn btn-danger">
-										<i class="fa fa-google-plus fz14"></i>
-									</a>
-								</center>
-							</section> -->
-							<div class="h3em"></div>
-						</form>
-					</article>
-					
-				</div><!-- /.row -->
-
-				<!-- <div class="h3em"></div>
-				<h4>LoginSecurity</h4>
-				<p>LoginSecurity is a lightweight password authorization plugin. You can optionally set a password each time you enter the server, adding a double layer of security to your account. The password is stored inside the configuration file, nobody else except the server owner can access or modify it.</p> -->
-
-			</article><!-- Layout Right aside End -->
+			<article class="col-md-10 col-md-offset-1 card">
+				<form id="loginForm" class="form-horizontal px-1">
+					<center style="padding:3.5em 0 6em;">
+						<img class="img-responsive" src="assets/images/hejun_logo.png">
+						<p class="grey">Login form</p>
+					</center>
+					<section class="form-group">
+						<label for="acName" class="col-sm-3 control-label">Account</label>
+						<div class="col-sm-8">
+							<input type="text" class="form-control input-lg" minlength="6" id="acName" name="acName" placeholder="mail or phone number" required>
+						</div>
+					</section>
+					<div class="h2em"></div>
+					<section class="form-group">
+						<label for="usPassword" class="col-sm-3 control-label">Password</label>
+						<div class="col-sm-8">
+							<div class="input-group mb-1">
+								<input class="form-control input-lg" type="password" minlength="6" id="usPassword" name="usPassword" placeholder="Password" required>
+								<label class="input-group-addon btn"><input class="ShowHidePW hidden" type="checkbox"><i class="fa fa-eye grey"></i> <small>SHOW</small></label>
+							</div>
+							<div class="checkbox_btn">
+								<input type="checkbox" id="remember" value="option1">
+								<label style="padding-left:0;" for="remember" class="checkbox-inline">Remember User ID</label>
+								<a data-toggle="modal" data-target="#ForgotModal" class="pull-right grey" style="margin-top:1.5em;" href="#0">Forgot?</a>
+							</div>
+						</div>
+					</section>
+					<div class="h2em"></div>
+					<section class="form-group">
+						<label for="vCode" class="col-sm-3 control-label">Verification code</label>
+						<div class="col-sm-9 form-inline">
+							<img style="height:3.3em;margin: 0 1em 1em 0;float:left;" src="http://images2015.cnblogs.com/blog/1100975/201702/1100975-20170215101353566-1365184605.jpg">
+							<input type="text" class="form-control input-lg" maxlength="8" minlength="4" id="vCode" name="vCode" placeholder="Enter code" required>
+						</div>
+					</section>
+					<div class="h2em"></div>
+					<section class="col-sm-offset-3">
+						<div class="row">
+							<div class="col-sm-6">
+								<!-- <button type="submit" class="pushy-btn btn-lg btn-block btn--red">Login</button> -->
+								<input class="pushy-btn btn-lg btn-block btn--red" type="submit" value="Login">
+							</div>
+							<div class="col-sm-6">
+								<button onclick="location.href='sign_up.html'" style="margin-top:.6em;" type="button" class="pushy-btn btn-block btn--link grey">Register</button>
+							</div>
+						</div>
+					</section>
+					<div class="h1em"></div>
+					<center class="social-or-login">
+						<span>Or Login Using</span>
+					</center>
+					<section class="col-sm-offset-1__ col-md-offset-2__">
+						<center class="social-login">
+							<a class="btn btn-success">
+								<i class="fa fa-wechat fz14"></i>
+							</a>
+							<a class="btn btn-primary">
+								<i class="fa fa-facebook fz14"></i>
+							</a>
+							<a class="btn btn-info">
+								<i class="fa fa-twitter fz14"></i>
+							</a>
+							<a class="btn btn-danger">
+								<i class="fa fa-google-plus fz14"></i>
+							</a>
+						</center>
+					</section>
+					<div class="h3em"></div>
+				</form>
+			</article>
 
 		</div><!-- /.row -->
-	</div><!-- /.container -->
+	</main><!-- /.container -->
 	
 	<!-- Search Modal -->
 	<div class="modal fade" id="SearchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"></div>
@@ -137,8 +125,12 @@
 	<!-- Bootstrap core JavaScript
     ================================================== -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<!-- jquery-validate plugin -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+	<!-- 本地化信息文件 -->
+	<script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/localization/messages_zh.js"></script>
 	<script src="assets/js/global_main.js" /></script>
 	<script type="text/javascript">
 	$(document).ready(function() {
@@ -146,8 +138,78 @@
 			//$("#footMenuBar .footMenu_btn").children('li:nth-child(1)').addClass("sel");
 			//$(".navbar-nav").children('li:nth-child(6)').children('a').addClass("red");
 		},500);
+
+		// Show & Hide Password
+		$(".ShowHidePW").change(function(){
+			if($(this).is(':checked')){
+				$(this).parents("div").children("input").attr("type","text");
+			}else{
+				$(this).parents("div").children("input").attr("type","password");
+			}
+		});
+
+		// user im login
+		$(".social-login a").click(function() {
+			alert("使用 Social IM 登錄!");
+		});
+
+		// validate form it is submitted
+		$.validator.setDefaults({
+			submitHandler: function() {
+				alert("這事件可被提交!");
+			}
+		});
+
+		$("#loginForm").validate({
+			messages: {
+				acName: {
+					required: "請輸入你的登入帳戶"
+				},
+				usPassword: {
+					required: "請輸入登入密碼"
+				},
+				vCode: {
+					required: "請輸入上方圖示驗證字元"
+				}
+			}
+		});
+		
+		// 本地化信息文件
+		//(function( factory ) {
+		//		if ( typeof define === "function" && define.amd ) {
+		//			define( ["jquery", "../jquery.validate"], factory );
+		//		} else {
+		//			factory( jQuery );
+		//		}
+		//}(function( $ ) {
+        //
+		//	/*
+		//	 * Translated default messages for the jQuery validation plugin.
+		//	 * Locale: ZH (Chinese, 中文 (Zhōngwén), 汉语, 漢語)
+		//	 */
+		//	$.extend($.validator.messages, {
+		//		required: "这是必填字段",
+		//		remote: "请修正此字段",
+		//		email: "请输入有效的电子邮件地址",
+		//		url: "请输入有效的网址",
+		//		date: "请输入有效的日期",
+		//		dateISO: "请输入有效的日期 (YYYY-MM-DD)",
+		//		number: "请输入有效的数字",
+		//		digits: "只能输入数字",
+		//		creditcard: "请输入有效的信用卡号码",
+		//		equalTo: "你的输入不相同",
+		//		extension: "请输入有效的后缀",
+		//		maxlength: $.validator.format("最多可以输入 {0} 个字符"),
+		//		minlength: $.validator.format("最少要输入 {0} 个字符"),
+		//		rangelength: $.validator.format("请输入长度在 {0} 到 {1} 之间的字符串"),
+		//		range: $.validator.format("请输入范围在 {0} 到 {1} 之间的数值"),
+		//		max: $.validator.format("请输入不大于 {0} 的数值"),
+		//		min: $.validator.format("请输入不小于 {0} 的数值")
+		//	});
+        //
+		//}));
 	});
 	</script>
-	
+
 </body>
 </html>

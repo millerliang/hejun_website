@@ -45,6 +45,7 @@ nav_item +='<ul class="dropdown-menu" role="menu">';
 //nav_item +='<li><a href="u6.html">好友邀請紀錄</a></li>';
 //nav_item +='<li><a href="u7.html">系統通知</a></li>';
 //nav_item +='<li><a href="u8.html">幫助中心</a></li>';
+nav_item +='<li><a href="signupStep1.html">SignUp Step3</a></li>';
 nav_item +='<li><a href="sign_up.html">Sign up</a></li>';
 nav_item +='<li class="divider"></li>';
 nav_item +='<li><a href="login.html">Sign in</a></li>';
@@ -276,7 +277,7 @@ $('#ChatModal').append(chat_item);
 var course_text =[{
 	c_url:"#0",c_comm:"0",c_title:"課程名稱 AAA",c_img:"http://placehold.it/720x480/dfdfdf/333"
 	},{                                                                   
-	c_url:"#0",c_comm:"1",c_title:"課程名稱 BBB",c_img:"http://www.mindriverad.com/images/case-online/rado/rado-3.jpg"
+	c_url:"#0",c_comm:"1",c_title:"課程名稱 BBB",c_img:"http://placehold.it/720x480/dfdfdf/333"
 	},{                                                                   
 	c_url:"#0",c_comm:"2",c_title:"課程名稱 CCC",c_img:"http://placehold.it/720x480/dfdfdf/333"
 	},{                                                                   
