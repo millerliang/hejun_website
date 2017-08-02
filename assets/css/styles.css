@@ -518,6 +518,11 @@ input.ShowHidePW:checked + i + small {display:inline-block;font-size: small;colo
 .pushy-btn.active[disabled]{background-color:#bbb;cursor: not-allowed;filter: alpha(opacity=65);-webkit-box-shadow: none;box-shadow: none;opacity: .65;}
 
 /* 2017-08-01 FadeIn */
+small.d-block,span.d-block{-webkit-animation: fadein .8s;
+-moz-animation: fadein .8s;
+-ms-animation: fadein .8s;
+ -o-animation: fadein .8s;
+	animation: fadein .8s;}
 @keyframes fadein {
 	from {opacity: 0;transform:translateY(-30%)}
 	to   {opacity: 1;transform:translateY(0%)}

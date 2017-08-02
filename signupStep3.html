@@ -66,7 +66,7 @@
 										<input class="form-control input-lg" type="password" v-model="password1" placeholder="输入密码 (6 or more characters required)"/>
 										<label class="input-group-addon btn"><input class="ShowHidePW hidden" type="checkbox"><i class="fa fa-eye grey"></i> <small>SHOW</small></label>
 									</div>
-										<small class="pt-1 red d-block" v-show="msg1">{{ pwd1_msg }}</small>
+									<small v-if="password1.length > 1" class="pt-1 red d-block" v-show="msg1">{{ pwd1_msg }}</small>
 								</div>
 							</section>
 							<div class="h1em"></div>
@@ -77,7 +77,7 @@
 										<input class="form-control input-lg" type="password" v-model="password2" placeholder="Confirm again"/>
 										<label class="input-group-addon btn"><input class="ShowHidePW hidden" type="checkbox"><i class="fa fa-eye grey"></i> <small>SHOW</small></label>
 									</div>
-									<small class="pt-1 red d-block" v-show="msg2">{{ pwd2_msg }}</small>
+									<small v-if="password2.length > 1" class="pt-1 red d-block" v-show="msg2">{{ pwd2_msg }}</small>
 								</div>
 							</section>
 							<div class="h1em"></div>
