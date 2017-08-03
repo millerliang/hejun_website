@@ -5,12 +5,17 @@
 	<title>website hejun page</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/pushy-buttons.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/flaticon.css" />
 	<link rel="stylesheet" href="https://idangero.us/swiper/dist/css/swiper.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+	<style>
+	.card a.imgDandi {height:200px;background-size:cover!important;}
+	@media (max-width: 991px) {.card a.imgDandi{height:280px;}}
+	@media (max-width: 414px) {.card a.imgDandi{height:155px;}}
+	</style>
 </head>
 
 <body>
@@ -22,15 +27,17 @@
 			<article class="table-box navbar-fixed-top top-Menu">
 				<section><img class="m-logo" src="assets/images/hejun_logo.png"></section>
 				<section>首頁</section>
-				<section><a data-toggle="modal" data-target="#SearchModal" href="#"><i class="fa fa-search"></i> Search</a>　</i></section>
+				<section><a data-toggle="modal" data-target="#SearchModal" href="#"><i class="fa fa-search"></i> <span class="hidden-xs">Search</span></a>　</i></section>
 			</article>
 		</div>
 
-		<article class="swiper-container">
+		<article id="swiperSlide" class="swiper-container">
 			<section class="swiper-wrapper">
-				<div class="swiper-slide"><img src="http://static.ehejun.com/upload/hejun/bannerImages/20161101/1477964907249406996.jpg"></div>
-				<div class="swiper-slide"><img src="http://static.ehejun.com/upload/hejun/bannerImages/20170220/1487578266938308136.png"></div>
-				<div class="swiper-slide"><img src="http://static.ehejun.com/upload/hejun/bannerImages/20151023/1445570500775813622.jpg"></div>
+				<div v-for="items in slideitems" class="swiper-slide"><a v-bind:href="items.imgLink"><img v-bind:src="items.urlLink"></a></div>
+				<!-- <div class="swiper-slide"><a href="http://s.ehejun.com/"><img src="http://static.ehejun.com/upload/hejun/bannerImages/20161101/1477964907249406996.jpg"></a></div>
+				<div class="swiper-slide"><a href="http://www.ehejun.com/front/couinfo/2267"><img src="http://static.ehejun.com/upload/hejun/bannerImages/20170220/1487578266938308136.png"></a></div>
+				<div class="swiper-slide"><a href=""><img src="http://static.ehejun.com/upload/hejun/bannerImages/20151023/1445570500775813622.jpg"></a></div>
+				<div class="swiper-slide"><a href=""><img src="http://static.ehejun.com/upload/hejun/bannerImages/20151023/1445570500775813622.jpg"></a></div> -->
 			</section>
 
 			<section class="swiper-pagination"></section>
@@ -46,9 +53,23 @@
 		<div class="row">
 			<!-- Layout Main aside Star -->
 			<article class="col-md-9">
-
+				<h4 class="pl-1 pb-1"><i class="fa fa-bookmark-o red"></i> 和君点滴</h4>
+				<div id="dandiItems" class="row">
+					<section v-for="dandi in dandiitems" class="col-xs-6 col-md-4">
+						<div class="card pb-1">
+							<a class="img_link imgDandi" :href="dandi.url" :style="{'background':'url('+ dandi.img +') no-repeat center center #ddd'}"></a>
+							<div class="caption">
+								<h5 class="h2em over-text">{{dandi.title}}</h5>
+								<small class="mb-1">{{dandi.subName}}</small>
+							</div>
+						</div>
+					</section>
+				</div>
+				<hr>
+				<h4 class="pl-1 pb-1"><i class="fa fa-bookmark-o red"></i> 和君小朋友</h4>
 				<div id="home_items" class="row"></div>
 				<hr>
+				<h4 class="pl-1 pb-1"><i class="fa fa-bookmark-o red"></i> 和君课程</h4>
 				<div class="row">
 					<div id="Product_item3"></div>
 				</div><!-- /.row -->
@@ -57,7 +78,7 @@
 
 			<!-- Layout Right aside Star -->
 			<aside class="col-sm-3 hidden-xs hidden-sm">
-				<ul class="list-group">
+				<!-- <ul class="list-group">
 					<li class="list-group-item active">
 						<span class="badge">0</span>
 						<span>this text</span>
@@ -66,15 +87,14 @@
 					<li class="list-group-item"><span class="badge">0</span>this text</li>
 					<li class="list-group-item"><span class="badge">0</span>this text</li>
 					<li class="list-group-item"><span class="badge">0</span>this text</li>
-				</ul>
-				<img src="http://www.xaxiaolu.com/mobile/images/12.jpg" class="img-thumbnail">
+				</ul> -->
+				<img src="http://www.xaxiaolu.com/mobile/images/12.jpg" class="img-thumbnail mb-1">
 				<img src="http://placehold.it/480x160/e2e2e2/333" class="img-thumbnail">
 				<div class="h1em"></div>
 				<center>
 					<img src="http://www.ellex.com/wp-content/uploads/sites/9/logo1.png" class="img-thumbnail_">&nbsp;
 					<img src="https://www.wiglewhiskey.com/sites/all/themes/wigle_foundation/images/logo.png" class="img-thumbnail_">&nbsp;
 					<img src="http://www.noaa.gov/sites/all/themes/custom/noaa/images/noaa_logo_circle_bw_72x72.svg" class="img-thumbnail_">
-					<!-- <img src="http://placehold.it/64x64/c0c9d8/333" class="img-thumbnail_"> -->
 				</center>
 			</aside><!-- Layout Right aside End -->
 
@@ -93,25 +113,58 @@
 	<!-- Bootstrap core JavaScript
     ================================================== -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://idangero.us/swiper/dist/js/swiper.min.js"></script>
+	<!-- Firebase database -->
+	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+	<!-- Vue2.js link -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.js"></script>
+	<!-- VueFire -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vuefire/1.4.3/vuefire.min.js"></script>
+
+	<script>
+		// Initialize Firebase
+		var config = {
+			databaseURL: "https://hejun-29013.firebaseio.com"
+		};
+		firebase.initializeApp(config);
+		var db = firebase.database();
+		var slideRef = db.ref('slideitems');
+		var dandiRef = db.ref('dandiitems');
+
+		var slideApp = new Vue({
+			el: '#swiperSlide',
+			firebase: {
+				slideitems: slideRef
+				//dandiitems: dandiRef
+			}
+		})
+
+		var dandiApp = new Vue({
+			el: '#dandiItems',
+			firebase: {
+				dandiitems: dandiRef
+			}
+		})
+	</script>
+
 	<script src="assets/js/global_main.js" /></script>
 	<script>
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        spaceBetween: 30
-    });
-    </script>
-	<script type="text/javascript">
 	$(document).ready(function() {
 		setTimeout(function(){
+			var swiper = new Swiper('.swiper-container', {
+				pagination: '.swiper-pagination',
+				paginationClickable: true,
+				nextButton: '.swiper-button-next',
+				prevButton: '.swiper-button-prev',
+				spaceBetween: 30
+			});
+
 			$("#footMenuBar .footMenu_btn").children('li:nth-child(1)').addClass("sel");
 			$(".navbar-nav:first-child").children('li:nth-child(1)').children('a').addClass("red");
-		},500);
+		},2000);
 	});
 	</script>
+
 </body>
 </html>

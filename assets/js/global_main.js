@@ -504,13 +504,9 @@ function activityPage(){
 var index_text =[{
 	item_title:"2014華航&菲觀局",item_date:"5月16日",item_loc:"長灘島",item_img:"http://www.cheesead.com.tw/w2/files/w03-4.jpg",item_url:"p1.html"
 	},{
-	item_title:"Title",item_date:"mm月dd日",item_loc:"Location",item_img:"http://placehold.it/720x480/#666/e65d4f",item_url:"p2.html"
+	item_title:"Title",item_date:"mm月dd日",item_loc:"Location",item_img:"http://placehold.it/720x480/#666/e65d4f",item_url:"p6.html"
 	},{
 	item_title:"瑞士雷达手表",item_date:"4月23日",item_loc:"瑞士",item_img:"http://www.mindriverad.com/images/case-online/rado/rado-3.jpg",item_url:"p3.html"
-	},{
-	item_title:"Title",item_date:"mm月dd日",item_loc:"Location",item_img:"http://placehold.it/720x480/#666/e65d4f",item_url:"p4.html"
-	},{
-	item_title:"Samsung Galaxy A8(2016) 評測",item_date:"10月26日",item_loc:"Taipei",item_img:"https://cdn0-techbang.pixfs.net/system/images/368769/original/b10abb16ffa2c7b7a32ab73ee5d828b2.jpg",item_url:"p5.html"
 	},{
 	item_title:"Title",item_date:"mm月dd日",item_loc:"Location",item_img:"http://placehold.it/720x480/#666/e65d4f",item_url:"p6.html"
 	}
@@ -520,9 +516,11 @@ $.each(index_text,function(index,obj)
 	index_items = '<section class="col-xs-6 col-md-4">';
 	index_items += '<div class="card">';
 	index_items += '<a class="img_link" href="'+ obj.item_url +'"><img src="'+ obj.item_img +'"></a>';
+	//index_items += '<a class="img_link" href="'+ obj.item_url +'" style="background: url('+ obj.item_img +') no-repeat center center #ddd;"></a>';
 	index_items += '<div class="caption">';
-	index_items += '<h4 class="h2em over-text">'+ obj.item_title +'</h4>';
+	index_items += '<h5 class="h2em over-text">'+ obj.item_title +'</h5>';
 	index_items += '<small class="mb-1">'+ obj.item_date +' ‧ '+ obj.item_loc +'</small>';
+	//index_items += '<small class="mb-1">'+ obj.item_loc +'</small>';
 	index_items += '<ul class="table-box brt" style="padding:.5rem 0;">';
 	index_items += '<li><button class="btn btn--link grey-lighter interested" role="button">有兴趣</button></li>';
 	index_items += '<li><button class="btn btn--link btn--grey grey-lighter join"><i class="fa fa-check"></i> 参加</button></li>';
