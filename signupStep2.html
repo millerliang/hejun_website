@@ -37,24 +37,24 @@
 						</center>
 						<form class="form-horizontal">
 							<section class="form-group">
-								<label for="" class="col-sm-3 control-label"><small class="hidden-xs_">Verification code</small></label>
+								<label for="" class="col-sm-3 control-label"><i class="fa fa-key"></i> <small>验证码</small></label>
 								<div class="col-sm-8">
 									<!-- <input type="tel" class="form-control input-lg" maxlength="6" id="" placeholder="输入6位数码验证码"> -->
-									<input type="tel" class="form-control input-lg" v-model="verification" maxlength="6" id="" placeholder="输入6位数验证码">
+									<input type="tel" class="form-control input-lg" v-model="verification" maxlength="6" id="" placeholder="请输入您收到的短信验证码">
 									<span v-if="verification.length > 1" :class="verificationColor" class="pt-1 d-block">{{ verification_msg }}</span>
 									<!-- <small class="pt-1 d-block grey">※ 由于手机验证码在短时间内重复发送，或是输入错误达设定上限，系统会暂时锁定一天，所以您若进行以上操作仍无法排除问题，请透过线上客服确认帐号验证状态喔！</small> -->
 								</div>
 							</section>
 						</form>
 						<div class="h2em"></div>
-						<section class="col-sm-offset-1">
+						<section class="col-sm-offset-1 pb-1">
 							<div class="row">
 								<div class="col-sm-6 col-sm-offset-3">
 									<!-- <button class="pushy-btn btn-lg btn-block btn--blue" onclick="NextPage()">下一步</button> -->
 									<button class="pushy-btn btn-lg btn-block btn--blue" :class="{active: disable_btn}" :disabled="disable_btn" onclick="NextPage()">验 证</button>
 								</div>
 								<div class="hidden-md h1em"></div>
-								<small class="col-xs-12 text-center pt-1 d-block grey">若于 5 分钟内未收到简讯或未登入成功，请重新注册取得简讯验证码，谢谢。</small>
+								<!-- <small class="col-xs-12 text-center pt-1 d-block grey">若于 5 分钟内未收到简讯或未登入成功，请重新注册取得简讯验证码，谢谢。</small> -->
 							</div>
 						</section>
 					</article>

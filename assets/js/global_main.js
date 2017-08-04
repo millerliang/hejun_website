@@ -13,18 +13,19 @@ nav_item +='<div id="navbar" class="navbar-collapse collapse">';
 nav_item +='<ul class="nav navbar-nav">';
 nav_item +='<li><a href="index.html"><i class="flaticon-home"></i> Home</a></li>';
 nav_item +='<li><a href="product.html"><i class="flaticon-circle"></i> 产品</a></li>';
-nav_item +='<li><a href="course.html"><i class="flaticon-calendar-1"></i> 课程</a></li>';
+nav_item +='<li><a href="course.html"><i class="flaticon-calendar-1"></i> 沙龍</a></li>';
 nav_item +='<li class="dropdown">';
 nav_item +='<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="flaticon-profile-1"></i> 会员 <span class="caret"></span></a>';
 nav_item +='<ul class="dropdown-menu" role="menu">';
-nav_item +='<li><a href="userprofile.html">會員檔案</a></li>';
-nav_item +='<li><a href="u2.html">課程訂單</a></li>';
-nav_item +='<li><a href="u3.html">積分交易紀錄</a></li>';
-nav_item +='<li><a href="u4.html">代幣交易紀錄</a></li>';
-nav_item +='<li><a href="u5.html">課程卡儲值紀錄</a></li>';
-nav_item +='<li><a href="u6.html">好友邀請紀錄</a></li>';
-nav_item +='<li><a href="u7.html">系統通知 <span class="badge pull-right red_bg_">3</span></a></li>';
-nav_item +='<li><a href="u8.html">幫助中心</a></li>';
+nav_item +='<li><a href="u1.html">我的课程</a></li>';
+nav_item +='<li><a href="u4.html">我的沙龙</a></li>';
+nav_item +='<li><a href="u3.html">我的余额</a></li>';
+nav_item +='<li><a href="u2.html">我的订单</a></li>';
+nav_item +='<li><a href="userprofile.html">我的资料</a></li>';
+nav_item +='<li><a href="u7.html">站内信 <span class="badge pull-right red_bg_">3</span></a></li>';
+nav_item +='<li><a href="u5.html">课程卡储值</a></li>';
+nav_item +='<li><a href="u6.html">好友邀请纪录</a></li>';
+nav_item +='<li><a href="u8.html">帮助中心</a></li>';
 nav_item +='<li class="divider"></li>';
 nav_item +='<li><a href="#0">Logout</a></li>';
 nav_item +='</ul>';
@@ -69,7 +70,7 @@ $('ul.nav li.dropdown').hover(function() {
 footMenu_item ='<ul class="table-box footMenu_btn">';
 footMenu_item +='<li><button class="btn btn-block btn-deault" onclick="indexPage()"><i class="flaticon-home"></i>首頁</button></li>';
 footMenu_item +='<li><button class="btn btn-block btn-deault" onclick="productPage()"><i class="flaticon-circle"></i>产品</button></li>';
-footMenu_item +='<li><button class="btn btn-block btn-deault" onclick="coursePage()"><i class="flaticon-calendar-1"></i>课程</button></li>';
+footMenu_item +='<li><button class="btn btn-block btn-deault" onclick="coursePage()"><i class="flaticon-calendar-1"></i>沙龙</button></li>';
 footMenu_item +='<li><button class="btn btn-block btn-deault" onclick="userPage()"><i class="flaticon-profile-1"></i>会员</button><span class="badge sye_msg">3</span></li>';
 footMenu_item +='<li><button class="btn btn-block btn-deault" onclick="activityPage()"><i class="flaticon-favorites"></i>活动</button></li>';
 footMenu_item +='</ul>';
@@ -432,7 +433,7 @@ var item3_text =[{
 	},{
 	item3_url:"p3.html",item3_type:"結帳88折",item3_price:"54",item3_buy:"1",item3_favorite:"3",item3_title:"互联网思维与中国企业创新转型",item3_img:"assets/images/item1.jpg",item3_icoColor:"c3"
 	},{
-	item3_url:"p4.html",item3_type:"限時促銷",item3_price:"0",item3_buy:"0",item3_favorite:"0",item3_title:"標題名稱",item3_img:"http://placehold.it/640x480/#666/e65d4f",item3_icoColor:"c1"
+	item3_url:"p4.html",item3_type:"限時促銷",item3_price:"0",item3_buy:"0",item3_favorite:"0",item3_title:"標題名稱",item3_img:"http://placehold.it/640x480/#666/e65d4f",item3_icoColor:"c1 hidden"
 	}
 ];
 $.each(item3_text,function(index,obj)

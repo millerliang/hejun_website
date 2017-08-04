@@ -37,12 +37,12 @@
 						</center>
 						<form class="form-horizontal">
 							<section class="form-group">
-								<label for="" class="col-sm-3 control-label"><small class="hidden-xs_">Phone Number</small></label>
+								<label for="" class="col-sm-3 control-label"><i class="fa fa-mobile"></i> <small>手 机</small></label>
 								<div class="col-sm-8 pt-1">
 									<!-- <input type="tel" class="form-control input-lg" id="" placeholder="输入手机号">
 									<small class="pt-1 d-block grey">※ Type your phone number.</small> -->
 									<div class="input-group">
-										<input type="tel" class="form-control input-lg" v-model="phone" maxlength="10" id="" placeholder="请输入手机号">
+										<input type="tel" class="form-control input-lg" v-model="phone" maxlength="10" id="" placeholder="请输入您的手机门号">
 										<span class="input-group-addon"><i :class="{hidden: phoneCheck}" class="fa fa-check green"></i></span>
 									</div>
 									<small v-if="phone.length > 1" :class="phoneColor" class="pt-1 d-block">{{ phone_msg }}</small>
@@ -50,12 +50,12 @@
 							</section>
 						</form>
 						<div class="h2em"></div>
-						<section class="col-sm-offset-1">
+						<section class="col-sm-offset-1 pb-1">
 							<div class="row">
 								<div class="col-sm-6 col-sm-offset-3">
 									<!-- <button class="pushy-btn btn-lg btn-block btn--blue" onclick="NextPage()">下一步</button> -->
 									<button class="pushy-btn btn-lg btn-block btn--blue" :class="{active: disable_btn}" :disabled="disable_btn" onclick="NextPage()">下一步</button>
-									<small class="text-center pt-1 d-block grey">请输入手机号</small>
+									<!-- <small class="text-center pt-1 d-block grey">请输入您的手机门号</small> -->
 								</div>
 							</div>
 						</section>
@@ -105,7 +105,7 @@
 				this.disable_btn = false;
 				return true;
 			  } else {
-				this[msg] = '※ 请输入行动电话注册';
+				this[msg] = '※ 请输入您的手机门号';
 				this.phoneColor = 'red';
 				this.phoneCheck = true;
 				this.disable_btn = true;

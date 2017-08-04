@@ -97,7 +97,7 @@ hr {border-color:#e0e0e0;}
 
 /* Fix bootstrap Style */
 .row {margin-right:-1.18rem;margin-left:-1.18rem;}
-.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {background-color: #333333;border-color: #fff;}
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {background-color: #e65d4f;border-color: #fff;}
 .list-group-item a {display:block;}
 .list-group-item a:hover {color: #e65d4f;}
 .list-group-item.active a, .list-group-item.active:focus a, .list-group-item.active:hover a {color:#fff;}
@@ -409,10 +409,10 @@ box-shadow___: 0 2px 2px rgba(0, 0, 0, .2);
 .lottery li a i {margin-top___:.25em;}
 .lottery li a i {font-size:3em;}
 
-.lottery li:nth-child(3) {border-right: 1px solid #ddd;}
-.lottery li:nth-child(6) {border-right: 1px solid #ddd;border-bottom: 1px solid #ddd;}
-.lottery li:nth-child(7) {border-bottom: 1px solid #ddd;}
-.lottery li:nth-child(8) {border-right: 1px solid #ddd;border-bottom: 1px solid #ddd;}
+.lottery li__:nth-child(3) {border-right: 1px solid #ddd;}
+.lottery li__:nth-child(6) {border-right: 1px solid #ddd;border-bottom: 1px solid #ddd;}
+.lottery li__:nth-child(7) {border-right: 1px solid #ddd;border-bottom: 1px solid #ddd;}
+.lottery li:nth-child(7),.lottery li:nth-child(8),.lottery li:nth-child(9) {border-bottom: 1px solid #ddd;}
 
 
 /* 課程 */
@@ -429,6 +429,16 @@ box-shadow___: 0 2px 2px rgba(0, 0, 0, .2);
 
 /* 交易紀錄 */
 .transaction_hard {color:#fff;padding:.6em;margin:0;
+	background-color:#004d66;
+	background: -moz-linear-gradient(45deg, #0e5692 0%, #070c4c 75%, #381a6b 100%); /* ff3.6+ */
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #0e5692), color-stop(75%, #070c4c), color-stop(100%, #381a6b)); /* safari4+,chrome */
+	background: -webkit-linear-gradient(45deg, #0e5692 0%, #070c4c 75%, #381a6b 100%); /* safari5.1+,chrome10+ */
+	background: -o-linear-gradient(45deg, #0e5692 0%, #070c4c 75%, #381a6b 100%); /* opera 11.10+ */
+	background: -ms-linear-gradient(45deg, #0e5692 0%, #070c4c 75%, #381a6b 100%); /* ie10+ */
+	background: linear-gradient(108deg, #6e9baf 0%, #6a7f9e 75%, #5f8ab5 100%); /* w3c */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444444', endColorstr='#000',GradientType=1 ); /* ie6-9 */
+}
+.transaction_hard---Default {color:#fff;padding:.6em;margin:0;
 	background-color:#111;
 	background: -moz-linear-gradient(45deg, #000 0%, #3B3B3B 75%, #444444 100%); /* ff3.6+ */
 	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #000), color-stop(75%, #3B3B3B), color-stop(100%, #444444)); /* safari4+,chrome */
@@ -457,7 +467,7 @@ border-bottom:1px solid #e5e5e5;
 .QA .answers {
 background-color: #fff;
 padding:0em .8em;
-margin: 5px 0;
+margin: -5px 0 8px;
 height: 0;
 overflow: hidden;
 z-index: -1;
@@ -471,7 +481,7 @@ transition: .7s ease;
 .QA input:checked ~ .answers{
 height: auto;
 opacity: 1;
-padding:.5em .8em;
+padding:.7em .8em .3em;
 }
 .QA .plus {
 position: absolute;

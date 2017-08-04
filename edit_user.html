@@ -21,7 +21,7 @@
 		<div class="top-height">
 			<article class="table-box navbar-fixed-top top-Menu">
 				<section onclick="history.go(-1)"><i class="fa fa-chevron-left"></i> back</section>
-				<section>會員檔案</section>
+				<section>我的资料</section>
 				<section><!-- <i class="fa fa-chevron-right"></i> --></section>
 			</article>
 		</div><!-- /.row -->
@@ -30,98 +30,181 @@
 			<!-- Layout Main aside Star -->
 			<aside class="col-sm-3 hidden-xs" style="margin-top:1rem;">
 				<ul class="list-group">
-					<li class="list-group-item active"><a href="userprofile.html">會員檔案</a></li>
-					<li class="list-group-item"><a href="u2.html">課程訂單</a></li>
-					<li class="list-group-item"><a href="u3.html">積分交易紀錄</a></li>
-					<li class="list-group-item"><a href="u4.html">代幣交易紀錄</a></li>
-					<li class="list-group-item"><a href="u5.html">課程卡儲值紀錄</a></li>
-					<li class="list-group-item"><a href="u6.html">好友邀請紀錄</a></li>
-					<li class="list-group-item"><span class="badge">0</span><a href="u7.html">系統通知</a></li>
-					<li class="list-group-item"><a href="u8.html">幫助中心</a></li>
+					<li class="list-group-item"><a href="u1.html">我的课程</a></li>
+					<li class="list-group-item"><a href="u4.html">我的沙龙</a></li>
+					<li class="list-group-item"><a href="u3.html">我的余额</a></li>
+					<li class="list-group-item"><a href="u2.html">我的订单</a></li>
+					<li class="list-group-item active"><a href="userprofile.html">我的资料</a></li>
+					<li class="list-group-item"><span class="badge">0</span><a href="u7.html">站内信</a></li>
+					<li class="list-group-item"><a href="u5.html">课程卡储值</a></li>
+					<li class="list-group-item"><a href="u6.html">好友邀请纪录</a></li>
+					<li class="list-group-item"><a href="u8.html">帮助中心</a></li>
 				</ul>
-				<hr/>
-				<img src="http://placehold.it/74x74/c0c9d8/333" class="img-thumbnail">
-				<img src="http://placehold.it/75x74/c0c9d8/333" class="img-thumbnail">
-				<img src="http://placehold.it/74x74/c0c9d8/333" class="img-thumbnail">
-				<hr/>
-
 			</aside><!-- Layout Main aside End -->
 			
 			<!-- Layout Right aside Star -->
 			<article class="col-sm-8">
 
-				<div class="row__">
+				<div class="card px-1 pb-1">
 					<!-- <header>
 						<h3 class="well"><i class="flaticon-profile"></i> Edit 會員檔案</h3>
 					</header> -->
 					<div class="h1em"></div>
-					<center>
-						<img class="img-thumbnail" src="assets/images/avatar/a6.jpg">
+					<center style="height:8.5em;margin:-1rem;padding:1.5rem 0;background: url('http://www.legvi.org/wp-content/uploads/layerslider/LayerSlider-5-responsive-demo-slider/bg4.jpg') no-repeat center top #dfe8ec;background-size:cover;">
+						<img style="position: absolute;transform: translateX(-50%);" class="img-thumbnail" src="assets/images/avatar/a6.jpg">
 						<!-- <i class="flaticon-profile fa-5x grey"></i> -->
 					</center>
-					<div class="h1em"></div>
+					<div class="h5em"></div>
 					<article class="col-sm-12__">
 						<form class="form-horizontal">
 							<section class="form-group">
-								<label for="" class="col-sm-2 control-label">會員編號</label>
-								<div class="col-sm-10">
-									<p class="form-control-static">Member serial number</p>
+								<label for="" class="col-sm-3 control-label grey">注册电邮</label>
+								<div class="col-sm-8">
+									<p class="form-control-static">abcdef@mail.com</p>
 								</div>
 							</section>
 							<section class="form-group">
-								<label for="" class="col-sm-2 control-label"><b class="red">*</b> 姓 名</label>
-								<div class="col-sm-10">
-									<input type="text" class="form-control" id="" placeholder="請填姓名">
+								<label for="" class="col-sm-3 control-label grey">注册手机</label>
+								<div class="col-sm-8">
+									<p class="form-control-static">0911222333</p>
 								</div>
 							</section>
 							<section class="form-group">
-								<label for="" class="col-sm-2 control-label">性 別</label>
-								<div class="col-sm-10 form-inline">
+								<label for="" class="col-sm-3 control-label grey">真实姓名</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" id="" placeholder="空白输入框">
+								</div>
+							</section>
+							<section class="form-group">
+								<label for="" class="col-sm-3 control-label grey">昵 称</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" id="" placeholder="空白输入框">
+								</div>
+							</section>
+							<section class="form-group">
+								<label for="" class="col-sm-3 control-label grey">生 日</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" id="" placeholder="空白输入框">
+								</div>
+							</section>
+							<section class="form-group">
+								<label for="" class="col-sm-3 control-label grey">QQ</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" id="" placeholder="会员QQ號">
+								</div>
+							</section>
+							<section class="form-group">
+								<label for="" class="col-sm-3 control-label grey">职 业</label>
+								<div class="col-sm-8 form-inline">
 									<select class="form-control">
-										<option>請選</option>
-										<option>女</option>
-										<option>男</option>
-										<option>Other</option>
+										<option>在职人员</option>
+										<option>在校人员</option>
 									</select>
 								</div>
 							</section>
 							<section class="form-group">
-								<label for="" class="col-sm-2 control-label">機 構</label>
-								<div class="col-sm-10">
-									<input type="text" class="form-control" id="" placeholder="請填機構">
+								<label for="" class="col-sm-3 control-label grey">职 位</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" id="" placeholder="职称全名">
 								</div>
 							</section>
 							<section class="form-group">
-								<label for="" class="col-sm-2 control-label">職 稱</label>
-								<div class="col-sm-10">
-									<input type="text" class="form-control" id="" placeholder="請填職稱">
+								<label for="" class="col-sm-3 control-label grey">单位名称</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" id="" placeholder="空白输入框">
 								</div>
 							</section>
 							<section class="form-group">
-								<label for="" class="col-sm-2 control-label">註冊電郵</label>
-								<div class="col-sm-10">
-									<input type="email" class="form-control" id="" placeholder="請填註冊電郵">
+								<label for="" class="col-sm-3 control-label grey">所属部门</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" id="" placeholder="空白输入框">
 								</div>
 							</section>
 							<section class="form-group">
-								<label for="" class="col-sm-2 control-label">註冊手機</label>
-								<div class="col-sm-10">
-									<input type="text" class="form-control" id="" placeholder="請填註冊手機">
+								<label for="" class="col-sm-3 control-label grey">所属行业</label>
+								<div class="col-sm-8 form-inline">
+									<select class="form-control">
+										<option>下拉选单</option>
+										<option>选单一</option>
+										<option>选单二</option>
+										<option>选单三</option>
+									</select>
 								</div>
 							</section>
 							<section class="form-group">
-								<label for="" class="col-sm-2 control-label">QQ號</label>
-								<div class="col-sm-10">
-									<input type="text" class="form-control" id="" placeholder="請填QQ號">
+								<label for="" class="col-sm-3 control-label grey">专业领域</label>
+								<div class="col-sm-8 form-inline">
+									<select class="form-control">
+										<option>下拉选单</option>
+										<option>选单A</option>
+										<option>选单B</option>
+										<option>选单C</option>
+									</select>
+								</div>
+							</section>
+							<section class="form-group">
+								<label for="" class="col-sm-3 control-label grey">学校名称</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" id="" placeholder="空白输入框">
+								</div>
+							</section>
+							<section class="form-group">
+								<label for="" class="col-sm-3 control-label grey">学 位</label>
+								<div class="col-sm-8 form-inline">
+									<select class="form-control">
+										<option>下拉选单</option>
+										<option>选单1</option>
+										<option>选单2</option>
+										<option>选单3</option>
+									</select>
+								</div>
+							</section>
+							<section class="form-group">
+								<label for="" class="col-sm-3 control-label grey">专业领域</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" id="" placeholder="空白输入框">
+								</div>
+							</section>
+							<section class="form-group">
+								<label for="" class="col-sm-3 control-label grey">是否为应届毕业生</label>
+								<div class="col-sm-8 form-inline">
+									<select class="form-control">
+										<option>请选择</option>
+										<option>是</option>
+										<option>否</option>
+									</select>
+								</div>
+							</section>
+							<section class="form-group">
+								<label for="" class="col-sm-3 control-label grey">求职方向</label>
+								<div class="col-sm-8 form-inline">
+									<select class="form-control">
+										<option>同所属行业下拉选单</option>
+										<option>选单一</option>
+										<option>选单二</option>
+										<option>选单三</option>
+									</select>
+								</div>
+							</section>
+							<section class="form-group">
+								<label for="" class="col-sm-3 control-label grey">积 分</label>
+								<div class="col-sm-8">
+									<h4 class="red">70</h4>
+								</div>
+							</section>
+							<section class="form-group">
+								<label for="" class="col-sm-3 control-label grey">等 级</label>
+								<div class="col-sm-8">
+									<p class="form-control-static">LV-1</p>
 								</div>
 							</section>
 							<hr/>
 							<section class="form-group">
 								<div class="col-xs-6 col-sm-4 col-sm-offset-2">
-									<button type="submit" class="pushy-btn btn-lg btn-block btn--grey" onclick="history.go(-1)">取消返回</button>
+									<button type="submit" class="pushy-btn btn-lg btn-block btn--grey" onclick="history.go(-1)">取 消</button>
 								</div>
 								<div class="col-xs-6 col-sm-4">
-									<button type="submit" class="pushy-btn btn-lg btn-block btn--red">儲存修改</button>
+									<button type="submit" class="pushy-btn btn-lg btn-block btn--red">送 出</button>
 								</div>
 							</section>
 						</form>

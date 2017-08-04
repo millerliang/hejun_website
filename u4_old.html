@@ -21,7 +21,7 @@
 		<div class="top-height">
 			<article class="table-box navbar-fixed-top top-Menu">
 				<section onclick="history.go(-1)"><i class="fa fa-chevron-left"></i> back</section>
-				<section>好友邀请纪录</section>
+				<section>代幣交易紀錄</section>
 				<section><!-- <i class="fa fa-chevron-right"></i> --></section>
 			</article>
 		</div><!-- /.row -->
@@ -30,16 +30,21 @@
 			<!-- Layout Main aside Star -->
 			<aside class="col-sm-3 hidden-xs" style="margin-top:1rem;">
 				<ul class="list-group">
-					<li class="list-group-item"><a href="u1.html">我的课程</a></li>
-					<li class="list-group-item"><a href="u4.html">我的沙龙</a></li>
-					<li class="list-group-item"><a href="u3.html">我的余额</a></li>
-					<li class="list-group-item"><a href="u2.html">我的订单</a></li>
-					<li class="list-group-item"><a href="userprofile.html">我的资料</a></li>
-					<li class="list-group-item"><span class="badge">0</span><a href="u7.html">站内信</a></li>
-					<li class="list-group-item"><a href="u5.html">课程卡储值</a></li>
-					<li class="list-group-item active"><a href="u6.html">好友邀请纪录</a></li>
-					<li class="list-group-item"><a href="u8.html">帮助中心</a></li>
+					<li class="list-group-item"><a href="userprofile.html">會員檔案</a></li>
+					<li class="list-group-item"><a href="u2.html">課程訂單</a></li>
+					<li class="list-group-item"><a href="u3.html">積分交易紀錄</a></li>
+					<li class="list-group-item active"><a href="u4.html"><i class="flaticon-changing-money"></i> 代幣交易紀錄</a></li>
+					<li class="list-group-item"><a href="u5.html">課程卡儲值紀錄</a></li>
+					<li class="list-group-item"><a href="u6.html">好友邀請紀錄</a></li>
+					<li class="list-group-item"><span class="badge">0</span><a href="u7.html">系統通知</a></li>
+					<li class="list-group-item"><a href="u8.html">幫助中心</a></li>
 				</ul>
+				<hr/>
+				<img src="http://placehold.it/74x74/c0c9d8/333" class="img-thumbnail">
+				<img src="http://placehold.it/75x74/c0c9d8/333" class="img-thumbnail">
+				<img src="http://placehold.it/74x74/c0c9d8/333" class="img-thumbnail">
+				<hr/>
+
 			</aside><!-- Layout Main aside End -->
 			
 			<!-- Layout Right aside Star -->
@@ -47,32 +52,30 @@
 
 				<div class="row">
 					<header class="hidden-xs">
-						<h3><i class="flaticon-handshake"></i> 好友邀请纪录</h3>
+						<h3><i class="flaticon-changing-money"></i> 代幣交易紀錄</h3>
 					</header>
-					<div class="h2em"></div>
-					<article>
+					<h4 class="transaction_hard text-center"><i class="fa fa-yen"></i> 結餘代幣 <b class="fz14 yellow">50</b></h4>
+					<article id="transaction_record">
 
-						<form class="form-horizontal">
-							<section class="form-group">
-								<div class="col-sm-8 col-lg-9">
-									<h3><span class="grey">我的推薦碼</span> <strong class="fz16">XCELIHH</strong></h3>
-								</div>
-								<div class="col-sm-4 col-lg-3">
-									<button type="submit" class="pushy-btn btn-lg btn-block btn--red"><i class="fa fa-share-alt"></i> 分享好友</button>
-								</div>
-							</section>
-						</form>
-						<div class="h3em"></div>
-						<section id="invitation_record">
-							<!-- <div class="card">
-								<ul class="row older transaction" style="padding:.5rem .35rem 0;">
-									<li class="col-sm-6 col-md-4"><b>註冊日期</b>：YYYY/MM/DD</li>
-									<li class="col-sm-6 col-md-4"><b>註冊會員</b>：會員姓名 XXXXX</li>
-									<li class="col-sm-6 col-md-4"><b>會員手機</b>：+886 918223XXX</li>
-								</ul>
-								<p class="integral">獲贈積分 <b class="fz16 red">+50</b></p>
-							</div> -->
+						<!-- <section class="card">
+							<ul class="row older grey transaction" style="padding:.5rem .35rem 0;">
+								<li class="col-sm-6"><b>交易日期</b>：YYYY/MM/DD</li>
+								<li class="col-sm-6"><b>代幣單號</b>：T-017BHVU</li>
+								<li class="col-sm-6"><b>交易原因</b>：購買課程</li>
+								<li class="col-sm-6"><b>交易備註</b>：</li>
+							</ul>
+							<p class="integral">交易代幣 <b class="fz16 red">-10</b></p>
 						</section>
+
+						<section class="card">
+							<ul class="row older grey transaction" style="padding:.5rem .35rem 0;">
+								<li class="col-sm-6"><b>交易日期</b>：YYYY/MM/DD</li>
+								<li class="col-sm-6"><b>代幣單號</b>：ENIDFRH124</li>
+								<li class="col-sm-6"><b>交易原因</b>：購買課程</li>
+								<li class="col-sm-6"><b>交易備註</b>：</li>
+							</ul>
+							<p class="integral">交易代幣 <b class="fz16 red">+100.0</b></p>
+						</section> -->
 
 					</article>
 				</div><!-- /.row -->
@@ -106,25 +109,27 @@
 	});
 
 	var data_text =[{
-		items_date:"YYYY/MM/DD",items_name:"會員姓名",items_phone:"0918223XXX",items_point:"50"
+		items_date:"YYYY/MM/DD",items_serial:"ENIDFRH124",items_reason:"購買課程",items_remarks:"..",items_token:"-10.0"
 		},{
-		items_date:"2017/06/06",items_name:"User Name",items_phone:"0918223333",items_point:"30"
+		items_date:"2017/06/05",items_serial:"ENIDFRH124",items_reason:"購買課程",items_remarks:"...",items_token:"+100.0"
 		},{
-		items_date:"2017/06/05",items_name:"Alex chang",items_phone:"0935111222",items_point:"20"
+		items_date:"2017/06/01",items_serial:"ENIDFRH078",items_reason:"購買課程",items_remarks:"....",items_token:"+50.0"
 		}
 	];
 	$.each(data_text,function(index,obj)
 	{
-		this_items ='<div class="card">';
+		this_items ='<section class="card">';
 		this_items +='<ul class="row older transaction" style="padding:.5rem .35rem 0;">';
-		this_items +='<li class="col-sm-6 col-md-4"><small class="grey">註冊日期</small>：'+ obj.items_date +'</li>';
-		this_items +='<li class="col-sm-6 col-md-4"><small class="grey">註冊會員</small>：'+ obj.items_name +'</li>';
-		this_items +='<li class="col-sm-6 col-md-4"><small class="grey">會員手機</small>：'+ obj.items_phone +'</li>';
+		this_items +='<li class="col-sm-6 col-md-4"><b>交易日期</b>：'+ obj.items_date +'</li>';
+		this_items +='<li class="col-sm-6 col-md-4"><b>代幣單號</b>：'+ obj.items_serial +'</li>';
+		this_items +='<li class="col-sm-6 col-md-4"><b>交易原因</b>：'+ obj.items_reason +'</li>';
+		this_items +='<li class="col-sm-6 col-md-4"><b>交易備註</b>：'+ obj.items_remarks +'</li>';
 		this_items +='</ul>';
-		this_items +='<p class="integral grey-lighter">獲贈積分 <b class="fz16 red">+'+ obj.items_point +'</b></p>';
-		this_items +='</div>';
-		$('#invitation_record').append(this_items);
+		this_items +='<p class="integral grey-lighter">交易代幣 <b class="fz16 red">'+ obj.items_token +'</b></p>';
+		this_items +='</section>';
+		$('#transaction_record').append(this_items);
 	});
 	</script>
+	
 </body>
 </html>

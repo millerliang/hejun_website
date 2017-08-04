@@ -21,7 +21,7 @@
 		<div class="top-height">
 			<article class="table-box navbar-fixed-top top-Menu">
 				<section onclick="history.go(-1)"><i class="fa fa-chevron-left"></i> back</section>
-				<section>課程訂單</section>
+				<section>我的订单</section>
 				<section><!-- <i class="fa fa-chevron-right"></i> --></section>
 			</article>
 		</div><!-- /.row -->
@@ -30,21 +30,16 @@
 			<!-- Layout Main aside Star -->
 			<aside class="col-sm-3 hidden-xs" style="margin-top:1rem;">
 				<ul class="list-group">
-					<li class="list-group-item"><a href="userprofile.html">會員檔案</a></li>
-					<li class="list-group-item active"><a href="u2.html"><i class="flaticon-calendar-1"></i> 課程訂單</a></li>
-					<li class="list-group-item"><a href="u3.html">積分交易紀錄</a></li>
-					<li class="list-group-item"><a href="u4.html">代幣交易紀錄</a></li>
-					<li class="list-group-item"><a href="u5.html">課程卡儲值紀錄</a></li>
-					<li class="list-group-item"><a href="u6.html">好友邀請紀錄</a></li>
-					<li class="list-group-item"><span class="badge">0</span><a href="u7.html">系統通知</a></li>
-					<li class="list-group-item"><a href="u8.html">幫助中心</a></li>
+					<li class="list-group-item"><a href="u1.html">我的课程</a></li>
+					<li class="list-group-item"><a href="u4.html">我的沙龙</a></li>
+					<li class="list-group-item"><a href="u3.html">我的余额</a></li>
+					<li class="list-group-item active"><a href="u2.html">我的订单</a></li>
+					<li class="list-group-item"><a href="userprofile.html">我的资料</a></li>
+					<li class="list-group-item"><span class="badge">0</span><a href="u7.html">站内信</a></li>
+					<li class="list-group-item"><a href="u5.html">课程卡储值</a></li>
+					<li class="list-group-item"><a href="u6.html">好友邀请纪录</a></li>
+					<li class="list-group-item"><a href="u8.html">帮助中心</a></li>
 				</ul>
-				<hr/>
-				<img src="http://placehold.it/74x74/c0c9d8/333" class="img-thumbnail">
-				<img src="http://placehold.it/75x74/c0c9d8/333" class="img-thumbnail">
-				<img src="http://placehold.it/74x74/c0c9d8/333" class="img-thumbnail">
-				<hr/>
-
 			</aside><!-- Layout Main aside End -->
 			
 			<!-- Layout Right aside Star -->
@@ -52,7 +47,7 @@
 
 				<div class="row">
 					<header class="hidden-xs">
-						<h3><i class="flaticon-calendar-1"></i> 課程訂單</h3>
+						<h3><i class="flaticon-folder"></i> 我的订单</h3>
 					</header>
 					<div class="h1em"></div>
 					<article id="course_order">
@@ -135,12 +130,12 @@
 		this_items ='<section class="card">';
 		this_items +='<h4 class="transaction_hard">【課程】XXXXXXXXXXXX</h4>';
 		this_items +='<ul class="row older transaction" style="padding:.5rem .35rem 0;">';
-		this_items +='<li class="col-sm-6 col-md-4"><b>訂單日期</b>：'+ obj.items_date +'</li>';
-		this_items +='<li class="col-sm-6 col-md-4"><b>訂單編號</b>：'+ obj.items_order +'</li>';
-		this_items +='<li class="col-sm-6 col-md-4"><b>付款方式</b>：'+ obj.items_reason +'</li>';
-		this_items +='<li class="col-sm-6 col-md-4"><b>促案編號</b>：'+ obj.items_promotion +'</li>';
-		this_items +='<li class="col-sm-6 col-md-4"><b>發票編號</b>：'+ obj.items_invoice +'</li>';
-		this_items +='<li class="col-xs-12"><b>訂單金額</b>：'+ obj.items_remarks +'</li>';
+		this_items +='<li class="col-sm-6 col-md-4"><small class="grey">訂單日期</small>：'+ obj.items_date +'</li>';
+		this_items +='<li class="col-sm-6 col-md-4"><small class="grey">訂單編號</small>：'+ obj.items_order +'</li>';
+		this_items +='<li class="col-sm-6 col-md-4"><small class="grey">付款方式</small>：'+ obj.items_reason +'</li>';
+		this_items +='<li class="col-sm-6 col-md-4"><small class="grey">促案編號</small>：'+ obj.items_promotion +'</li>';
+		this_items +='<li class="col-sm-6 col-md-4"><small class="grey">發票編號</small>：'+ obj.items_invoice +'</li>';
+		this_items +='<li class="col-xs-12"><small class="grey">訂單金額</small>：'+ obj.items_remarks +'</li>';
 		this_items +='</ul>';
 		this_items +='<p class="integral grey-lighter">交易積分 $ <b class="fz16 red">'+ obj.items_token +'</b></p>';
 		this_items +='<ul class="table-box infomaction grey_bg">';

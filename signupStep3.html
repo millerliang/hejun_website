@@ -37,7 +37,7 @@
 						</center>
 						<form id="signup-form" class="form-horizontal px-1">
 							<section class="form-group">
-								<label for="" class="col-sm-3 control-label grey-lighter_"><small class="hidden-xs_"><b class="red">*</b> Nick Name</small></label>
+								<label for="" class="col-sm-3 control-label grey-lighter_"><small><b class="red">*</b> 昵 称</small></label>
 								<div class="col-sm-8 pt-1">
 									<div class="input-group">
 										<input type="text" class="form-control input-lg" v-model="nickName" maxlength="15" id="" placeholder="输入昵称">
@@ -48,10 +48,10 @@
 							</section>
 							<div class="h1em"></div>
 							<section class="form-group">
-								<label for="" class="col-sm-3 control-label grey-lighter_"><small class="hidden-xs_"><b class="red">*</b> E-Mail</small></label>
+								<label for="" class="col-sm-3 control-label grey-lighter_"><small class="hidden-xs_"><b class="red">*</b> 邮 箱</small></label>
 								<div class="col-sm-8">
 									<div class="input-group">
-										<input type="email" class="form-control input-lg" v-model="email" id="" placeholder="输入邮箱">
+										<input type="email" class="form-control input-lg" v-model="email" id="" placeholder="请输入邮箱">
 										<span class="input-group-addon"><i :class="{hidden: mailCheck}" class="fa fa-check green"></i></span>
 									</div>
 									<small class="grey">※ 您可以输入电子信箱以便日后查询密码。</small>
@@ -60,21 +60,22 @@
 							</section>
 							<div class="h1em"></div>
 							<section class="form-group">
-								<label for="" class="col-sm-3 control-label grey-lighter_"><small class="hidden-xs_"><b class="red">*</b> Password</small></label>
+								<label for="" class="col-sm-3 control-label grey-lighter_"><small class="hidden-xs_"><b class="red">*</b> 登入密码设定</small></label>
 								<div class="col-sm-8">
 									<div class="input-group">
-										<input class="form-control input-lg" type="password" v-model="password1" placeholder="输入密码 (6 or more characters required)"/>
+										<input class="form-control input-lg" type="password" v-model="password1" placeholder="请输入登入密码"/>
 										<label class="input-group-addon btn"><input class="ShowHidePW hidden" type="checkbox"><i class="fa fa-eye grey"></i> <small>SHOW</small></label>
 									</div>
+									<small class="grey">※ 请设定8为英数字的登入密码，英文无区分大小写</small>
 									<small v-if="password1.length > 1" class="pt-1 red d-block" v-show="msg1">{{ pwd1_msg }}</small>
 								</div>
 							</section>
 							<div class="h1em"></div>
 							<section class="form-group">
-								<label for="" class="col-sm-3 control-label grey-lighter_"><small class="hidden-xs_"><b class="red">*</b> Password confirm</small></label>
+								<label for="" class="col-sm-3 control-label grey-lighter_"><small class="hidden-xs_"><b class="red">*</b> 再次填写登入密码</small></label>
 								<div class="col-sm-8">
 									<div class="input-group">
-										<input class="form-control input-lg" type="password" v-model="password2" placeholder="Confirm again"/>
+										<input class="form-control input-lg" type="password" v-model="password2" placeholder="请再次填写上栏的密码"/>
 										<label class="input-group-addon btn"><input class="ShowHidePW hidden" type="checkbox"><i class="fa fa-eye grey"></i> <small>SHOW</small></label>
 									</div>
 									<small v-if="password2.length > 1" class="pt-1 red d-block" v-show="msg2">{{ pwd2_msg }}</small>
@@ -82,10 +83,10 @@
 							</section>
 							<div class="h1em"></div>
 							<section class="form-group">
-								<label for="" class="col-sm-3 control-label grey-lighter_"><small class="hidden-xs_">Industry</small></label>
+								<label for="" class="col-sm-3 control-label grey-lighter_"><small class="hidden-xs_">行业栏</small></label>
 								<div class="col-sm-8">
 									<select class="form-control input-lg" id="">
-										<option value="0">Select 行業欄</option>
+										<option value="0">行业栏</option>
 										<option value="1">作鸡</option>
 										<option value="2">吃鸡</option>
 										<option value="3">養鸡</option>
@@ -198,7 +199,7 @@
 			this.mailCheck = false;
 			return true;
 		  } else {
-			this[msg] = '※ Keep typing...waiting for a valid email';
+			this[msg] = '※ 请输入正确邮箱';
 			this.msgColor = 'red';
 			this.mailCheck = true;
 			return false;
@@ -231,9 +232,9 @@
 		  }
 		},
 		check_passwords_match() {
-		  if(this.password1.length > 5 && this.password2.length > 5) {
+		  if(this.password1.length > 7 && this.password2.length > 7) {
 			  if(this.password2 != this.password1) {
-				this.pwd2_msg = 'Passwords do not match';
+				this.pwd2_msg = '※ 两次密码不相符';
 				this.disable_btn = true;
 				return true;
 			  } else {
@@ -267,12 +268,12 @@
 		  this.valid_email(value, 'email_msg');
 		},
 		password1: function(value) {
-		  if(this.check_password_length(value, 'pwd1_msg', 6)) {
+		  if(this.check_password_length(value, 'pwd1_msg', 8)) {
 			this.check_passwords_match();
 		  }
 		},
 		password2: function(value) {
-		  if(this.check_password_length(value, 'pwd2_msg', 6)) {
+		  if(this.check_password_length(value, 'pwd2_msg', 8)) {
 			this.check_passwords_match();
 		  }
 		}
