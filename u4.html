@@ -11,47 +11,6 @@
 	<link rel="stylesheet" href="assets/css/pushy-buttons.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/flaticon.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
-	<style>
-.yearTitle {color:#d5d5d5;}
-.timeline {background: white;padding:3rem 1rem 2rem .5rem;position: relative;
-__box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);}
-.timeline:before {content: '';position: absolute;top: 0px;left: calc(15% + .55rem);bottom: 0px;width: .3rem;background: #ddd;}
-.timeline:after {content: "";display: table;clear: both;}
-.entry {clear: both;text-align: left;position: relative;}
-
-.entry .date {
-	float: left;
-    width: 15%;
-    text-align: center;
-    position: relative;
-}
-.entry .date:before {content: '';position: absolute;width:13px;height:13px;border: 2px solid #fff;background-color: #e65d4f;border-radius: 100%;top: 15%;right:-.95rem;z-index: 99;}
-
-.entry .date dl {max-width:80%;margin:0 auto;background-color:white;border:1px solid rgba(0,0,0,.12);}
-.entry .date dt {font-size: x-large;color:#666;padding:.2rem 0;}
-.entry .date dd {font-size: small;background-color:#aaa;color:white;padding:.1rem 0;}
-.entry .date dd.active {background-color:#e65d4f;}
-.entry .date dd.over {background-color:#ddd;}
-
-.entry .date h2 {margin: 0;padding:0;}
-.entry .date p {margin: 0;font-size: 100%;}
-
-.entry .body {margin: 0 0 4em;float: right;width: 80%;}
-.entry .body h4 {margin:.5rem 0;color:#e65d4f;}
-.entry .body p {
-  line-height: 1.4em;
-}
-
-.entry .body ul {
-  color: #aaa;
-  padding-left: 0;
-  list-style-type: none;
-}
-.entry .body ul li:before {
-  content: "–";
-  margin-right: .5em;
-}
-</style>
 </head>
 
 <body>
@@ -69,7 +28,7 @@ __box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);}
 
 		<div class="row">
 			<!-- Layout Main aside Star -->
-			<aside class="col-sm-3 hidden-xs" style="margin-top:1rem;">
+			<aside class="col-sm-3 hidden-xs hidden-sm" style="margin-top:1rem;">
 				<ul class="list-group">
 					<li class="list-group-item"><a href="u1.html">我的课程</a></li>
 					<li class="list-group-item active"><a href="u4.html">我的沙龙</a></li>
@@ -84,149 +43,183 @@ __box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);}
 			</aside><!-- Layout Main aside End -->
 			
 			<!-- Layout Right aside Star -->
-			<article class="col-sm-8">
+			<article class="col-md-8">
 
 				<div class="row">
 					<header class="hidden-xs">
-						<h3><i class="flaticon-calendar-1"></i> 我的沙龙</h3>
+						<h3><i class="flaticon-chat"></i> 我的沙龙</h3>
 					</header>
 					<div class="h2em hidden-xs"></div>
 					<center class="yearTitle"><h4>- 2017 -</h4></center>
-					<!-- <h4 class="transaction_hard text-center"><i class="fa fa-yen"></i> 結餘代幣 <b class="fz14 yellow">50</b></h4> -->
-					<section class="timeline card">
+					<section class="card timeline">
+						<article class="entry">
+							<header class="date">
+								<dl>
+									<dt>08</dt>
+									<dd class="transaction_hard">Aug</dd>
+								</dl>
+								<small class="grey">等待举行</small>
+							</header>
+							<div class="body">
+								<h4>蒋干蒋干画 ‧ 蒋干不要讲干画</h4>
+								<p>主講：蒋干 ‧ <small class="grey"><time>2017/08/08</time> PM 13:30</small></p>
+								<section class="row">
+									<div class="col-sm-7 FlieUploadBlock">
+										<p class="mb-1"><i class="fa fa-file-powerpoint-o"></i> 未传送 / 档案名称.pptx</p>
+										<div class="input-group">
+											<input id="file" type="file" class="form-control">
+											<span class="input-group-btn">
+												<button class="btn btn-default sendFile" type="button">传送</button>
+											</span>
+										</div>
+										<div class="progress hidden">
+											<div class="progress-bar progress-bar-striped progress-bar-info active" aria-valuemin="0" aria-valuemax="100">
+											<!-- Complete -->
+											</div>
+										</div>
+										<small class="grey">※ 限传一个档</small>
+									</div>
+									<div class="col-sm-5 text-right">
+										<p class="grey pt-1">费用：$ <span class="fz16 red">87.87</span> 元</p>
+									</div>
+								</section>
+								<div class="h2em"></div>
+								<label class="thisSH">
+									<input type="checkbox">
+									<section class="btn-group btn-group-justified mb-1">
+										<div class="btn-group">
+											<button type="button" class="btn btn-block btn-default">会议未开播</button>
+										</div>
+										<div class="btn-group">
+											<span class="btn btn-block btn-default">说明</span>
+										</div>
+									</section>
+									<section class="collapseSH">
+										<div class="well">
+											<p>text text text text text text text.</p>
+											<p>text text text text text text text.</p>
+											<p>text text text text text text text.</p>
+											<p>text text text text text text text.</p>
+										</div>
+									</section>
+								</label>
+							</div>
+						</article>
+
 						<article class="entry">
 							<header class="date">
 								<dl>
 									<dt>12</dt>
-									<dd class="active">七月</dd>
+									<dd class="active">July</dd>
 								</dl>
-								<small class="red">即將開始</small>
+								<small class="stust red">即将举行</small>
 							</header>
 							<div class="body">
-								<h4>會議名稱</h4>
-								<p>主講：趙雲 ‧ <small class="grey"><time>2017/07/12</time> PM 20:30</small></p>
+								<h4>会议名称</h4>
+								<p>主講：赵云 ‧ <small class="grey"><time>2017/07/12</time> PM 20:30</small></p>
 								<section class="row">
-									<div class="col-sm-7">
-										<i class="fa fa-file-powerpoint-o"></i> 未傳送
+									<div class="col-sm-7 FlieUploadBlock">
+										<p class="mb-1"><i class="fa fa-file-powerpoint-o"></i> 未传送 / 档案名称.pptx</p>
 										<div class="input-group">
 											<input id="file" type="file" class="form-control">
 											<span class="input-group-btn">
-												<button class="btn btn-default" type="button">傳送</button>
+												<button class="btn btn-default sendFile" type="button">传送</button>
 											</span>
 										</div>
+										<div class="progress hidden">
+											<div class="progress-bar progress-bar-striped progress-bar-info active" aria-valuemin="0" aria-valuemax="100">
+											<!-- Complete -->
+											</div>
+										</div>
+										<small class="grey">※ 限传一个档</small>
 									</div>
 									<div class="col-sm-5 text-right">
-										<p class="grey">費用：$ <span class="fz16 red">30</span> 元</p>
+										<p class="grey pt-1">费用：$ <span class="fz16 red">150.00</span> 元</p>
 									</div>
 								</section>
-								<div class="h3em"></div>
-								<div class="btn-group btn-group-justified" role="group">
-									<div class="btn-group" role="group">
-										<button type="button" class="btn btn-danger btn-primary_" disabled>進入會議</button>
-									</div>
-									<div class="btn-group" role="group">
-										<label for="file" class="btn btn-default"><i class="fa fa-cloud-upload grey"></i> 傳文檔</label>
-									</div>
-									<div class="btn-group" role="group">
-										<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#collapseExample">說明</button>
-									</div>
-								</div>
-								<br>
-								<div class="collapse" id="collapseExample">
-									<div class="well__">
-										<ul>
-											<li>Rerum sit libero possimus amet excepturi</li>
-											<li>Exercitationem enim dolores sunt praesentium dolorum praesentium</li>
-											<li>Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo</li>
-										</ul>
-									</div>
-								</div>
+								<div class="h2em"></div>
+								<label class="thisSH">
+									<input type="checkbox">
+									<section class="btn-group btn-group-justified mb-1">
+										<div class="btn-group">
+											<button type="button" class="btn btn-block btn-danger btn-primary_" disabled_>20:00 会议开播</button>
+										</div>
+										<div class="btn-group">
+											<span class="btn btn-block btn-default">说明</span>
+										</div>
+									</section>
+									<section class="collapseSH">
+										<div class="well">
+											<p>Rerum sit libero possimus amet excepturi</p>
+											<p>Exercitationem enim dolores sunt praesentium dolorum praesentium</p>
+											<p>Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo</p>
+										</div>
+									</section>
+								</label>
 							</div>
 						</article>
+
 						<article class="entry">
 							<header class="date">
 								<dl>
-									<dt>10</dt>
-									<dd>七月</dd>
+									<dt>05</dt>
+									<dd class="thisOver">July</dd>
 								</dl>
+								<small class="grey">会议结束</small>
 							</header>
 							<div class="body">
-								<h4>Title text</h4>
-								<p>help text text text text.</p>
-								<ul>
-									<li>Rerum sit libero possimus amet excepturi</li>
-									<li>Exercitationem enim dolores sunt praesentium dolorum praesentium</li>
-									<li>Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo</li>
-								</ul>
+								<h4>会议名称</h4>
+								<p>主講：姜疆跄 ‧ <small class="grey"><time>2017/07/05</time> AM 11:30</small></p>
+								<section class="row">
+									<div class="col-sm-7 FlieUploadBlock">
+										<p class="mb-1"><i class="fa fa-file-powerpoint-o"></i> 偶滴简报档.pptx</p>
+										<!-- <div class="input-group">
+											<input id="file" type="file" class="form-control" disabled>
+											<span class="input-group-btn">
+												<button class="btn btn-default sendFile" type="button" disabled>传送</button>
+											</span>
+										</div> -->
+										<div class="progress hidden">
+											<div class="progress-bar progress-bar-striped progress-bar-info active" aria-valuemin="0" aria-valuemax="100">
+											<!-- Complete -->
+											</div>
+										</div>
+										<small class="grey">※ 限传一个档</small>
+									</div>
+									<div class="col-sm-5 text-right">
+										<p class="grey pt-1">费用：$ <span class="fz16 red">0</span> 元</p>
+									</div>
+								</section>
+								<div class="h2em"></div>
+								<label class="thisSH">
+									<input type="checkbox">
+									<section class="btn-group btn-group-justified mb-1">
+										<div class="btn-group">
+											<button type="button" class="btn btn-block btn-default" disabled>会议结束</button>
+										</div>
+										<div class="btn-group">
+											<span class="btn btn-block btn-default">说明</span>
+										</div>
+									</section>
+									<section class="collapseSH">
+										<div class="well">
+											<p>1234567890</p>
+											<p>1234567890</p>
+											<p>1234567890</p>
+											<p>1234567890</p>
+											<p>1234567890</p>
+											<p>1234567890</p>
+										</div>
+									</section>
+								</label>
 							</div>
 						</article>
-					 <!--  <div class="entry">
-						<div class="title">
-						  <h3>2010 - Present</h3>
-						  <p>Title, Company</p>
-						</div>
-						<div class="body">
-						  <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis.</p>
-						  <ul>
-							<li>Rerum sit libero possimus amet excepturi</li>
-							<li>Exercitationem enim dolores sunt praesentium dolorum praesentium</li>
-							<li>Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo</li>
-						  </ul>
-						</div>
-					  </div>
-					  <div class="entry">
-						<div class="title">
-						  <h3>2009 - 2010</h3>
-						  <p>Title, Company</p>
-						</div>
-						<div class="body">
-						  <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis.</p>
-						  <ul>
-							<li>Rerum sit libero possimus amet excepturi</li>
-							<li>Exercitationem enim dolores sunt praesentium dolorum praesentium</li>
-							<li>Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo</li>
-						  </ul>
-						</div>
-					  </div>
-					  <div class="entry">
-						<div class="title">
-						  <h3>2006 - 2008</h3>
-						  <p>Title, Company</p>
-						</div>
-						<div class="body">
-						  <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis.</p>
-						  <ul>
-							<li>Rerum sit libero possimus amet excepturi</li>
-							<li>Exercitationem enim dolores sunt praesentium dolorum praesentium</li>
-							<li>Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo</li>
-						  </ul>
-						</div>
-					  </div> -->
-
 					</section>
 					<center class="yearTitle"><h4>- 2016 -</h4></center>
+					<section class="card timeline"></section>
 					<center class="yearTitle"><h4>- 2015 -</h4></center>
-					<!-- <article id="transaction_record">
-
-						<section class="card">
-							<ul class="row older grey transaction" style="padding:.5rem .35rem 0;">
-								<li class="col-sm-6"><b>交易日期</b>：YYYY/MM/DD</li>
-								<li class="col-sm-6"><b>代幣單號</b>：T-017BHVU</li>
-								<li class="col-sm-6"><b>交易原因</b>：購買課程</li>
-								<li class="col-sm-6"><b>交易備註</b>：</li>
-							</ul>
-							<p class="integral">交易代幣 <b class="fz16 red">-10</b></p>
-						</section>
-
-						<section class="card">
-							<ul class="row older grey transaction" style="padding:.5rem .35rem 0;">
-								<li class="col-sm-6"><b>交易日期</b>：YYYY/MM/DD</li>
-								<li class="col-sm-6"><b>代幣單號</b>：ENIDFRH124</li>
-								<li class="col-sm-6"><b>交易原因</b>：購買課程</li>
-								<li class="col-sm-6"><b>交易備註</b>：</li>
-							</ul>
-							<p class="integral">交易代幣 <b class="fz16 red">+100.0</b></p>
-						</section>
+					<section class="card timeline"></section>
+					<!-- <article id="mySalon">
 
 					</article> -->
 				</div><!-- /.row -->
@@ -254,17 +247,35 @@ __box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);}
 	<script type="text/javascript">
 	$(document).ready(function() {
 		setTimeout(function(){
-			$(".navbar-nav:first-child").children('li:nth-child(4)').children('a').addClass("red");
-			$("#footMenuBar .footMenu_btn").children('li:nth-child(4)').addClass("sel");
-		},500); 
+			$(".navbar-nav:first-child").children('li:nth-child(5)').children('a').addClass("red");
+			$("#footMenuBar .footMenu_btn").children('li:nth-child(5)').addClass("sel");
+		},500);
+
+		// File Upload
+		$(".sendFile").click(function() {
+			var sendBtn = $(this);
+			var fileStatus = $(this).parent().parent("div").children("input[type=file]").val();
+
+			if( fileStatus != "" ){
+				$(sendBtn).parents(".FlieUploadBlock").children(".progress").removeClass("hidden");
+				$(sendBtn).prop({disabled: true});
+				//uploadStatus = true;
+				setTimeout(function(){
+					$(sendBtn).parents(".FlieUploadBlock").children(".progress").addClass("hidden")
+					$(sendBtn).prop({disabled: false});
+					alert ("Upload file is Complete.");
+					//uploadStatus = false;
+				},6100);
+			}else{
+				alert ("未选择任何档案");
+			}
+		});
 	});
 
 	var data_text =[{
-		items_date:"YYYY/MM/DD",items_serial:"ENIDFRH124",items_reason:"購買課程",items_remarks:"..",items_token:"-10.0"
+		items_date:"YYYY/MM/DD",items_price:""
 		},{
-		items_date:"2017/06/05",items_serial:"ENIDFRH124",items_reason:"購買課程",items_remarks:"...",items_token:"+100.0"
 		},{
-		items_date:"2017/06/01",items_serial:"ENIDFRH078",items_reason:"購買課程",items_remarks:"....",items_token:"+50.0"
 		}
 	];
 	$.each(data_text,function(index,obj)
@@ -278,7 +289,7 @@ __box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);}
 		this_items +='</ul>';
 		this_items +='<p class="integral grey-lighter">交易代幣 <b class="fz16 red">'+ obj.items_token +'</b></p>';
 		this_items +='</section>';
-		$('#transaction_record').append(this_items);
+		$('#mySalon').append(this_items);
 	});
 	</script>
 	

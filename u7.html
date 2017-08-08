@@ -28,7 +28,7 @@
 
 		<div class="row">
 			<!-- Layout Main aside Star -->
-			<aside class="col-sm-3 hidden-xs" style="margin-top:1rem;">
+			<aside class="col-sm-3 hidden-xs hidden-sm" style="margin-top:1rem;">
 				<ul class="list-group">
 					<li class="list-group-item"><a href="u1.html">我的课程</a></li>
 					<li class="list-group-item"><a href="u4.html">我的沙龙</a></li>
@@ -43,14 +43,14 @@
 			</aside><!-- Layout Main aside End -->
 			
 			<!-- Layout Right aside Star -->
-			<article class="col-sm-8">
+			<article class="col-md-8">
 
 				<div class="row">
 					<header class="hidden-xs">
 						<h3><i class="flaticon-megaphone"></i> 站内信</h3>
 					</header>
 					<div class="h1em"></div>
-					<article style="padding:.8rem 0 .1rem 1rem;background-color:#fff;">
+					<article class="card" style="padding:.8rem 0 .1rem 1rem;">
 						<ol id="sys_notice" class="sys-msg">
 							<!-- <li>
 								<button class="pull-right btn btn--link hidden"><i class="fa fa-trash-o fz14 red"></i></button>
@@ -88,19 +88,19 @@
 	<script type="text/javascript">
 	$(document).ready(function() {
 		setTimeout(function(){
-			$(".navbar-nav:first-child").children('li:nth-child(4)').children('a').addClass("red");
-			$("#footMenuBar .footMenu_btn").children('li:nth-child(4)').addClass("sel");
+			$(".navbar-nav:first-child").children('li:nth-child(5)').children('a').addClass("red");
+			$("#footMenuBar .footMenu_btn").children('li:nth-child(5)').addClass("sel");
 		},500); 
 	});
 
 	var data_text =[{
-		items_title:"xxxx",items_remarks:"內容 1",items_date:"YYYY/MM/DD",items_link:"#0",items_img:"http://placehold.it/88x64/c0c9d8/333",items_UrlHide:"",items_imgHide:"hidden"
+		items_title:"xxxx",items_remarks:"说明 1",items_date:"YYYY/MM/DD",items_link:"#0",items_img:"http://placehold.it/88x64/c0c9d8/333",items_UrlHide:"",items_imgHide:"hidden"
 		},{
-		items_title:"xx xx xx",items_remarks:"內容 2",items_date:"2017/05/05",items_link:"#0",items_img:"http://placehold.it/120x66/c0cff8/355",items_UrlHide:"",items_imgHide:""
+		items_title:"xx xx xx",items_remarks:"说明 2",items_date:"2017/05/05 16:33",items_link:"#0",items_img:"http://placehold.it/120x66/c0cff8/355",items_UrlHide:"",items_imgHide:""
 		},{
-		items_title:"xx xx xx xx xx",items_remarks:"內容 3",items_date:"2017/05/04",items_link:"#0",items_img:"http://placehold.it/160x80/c0cfd8/333",items_UrlHide:"hidden",items_imgHide:"hidden"
+		items_title:"xx xx xx xx xx",items_remarks:"说明 3",items_date:"2017/05/04 21:46",items_link:"#0",items_img:"http://placehold.it/160x80/c0cfd8/333",items_UrlHide:"hidden",items_imgHide:"hidden"
 		},{
-		items_title:"xxx xxx xxx",items_remarks:"內容 4",items_date:"2017/05/03",items_link:"#0",items_img:"http://placehold.it/64x64/c1c9d8/666",items_UrlHide:"hidden",items_imgHide:""
+		items_title:"xxx xxx xxx",items_remarks:"说明 4",items_date:"2017/05/03 13:12",items_link:"#0",items_img:"http://placehold.it/64x64/c1c9d8/666",items_UrlHide:"hidden",items_imgHide:""
 		}
 	];
 	$.each(data_text,function(index,obj)
@@ -113,7 +113,7 @@
 		this_items +='</label>';
 		this_items +='<p>'+ obj.items_remarks +'</p>';
 		this_items +='<div class="mb-1"><img src="'+ obj.items_img +'" class="img-thumbnail mr-1 '+ obj.items_imgHide +'"> <a class="btn btn-xs btn-primary btn-outline'+ obj.items_UrlHide +'" href="'+ obj.items_link +'"><i class="fa fa-link"></i> Url Link</a></div>';
-		this_items +='<time>- '+ obj.items_date +'</time>';
+		this_items +='<time><i class="fa fa-calendar-o"> '+ obj.items_date +'</time>';
 		this_items +='</li>';
 		$('#sys_notice').append(this_items);
 	});

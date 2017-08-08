@@ -13,7 +13,8 @@ nav_item +='<div id="navbar" class="navbar-collapse collapse">';
 nav_item +='<ul class="nav navbar-nav">';
 nav_item +='<li><a href="index.html"><i class="flaticon-home"></i> Home</a></li>';
 nav_item +='<li><a href="product.html"><i class="flaticon-circle"></i> 产品</a></li>';
-nav_item +='<li><a href="course.html"><i class="flaticon-calendar-1"></i> 沙龍</a></li>';
+nav_item +='<li><a href="salon.html"><i class="flaticon-chat"></i> 沙龙</a></li>';
+nav_item +='<li><a href="course.html"><i class="flaticon-calendar-1"></i> 课程</a></li>';
 nav_item +='<li class="dropdown">';
 nav_item +='<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="flaticon-profile-1"></i> 会员 <span class="caret"></span></a>';
 nav_item +='<ul class="dropdown-menu" role="menu">';
@@ -70,9 +71,10 @@ $('ul.nav li.dropdown').hover(function() {
 footMenu_item ='<ul class="table-box footMenu_btn">';
 footMenu_item +='<li><button class="btn btn-block btn-deault" onclick="indexPage()"><i class="flaticon-home"></i>首頁</button></li>';
 footMenu_item +='<li><button class="btn btn-block btn-deault" onclick="productPage()"><i class="flaticon-circle"></i>产品</button></li>';
-footMenu_item +='<li><button class="btn btn-block btn-deault" onclick="coursePage()"><i class="flaticon-calendar-1"></i>沙龙</button></li>';
+footMenu_item +='<li><button class="btn btn-block btn-deault" onclick="salonPage()"><i class="flaticon-chat"></i>沙龙</button></li>';
+footMenu_item +='<li><button class="btn btn-block btn-deault" onclick="coursePage()"><i class="flaticon-calendar-1"></i>课程</button></li>';
 footMenu_item +='<li><button class="btn btn-block btn-deault" onclick="userPage()"><i class="flaticon-profile-1"></i>会员</button><span class="badge sye_msg">3</span></li>';
-footMenu_item +='<li><button class="btn btn-block btn-deault" onclick="activityPage()"><i class="flaticon-favorites"></i>活动</button></li>';
+// footMenu_item +='<li><button class="btn btn-block btn-deault" onclick="activityPage()"><i class="flaticon-favorites"></i>活动</button></li>';
 footMenu_item +='</ul>';
 $('#footMenuBar').append(footMenu_item);
 // footMenu_btn End //
@@ -480,12 +482,16 @@ $('#Recommendations').append(rcd_item);
 
 // footMenu goto where page star
 function indexPage(){
-	if (confirm("Go back Homepage？")==true)
+	// if (confirm("Go back Homepage？")==true)
 	location.href = "index.html";
 }
 
 function productPage(){
 	location.href = "product.html";
+}
+
+function salonPage(){
+	location.href = "salon.html";
 }
 
 function coursePage(){

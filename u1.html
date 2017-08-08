@@ -28,7 +28,7 @@
 
 		<div class="row">
 			<!-- Layout Main aside Star -->
-			<aside class="col-sm-3 hidden-xs" style="margin-top:1rem;">
+			<aside class="col-sm-3 hidden-xs hidden-sm" style="margin-top:1rem;">
 				<ul class="list-group">
 					<li class="list-group-item active"><a href="u1.html">我的课程</a></li>
 					<li class="list-group-item"><a href="u4.html">我的沙龙</a></li>
@@ -43,36 +43,36 @@
 			</aside><!-- Layout Main aside End -->
 			
 			<!-- Layout Right aside Star -->
-			<article class="col-sm-8">
+			<article class="col-md-8">
 
 				<div class="row">
 					<header class="hidden-xs">
 						<h3><i class="flaticon-calendar-2"></i> 我的课程</h3>
 					</header>
-					<!-- <h4 class="transaction_hard text-center"><i class="fa fa-yen"></i> 結餘代幣 <b class="fz14 yellow">50</b></h4>
+					<h4 class="transaction_hard text-center"><i class="fa fa-yen"></i> 結餘代幣 <b class="fz14 yellow">50</b></h4>
 					<article id="transaction_record">
 
-						<section class="card">
+						<!-- <section class="card">
 							<ul class="row older grey transaction" style="padding:.5rem .35rem 0;">
-								<li class="col-sm-6"><b>交易日期</b>：YYYY/MM/DD</li>
-								<li class="col-sm-6"><b>代幣單號</b>：T-017BHVU</li>
-								<li class="col-sm-6"><b>交易原因</b>：購買課程</li>
-								<li class="col-sm-6"><b>交易備註</b>：</li>
+								<li class="col-sm-6"><small class="grey">交易日期</small>：YYYY/MM/DD</li>
+								<li class="col-sm-6"><small class="grey">代幣單號</small>：T-017BHVU</li>
+								<li class="col-sm-6"><small class="grey">交易原因</small>：購買課程</li>
+								<li class="col-sm-6"><small class="grey">交易備註</small>：</li>
 							</ul>
 							<p class="integral">交易代幣 <b class="fz16 red">-10</b></p>
 						</section>
 
 						<section class="card">
 							<ul class="row older grey transaction" style="padding:.5rem .35rem 0;">
-								<li class="col-sm-6"><b>交易日期</b>：YYYY/MM/DD</li>
-								<li class="col-sm-6"><b>代幣單號</b>：ENIDFRH124</li>
-								<li class="col-sm-6"><b>交易原因</b>：購買課程</li>
-								<li class="col-sm-6"><b>交易備註</b>：</li>
+								<li class="col-sm-6"><small class="grey">交易日期</small>：YYYY/MM/DD</li>
+								<li class="col-sm-6"><small class="grey">代幣單號</small>：ENIDFRH124</li>
+								<li class="col-sm-6"><small class="grey">交易原因</small>：購買課程</li>
+								<li class="col-sm-6"><small class="grey">交易備註</small>：</li>
 							</ul>
 							<p class="integral">交易代幣 <b class="fz16 red">+100.0</b></p>
-						</section>
+						</section> -->
 
-					</article> -->
+					</article>
 				</div><!-- /.row -->
 
 			</article><!-- Layout Right aside End -->
@@ -98,8 +98,8 @@
 	<script type="text/javascript">
 	$(document).ready(function() {
 		setTimeout(function(){
-			$(".navbar-nav:first-child").children('li:nth-child(4)').children('a').addClass("red");
-			$("#footMenuBar .footMenu_btn").children('li:nth-child(4)').addClass("sel");
+			$(".navbar-nav:first-child").children('li:nth-child(5)').children('a').addClass("red");
+			$("#footMenuBar .footMenu_btn").children('li:nth-child(5)').addClass("sel");
 		},500); 
 	});
 
@@ -115,10 +115,10 @@
 	{
 		this_items ='<section class="card">';
 		this_items +='<ul class="row older transaction" style="padding:.5rem .35rem 0;">';
-		this_items +='<li class="col-sm-6 col-md-4"><b>交易日期</b>：'+ obj.items_date +'</li>';
-		this_items +='<li class="col-sm-6 col-md-4"><b>代幣單號</b>：'+ obj.items_serial +'</li>';
-		this_items +='<li class="col-sm-6 col-md-4"><b>交易原因</b>：'+ obj.items_reason +'</li>';
-		this_items +='<li class="col-sm-6 col-md-4"><b>交易備註</b>：'+ obj.items_remarks +'</li>';
+		this_items +='<li class="col-sm-6 col-md-4"><small class="grey">交易日期</small>：'+ obj.items_date +'</li>';
+		this_items +='<li class="col-sm-6 col-md-4"><small class="grey">代幣單號</small>：'+ obj.items_serial +'</li>';
+		this_items +='<li class="col-sm-6 col-md-4"><small class="grey">交易原因</small>：'+ obj.items_reason +'</li>';
+		this_items +='<li class="col-sm-6 col-md-4"><small class="grey">交易備註</small>：'+ obj.items_remarks +'</li>';
 		this_items +='</ul>';
 		this_items +='<p class="integral grey-lighter">交易代幣 <b class="fz16 red">'+ obj.items_token +'</b></p>';
 		this_items +='</section>';

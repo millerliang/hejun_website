@@ -527,6 +527,74 @@ input.ShowHidePW:checked + i::before{content: "\f070";}
 input.ShowHidePW:checked + i + small {display:inline-block;font-size: small;color:#a3a3a3;}
 .pushy-btn.active[disabled]{background-color:#bbb;cursor: not-allowed;filter: alpha(opacity=65);-webkit-box-shadow: none;box-shadow: none;opacity: .65;}
 
+/* 2017-08-07 会员 > 我的沙龙 */
+.yearTitle {color:#d5d5d5;}
+.timeline {background: white;padding:2rem 1rem 0 .5rem;position: relative;
+__box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);}
+.timeline:before {content: '';position: absolute;top: 0px;left: calc(15% + .55rem);bottom: 0px;width: .3rem;background: #ddd;}
+.timeline:after {content: "";display: table;clear: both;}
+
+.entry {clear: both;text-align: left;position: relative;}
+.entry .date {float: left;width: 15%;text-align: center;position: relative;}
+.entry .date:before {content: '';position: absolute;width:13px;height:13px;border: 2px solid #fff;background-color: #e65d4f;border-radius: 100%;top: 15%;right:-.95rem;z-index: 99;}
+
+.entry .date dl {max-width:80%;margin:0 auto;background-color:white;border:1px solid rgba(0,0,0,.12);}
+.entry .date dt {font-size: x-large;color:#666;padding:.2rem 0;}
+.entry .date dd {font-size: small;background-color:#a8a8a8;color:white;padding:.1rem 0;}
+.entry .date dd.active {background-color:#e65d4f;}
+.entry .date dd.thisOver {background-color:#d2d2d2;}
+
+.entry .date .stust {animation: Flash 1.8s infinite;}
+
+.entry .date h2 {margin: 0;padding:0;}
+.entry .date p {margin: 0;font-size: 100%;}
+
+.entry .body {margin: 0 0 3em;float: right;width: 80%;}
+.entry .body h4 {margin:.5rem 0;color:#e65d4f;}
+.entry .body p {line-height: 1.4em;}
+
+.entry .body ul {
+  color: #aaa;
+  padding-left: 0;
+  list-style-type: none;
+}
+.entry .body ul li:before {
+  content: "–";
+  margin-right: .5em;
+}
+
+/* label checkbox toggle show, hidden */
+label.thisSH {display:block;}
+.thisSH .collapseSH {padding:0;height:0em;opacity:0;-webkit-transition: .8s ease;-moz-transition: .8s ease;-o-transition: .8s ease;transition: .8s ease;}
+.thisSH .collapseSH .well {display:none;padding:1rem;}
+.thisSH input[type="checkbox"] {display: none;}
+.thisSH input[type="checkbox"]:checked ~ .collapseSH {padding:2px 0;height:auto;max-height:12em;overflow-y:auto;opacity: 1;}
+.thisSH input[type="checkbox"]:checked ~ .collapseSH .well {display:block;}
+
+/* progress bar */
+.progress{height:.8rem;margin:.3rem 0 0;}
+.progress-bar.active{
+	width:100%;
+	animation-name: progress-bar-stripes;
+	-webkit-animation-name: progress-bar-stripes;
+	animation-duration:6s;
+	-webkit-animation-duration:6s;
+	animation-iteration-count:1;
+	-webkit-animation-iteration-count:1;
+}
+.progress-bar{font-size: xx-small;line-height: 1;}
+
+@keyframes progress-bar-stripes {
+   0% {width: 0;}
+   100% {width: 100%;}
+}
+@keyframes Flash {
+   0% {opacity: 1;}
+   65% {opacity: 1;}
+   75% {opacity: 0;}
+   100% {opacity: 1;}
+}
+
 /* 2017-08-01 FadeIn */
 small.d-block,span.d-block{-webkit-animation: fadein .8s;
 -moz-animation: fadein .8s;

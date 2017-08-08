@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>website hejun page</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link rel="stylesheet" href="assets/css/pushy-buttons.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/flaticon.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+</head>
+
+<body>
+	<!-- Fixed navbar -->
+	<nav id="navBar" class="navbar navbar-default navbar-SH navbar-fixed-top" role="navigation"></nav>
+
+	<div class="container-fluid" style="padding:0;">
+		<div class="top-height">
+			<article class="table-box navbar-fixed-top top-Menu">
+				<section onclick="location.href='index.html'"><img class="m-logo" src="assets/images/hejun_logo.png"></section>
+				<!-- <section onclick="history.go(-1)"><i class="fa fa-chevron-left"></i> back</section> -->
+				<section>沙龙</section>
+				<section><a data-toggle="modal" data-target="#SearchModal" href="#"><i class="fa fa-search"></i> <!-- Search --></a>　</section>
+			</article>
+		</div>
+
+		<div id="filter_btn">
+			<article class="carousel type_sel_btn" data-flickity='{ "contain": true, "prevNextButtons": false, "pageDots": false }'>
+				<section class="carousel-cell">
+					<span class="label_text">月份</span>
+				</section>
+				<section class="carousel-cell">
+					<input type="radio" name="options" id="selAll" checked>
+					<label class="btn" for="selAll">All</label>
+				</section>
+				<section class="carousel-cell">
+					<input type="radio" name="options" id="option1">
+					<label class="btn" for="option1">一月</label>
+				</section>
+				<section class="carousel-cell">
+					<input type="radio" name="options" id="option2">
+					<label class="btn" for="option2">二月</label>
+				</section>
+				<section class="carousel-cell">
+					<input type="radio" name="options" id="option3">
+					<label class="btn" for="option3">三月</label>
+				</section>
+				<section class="carousel-cell">
+					<input type="radio" name="options" id="option4">
+					<label class="btn" for="option4">四月</label>
+				</section>
+				<section class="carousel-cell">
+					<input type="radio" name="options" id="option5">
+					<label class="btn" for="option5">五月</label>
+				</section>
+				<section class="carousel-cell">
+					<input type="radio" name="options" id="option6">
+					<label class="btn" for="option6">六月</label>
+				</section>
+				<section class="carousel-cell">
+					<input type="radio" name="options" id="option7">
+					<label class="btn" for="option7">七月</label>
+				</section>
+				<section class="carousel-cell">
+					<input type="radio" name="options" id="option8">
+					<label class="btn" for="option8">八月</label>
+				</section>
+				<section class="carousel-cell">
+					<input type="radio" name="options" id="option9">
+					<label class="btn" for="option9">九月</label>
+				</section>
+				<section class="carousel-cell">
+					<input type="radio" name="options" id="option10">
+					<label class="btn" for="option10">十月</label>
+				</section>
+				<section class="carousel-cell">
+					<input type="radio" name="options" id="option11">
+					<label class="btn" for="option11">十一月</label>
+				</section>
+				<section class="carousel-cell">
+					<input type="radio" name="options" id="option12">
+					<label class="btn" for="option12">十二月</label>
+				</section>
+			</article>
+		</div>
+		
+		<div class="container">
+
+			<!-- Layout Main aside Star -->
+			<article class="col-md-8">
+
+				<div class="row">
+					<div class="h2em hidden-xs hidden-sm"></div>
+					<!-- <article>
+						<p class="text-right">
+							<a class="btn btn--link view-th red"><i class="fa fa-th"></i></a>
+							<a class="btn btn--link view-list grey"><i class="fa fa-list"></i></a>
+						</p>
+						<div id="Course" class="row"></div>
+					</article> -->
+
+					<section class="card timeline">
+						<article class="entry">
+							<header class="date">
+								<dl>
+									<dt>08</dt>
+									<dd class="transaction_hard">Aug</dd>
+								</dl>
+								<center class="yearTitle"><h4>2017</h4></center>
+								样板 A
+							</header>
+							<div class="body">
+								<h4>蒋干蒋干话之维多利亚的秘密</h4>
+								<section class="row">
+									<div class="col-sm-4">
+										<a href="#0"><img class="img-responsive img-thumbnail mb-1" src="http://placehold.it/720x480/E8E8FA/AFAFD8"></a>
+									</div>
+									<div class="col-sm-8">
+										<p>主讲：蒋干</p>
+										<p>时间：<time>2017/08/08</time> PM 13:30</p>
+										<p><i class="fa fa-shopping-cart text-muted"></i> 588 人购买</p>
+									</div>
+								</section>
+								<div class="h2em"></div>
+								<label class="thisSH">
+									<input type="checkbox">
+									<section class="row">
+										<div class="col-xs-6">
+											<span class="btn btn-block btn-outline grey">说 明</span>
+										</div>
+										<div class="col-xs-6">
+											<button type="button" class="pushy-btn btn-block btn--red"><i class="fa fa-yen"></i> 66 元</button>
+											<!-- <button type="button" class="btn btn-block btn-primary">购买</button> -->
+										</div>
+									</section>
+									<section class="collapseSH">
+										<div class="well">
+											<p>1977年在美國舊金山創建了維多利亞的秘密。他在帕洛阿爾托的斯坦福購物中心開了自己的第一家店，很快又建立了郵購商品廣告目錄以及另外三家分店。</p>
+											<p>這些商店裝修用了鑲木板的牆以及招聘了熱情好客的營業員，本意是為男性買內衣創造更舒適的環境。除了擺在架子上的女式內衣，牆上也貼滿了各種內衣的海報供男性參考。</p>
+										</div>
+									</section>
+								</label>
+							</div>
+						</article>
+						<article class="entry">
+							<header class="date">
+								<dl>
+									<dt>02</dt>
+									<dd class="transaction_hard">Aug</dd>
+								</dl>
+								<center class="yearTitle"><h4>2017</h4></center>
+								样板 B
+							</header>
+							<div class="body">
+								<h4>如何做一个称职的王美</h4>
+								<a href="#0" style="position: relative;display: block;}">
+									<div style="position: absolute;bottom: 0;right: 0;z-index: 88;color: white;padding: .3rem 1rem;background: rgba(68, 60, 85, 0.75);white-space: nowrap;">
+										1.3k 人参加
+									</div>
+									<img class="img-responsive" src="https://i.ytimg.com/vi/vBTDJNVQKwU/maxresdefault.jpg">
+								</a>
+								<div class="h1em"></div>
+								<section class="row">
+									<div class="col-sm-6">
+										<p>主讲：白痴公主</p>
+									</div>
+									<div class="col-sm-6">
+										<p><i class="fa fa-calendar grey-lighter"></i> <time>2017/08/02</time> PM 10:00</p>
+									</div>
+								</section>
+								<div class="h1em"></div>
+								<p>白癡公主Ａ減</p>
+								<p>有一點專業的配音、惡搞、教大家做有可能可以吃的菜→影片不定期更新，訂閱頻道，立馬收到通知。</p>
+								<div class="h2em"></div>
+								<label class="thisSH">
+									<input type="checkbox">
+									<section class="btn-group btn-group-justified mb-1">
+										<div class="btn-group">
+											<span class="btn btn-block btn-default">更多说明</span>
+										</div>
+										<div class="btn-group">
+											<button type="button" class="btn btn-block btn-danger btn-outline_">免 费</button>
+										</div>
+									</section>
+									<section class="collapseSH">
+										<div class="well">
+											<p>任何問題或合作請洽 Facebook</p>
+											<p><a href="http://www.facebook.com/BaiChiGongZhu">http://www.facebook.com/BaiChiGongZhu</a></p>
+										</div>
+									</section>
+								</label>
+							</div>
+						</article>
+						<article class="entry">
+							<header class="date">
+								<dl>
+									<dt>12</dt>
+									<dd class="transaction_hard">July</dd>
+								</dl>
+								<center class="yearTitle"><h4>2017</h4></center>
+								样板 C
+							</header>
+							<div class="body">
+								<h3 class="red" style="margin: 0 0 1rem;">item Title</h3>
+								<a href="#0"><img class="img-responsive" src="http://placehold.it/1920x1080/E8E8FA/AFAFD8"></a>
+								<div class="h1em"></div>
+								<p>主讲：OOO</p>
+								<p>时间：<time>2017/07/012</time> AM 06:00</p>
+								<p>购买：1,021 人</p>
+								<p class="grey pt-1 text-right">费用：<i class="fa fa-yen"></i> <span class="fz16 red">88</span> 元</p>
+								<div class="h2em"></div>
+								<label class="thisSH">
+									<input type="checkbox">
+									<section class="row">
+										<div class="col-xs-6">
+											<span class="btn btn-block btn-default">说 明</span>
+										</div>
+										<div class="col-xs-6">
+											<button type="button" class="btn btn-block btn-danger btn-outline">购 买</button>
+										</div>
+									</section>
+									<section class="collapseSH">
+										<div class="well">
+											<p>text text text text text text text.</p>
+											<p>text text text text text text text.</p>
+											<p>text text text text text text text.</p>
+											<p>text text text text text text text.</p>
+										</div>
+									</section>
+								</label>
+							</div>
+						</article>
+					</section>
+
+				</div><!-- /.row -->
+
+			</article><!-- Layout Main aside End -->
+
+			<!-- Layout Right aside Star -->
+			<article class="col-sm-3 col-sm-offset-1 hidden-xs hidden-sm">
+				<div style="height:2em;"></div>
+				<a href="#0"><img src="http://www.xaxiaolu.com/mobile/images/12.jpg" class="img-thumbnail mb-1"></a>
+				<a href="#0"><img src="http://placehold.it/480x160/e2e2e2/333" class="img-thumbnail mb-1"></a>
+			</article><!-- Layout Right aside End -->
+
+		</div><!-- /.container -->
+	</div><!-- /.container-fluid -->
+
+	<!-- Search Modal -->
+	<div class="modal fade" id="SearchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"></div>
+
+	<div style="height:6em;"></div>
+
+	<div class="container">
+		<!-- <footer>Footer bar</footer> -->
+		<article id="footMenuBar"></article>
+	</div>
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<script src="assets/js/global_main.js" /></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		setTimeout(function(){
+			$("#footMenuBar .footMenu_btn").children('li:nth-child(3)').addClass("sel");
+			$(".navbar-nav:first-child").children('li:nth-child(3)').children('a').addClass("red");
+		},500);
+	});
+
+	// File cube & list view
+	$('.view-list').click(function() {
+		$(this).addClass('red');
+		$(".view-th").removeClass("red").addClass( "grey" );
+		$(".price").removeClass("price").addClass( "view_list" );
+	});
+	$('.view-th').click(function() {
+		$(this).addClass('red');
+		$(".view-list").removeClass("red").addClass( "grey" );
+		$(".view_list").removeClass("view_list").addClass( "price" );
+	});
+	</script>
+</body>
+</html>
