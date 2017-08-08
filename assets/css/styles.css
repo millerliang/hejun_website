@@ -13,7 +13,7 @@ a {color:#333;}
 .grey {color:#777;}
 .grey-lighter {color:#999;}
 .grey_bg {background-color:#fcfcfc;}
-.greyDark_bg {background-color:#938f8e;padding:.6rem;margin:0;}
+.greyDark_bg {background-color:#6b7a8e;padding:.6rem;margin:0;}
 .red {color:#dc4d3f!important;}
 .red_bg {background-color:#c60500;}
 .blue {color:#337ab7;}
@@ -74,6 +74,9 @@ hr {border-color:#e0e0e0;}
 .this_opacity {opacity:0;-webkit-transition: all 0.5s;-moz-transition: all .5s;-o-transition: all .5s;transition: all .5s;}
 .text_list{padding: .2rem 1.3em;}
 .badge_for_course{max-width:1.5em;font-size: 8px;white-space: normal;padding: .4rem 0;position: relative;top: -.7rem;left: .1rem;}
+
+.hoverSize {-webkit-transition: all 0.3s;-moz-transition: all 0.3s;transition: all 0.3s;}
+.hoverSize:hover {transform:scale(.98,.98);-webkit-transition: all 0.3s;-moz-transition: all 0.3s;transition: all 0.3s;}
 
 /* .btn-outline */
 .btn-outline {background-color: transparent;color: inherit;transition: all .3s;}
@@ -150,7 +153,9 @@ footer .input-group input, footer.input-group input {background-color:#fff;}
 
 /* price Style */
 .price {-webkit-transition: all 0.3s;-moz-transition: all .5s;-o-transition: all .5s;transition: all .5s;}
-.price header h4 {margin:0;line-height:1.2;padding:.5rem .8rem;border-bottom:1px solid #000;border-left__: 3px solid #e65d4f;color:#fff;
+.price header h4 {line-height:1.2;padding:.5rem .8rem!important;font-size:initial;}
+.price---Default header h4 {margin:0;line-height:1.2;padding:.5rem .8rem;border-left__: 3px solid #e65d4f;color:#fff;
+	border-bottom:1px solid #000;
 	background-color:#111;
 	background: -moz-linear-gradient(45deg, #000 0%, #3B3B3B 75%, #444444 100%); /* ff3.6+ */
 	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #000), color-stop(75%, #3B3B3B), color-stop(100%, #444444)); /* safari4+,chrome */
@@ -428,7 +433,7 @@ box-shadow___: 0 2px 2px rgba(0, 0, 0, .2);
 .integral {text-align:right;padding:0 1rem 0;}
 
 /* 交易紀錄 */
-.transaction_hard {color:#fff;padding:.6em;margin:0;
+.transaction_hard,.price header h4 {color:#fff;padding:.6em;margin:0;
 	background-color:#004d66;
 	background: -moz-linear-gradient(45deg, #0e5692 0%, #070c4c 75%, #381a6b 100%); /* ff3.6+ */
 	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #0e5692), color-stop(75%, #070c4c), color-stop(100%, #381a6b)); /* safari4+,chrome */
