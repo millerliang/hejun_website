@@ -223,6 +223,8 @@ border-color: #671313;
 .label_c2:after{border-top-color: #00a3d9;}
 .label_c3{background-color:#7f33ca;}
 .label_c3:after{border-top-color: #7f33ca;}
+.label_c4{background-color: #e4e7e8;border: 1px solid #b8bfc5;color: #394a5a;border-radius: 3px;-webkit-border-radius: 3px;}
+.label_c4 i {color:#aab2ba;}
 
 .media .media-object {width:2.5em;height:2.5em;overflow:hidden;border-radius:5px;border: 1px solid #fff;
 	box-shadow: 0 2px 2px rgba(0, 0, 0, .25);
@@ -380,6 +382,18 @@ z-index: 1028;
 
 /* User Profile Style 2017-05-15 */
 .userProfile {}
+ .userLV {position: absolute;
+z-index: 99;
+background-color: #ffe29f;
+color: #e65d4f;
+padding:.12rem .8rem;
+font-size: smaller;
+margin-left: 4.2rem;
+border-radius:2rem;
+-webkit-border-radius:2rem;
+-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .25);
+transform: translateY(450%);
+}
 .userProfile .media,.userProfile  .media-body {overflow: visible;}
 .userProfile .list-group .active {color:#fff;}
 .userProfile .media-left {padding-right:1.2em;}

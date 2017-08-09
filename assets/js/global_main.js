@@ -394,11 +394,11 @@ $.each(item1_text,function(index,obj)
 
 // Product_item2 list Star //
 var item2_text =[{
-	item2_url:"#0",item2_type:"套餐",item2_price:"20",item2_buy:"1",item2_favorite:"1",item2_title:"課程標題課程標題課程標題課程標題課程標題課程標題課程標題課程標題",item2_img:"http://lab.jyt-inc.com/rc/coursepic/20170713/1499926304987CAi4YvT.jpg",item2_icoColor:"c3"
+	item2_url:"#0",item2_type:"老師名",item2_price:"20",item2_buy:"1",item2_favorite:"1",item2_title:"写一份容易获得面试邀请的简历——怎样写自我评价",item2_img:"assets/images/a1.jpg",item2_icoColor:"c4"
 	},{
-	item2_url:"#0",item2_type:"體驗",item2_price:"25",item2_buy:"0",item2_favorite:"2",item2_title:"高考奋斗青春精彩未来",item2_img:"http://lab.jyt-inc.com/rc/coursepic/20170713/1499926304987CAi4YvT.jpg",item2_icoColor:"c2"
+	item2_url:"#0",item2_type:"林森淼",item2_price:"25",item2_buy:"0",item2_favorite:"2",item2_title:"如何通过转念瞬间调整情绪",item2_img:"assets/images/a2.jpg",item2_icoColor:"c4"
 	},{
-	item2_url:"#0",item2_type:"單課",item2_price:"10",item2_buy:"1",item2_favorite:"3",item2_title:"課程標題 xxxx xxxx xxxx xxxx xxxx xxxx",item2_img:"http://lab.jyt-inc.com/rc/coursepic/20170713/1499926304987CAi4YvT.jpg",item2_icoColor:"c1"
+	item2_url:"#0",item2_type:"汪海青",item2_price:"10",item2_buy:"1",item2_favorite:"3",item2_title:"教你如何申请哈佛大学访问学者",item2_img:"assets/images/a3.jpg",item2_icoColor:"c4"
 	}
 ];
 $.each(item2_text,function(index,obj)
@@ -415,10 +415,10 @@ $.each(item2_text,function(index,obj)
 	list_item2 +='</ul>';
 	list_item2 +='</section>';
 	list_item2 +='<section>';
-	list_item2 +='<h5 class="brt brb h3em" style="padding:0 .1rem 0 .8rem;">'+ obj.item2_title +'</h5>';
+	list_item2 +='<h5 class="brt brb h2em" style="padding:0 .1rem 0 .8rem;">'+ obj.item2_title +'</h5>';
 	list_item2 +='<ul class="table-box">';
-	list_item2 +='<li class="pl-1" style="text-align:left;"><span class="badge label_'+ obj.item2_icoColor +'">'+ obj.item2_type +'</span></li>';
-	list_item2 +='<li class="red pr-1" style="text-align:right;">$<span class="fz16">'+ obj.item2_price +'</span></li>';
+	list_item2 +='<li class="pl-1" style="text-align:left;"><span class="badge pr-1 label_'+ obj.item2_icoColor +'"><i class="fa fa-user"></i> '+ obj.item2_type +'</span></li>';
+	list_item2 +='<li class="red pr-1" style="text-align:right;">¥ <span class="fz16">'+ obj.item2_price +'</span></li>';
 	list_item2 +='</ul>';
 	list_item2 +='</section>';
 	list_item2 +='</div>';

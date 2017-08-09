@@ -11,6 +11,24 @@
 	<link rel="stylesheet" href="assets/css/pushy-buttons.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/flaticon.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+	<style>
+	.error{color:red;}
+	label.error{border:none;font-size:small;position:absolute;white-space:nowrap;left:1rem;top:2.8em;
+	-webkit-animation: fadein .8s;
+       -moz-animation: fadein .8s;
+        -ms-animation: fadein .8s;
+         -o-animation: fadein .8s;
+            animation: fadein .8s;
+	}
+	#password-error,#confirm_password-error{left:0;}
+
+	.checkbox_btn input{display:inline-block;visibility:hidden;position:absolute;bottom:.5rem;}
+	.checkbox_btn input[type=checkbox]:checked + label + label:before {color:#e65d4f;content: "\f058";}
+	#agree-error{top:3.2rem;left:1.8rem;}
+	#agree-error::before{content:"";}
+	.form-group {margin-bottom: 1.6em;}
+	.form-group label{font-weight:100;}
+	</style>
 </head>
 
 <body>
@@ -28,10 +46,16 @@
 
 		<div class="row">
 
-			<!-- Layout Right aside Star -->
+			<!-- Layout Left aside Star -->
 			<article class="col-md-8">
 
 				<div class="h1em hidden-xs"></div>
+					<ol class="breadcrumb hidden-xs hidden-sm row">
+					<li class="breadcrumb-item"><a href="index.html"><i class="flaticon-home"></i> Home</a></li>
+					<li class="breadcrumb-item"><a href="salon.html">沙龍</a></li>
+					<li class="breadcrumb-item active">沙龍報名表</li>
+				</ol>
+
 				<div class="card timeline">
 					<article class="entry">
 						<header class="date">
@@ -44,10 +68,10 @@
 						</header>
 						<div class="body">
 							<section class="row">
-								<div class="col-sm-4">
+								<div class="col-xs-4">
 									<img class="img-responsive img-thumbnail mb-1" src="http://placehold.it/720x480/E8E8FA/AFAFD8">
 								</div>
-								<div class="col-sm-8">
+								<div class="col-xs-8">
 									<h4>沙龍會議室名稱</h4>
 									<p>xxxxxx xxxxx xxxx xxx xx x</p>
 								</div>
@@ -67,23 +91,23 @@
 								<p>text text text text text text text.</p>
 								<p>text text text text text text text.</p>
 							</div>
-							<p class="grey text-right">费用：<i class="fa fa-yen"></i> <span class="fz16 red">23</span> 元</p>
+							<p class="grey text-right">费用：¥ <span class="fz16 red">23</span> 元</p>
 						</div>
 					</article>
 				</div>
 
-				<div class="card px-1 py-1">
+				<div class="card px-1 py-1 brt3">
 					<header>
 						<h3 class="pl-1 text-muted">報名資訊</h3>
 					</header>
 					<div class="h1em"></div>
 
 					<article>
-						<form class="form-horizontal">
+						<form id="salonForm" class="form-horizontal">
 							<section class="form-group">
-								<label for="" class="col-sm-3 control-label grey">真实姓名</label>
+								<label for="" class="col-sm-3 control-label grey"><b class="red">*</b> 真实姓名</label>
 								<div class="col-sm-8">
-									<input type="text" class="form-control" id="" placeholder="真实姓名">
+									<input type="text" class="form-control" id="" name="username" placeholder="真实姓名">
 								</div>
 							</section>
 							<section class="form-group">
@@ -92,21 +116,24 @@
 									<select class="form-control">
 										<option>男</option>
 										<option>女</option>
+										<option>Other</option>
 									</select>
 								</div>
 							</section>
 							<section class="form-group">
-								<label for="" class="col-sm-3 control-label grey">聯絡電郵</label>
+								<label for="" class="col-sm-3 control-label grey"><b class="red">*</b> 聯絡電郵</label>
 								<div class="col-sm-8">
-									<input type="text" class="form-control" id="" placeholder="聯絡電郵">
+									<input type="text" class="form-control" id="" name="email" placeholder="聯絡電郵">
 								</div>
 							</section>
 							<section class="form-group">
-								<label for="" class="col-sm-3 control-label grey">聯絡手機</label>
+								<label for="" class="col-sm-3 control-label grey"><b class="red">*</b> 聯絡手機</label>
 								<div class="col-sm-8">
-									<input type="text" class="form-control" id="" placeholder="聯絡手機">
+									<input type="tel" class="form-control" id="" name="phonenumber" placeholder="聯絡手機">
 								</div>
 							</section>
+							<hr class="py-1 hidden-xs">
+							<div class="h3em hidden-sm hidden-md hidden-lg"></div>
 							<section class="form-group">
 								<label for="" class="col-sm-3 control-label grey">职 业</label>
 								<div class="col-sm-8 form-inline">
@@ -157,6 +184,7 @@
 									<input type="text" class="form-control" id="" placeholder="服務機構">
 								</div>
 							</section>
+							<div class="h3em hidden-xs"></div>
 							<section class="form-group">
 								<label for="" class="col-sm-3 control-label grey">学校名称</label>
 								<div class="col-sm-8">
@@ -200,12 +228,12 @@
 							<!-- <section class="form-group">
 								<div class="col-sm-8 col-sm-offset-3">
 									<div class="checkbox_btn">
-										<input type="checkbox" value="option1" id="Remember" name="Remember">
+										<input type="checkbox" value="option1" id="Remember" name="remember">
 										<label for="Remember" style="padding-left:0;" class="checkbox-inline">Remember my information</label>
 									</div>
 								</div>
 							</section> -->
-							<hr/>
+							<hr class="py-1">
 							<section class="form-group">
 								<div class="col-xs-6 col-sm-4 col-sm-offset-2">
 									<button type="submit" class="pushy-btn btn-lg btn-block btn--grey" onclick="history.go(-1)">離 開</button>
@@ -237,15 +265,43 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<!-- jquery-validate plugin -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+	<!-- 本地化信息文件 -->
+	<script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/localization/messages_zh.js"></script>
 	<script src="assets/js/global_main.js" /></script>
 	<script type="text/javascript">
 	$(document).ready(function() {
 		setTimeout(function(){
-			//$(".navbar-nav:first-child").children('li:nth-child(5)').children('a').addClass("red");
-			//$("#footMenuBar .footMenu_btn").children('li:nth-child(5)').addClass("sel");
-		},500); 
+			$(".navbar-nav:first-child").children('li:nth-child(3)').children('a').addClass("red");
+			//$("#footMenuBar .footMenu_btn").children('li:nth-child(3)').addClass("sel");
+		},500);
+
+		// validate form it is submitted
+		$.validator.setDefaults({
+			submitHandler: function() {
+				alert("這事件可被提交!");
+			}
+		});
+
+		$("#salonForm").validate({
+			rules: {
+				username: {
+					required: true,
+					minlength: 3
+				},
+				email: {
+					required: true,
+					email: true
+				},
+				phonenumber: {
+					required: true,
+					minlength: 10
+				}
+			}
+		});
 	});
 	</script>
-	
+
 </body>
 </html>
