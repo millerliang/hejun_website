@@ -667,6 +667,7 @@ box-shadow: none;
 	.form-horizontal .form-group {margin-right: .5rem;margin-left: .5rem;}
 	.checkbox-inline, .radio-inline {padding:0;}
 	#SearchModal .modal-footer button {width:49%;margin-bottom__:.5rem;}
+	#ForgotModal .modal-footer button {width:48%;}
 	.view_list a {width:7em;}
 	.view_list .table-box {width:100%;float:none;padding:.25rem 0;}
 	.fz13{font-size: inherit;}

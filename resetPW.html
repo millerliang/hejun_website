@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>website index page</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link rel="stylesheet" href="assets/css/pushy-buttons.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/flaticon.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+	<style>
+	.error{color:red;}
+	label.error{border:none;font-size:small;position:absolute;white-space:nowrap;left:1rem;top:3.8em;
+	-webkit-animation: fadein .8s;
+       -moz-animation: fadein .8s;
+        -ms-animation: fadein .8s;
+         -o-animation: fadein .8s;
+            animation: fadein .8s;
+	}
+	#password-error,#confirm_password-error{left:0;}
+	</style>
+</head>
+
+<body>
+	<!-- Fixed navbar -->
+	<nav id="navBar" class="navbar navbar-default navbar-SH navbar-fixed-top" role="navigation"></nav>
+
+	<main class="container">
+		<div class="top-height">
+			<article class="table-box navbar-fixed-top top-Menu">
+				<section onclick="location.href='index.html'"><img class="m-logo" src="assets/images/hejun_logo.png"></section>
+				<section>修改密碼</section>
+				<section>　</section>
+			</article>
+		</div><!-- /.row -->
+
+		<div class="row">
+			<article class="col-md-10 col-md-offset-1 card">
+
+				<form id="signupForm" class="form-horizontal px-1">
+					<center style="padding:2em 0 3em;">
+						<img class="img-responsive mb-1" src="assets/images/hejun_logo.png">
+						<p class="grey">请设定8位英数字的登入密码，英文无区分大小写</p>
+					</center>
+
+					<section class="form-group">
+						<label for="password" class="col-sm-4 col-md-3 control-label"><b class="red">*</b> 我的新密碼</label>
+						<div class="col-sm-7 col-md-8">
+							<div class="input-group">
+								<input class="form-control input-lg" type="password" id="password" name="password"  placeholder="Password(8 Characters)">
+								<label class="input-group-addon btn"><input class="ShowHidePW hidden" type="checkbox"><i class="fa fa-eye grey"></i> <small>SHOW</small></label>
+							</div>
+						</div>
+					</section>
+					<div class="h1em"></div>
+					<section class="form-group">
+						<label for="confirm_password" class="col-sm-4 col-md-3 control-label"><b class="red">*</b> 再次輸入密碼</label>
+						<div class="col-sm-7 col-md-8">
+							<div class="input-group">
+								<input class="form-control input-lg" type="password" id="confirm_password" name="confirm_password"  placeholder="Confirm password">
+								<label class="input-group-addon btn"><input class="ShowHidePW hidden" type="checkbox"><i class="fa fa-eye grey"></i> <small>SHOW</small></label>
+							</div>
+						</div>
+					</section>
+					<div class="h3em"></div>
+					<section class="col-sm-offset-3 col-md-offset-2">
+						<div class="row">
+							<div class="col-sm-6">
+								<input class="pushy-btn btn-lg btn-block btn--red" type="submit" value="確 認">
+							</div>
+							<div class="col-sm-6">
+								<button style="margin-top:.6em;" type="button" class="pushy-btn btn--grey btn-block btn-lg">取 消</button>
+							</div>
+						</div>
+					</section>
+					<div class="h2em"></div>
+				</form>
+
+			</article><!-- Layout Right aside End -->
+
+		</div><!-- /.row -->
+	</main><!-- /.container -->
+
+	<!-- <div class="container">
+		<article id="footMenuBar"></article>
+	</div> -->
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<!-- jquery-validate plugin -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+	<!-- 本地化信息文件 -->
+	<script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/localization/messages_zh.js"></script>
+	<script src="assets/js/global_main.js" /></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		setTimeout(function(){
+			//$("#footMenuBar .footMenu_btn").children('li:nth-child(1)').addClass("sel");
+			//$(".navbar-nav").children('li:nth-child(6)').children('a').addClass("red");
+		},500);
+
+		// Show & Hide Password
+		$(".ShowHidePW").change(function(){
+			if($(this).is(':checked')){
+				$(this).parents("div").children("input").attr("type","text");
+			}else{
+				$(this).parents("div").children("input").attr("type","password");
+			}
+		});
+		
+		// validate form it is submitted
+		$.validator.setDefaults({
+			submitHandler: function() {
+				alert("這事件可被提交!");
+			}
+		});
+
+		$("#signupForm").validate({
+			rules: {
+				password: {
+					required: true,
+					minlength: 8
+				},
+				confirm_password: {
+					required: true,
+					minlength: 8,
+					equalTo: "#password"
+				}
+			},
+			messages: {
+				confirm_password: {
+					equalTo: "兩次密碼不相同"
+				}
+			}
+		});
+	});
+	</script>
+	
+</body>
+</html>

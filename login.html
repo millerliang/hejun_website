@@ -62,7 +62,7 @@
 							<div class="checkbox_btn">
 								<input type="checkbox" id="remember" value="option1">
 								<label style="padding-left:0;" for="remember" class="checkbox-inline">Remember User ID</label>
-								<a data-toggle="modal" data-target="#ForgotModal" class="pull-right grey" style="margin-top:1.5em;" href="#0">Forgot?</a>
+								<a data-toggle="modal" data-target="#ForgotModal" class="pull-right grey" style="margin-top:1.5em;" href="#0"><i class="fa fa-key grey"></i> 忘記密碼?</a>
 							</div>
 						</div>
 					</section>
@@ -114,7 +114,44 @@
 	</main><!-- /.container -->
 	
 	<!-- Search Modal -->
-	<div class="modal fade" id="SearchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"></div>
+	<div class="modal fade" id="SearchModal"></div>
+
+	<div class="modal fade" id="ForgotModal">
+		<form class="modal-dialog" role="document">
+			<section class="modal-content">
+				<header class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+					<h4 class="modal-title" id="myModalLabel">
+						<i class="fa fa-key"></i> 忘記密碼
+					</h4>
+				</header>
+			<section class="modal-body">
+				<center><img class="img-responsive" src="assets/images/ForgotLock.png"></center>
+				<p class="my-2">您好，請選定聯絡方式，收取密碼重設通知信</p>
+				<ul class="nav nav-pills nav-justified" role="tablist">
+					<li role="presentation" class="active"><a href="#SendMail" aria-controls="a" role="tab" data-toggle="tab"><i class="fa fa-check white"></i> 送至郵箱</a></li>
+					<li role="presentation"><a href="#SendPhone" aria-controls="b" role="tab" data-toggle="tab"><i class="fa fa-check white"></i> 送至手機</a></li>
+				</ul>
+				<div class="h1em"></div>
+				<article class="tab-content row">
+					<div role="tabpanel" class="tab-pane fade in active" id="SendMail">
+						<input type="email" class="form-control input-lg" placeholder="type your e-mail">
+					</div>
+					<div role="tabpanel" class="tab-pane fade in" id="SendPhone">
+						<input type="tel" class="form-control input-lg" placeholder="phone number">
+					</div>
+				</article>
+				<div class="h1em"></div>
+			</section>
+			<footer class="modal-footer">
+				<button type="button" class="pushy-btn btn--grey" data-dismiss="modal">Close</button>&nbsp;
+				<button type="button" class="pushy-btn btn--red">Send</button>
+			</footer>
+			</section>
+		</form>
+	</div>
 
 	<div class="h6em hidden-md hidden-lg"></div>
 
