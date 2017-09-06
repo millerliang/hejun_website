@@ -11,6 +11,14 @@
 	<link rel="stylesheet" href="assets/css/pushy-buttons.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/flaticon.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+	<style>
+	.lottery2 {list-style: none;padding:0;margin:0;background-color:#fff;}
+	.lottery2 li a {font-size:medium;display:block;padding:.5rem 0 .5rem 1rem;border-bottom:1px solid rgba(0,0,0,.12);line-height:2;background:url(assets/images/arrow-right.svg) right center no-repeat;background-size:auto 50%;}
+	.lottery2 li a:hover,.lottery2 li a:focus {color:#e65d4f;text-decoration: none;}
+	.lottery2 li a label {color:#333;}
+	.lottery2 li a i {font-size:125%;margin-right:.8rem;}
+	#logoutModal .modal-content {margin-top:65%;}
+	</style>
 </head>
 
 <body>
@@ -23,7 +31,7 @@
 				<section onclick="location.href='index.html'"><img class="m-logo" src="assets/images/hejun_logo.png"></section>
 				<!-- <section onclick="history.go(-1)"><i class="fa fa-chevron-left"></i> back</section> -->
 				<section>我的资料</section>
-				<section><!-- <i class="fa fa-chevron-right"></i> --></section>
+				<section><span class="grey" data-toggle="modal" data-target="#logoutModal"><i class="fa fa-power-off"></i> 登出　</span></section>
 			</article>
 		</div><!-- /.row -->
 
@@ -31,69 +39,35 @@
 			<!-- Layout Main aside Star -->
 			<aside class="col-sm-3 hidden-xs" style="margin-top:1rem;">
 				<ul class="list-group">
-					<li class="list-group-item"><a href="u1.html">我的课程</a></li>
-					<li class="list-group-item"><a href="u4.html">我的沙龙</a></li>
+					<li class="list-group-item active"><a href="userprofile.html">我的资料</a></li>
 					<li class="list-group-item"><a href="u3.html">我的余额</a></li>
 					<li class="list-group-item"><a href="u2.html">我的订单</a></li>
-					<li class="list-group-item active"><a href="userprofile.html">我的资料</a></li>
-					<li class="list-group-item"><span class="badge">0</span><a href="u7.html">站内信</a></li>
 					<li class="list-group-item"><a href="u5.html">课程卡储值</a></li>
-					<li class="list-group-item"><a href="u6.html">好友邀请纪录</a></li>
+					<li class="list-group-item"><span class="badge">0</span><a href="u7.html">站内信</a></li>
 					<li class="list-group-item"><a href="u8.html">帮助中心</a></li>
+					<li class="list-group-item"><a href="u1.html">我的课程</a></li>
+					<!-- <li class="list-group-item"><a href="u6.html">好友邀请纪录</a></li>
+					<li class="list-group-item"><a href="u4.html">我的沙龙</a></li> -->
 				</ul>
 			</aside><!-- Layout Main aside End -->
 			
 			<!-- Layout Right aside Star -->
 			<article class="col-sm-8">
 
-				<div class="row userProfile">
-					<header class="col-sm-12" style="margin-top:1rem;">
-						<div class="media">
-							<div class="media-left">
-								<img class="img-thumbnail" src="assets/images/avatar/a6.jpg">
-								<button onclick="location.href='edit_user.html'" class="pushy-btn btn-block btn-sm btn--red hidden-xs"><i class="fa fa-pencil-square-o"></i> Edit</button>
-								<div class="h1em hidden-xs"></div>
+				<div class="row userProfile white_bg">
+					<header>
+						<button style="position: absolute;left:1em;top:1em;" onclick="location.href='edit_user.html'" class="pushy-btn btn-sm btn--red hidden-xs"><i class="fa fa-pencil-square-o"></i> Edit</button>
+						<center style="height:8.5em;padding:1.5rem 0;background: url('https://loading.io/patterns/ripple/index.rainy-day-texture.gif') repeat center top #dfe8ec;">
+							<span class="userLV"><i class="fa fa-diamond"></i> 70 ‧ LV-12</span>
+							<div>
+								<img class="img-thumbnail img-rounded mb-1" src="assets/images/avatar/a6.jpg">
+								<h4 class="media-heading red">甄妮 王</h4>
+								<div class="grey-lighter fz10">JYT - 經理</div>
 							</div>
-							<div class="media-body">
-								<div class="pull-right hidden" style="margin-top:-.5em;position:relative;">
-									<div class="dropdown">
-										<button class="btn btn-lg btn-link dropdown-toggle grey" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-											<i class="fa fa-ellipsis-v"></i>
-											<!-- Option
-											<span class="caret"></span> -->
-										</button>
-										<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-											<li><a href="edit_user.html">Edit Profile</a></li>
-											<li><a href="#">Following</a></li>
-											<li><a href="#">Likes</a></li>
-											<li role="separator" class="divider"></li>
-											<li><a href="#">Delete Account</a></li>
-										</ul>
-									</div>
-								</div>
-								<h4 class="media-heading red">Janet Carton</h4>
-								<p class="text-muted"><small>JYT, Inc. - 經理 ‧ <i class="fa fa-female red"></i></small> <i class="fa fa-male blue"></i></small></p>
-								<p><i class="fa fa-envelope-o"></i> <a href="mailto:ning@hotmail.com">ning@hotmail.com</a></p>
-								<p><i class="fa fa-mobile"></i> +886 918223344</p>
-								<p><i class="fa fa-qq text-muted"></i> QQ ---</p>
-								<!-- <p>
-									<i class="fa fa-wechat text-success"></i> Wechat
-									<button class="btn btn-xs">未綁定</button>
-									<button class="btn btn-xs btn-success"><i class="fa fa-check"></i> 已綁定</button>
-								</p> -->
-								<p class="text-muted hidden">
-									<button class="btn btn-sm btn-link" type="button" data-toggle="collapse" data-target="#more_show" aria-expanded="false" aria-controls="more_show"><i class="fa fa-angle-down"></i> More...</button>
-								</p>
-								<div class="collapse" id="more_show">
-									<footer class="input-group col-sm-12">
-										<p><a href="#"><i class="fa fa-weixin green"></i> weixin ---</a></p>
-										<p><a href="#"><i class="fa fa-facebook-square text-primary"></i> facebook ---</a></p>
-										<p><i class="fa fa-map-marker red"></i> 中國上海市黄浦区打浦桥徐家汇路550号宝鼎大厦9楼902室</p>
-									</footer><!-- /more_show -->
-								</div>
-							</div>
-						</div>
+						</center>
 					</header>
+
+					<div class="h6em"></div>
 
 					<ul class="table-box infomaction">
 						<li><b>50</b>代 幣</li>
@@ -101,27 +75,62 @@
 						<li><b>VIP</b>等 級</li>
 					</ul>
 					<article>
+						<section style="padding:1em .6em 0;" class="card hidden-xs">
+							<ul class="list-group">
+								<li class="list-group-item">
+									<span class="pull-right">
+										<button class="btn btn-xs btn-success"><i class="fa fa-check"></i> 已認證</button>
+									</span>
+									<a href="mailto:ning@hotmail.com"><i class="fa fa-envelope-o"></i> ning@hotmail.com</a>
+								</li>
+								<li class="list-group-item">
+									<span class="pull-right">
+										<button class="btn btn-xs">未認證</button>
+									</span>
+									<i class="fa fa-mobile"></i> +886 918223344
+								</li>
+								<li class="list-group-item">
+									<span class="pull-right">
+										<button class="btn btn-xs btn-success"><i class="fa fa-check"></i> 已綁定</button>
+									</span>
+									<i class="fa fa-wechat text-success"></i> Wechat
+								</li>
+								<li class="list-group-item">
+									<span class="pull-right">
+										<button class="btn btn-xs">未綁定</button>
+									</span>
+									<i class="fa fa-qq"></i> QQ ---
+								</li>
+								<li class="list-group-item">
+									<span class="pull-right">
+										<button class="btn btn-xs">未綁定</button>
+									</span>
+									<a href="#"><i class="fa fa-facebook-square text-primary"></i> facebook ---</a>
+								</li>
+								<li class="list-group-item">
+									<span class="pull-right">
+										<button class="btn btn-xs">編輯地址</button>
+									</span>
+									<i class="fa fa-map-marker red"></i> 中國上海市黄浦区打浦桥徐家汇路550号宝鼎大厦9楼902室
+								</li>
+							</ul>
+						</section>
 						<section class="col-sm-12 hidden-sm hidden-md hidden-lg">
 							<div class="row">
-								<ul class="lottery">
-									<li><a href="u1.html"><i class="flaticon-calendar-2"></i><label>我的课程</label></a></li>
-									<li><a href="u4.html"><span class="badge red_bg">1</span><i class="flaticon-favorites"></i><label>我的沙龙</label></a></li>
+								<ul class="lottery2">
+									<li><a href="edit_user.html"><i class="flaticon-profile"></i><label>個人信息 <small class="grey">(我的資料)</small></label></a></li>
 									<li><a href="u3.html"><i class="flaticon-currency"></i><label>我的余额</label></a></li>
-									<li><a href="u2.html"><i class="flaticon-folder"></i><label>我的订单</label></a></li>
-									<li><a href="edit_user.html"><i class="flaticon-profile"></i><label>我的资料</label></a></li>
-									<li><span class="badge">0</span><a href="u7.html"><i class="flaticon-megaphone"></i><label>站内信</label></a></li>
+									<li><a href="u2.html"><i class="flaticon-folder"></i><label>我的已購 <small class="grey">(我的訂單)</small></label></a></li>
 									<li><a href="u5.html"><i class="flaticon-calendar"></i><label>课程卡储值</label></a></li>
-									<li><a href="u6.html"><i class="flaticon-handshake"></i><label>好友邀请纪录</label></a></li>
+									<li><a href="u7.html"><i class="flaticon-megaphone"></i><label>站内信</label></a></li>
 									<li><a href="u8.html"><i class="flaticon-information"></i><label>帮助中心</label></a></li>
+									<li><a href="u1.html"><i class="flaticon-calendar-2"></i><label>我的课程</label></a></li>
+									<li><a data-toggle="modal" data-target="#logoutModal" href="#0"><i class="fa fa-power-off red"></i><label>登出 / 登入</label></a></li>
+									<!-- <li><a href="u4.html"><i class="flaticon-favorites"></i><label>我的沙龙</label></a></li>
+									<li><a href="u6.html"><i class="flaticon-handshake"></i><label>好友邀请纪录</label></a></li> -->
 								</ul>
 							</div>
 						</section>
-						<!-- <section class="col-sm-12 hidden-xs">
-							<br/>
-							<p>絕中機教拉一物不快多觀一；天成取？廠片陽財，位魚稱……已系大著定花的，力痛步：間道舉認的；十這信創老天比理落此……功黑到小信難成拿：試視好富的人治賽維現……生的果再車性安然給人從子提岸！</p>
-							<p>則之外育絕，每工界。是當問。</p>
-							<p>手什一活你小，品來氣是？常亞藝影斷於體前也的導的別反失拿開們、玩而知然之一？化住化生還愛，房愛家是總示不處去這不往球產另作！長行成能的頭方身做自質跟升制，色死美然中只院可，這輪極且在第識示性元麼的門！</p>
-						</section> -->
 					</article>
 				</div><!-- /.row -->
 				
@@ -134,18 +143,39 @@
 	<!-- Search Modal -->
 	<div class="modal fade" id="SearchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"></div>
 
+	<div class="modal fade" id="logoutModal">
+		<article style="max-width:25em;margin:auto;" class="modal-dialog">
+			<section class="modal-content">
+				<header class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+					<h4 class="modal-title" id="myModalLabel">
+						<i class="fa fa-exclamation-triangle"></i> 訊息提示
+					</h4>
+				</header>
+				<section class="modal-body text-center">
+					<h3>登出哦？</h3>
+					<div class="h1em"></div>
+				</section>
+				<footer class="modal-footer">
+					<section class="row">
+						<div class="col-xs-6">
+							<button style="width:100%;" type="button" class="pushy-btn btn-block btn--grey" data-dismiss="modal">Close</button>
+						</div>
+						<div class="col-xs-6">
+							<button style="width:100%;" type="button" class="pushy-btn btn-block btn--red">Confirm</button>
+						</div>
+					</section>
+				</footer>
+			</section>
+		</article>
+	</div>
+
 	<div class="h5em"></div>
 
 	<div class="container">
-		<!-- <footer>Footer bar</footer> -->
 		<article id="footMenuBar">
-			<!-- <ul class="table-box footMenu_btn">
-				<li><button class="btn btn-block btn-deault"><i class="flaticon-home"></i>首頁</button></li>
-				<li><button class="btn btn-block btn-deault"><i class="flaticon-circle"></i>产品</button></li>
-				<li><button class="btn btn-block btn-deault"><i class="flaticon-calendar-1"></i>课程</button></li>
-				<li><button class="btn btn-block btn-deault"><i class="flaticon-profile-1"></i>会员</button></li>
-				<li><button class="btn btn-block btn-deault"><i class="flaticon-favorites"></i>活动</button></li>
-			</ul> -->
 		</article>
 	</div>
 
