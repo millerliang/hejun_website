@@ -16,6 +16,8 @@
 	.lottery2 li a {font-size:medium;display:block;padding:.5rem 0 .5rem 1rem;border-bottom:1px solid rgba(0,0,0,.12);line-height:2;background:url(assets/images/arrow-right.svg) right center no-repeat;background-size:auto 50%;}
 	.lottery2 li a:hover,.lottery2 li a:focus {color:#e65d4f;text-decoration: none;}
 	.lottery2 li a label {color:#333;}
+	.lottery2 li a span {position:absolute;right:2em;margin-top: .4em;}
+	.lottery2 li a span.badge {right:2.6em;margin-top: 1.1em;}
 	.lottery2 li a i {font-size:125%;margin-right:.8rem;}
 	#logoutModal .modal-content {margin-top:65%;}
 	</style>
@@ -119,10 +121,10 @@
 							<div class="row">
 								<ul class="lottery2">
 									<li><a href="edit_user.html"><i class="flaticon-profile"></i><label>個人信息 <small class="grey">(我的資料)</small></label></a></li>
-									<li><a href="u3.html"><i class="flaticon-currency"></i><label>我的余额</label></a></li>
-									<li><a href="u2.html"><i class="flaticon-folder"></i><label>我的已購 <small class="grey">(我的訂單)</small></label></a></li>
+									<li><a href="u3.html"><i class="flaticon-currency"></i><label>我的余额</label><span class="hidden">¥ 50</span></a></li>
+									<li><a href="u2.html"><i class="flaticon-folder"></i><label>我的已購 <small class="grey">(我的訂單)</small></label><span class="badge">2</span></a></li>
 									<li><a href="u5.html"><i class="flaticon-calendar"></i><label>课程卡储值</label></a></li>
-									<li><a href="u7.html"><i class="flaticon-megaphone"></i><label>站内信</label></a></li>
+									<li><a href="u7.html"><i class="flaticon-megaphone"></i><label>站内信</label><span class="badge red_bg">3</span></a></li>
 									<li><a href="u8.html"><i class="flaticon-information"></i><label>帮助中心</label></a></li>
 									<li><a href="u1.html"><i class="flaticon-calendar-2"></i><label>我的课程</label></a></li>
 									<li><a data-toggle="modal" data-target="#logoutModal" href="#0"><i class="fa fa-power-off red"></i><label>登出 / 登入</label></a></li>

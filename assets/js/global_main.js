@@ -410,8 +410,9 @@ $.each(item2_text,function(index,obj)
 	list_item2 ='<section class="col-xs-6 col-sm-4">';
 	list_item2 +='<div class="card">';
 	list_item2 +='<section style="position: relative;">';
-	list_item2 +='<a class="price2_img" href="'+ obj.item2_url +'">';
-	list_item2 +='<img src="'+ obj.item2_img +'">';
+	list_item2 +='<a class="price2_img" href="'+ obj.item2_url +'" style="background:no-repeat top center #c1d5e8;background-size:cover;background-image: url('+ obj.item2_img +')">';
+	//list_item2 +='<img src="'+ obj.item2_img +'">';
+	list_item2 +='<img src="assets/images/transparentBG.png">';
 	list_item2 +='</a>';
 	list_item2 +='<ul class="table-box" style="padding: .35rem 0;position: absolute;bottom: 0;color: white;background: rgba(0,0,0,.35);">';
 	list_item2 +='<li><span><i class="fa fa-shopping-cart"></i> 購買 '+ obj.item2_buy +'</span></li>';
@@ -419,7 +420,7 @@ $.each(item2_text,function(index,obj)
 	list_item2 +='</ul>';
 	list_item2 +='</section>';
 	list_item2 +='<section>';
-	list_item2 +='<h5 class="brt brb h2em" style="padding:0 .1rem 0 .8rem;">'+ obj.item2_title +'</h5>';
+	list_item2 +='<h5 style="height: 3.2em;padding:0 .1rem .8rem .8rem;overflow:hidden;">'+ obj.item2_title +'</h5>';
 	list_item2 +='<ul class="table-box">';
 	list_item2 +='<li class="pl-1" style="text-align:left;"><span class="badge pr-1 label_'+ obj.item2_icoColor +'"><i class="fa fa-user"></i> '+ obj.item2_type +'</span></li>';
 	list_item2 +='<li class="red pr-1" style="text-align:right;">¥ <span class="fz16">'+ obj.item2_price +'</span></li>';

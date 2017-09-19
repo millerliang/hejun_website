@@ -24,7 +24,7 @@ a {color:#333;}
 .black_bg {background-color:#000;}
 .noww{white-space:nowrap;}
 hr {border-color:#e0e0e0;}
-.sye_msg {display:none;position:absolute;right:.6rem;top:.3rem;background-color:#e65d4f;padding:2px 5px;font-size:xx-small;}
+.sye_msg {display__:none;position:absolute;transform: translateX(.3rem);top:.3rem;background-color:#e65d4f;padding:2px 5px;font-size:xx-small;}
 .h1em {height:1em;}
 .h2em {height:2em;}
 .h3em {height:3em;}

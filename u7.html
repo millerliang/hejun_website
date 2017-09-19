@@ -22,7 +22,7 @@
 			<article class="table-box navbar-fixed-top top-Menu">
 				<section onclick="history.go(-1)"><i class="fa fa-chevron-left"></i> back</section>
 				<section>站内信</section>
-				<section><!-- <i class="fa fa-chevron-right"></i> --></section>
+				<section><i class="fa fa-edit"></i>　</section>
 			</article>
 		</div><!-- /.row -->
 
@@ -49,7 +49,7 @@
 					<header class="hidden-xs">
 						<h3><i class="flaticon-megaphone"></i> 站内信</h3>
 					</header>
-					<div class="h1em"></div>
+					<h5 class="pl-1"><i class="fa fa-envelope-o"></i> 未讀 (4)</h5>
 					<article class="card" style="padding:.8rem 0 .1rem 1rem;">
 						<ol id="sys_notice" class="sys-msg">
 							<!-- <li>
@@ -62,6 +62,10 @@
 								<time>- 2017/05/05</time>
 							</li> -->
 						</ol>
+					</article>
+					<h5 class="pl-1"><i class="fa fa-envelope-open-o"></i> 已讀 (0)</h5>
+					<article class="card" style="padding:.8rem 0 .1rem 1rem;">
+						<ol id="sys_notice_read" class="sys-msg"></ol>
 					</article>
 				</div><!-- /.row -->
 
@@ -106,9 +110,9 @@
 	$.each(data_text,function(index,obj)
 	{
 		this_items ='<li>';
-		//this_items +='<button class="pull-right btn btn--link"><i class="fa fa-trash-o fz12 red"></i></button>';
+		this_items +='<button class="pull-right btn btn--link"><i class="fa fa-trash-o fz12 red"></i></button>';
 		this_items +='<label>';
-		//this_items +='<input type="checkbox" class="hidden"> <i class="fa fa-envelope-o"></i>';
+		//this_items +='<input type="checkbox" class="hidden_">';
 		this_items +='【主旨】'+ obj.items_title +'';
 		this_items +='</label>';
 		this_items +='<p>'+ obj.items_remarks +'</p>';
