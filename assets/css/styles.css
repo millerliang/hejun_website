@@ -555,7 +555,7 @@ __box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);}
 
 .entry {clear: both;text-align: left;position: relative;}
 .entry .date {float: left;width: 15%;text-align: center;position: relative;}
-.entry .date:before {content: '';position: absolute;width:13px;height:13px;border: 2px solid #fff;background-color: #e65d4f;border-radius: 100%;top: 15%;right:-.95rem;z-index: 99;}
+.entry .date:before {content: '';position: absolute;width:13px;height:13px;border: 2px solid #fff;background-color: #e65d4f;border-radius: 100%;top: 6.5%;right:-.95rem;z-index: 99;}
 
 .entry .date dl {max-width:80%;margin:0 auto;background-color:white;border:1px solid rgba(0,0,0,.12);}
 .entry .date dt {font-size: x-large;color:#666;padding:.2rem 0;}
@@ -581,6 +581,11 @@ __box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);}
   content: "–";
   margin-right: .5em;
 }
+
+.entry .subStatus {position:relative;display:inline-block;}
+.entry .subStatus img.hoverSize:hover {box-shadow:0px 2px 8px rgba(0,0,0,.45);transform: scale(1.01,1.01);}
+.entry .subStatus small {position: absolute;right:0;bottom:0;z-index:2;color: white;padding: .3rem 1rem .3rem 1.8rem;background:rgba(199,26,22,0.65);white-space: nowrap;}
+.entry .subStatus small:before {position:absolute;content: "";background-color:#bd554f;width:.8rem;height:2rem;top:0;left:0;display:block;}
 
 /* label checkbox toggle show, hidden */
 label.thisSH {display:block;}
