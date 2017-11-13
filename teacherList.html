@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>website hejun page</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link rel="stylesheet" href="assets/css/pushy-buttons.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/flaticon.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+	<style>
+	.PaymentDetails{border-bottom: dotted 1px #d8d8d8;padding:.8rem .5rem;margin:0 0 .3em;}
+	.SubTitle{position:relative;top:-1.1rem;padding: .2rem .5rem .3rem;background-color:#929a99;color:white;-webkit-border-radius:0 0 3px 0;-moz-border-radius:0 0 3px 0;border-radius:0 0 3px 0;}
+	.SubTitle::after{content:"";width: 0;margin-left:.33em;height: 0;border-style: solid;border-width: 1.75em 1.2em 0 0;border-color: #929a99 transparent transparent transparent;position:absolute;}
+	</style>
+</head>
+
+<body>
+	<!-- Fixed navbar -->
+	<nav id="navBar" class="navbar navbar-default navbar-SH navbar-fixed-top" role="navigation"></nav>
+
+	<div class="container">
+		<div class="top-height">
+			<article class="table-box navbar-fixed-top top-Menu">
+				<section onclick="location.href='index.html'"><i class="fa fa-chevron-left"></i> back</section>
+				<section>高级讲师</section>
+				<section><a data-toggle="modal" data-target="#SearchModal" href="#"><i class="fa fa-search"></i> <span class="hidden-xs">Search</span></a>　</section>
+			</article>
+		</div>
+
+		<!-- Layout Main aside Star -->
+		<article class="col-md-8">
+
+			<div class="hidden-sm h1em"></div>
+			<ol class="breadcrumb hidden-xs hidden-sm row">
+				<li class="breadcrumb-item"><a href="index.html"><i class="flaticon-home"></i> Home</a></li>
+				<li class="breadcrumb-item active">高级讲师</li>
+			</ol>
+
+			<style>
+				.forUserCard {cursor: pointer;}
+				.forUserCard .card {position: relative;margin:0 .35rem;margin-bottom:1rem;-webkit-transition: all 0.3s;-moz-transition: all .3s;-o-transition: all .3s;transition: all .3s;}
+				.forUserCard .card:hover {-ms-transform: scale(1.05, 1.05);-webkit-transform: scale(1.05, 1.05);transform: scale(1.05, 1.05);-webkit-transition: all 0.5s;-moz-transition: all .5s;-o-transition: all .5s;transition: all .5s;}
+				.forUserCard .bgImg {height:12vh;overflow:hidden;}
+				.forUserCard .bgImg img {width:100%;-ms-transform: scale(1.2, 1.2);-webkit-transform: scale(1.2, 1.2);transform: scale(1.2, 1.2);-webkit-filter: grayscale(60%) blur(5px);filter: grayscale(60%) blur(5px);}
+				.forUserCard .usericon {position:absolute;width:100%;text-align:center;transform: translateY(-45%);-webkit-transform: translateY(-45%);-moz-transform: translateY(-45%);}
+				.forUserCard .usericon img {max-width:40%;margin-bottom:.8rem;box-shadow: 0 1px 5px rgba(50, 50, 50, 0.5);-webkit-box-shadow: 0 1px 5px rgba(50, 50, 50, 0.5);-moz-box-shadow: 0 1px 5px rgba(50, 50, 50, 0.5);}
+				.forUserCard .card-text {margin-top: 4.5rem;text-align:center;}
+				.forUserCard .card-text p {margin:0;}
+				.forUserCard .card-text footer {border-top:1px solid rgba(0,0,0,.08);line-height:2.5;margin-top:.8rem;}
+			</style>
+			<div class="row forUserCard">
+				<section class="col-xs-6 col-sm-4">
+					<div class="card">
+						<div class="bgImg">
+							<img src="http://endlesstheme.com/simplify1.0/images/profile/profile4.jpg">
+						</div>
+						<div class="usericon">
+							<img class="img-circle" src="http://endlesstheme.com/simplify1.0/images/profile/profile4.jpg">
+						</div>
+						<div class="card-text">
+							<h4>蔡春华</h4>
+							<p>和恒咨询有限公司</p>
+							<p class="grey">副总经理</p>
+							<footer>视频教程：7个</footer>
+						</div>
+					</div>
+				</section>
+				<section class="col-xs-6 col-sm-4">
+					<div class="card">
+						<div class="bgImg">
+							<img src="assets/images/avatar/user_male.png">
+						</div>
+						<div class="usericon">
+							<img class="img-circle" src="assets/images/avatar/user_male.png">
+						</div>
+						<div class="card-text">
+							<h4>李岩</h4>
+							<p>升恒昌有限公司</p>
+							<p class="grey">---</p>
+							<footer>视频教程：5个</footer>
+						</div>
+					</div>
+				</section>
+				<section class="col-xs-6 col-sm-4">
+					<div class="card">
+						<div class="bgImg">
+							<img src="assets/images/avatar/user_female.png">
+						</div>
+						<div class="usericon">
+							<img class="img-circle" src="assets/images/avatar/user_female.png">
+						</div>
+						<div class="card-text">
+							<h4>王泉灵</h4>
+							<p>---</p>
+							<p class="grey">---</p>
+							<footer>视频教程：2个</footer>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="hidden-xs h1em"></div>
+
+		</article><!-- Layout Main aside End -->
+
+		<!-- Layout Right aside Star -->
+		<aside class="col-sm-12 col-md-4">
+			<div class="h5em hidden-xs hidden-sm"></div>
+		</aside><!-- Layout Right aside End -->
+
+	</div><!-- /.container -->
+	
+	<!-- Search Modal -->
+	<div class="modal fade" id="SearchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"></div>
+
+	<!-- Comment Modal -->
+	<div class="modal fade" id="commentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"></div>
+
+	<div class="h3em hidden-xs"></div>
+
+	<!-- <div class="container">
+		<article id="footMenuBar"></article>
+	</div> -->
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<script src="assets/js/global_main.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$(".forUserCard .card").on('click', function(){
+			 window.location = "teacherProfile.html";    
+		});
+		setTimeout(function(){
+			//$("#footMenuBar .footMenu_btn").children('li:nth-child(2)').addClass("sel");
+			//$(".navbar-nav:first-child").children('li:nth-child(2)').children('a').addClass("red");
+		},500);
+	});
+	</script>
+
+</body>
+</html>

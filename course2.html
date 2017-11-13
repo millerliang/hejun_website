@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>website hejun page</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link rel="stylesheet" href="assets/css/pushy-buttons.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/flaticon.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+</head>
+
+<body>
+	<!-- Fixed navbar -->
+	<nav id="navBar" class="navbar navbar-default navbar-SH navbar-fixed-top" role="navigation"></nav>
+
+	<div class="container">
+		<div class="top-height">
+			<article class="table-box navbar-fixed-top top-Menu">
+				<section onclick="location.href='index.html'"><img class="m-logo" src="assets/images/hejun_logo.png"></section>
+				<!-- <section onclick="history.go(-1)"><i class="fa fa-chevron-left"></i> back</section> -->
+				<section>课程</section>
+				<section><a data-toggle="modal" data-target="#SearchModal" href="#"><i class="fa fa-search"></i> <!-- Search --></a>　</section>
+			</article>
+		</div>
+
+		<!-- Layout Main aside Star -->
+		<article class="col-md-8">
+
+			<div class="row">
+				<div class="hidden-xs hidden-sm" style="height:2em;"></div>
+				<ul class="nav nav-pills nav-justified" role="tablist">
+					<li role="presentation" class="active"><a href="#A" aria-controls="aa" role="tab" data-toggle="tab">单 课</a></li>
+					<li role="presentation"><a href="#B" aria-controls="bb" role="tab" data-toggle="tab">套 餐</a></li>
+					<li role="presentation"><a href="#C" aria-controls="cc" role="tab" data-toggle="tab">团 购</a></li>
+				</ul>
+				<article class="tab-content row">
+					<div role="tabpanel" class="tab-pane fade in active" id="A">
+
+						<form class="card"><!-- selextFilter -->
+							<section class="row">
+								<div class="col-xs-4">
+									<select class="form-control">
+										<option value="">类 别</option>
+										<option value="1">text</option>
+										<option value="2">text</option>
+										<option value="3">text</option>
+										<option value="4">text</option>
+										<option value="5">text</option>
+									</select>
+								</div>
+								<div class="col-xs-4">
+									<select class="form-control">
+										<option value="">讲 员</option>
+										<option value="1">text</option>
+										<option value="2">text</option>
+										<option value="3">text</option>
+										<option value="4">text</option>
+										<option value="5">text</option>
+									</select>
+								</div>
+								<div class="col-xs-4">
+									<select class="form-control">
+										<option value="">其他条件</option>
+										<option value="1">text</option>
+										<option value="2">text</option>
+										<option value="3">text</option>
+										<option value="4">text</option>
+										<option value="5">text</option>
+									</select>
+								</div>
+							</section>
+						</form><!-- selextFilter -->
+
+						<div id="course_list" class="row">
+						</div><!-- /.row -->
+
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="B">
+
+						<style>
+							.gridLayout	{
+								display: grid;
+								grid:"imgs heard" "imgs footer";
+								grid-template-columns:35% 1fr;
+								grid-template-rows:1fr 2.3rem;
+								margin-bottom: 1rem;
+							}
+							.gridLayout a {grid-area: imgs;}
+							.gridLayout header {grid-area: heard;padding:.5rem .8rem;font-size: medium;}
+							.gridLayout time {grid-area: footer;padding-left:.8rem;font-size:small;}
+						</style>
+						<article style="padding:0 .5rem;">
+
+							<section class="gridLayout card">
+								<a href="#0"><img class="img-responsive" src="assets/images/item1.jpg"></a>
+								<header>[李岩] 課程名稱 AAA</header>
+								<time class="grey">2017/11/11 到期</time>
+							</section>
+
+							<section class="gridLayout card">
+								<a href="#0"><img class="img-responsive" src="assets/images/item2.jpg"></a>
+								<header>[讲员] 課程名稱 BBB CCC DDD EEE FFF GGG HHH III JJJ KKK LLL MMM NNN</header>
+								<time class="grey">yyyy/mm/dd 到期</time>
+							</section>
+
+							<section class="gridLayout card">
+								<a href="#0"><img class="img-responsive" src="assets/images/item3.jpg"></a>
+								<header>[讲员] 課程名稱 CCC</header>
+								<time class="grey">yyyy/mm/dd 到期</time>
+							</section>
+
+						</article>
+
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="C">
+
+						<center>
+							<h1>团购</h1>
+						</center>
+
+					</div>
+				</article>
+
+			</div><!-- /.row -->
+
+		</article><!-- Layout Main aside End -->
+		
+		<!-- Layout Right aside Star -->
+		<article class="col-sm-3 col-sm-offset-1 hidden-xs hidden-sm">
+			<div style="height:2em;"></div>
+			<img src="http://www.xaxiaolu.com/mobile/images/12.jpg" class="img-thumbnail mb-1">
+			<img src="http://placehold.it/480x160/e2e2e2/333" class="img-thumbnail mb-1">
+		</article><!-- Layout Right aside End -->
+
+	</div><!-- /.container -->
+	
+	<!-- Search Modal -->
+	<div class="modal fade" id="SearchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"></div>
+
+	<!-- Comment Modal -->
+	<div class="modal fade" id="CommentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"></div>
+
+	<div style="height:6em;"></div>
+
+	<div class="container">
+		<!-- <footer>Footer bar</footer> -->
+		<article id="footMenuBar"></article>
+	</div>
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<script src="assets/js/global_main.js" /></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		setTimeout(function(){
+			$("#footMenuBar .footMenu_btn").children('li:nth-child(4)').addClass("sel");
+			$(".navbar-nav:first-child").children('li:nth-child(4)').children('a').addClass("red");
+		},500);
+	});
+
+	// Course goto next page
+	function GotoPage(){
+		location.href = "P12.html";
+	}
+
+	// Course Data list
+	var course_data =[{
+		course_title:"品牌营销的理论与实操",course_img:"assets/images/item2.jpg",course_time:"128",course_day:"99",course_date:"2017/5/20",course_type:"label_c1",course_typeName:"單課"
+		},{
+		course_title:"何梦杰：资本市场形势与机会识别",course_img:"assets/images/item1.jpg",course_time:"10",course_day:"48",course_date:"2017/5/12",course_type:"label_c2",course_typeName:"套餐"
+		},{
+		course_title:"郭坤学：重新发现国学",course_img:"assets/images/item3.jpg",course_time:"20",course_day:"32",course_date:"2017/4/30",course_type:"label_c3",course_typeName:"團購"
+		},{
+		course_title:"Title text",course_img:"http://lab.jyt-inc.com/rc/coursepic/20170713/1499926304987CAi4YvT.jpg",course_time:"xx",course_day:"xx",course_date:"yyy/mm/dd",course_type:"label_c3",course_typeName:"團購"
+		}
+	];
+	$.each(course_data,function(index,obj)
+	{
+		course_items ='<section class="col-xs-12 col-sm-6 col-md-4">';
+		course_items +='<div class="card clearfix">';
+		course_items +='<center class="black_bg" onclick="GotoPage()"><img class="img-responsive" src="'+ obj.course_img +'"></center>';
+		course_items +='<h5 class="transaction_hard h3em">'+ obj.course_title +'</h5>';
+		course_items +='<div class="col-xs-12">';
+		course_items +='<section style="padding:0.5rem;">';
+		course_items +='<div class="row fz11 grey pb-1">';
+		course_items +='<div class="col-md-12 col-sm-6">课时：<span>'+ obj.course_time +'</span></div>';
+		course_items +='<div class="col-md-12 col-sm-6 noww">效期：<span>'+ obj.course_day +'天</span> <small>('+ obj.course_date +')</small></div>';
+		course_items +='</div>';
+		course_items +='<div class="hidden-sm hidden-md hidden-lg" style="height:.5rem;"></div>';
+		course_items +='<ul class="table-box row">';
+		course_items +='<li><span class="badge '+ obj.course_type +' mr-1 white">'+ obj.course_typeName +'</span></li>';
+		course_items +='<li><button class="pushy-btn btn-sm btn-block btn--blue" onclick="GotoPage()">观 看</button></li>';
+		course_items +='</ul>';
+		course_items +='</section>';
+		course_items +='</div>';
+		course_items +='</div>';
+		course_items +='</section>';
+		$('#course_list').append(course_items);
+	});
+	</script>
+</body>
+</html>

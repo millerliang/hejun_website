@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>website hejun page</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link rel="stylesheet" href="assets/css/pushy-buttons.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/flaticon.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+</head>
+
+<body>
+	<!-- Fixed navbar -->
+	<nav id="navBar" class="navbar navbar-default navbar-SH navbar-fixed-top" role="navigation"></nav>
+
+	<div class="container">
+		<div class="top-height">
+			<article class="table-box navbar-fixed-top top-Menu">
+				<section onclick="location.href='teacherList.html'"><i class="fa fa-chevron-left"></i> back</section>
+				<section>讲师主页</section>
+				<section><!-- <a data-toggle="modal" data-target="#SearchModal" href="#"><i class="fa fa-search"></i> <span class="hidden-xs">Search</span></a>　 --></section>
+			</article>
+		</div>
+
+		<!-- Layout Main aside Star -->
+		<article class="col-md-8">
+
+			<div class="hidden-xs h1em"></div>
+			<ol class="breadcrumb hidden-xs hidden-sm row">
+				<li class="breadcrumb-item"><a href="index.html"><i class="flaticon-home"></i> Home</a></li>
+				<li class="breadcrumb-item"><a href="teacherList.html">高级讲师</a></li>
+				<li class="breadcrumb-item active">讲师主页</li>
+			</ol>
+
+			<style>
+				.forTeacherProfile {}
+				.forTeacherProfile .card {position: relative;margin:0;}
+				.forTeacherProfile .bgImg {height:40vh;overflow: hidden;}
+				.forTeacherProfile .bgImg img {width:100%;-ms-transform: scale(1.2, 1.2);-webkit-transform: scale(1.2, 1.2);transform: scale(1.2, 1.2);-webkit-filter: grayscale(85%) blur(12px);filter: grayscale(85%) blur(12px);}
+				.forTeacherProfile .usericon {position:absolute;top:0;width:100%;text-align:center;transform: translateY(12%);-webkit-transform: translateY(12%);-moz-transform: translateY(12%);}
+				.forTeacherProfile .usericon img {max-width:30%;border:3px solid rgba(255,255,255,.75);box-shadow: 0 1px 5px rgba(50, 50, 50, 0.5);-webkit-box-shadow: 0 1px 5px rgba(50, 50, 50, 0.5);-moz-box-shadow: 0 1px 5px rgba(50, 50, 50, 0.5);}
+				.forTeacherProfile h4 {margin-top:1rem;text-shadow: 0 1px 2px rgba(50, 50, 50, 0.75);-webkit-text-shadow: 0 1px 2px rgba(50, 50, 50, 0.75);-moz-text-shadow: 0 1px 2px rgba(50, 50, 50, 0.75);}
+				.forTeacherProfile h4 span {display:inline-block;background-color:rgba(0,0,0,.08);color:#fff;padding:.5rem 2rem;border-radius:18px;}
+				.videoList {margin:0;padding:0 .5rem;list-style: none;}
+				.videoList li {padding: 0 .3rem .8rem;}
+				@media (max-width: 768px) {
+					.forTeacherProfile .bgImg {height:35vh;}
+					.forTeacherProfile .usericon img {max-width:35%;}
+				}
+			</style>
+			<div class="row forTeacherProfile">
+
+				<div class="card">
+					<div class="bgImg">
+						<img src="http://endlesstheme.com/simplify1.0/images/profile/profile4.jpg">
+					</div>
+					<div class="usericon">
+						<img class="img-circle" src="http://endlesstheme.com/simplify1.0/images/profile/profile4.jpg">
+						<h4><span>蔡春华</span></h4>
+					</div>
+				</div>
+
+				<ul class="nav nav-pills nav-justified" role="tablist">
+					<li role="presentation" class="active"><a href="#TA" aria-controls="home" role="tab" data-toggle="tab">他的介绍</a></li>
+					<li role="presentation"><a href="#TB" aria-controls="profile" role="tab" data-toggle="tab">他的视频 (4)</a></li>
+				</ul>
+
+				<article class="tab-content row">
+					<section role="tabpanel" class="tab-pane fade in active" id="TA">
+						<div class="px-1">
+							<div class="card px-1 py-1">
+								<p>【學歷】<br>美國奧克拉荷馬財務管理博士</p>
+								<p>【學術研究專長】<br>財務管理、投資學、企業倫理、經濟學、衍生性金融商品</p>
+								<p>【教授科目】<br>投資學、證券分析及投資管理、全球經濟與金融情勢、投資決策與管理、衍生性金融商品、企業倫理與</p>
+								<p>【專長領域】<br>知覺心理學、立體視覺、視覺、錯覺、視覺藝術、心理學史、藥物化學、有機合成、胜肽化學、儀器分析、藥理學、擬胜肽酵素抑制劑設計與合成、小分子抗癌藥物設計與合成、新型抗菌藥物開發;開發天然活性成分衍生物於妝品應用。</p>
+							</div>
+						</div>
+					</section>
+					<section role="tabpanel" class="tab-pane fade" id="TB">
+						<ul class="videoList">
+							<li class="col-xs-4">
+								<a href="#0"><img class="img-responsive" src="https://dummyimage.com/560x360/ddd/222&text=Video1"></a>
+							</li>
+							<li class="col-xs-4">
+								<a href="#0"><img class="img-responsive" src="https://dummyimage.com/560x360/ddd/222&text=Video2"></a>
+							</li>
+							<li class="col-xs-4">
+								<a href="#0"><img class="img-responsive" src="https://dummyimage.com/560x360/ddd/222&text=Video3"></a>
+							</li>
+							<li class="col-xs-4">
+								<a href="#0"><img class="img-responsive" src="https://dummyimage.com/560x360/ddd/222&text=Video4"></a>
+							</li>
+						</ul>
+					</section>
+				</article>
+
+			</div>
+			<div class="hidden-xs h1em"></div>
+
+		</article><!-- Layout Main aside End -->
+
+		<!-- Layout Right aside Star -->
+		<aside class="col-sm-12 col-md-4">
+			<div class="h5em hidden-xs hidden-sm"></div>
+		</aside><!-- Layout Right aside End -->
+
+	</div><!-- /.container -->
+	
+	<!-- Search Modal -->
+	<div class="modal fade" id="SearchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"></div>
+
+	<!-- Comment Modal -->
+	<div class="modal fade" id="commentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"></div>
+
+	<div class="h3em hidden-xs"></div>
+
+	<!-- <div class="container">
+		<article id="footMenuBar"></article>
+	</div> -->
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<script src="assets/js/global_main.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		setTimeout(function(){
+			//$("#footMenuBar .footMenu_btn").children('li:nth-child(2)').addClass("sel");
+			//$(".navbar-nav:first-child").children('li:nth-child(2)').children('a').addClass("red");
+		},500);
+	});
+	</script>
+
+</body>
+</html>

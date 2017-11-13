@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>website hejun page</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link rel="stylesheet" href="assets/css/pushy-buttons.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/flaticon.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+	<style>
+	.PaymentDetails{border-bottom: dotted 1px #d8d8d8;padding:.8rem .5rem;margin:0 0 .3em;}
+	.SubTitle{position:relative;top:-1.1rem;padding: .2rem .5rem .3rem;background-color:#929a99;color:white;-webkit-border-radius:0 0 3px 0;-moz-border-radius:0 0 3px 0;border-radius:0 0 3px 0;}
+	.SubTitle::after{content:"";width: 0;margin-left:.33em;height: 0;border-style: solid;border-width: 1.75em 1.2em 0 0;border-color: #929a99 transparent transparent transparent;position:absolute;}
+	</style>
+</head>
+
+<body>
+	<!-- Fixed navbar -->
+	<nav id="navBar" class="navbar navbar-default navbar-SH navbar-fixed-top" role="navigation"></nav>
+
+	<div class="container">
+		<div class="top-height">
+			<article class="table-box navbar-fixed-top top-Menu">
+				<section onclick="location.href='index.html'"><i class="fa fa-chevron-left"></i> back</section>
+				<section>購買課程</section>
+				<section><a data-toggle="modal" data-target="#SearchModal" href="#"><i class="fa fa-search"></i> <span class="hidden-xs">Search</span></a>　</section>
+			</article>
+		</div>
+
+		<!-- Layout Main aside Star -->
+		<article class="col-md-8">
+
+			<div class="hidden-sm h1em"></div>
+			<ol class="breadcrumb hidden-xs hidden-sm row">
+				<li class="breadcrumb-item"><a href="index.html"><i class="flaticon-home"></i> Home</a></li>
+				<li class="breadcrumb-item"><a href="#">課程</a></li>
+				<li class="breadcrumb-item active">課程資訊</li>
+			</ol>
+
+			<section class="card" style="margin-bottom:.8rem!important;">
+				<h4 class="PaymentDetails">课程信息</h4>
+				<div class="table-box grey">
+					<div style="width:50%;">
+						<a href="#0"><img class="img-responsive" src="assets/images/item1.jpg"></a>
+					</div>
+					<div>
+						¥ <span class="red fz16">122</span>
+					</div>
+				</div>
+			</section>
+			<div class="hidden-xs h1em"></div>
+
+			<section class="white_bg py-1 card brt3" style="border-color:#929a99;">
+				<small class="SubTitle">支付方式</small>
+				<div class="form-horizontal">
+					<section class="form-group form-inline">
+						<div class="h1em"></div>
+						<label for="" class="col-sm-3 col-xs-3 control-label grey">其他方式</label>
+						<div class="ShowHiddenInput col-sm-8 col-xs-9 text-right">
+							<button class="pushy-btn b-lg btn--green mr-1" type="submit"><i class="fa fa-wechat"></i> 微信付款</button>
+						</div>
+					</section>
+					<div class="h1em hidden-sm"></div>
+					<section class="form-group form-inline pt-1">
+						<label for="" class="col-sm-3 col-xs-3 control-label grey">积分可抵现</label>
+						<div class="ShowHiddenInput col-sm-8 col-xs-9">
+							<div style="text-align: right;">- ¥<span>1</span>
+							<img style="width:24px;margin-left:.5rem;" src="assets/images/arrow-right.svg">
+							</div>
+						</div>
+					</section>
+
+					<section class="form-group pt-1">
+						<div class="col-xs-12 text-center">
+							<div class="checkbox_btn">
+								<input type="checkbox" value="option1" id="agree" name="agree">
+								<label for="agree" style="padding-left:0;" class="checkbox-inline">购买同意条款</label>
+							</div>
+						</div>
+					</section>
+
+					<div class="h1em hidden-xs"></div>
+
+				</div>
+			</section><!-- /.section -->
+
+			<section class="card py-1">
+				<div class="row">
+					<section class="col-xs-6 text-center">
+						实付 ¥ <span class="red fz14">122</span>
+					</section>
+					<section class="col-xs-6">
+						<button class="pushy-btn b-lg btn-block btn--red" type="submit">提交订单</button>
+					</section>
+				</div>
+			</section>
+
+		</article><!-- Layout Main aside End -->
+
+		<!-- Layout Right aside Star -->
+		<aside class="col-sm-12 col-md-4">
+			<div class="h5em hidden-xs hidden-sm"></div>
+		</aside><!-- Layout Right aside End -->
+
+	</div><!-- /.container -->
+	
+	<!-- Search Modal -->
+	<div class="modal fade" id="SearchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"></div>
+
+	<!-- Comment Modal -->
+	<div class="modal fade" id="commentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"></div>
+
+	<div class="h3em hidden-xs"></div>
+
+	<!-- <div class="container">
+		<article id="footMenuBar"></article>
+	</div> -->
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<script src="assets/js/global_main.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		setTimeout(function(){
+			$("#footMenuBar .footMenu_btn").children('li:nth-child(2)').addClass("sel");
+			$(".navbar-nav:first-child").children('li:nth-child(2)').children('a').addClass("red");
+		},500);
+	});
+	</script>
+
+</body>
+</html>
