@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>website hejun page</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link rel="stylesheet" href="assets/css/pushy-buttons.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/flaticon.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+	<style>
+	.QAList {list-style: none;padding:0;margin:0;background-color:#fff;}
+	.QAList li {position:relative;font-size:medium;display:block;padding:.5rem .8rem 1rem;border-bottom:1px solid rgba(0,0,0,.12);background:url(assets/images/arrow-right.svg) right center no-repeat;background-size:auto 32px;}
+	.QAList li label {color:#333;font-size:small;}
+	.QAList li div {line-height:1.2;max-width:90%;margin:.25rem 0 .8rem;}
+	.QAList li span.badge {position:absolute;right:1em;top:.6rem;}
+	.QAList li span.grey_bg {background-color:#dadada;}
+	.footerBtn {padding:.5rem;position:fixed;bottom:0;left:0;width:100%;z-index:87;background-color: #fff;
+		-moz-box-shadow: 0px -2px 12px rgba(0,0,0,.12);
+		-webkit-box-shadow: 0px -2px 12px rgba(0,0,0,.12);
+		box-shadow: 0px -2px 12px rgba(0,0,0,.12);
+	}
+	.inputQA .form-control {border: 1px solid #dcdcdc;margin-top:.8rem;}
+	.inputQA .modal-subTitle {margin-top:0;}
+	</style>
+</head>
+
+<body>
+	<!-- Fixed navbar -->
+	<nav id="navBar" class="navbar navbar-default navbar-SH navbar-fixed-top" role="navigation"></nav>
+
+	<div class="container">
+		<div class="top-height">
+			<article class="table-box navbar-fixed-top top-Menu">
+				<section onclick="location.href='userprofile.html'"><i class="fa fa-chevron-left"></i> back</section>
+				<section>反馈建议</section>
+				<section><!-- <a data-toggle="modal" data-target="#QAModal" href="#"><i class="fa fa-plus"></i></a> -->　</section>
+			</article>
+		</div>
+
+		<!-- Layout Main aside Star -->
+		<article class="col-md-8">
+
+			<div class="hidden-sm h1em"></div>
+			<ol class="breadcrumb hidden-xs hidden-sm row">
+				<li class="breadcrumb-item"><a href="index.html"><i class="flaticon-home"></i> Home</a></li>
+				<li class="breadcrumb-item"><a href="#">会员</a></li>
+				<li class="breadcrumb-item active">反馈建议</li>
+			</ol>
+
+			<section class="col-sm-12">
+				<div class="row">
+					<ul class="QAList">
+						<li>
+							<span class="badge red_bg">New</span>
+							<label>[类别 1]</label>
+							<div>问题 xx xx xxxxx xxxx xx xx xxxxx xxxx xx xx xxxxx xxxx xx xx xxxxx xxxx</div>
+							<small class="grey">2017/11/13 15:29 发问</small>
+						</li>
+						<li>
+							<!-- <span class="badge grey_bg">12</span> -->
+							<label>[类别 2]</label>
+							<div>问题 xx xx xxxxx x xx xxxxx xxxx</div>
+							<small class="grey">2017/11/12 10:02 发问</small>
+						</li>
+						<li>
+							<label>[类别 3]</label>
+							<div>问题 xx xx xxxxx xxxx xx xx xxxxx xxxx xx xx xxxxx xx xx xxxxx xxxx xx xx xxxxx xxxx xx xx xxxxx xxxxxxx xxxx xx xx xxxxx xxxx</div>
+							<small class="grey">2017/11/11 14:44　<span data-toggle="modal" data-target="#commentModal">管理员回覆</span></small>
+						</li>
+					</ul>
+				</div>
+				<div class="h4em"></div>
+			</section>
+
+			<footer class="footerBtn">
+				<button class="pushy-btn btn-block btn--red" data-toggle="modal" data-target="#QAModal" type="button">新增反馈</button>
+			</footer>
+		</article>
+
+		</article><!-- Layout Main aside End -->
+
+		<!-- Layout Right aside Star -->
+		<aside class="col-sm-12 col-md-4">
+			<div class="h5em hidden-xs hidden-sm"></div>
+		</aside><!-- Layout Right aside End -->
+
+	</div><!-- /.container -->
+	
+	<!-- AddQA Modal -->
+	<div class="modal fade in" id="QAModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<article class="modal-dialog" role="document">
+			<form class="modal-content">
+				<header class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">×</span></button><h4 class="modal-title" id="myModalLabel"><i class="fa fa-plus"></i> 新增反馈</h4></header>
+				<section class="modal-body inputQA" style="padding-top:0;">
+					<p class="modal-subTitle">1.请选择问题类别</p>
+					<select class="form-control">
+						<option value="">选择类别</option>
+						<option value="1">类别 1</option>
+						<option value="2">类别 2</option>
+						<option value="3">类别 3</option>
+						<option value="4">类别 4</option>
+						<option value="5">类别 5</option>
+					</select>
+					<div class="h1em"></div>
+					<p class="modal-subTitle">2.请填写您的提问</p>
+					<textarea class="form-control" rows="6" placeholder="此处填写..."></textarea>
+				</section>
+				<footer style="padding:1rem .5rem;border-top: 1px solid #e5e5e5;">
+					<section class="row">
+						<div class="col-xs-6"><button type="button" class="pushy-btn btn-block btn--grey" data-dismiss="modal">取 消</button></div>
+						<div class="col-xs-6"><button type="button" class="pushy-btn btn-block btn--red">送 出</button></div>
+					</section>
+				</footer>
+			</form>
+		</article>
+	</div>
+
+	<!-- Comment Modal -->
+	<div class="modal fade" id="commentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"></div>
+
+	<div class="h3em hidden-xs"></div>
+
+	<!-- <div class="container">
+		<article id="footMenuBar"></article>
+	</div> -->
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<script src="assets/js/global_main.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		setTimeout(function(){
+			$("#footMenuBar .footMenu_btn").children('li:nth-child(2)').addClass("sel");
+			$(".navbar-nav:first-child").children('li:nth-child(2)').children('a').addClass("red");
+		},500);
+	});
+	</script>
+
+</body>
+</html>

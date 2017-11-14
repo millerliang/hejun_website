@@ -25,9 +25,9 @@
 	<div class="container">
 		<div class="top-height">
 			<article class="table-box navbar-fixed-top top-Menu">
-				<section onclick="location.href='index.html'"><i class="fa fa-chevron-left"></i> back</section>
+				<section onclick="location.href='course2.html'"><i class="fa fa-chevron-left"></i> back</section>
 				<section>購買課程</section>
-				<section><a data-toggle="modal" data-target="#SearchModal" href="#"><i class="fa fa-search"></i> <span class="hidden-xs">Search</span></a>　</section>
+				<section><!-- <a data-toggle="modal" data-target="#SearchModal" href="#"><i class="fa fa-search"></i> <span class="hidden-xs">Search</span></a> -->　</section>
 			</article>
 		</div>
 
@@ -75,10 +75,11 @@
 					</section>
 
 					<section class="form-group pt-1">
-						<div class="col-xs-12 text-center">
+						<div class="text-center">
+							<span style="position: absolute;right: .8rem;margin-top: 1.75rem;z-index: 2;"><button class="btn btn-xs btn-outline" style="border: 1px solid #ddd;" data-toggle="modal" data-target="#TermsModal">檢視条款</button></span>
 							<div class="checkbox_btn">
 								<input type="checkbox" value="option1" id="agree" name="agree">
-								<label for="agree" style="padding-left:0;" class="checkbox-inline">购买同意条款</label>
+								<label for="agree" style="padding-left:0;" class="checkbox-inline">勾选即同意购买条款</label>
 							</div>
 						</div>
 					</section>
@@ -109,7 +110,7 @@
 	</div><!-- /.container -->
 	
 	<!-- Search Modal -->
-	<div class="modal fade" id="SearchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"></div>
+	<div class="modal fade" id="TermsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"></div>
 
 	<!-- Comment Modal -->
 	<div class="modal fade" id="commentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"></div>
@@ -126,6 +127,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 	<script src="assets/js/global_main.js"></script>
+	<script src="assets/js/terms.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function() {
 		setTimeout(function(){
