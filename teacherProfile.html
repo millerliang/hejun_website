@@ -47,6 +47,8 @@
 				.forTeacherProfile h4 span {display:inline-block;background-color:rgba(0,0,0,.08);color:#fff;padding:.5rem 2rem;border-radius:18px;}
 				.videoList {margin:0;padding:0 .5rem;list-style: none;}
 				.videoList li {padding: 0 .3rem .8rem;}
+				
+				.courseList li {background:#fff url(assets/images/arrow-right.svg) 99% center no-repeat;background-size: auto 50%;}
 				@media (max-width: 768px) {
 					.forTeacherProfile .bgImg {height:35vh;}
 					.forTeacherProfile .usericon img {max-width:35%;}
@@ -56,23 +58,33 @@
 
 				<div class="card">
 					<div class="bgImg">
-						<img src="http://endlesstheme.com/simplify1.0/images/profile/profile4.jpg">
+						<img src="assets/images/avatar/a7.png">
 					</div>
 					<div class="usericon">
-						<img class="img-circle" src="http://endlesstheme.com/simplify1.0/images/profile/profile4.jpg">
-						<h4><span>蔡春华</span></h4>
+						<img class="img-circle" src="assets/images/avatar/a7.png">
+						<h4><span>蒋 玲</span></h4>
 					</div>
 				</div>
 
 				<ul class="nav nav-pills nav-justified" role="tablist">
-					<li role="presentation" class="active"><a href="#TA" aria-controls="home" role="tab" data-toggle="tab">他的介绍</a></li>
-					<li role="presentation"><a href="#TB" aria-controls="profile" role="tab" data-toggle="tab">他的视频 (4)</a></li>
+					<li role="presentation" class="active"><a href="#TA" aria-controls="home" role="tab" data-toggle="tab">讲师介绍</a></li>
+					<li role="presentation"><a href="#TB" aria-controls="profile" role="tab" data-toggle="tab">讲师課程 (4)</a></li>
 				</ul>
 
 				<article class="tab-content row">
 					<section role="tabpanel" class="tab-pane fade in active" id="TA">
 						<div class="px-1">
+							<div class="Introduction table-box card">
+								<section>
+									<img class="img-responsive" src="http://hjwk.ehejun.com/rc/lecturerlecturerPic/20170907/1504752709963Pxmnh3M.JPG">
+								</section>
+								<section>
+									<h2 class="red">蒋玲</h2>
+									<p class="fz12 grey">和君商学<br>主任</p>
+								</section>
+							</div>
 							<div class="card px-1 py-1">
+								<p>【讲员简介】<br>•优职英才联合创始人 •金牌学徒计划资深导师 •硕士毕业于吉林大学文学院 •	10年以上校园招聘、大学生职业规划及培训经验 •	对企业招聘常用的心理测评工具有深入研究和见解 •帮助多家名企完成校园招聘及效果评估，熟悉企业招聘流程与人才能力模型 •擅长职业规划、能力提升训练、求职文书、面试辅导等模块，已帮助数百名大学生进入腾讯、阿里、百度、京东、华为等知名企业。</p>
 								<p>【學歷】<br>美國奧克拉荷馬財務管理博士</p>
 								<p>【學術研究專長】<br>財務管理、投資學、企業倫理、經濟學、衍生性金融商品</p>
 								<p>【教授科目】<br>投資學、證券分析及投資管理、全球經濟與金融情勢、投資決策與管理、衍生性金融商品、企業倫理與</p>
@@ -81,7 +93,33 @@
 						</div>
 					</section>
 					<section role="tabpanel" class="tab-pane fade" id="TB">
-						<ul class="videoList">
+						<ul class="list-group courseList px-1">
+							<li class="list-group-item">
+								<span class="pull-right">
+									<!-- <small class="grey">01:04:16</small>　 -->
+								</span>
+								<a href="#">課程一</a>
+							</li>
+							<li class="list-group-item">
+								<span class="pull-right">
+									<!-- <small class="grey">00:00:00</small> -->
+								</span>
+								<a href="#">課程二</a>
+							</li>
+							<li class="list-group-item">
+								<span class="pull-right">
+									<!-- <small class="grey">00:52:10</small>　 -->
+								</span>
+								<a href="#">課程三</a>
+							</li>
+							<li class="list-group-item">
+								<span class="pull-right">
+									<!-- <small class="grey">00:00:00</small> -->
+								</span>
+								<a href="#">課程四</a>
+							</li>
+						</ul>
+						<!-- <ul class="videoList">
 							<li class="col-xs-4">
 								<a href="#0"><img class="img-responsive" src="https://dummyimage.com/560x360/ddd/222&text=Video1"></a>
 							</li>
@@ -94,7 +132,7 @@
 							<li class="col-xs-4">
 								<a href="#0"><img class="img-responsive" src="https://dummyimage.com/560x360/ddd/222&text=Video4"></a>
 							</li>
-						</ul>
+						</ul> -->
 					</section>
 				</article>
 
